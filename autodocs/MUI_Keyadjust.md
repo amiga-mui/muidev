@@ -21,18 +21,18 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Keyadjust_AllowDoubleClick
 ### NAME
-[MUIA_Keyadjust_AllowDoubleClick](MUI_Keyadjust/#MUIA_Keyadjust_AllowDoubleClick) -- V20 [ISG], `BOOL`, 0x8042be82
+[MUIA_Keyadjust_AllowDoubleClick](MUI_Keyadjust.md/#MUIA_Keyadjust_AllowDoubleClick) -- V20 [ISG], `BOOL`, 0x8042be82
 
 ### FUNCTION
 Setting this attribute to FALSE will disable double click handling for the
 embedded string object.
 
 ### SEE ALSO
-[MUIA_Keyadjust_AllowTripleClick](MUI_Keyadjust/#MUIA_Keyadjust_AllowTripleClick)
+[MUIA_Keyadjust_AllowTripleClick](MUI_Keyadjust.md/#MUIA_Keyadjust_AllowTripleClick)
 
 ## MUIA_Keyadjust_AllowMouseEvents
 ### NAME
-[MUIA_Keyadjust_AllowMouseEvents](MUI_Keyadjust/#MUIA_Keyadjust_AllowMouseEvents) -- V20 [ISG], `BOOL`, 0x8042b61c
+[MUIA_Keyadjust_AllowMouseEvents](MUI_Keyadjust.md/#MUIA_Keyadjust_AllowMouseEvents) -- V20 [ISG], `BOOL`, 0x8042b61c
 
 ### FUNCTION
 Also allow mouse events for shortcuts. By default only keyboard events are
@@ -40,7 +40,7 @@ allowed and mouse events are used for Keyadjust class' own GUI handling.
 
 ## MUIA_Keyadjust_AllowMultipleKeys
 ### NAME
-[MUIA_Keyadjust_AllowMultipleKeys](MUI_Keyadjust/#MUIA_Keyadjust_AllowMultipleKeys) -- V20 [ISG], `BOOL`, 0x8042890b
+[MUIA_Keyadjust_AllowMultipleKeys](MUI_Keyadjust.md/#MUIA_Keyadjust_AllowMultipleKeys) -- V20 [ISG], `BOOL`, 0x8042890b
 
 ### FUNCTION
 Settings this attribute to FALSE will forbid several shortcuts to be handled
@@ -50,18 +50,18 @@ Defaults to TRUE.
 
 ## MUIA_Keyadjust_AllowTripleClick
 ### NAME
-[MUIA_Keyadjust_AllowTripleClick](MUI_Keyadjust/#MUIA_Keyadjust_AllowTripleClick) -- V20 [ISG], `BOOL`, 0x8042fd79
+[MUIA_Keyadjust_AllowTripleClick](MUI_Keyadjust.md/#MUIA_Keyadjust_AllowTripleClick) -- V20 [ISG], `BOOL`, 0x8042fd79
 
 ### FUNCTION
 Setting this attribute to FALSE will disable triple click handling for the
 embedded string object.
 
 ### SEE ALSO
-[MUIA_Keyadjust_AllowDoubleClick](MUI_Keyadjust/#MUIA_Keyadjust_AllowDoubleClick)
+[MUIA_Keyadjust_AllowDoubleClick](MUI_Keyadjust.md/#MUIA_Keyadjust_AllowDoubleClick)
 
 ## MUIA_Keyadjust_Key
 ### NAME
-[MUIA_Keyadjust_Key](MUI_Keyadjust/#MUIA_Keyadjust_Key) -- V20 [ISG], `STRPTR`, 0x8042e161
+[MUIA_Keyadjust_Key](MUI_Keyadjust.md/#MUIA_Keyadjust_Key) -- V20 [ISG], `STRPTR`, 0x8042e161
 
 ### FUNCTION
 Set or get the complete shortcut description string. Multiple shortcuts will

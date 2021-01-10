@@ -16,7 +16,7 @@ IMPORTANT: At object creation time, you can use all ASL library tags as
 well. They will be passed to the AllocAslRequest() call without further
 interpretation, but some of the tags may get overloaded by Popasl's normal
 requester opening procedure - namely ASLFR_InitialFile and
-ASLFR_InitialDrawer. These can be changed by using [MUIA_Popasl_StartHook](MUI_Popasl/#MUIA_Popasl_StartHook).
+ASLFR_InitialDrawer. These can be changed by using [MUIA_Popasl_StartHook](MUI_Popasl.md/#MUIA_Popasl_StartHook).
 ## Attributes
 Attribute|Version|ISG|Type
 ---------|-------|---|----
@@ -27,12 +27,12 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Popasl_Active
 ### NAME
-[MUIA_Popasl_Active](MUI_Popasl/#MUIA_Popasl_Active) -- V7 [..G], `BOOL`, 0x80421b37
+[MUIA_Popasl_Active](MUI_Popasl.md/#MUIA_Popasl_Active) -- V7 [..G], `BOOL`, 0x80421b37
 
 ### FUNCTION
 Popasl creates asynchronous popups. Requesters are opened in a seperately
 spawned task and don't disturb the rest of the application. You can ask for
-the state of a requester by querying the [MUIA_Popasl_Active](MUI_Popasl/#MUIA_Popasl_Active) attribute. It
+the state of a requester by querying the [MUIA_Popasl_Active](MUI_Popasl.md/#MUIA_Popasl_Active) attribute. It
 will return TRUE when the requester is currently open, FALSE otherwise.
 
 Common use for this attribute is to prevent an application from being
@@ -61,11 +61,11 @@ break;
 ```
 
 ### SEE ALSO
-[MUIA_Popasl_StartHook](MUI_Popasl/#MUIA_Popasl_StartHook), [MUIA_Popasl_StopHook](MUI_Popasl/#MUIA_Popasl_StopHook), [MUIA_Popasl_Type](MUI_Popasl/#MUIA_Popasl_Type)
+[MUIA_Popasl_StartHook](MUI_Popasl.md/#MUIA_Popasl_StartHook), [MUIA_Popasl_StopHook](MUI_Popasl.md/#MUIA_Popasl_StopHook), [MUIA_Popasl_Type](MUI_Popasl.md/#MUIA_Popasl_Type)
 
 ## MUIA_Popasl_StartHook
 ### NAME
-[MUIA_Popasl_StartHook](MUI_Popasl/#MUIA_Popasl_StartHook) -- V7 [ISG], `struct Hook *`, 0x8042b703
+[MUIA_Popasl_StartHook](MUI_Popasl.md/#MUIA_Popasl_StartHook) -- V7 [ISG], `struct Hook *`, 0x8042b703
 
 ### FUNCTION
 Before popasl class opens the asl requester, it has to get some kind of
@@ -73,7 +73,7 @@ parameters describing its initial contents. A file popup would e.g. need to
 split the string gadgets contents into path and file name part and pass
 these as ASLFR_InititalFile and ASLFR_InitialDrawer to the requester.
 
-The [MUIA_Popasl_StartHook](MUI_Popasl/#MUIA_Popasl_StartHook) tag describes a hook function that will be called
+The [MUIA_Popasl_StartHook](MUI_Popasl.md/#MUIA_Popasl_StartHook) tag describes a hook function that will be called
 immediately before the requester is opened. It will receive a pointer to
 itself in A0, a pointer to the popasl object in A2 and a pointer to a
 taglist in A1. This taglist already contains some tags:
@@ -104,14 +104,14 @@ ASLFR_InitialDrawer. A font requester splits a string like "topaz/8" into
 font name and size for ASLFO_InitialName and ASLFO_InitialSize.
 
 ### SEE ALSO
-[MUIA_Popasl_StopHook](MUI_Popasl/#MUIA_Popasl_StopHook), [MUIA_Popasl_Type](MUI_Popasl/#MUIA_Popasl_Type)
+[MUIA_Popasl_StopHook](MUI_Popasl.md/#MUIA_Popasl_StopHook), [MUIA_Popasl_Type](MUI_Popasl.md/#MUIA_Popasl_Type)
 
 ## MUIA_Popasl_StopHook
 ### NAME
-[MUIA_Popasl_StopHook](MUI_Popasl/#MUIA_Popasl_StopHook) -- V7 [ISG], `struct Hook *`, 0x8042d8d2
+[MUIA_Popasl_StopHook](MUI_Popasl.md/#MUIA_Popasl_StopHook) -- V7 [ISG], `struct Hook *`, 0x8042d8d2
 
 ### FUNCTION
-When the requester terminates, [MUIA_Popasl_StopHook](MUI_Popasl/#MUIA_Popasl_StopHook) will be called with a
+When the requester terminates, [MUIA_Popasl_StopHook](MUI_Popasl.md/#MUIA_Popasl_StopHook) will be called with a
 pointer to itself in A0, a pointer to the popasl object in A2 and a pointer
 to the asl requester structure in A1. The hook can then parse the requester
 structure and set the string gadgets contents respectively.
@@ -119,11 +119,11 @@ structure and set the string gadgets contents respectively.
 For file and font requesters, a default handling is provided.
 
 ### SEE ALSO
-[MUIA_Popasl_StartHook](MUI_Popasl/#MUIA_Popasl_StartHook), [MUIA_Popasl_Type](MUI_Popasl/#MUIA_Popasl_Type)
+[MUIA_Popasl_StartHook](MUI_Popasl.md/#MUIA_Popasl_StartHook), [MUIA_Popasl_Type](MUI_Popasl.md/#MUIA_Popasl_Type)
 
 ## MUIA_Popasl_Type
 ### NAME
-[MUIA_Popasl_Type](MUI_Popasl/#MUIA_Popasl_Type) -- V7 [I.G], `ULONG`, 0x8042df3d
+[MUIA_Popasl_Type](MUI_Popasl.md/#MUIA_Popasl_Type) -- V7 [I.G], `ULONG`, 0x8042df3d
 
 ### FUNCTION
 This tag allows to set the type of asl requester. Pass the same value you
@@ -135,13 +135,13 @@ start/stop handling. When a file requester is opened, MUI splits the string
 gadgets contents into a path and a file name and uses these as initial
 parameters for the requester. Font popups translate a font into a name/size
 pair, e.g. "topaz/8". You can override these translations by specifying a
-[MUIA_Popasl_StartHook](MUI_Popasl/#MUIA_Popasl_StartHook) and a [MUIA_Popasl_StopHook](MUI_Popasl/#MUIA_Popasl_StopHook).
+[MUIA_Popasl_StartHook](MUI_Popasl.md/#MUIA_Popasl_StartHook) and a [MUIA_Popasl_StopHook](MUI_Popasl.md/#MUIA_Popasl_StopHook).
 
 For ASL_ScreenModeRequest, no standard handling is available. Using such a
 popup without Start and Stop hooks won't make much sense.
 
 ### SEE ALSO
-[MUIA_Popasl_StartHook](MUI_Popasl/#MUIA_Popasl_StartHook), [MUIA_Popasl_StopHook](MUI_Popasl/#MUIA_Popasl_StopHook)
+[MUIA_Popasl_StartHook](MUI_Popasl.md/#MUIA_Popasl_StartHook), [MUIA_Popasl_StopHook](MUI_Popasl.md/#MUIA_Popasl_StopHook)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

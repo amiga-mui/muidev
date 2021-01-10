@@ -2,10 +2,10 @@
 ## Super class
 [Area.mui](MUI_Area.md)
 ## Inherited by
-* [Knob.mui](MUI_Knob)
-* [Levelmeter.mui](MUI_Levelmeter)
-* [Numericbutton.mui](MUI_Numericbutton)
-* [Slider.mui](MUI_Slider)
+* [Knob.mui](MUI_Knob.md)
+* [Levelmeter.mui](MUI_Levelmeter.md)
+* [Numericbutton.mui](MUI_Numericbutton.md)
+* [Slider.mui](MUI_Slider.md)
 ## Background
 Numeric class is the base class for everything that deals with the input (and
 display) of integer numbers. Numeric class itself does not feature any GUI
@@ -18,14 +18,14 @@ Numeric class and the supplied subclasses communicate with a set of methods. By
 writing subclasses which override some of them, you can change the behaviour of
 all sliders to fit your requirements. You could e.g. enhance the builtin value
 formatting code which is limited to simple printf-style strings by replacing the
-[MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify) method with something more complicated. Or you turn your
-sliders to logarithmic scales by replacing [MUIM_Numeric_ValueToScale](MUI_Numeric/#MUIM_Numeric_ValueToScale) and
-[MUIM_Numeric_ScaleToValue](MUI_Numeric/#MUIM_Numeric_ScaleToValue).
+[MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify) method with something more complicated. Or you turn your
+sliders to logarithmic scales by replacing [MUIM_Numeric_ValueToScale](MUI_Numeric.md/#MUIM_Numeric_ValueToScale) and
+[MUIM_Numeric_ScaleToValue](MUI_Numeric.md/#MUIM_Numeric_ScaleToValue).
 
 Imagine you would like a slider which doesn't only display a users age but also
 makes comments depending on the current value, e.g. "13 years (Teenie)" ...
 "25 years (Twen)" ... All you have to do is to write a subclass of any of MUI's
-builtin slider types which does nothing but replace [MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify) with
+builtin slider types which does nothing but replace [MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify) with
 your code. See the supplied "Slidorama" demo program to see how this might work.
 
 MUI features several different subclasses of Numeric class: Slider class creates
@@ -45,7 +45,7 @@ requirements, you may of course write custom classes for numeric data input. If
 you use Numeric class as base class, you won't need to think about the basic
 stuff like minimum and maximum values and formatting.
 
-Keyboard control (TAB, cursor keys, [MUIA_ControlChar](MUI_Area/#MUIA_ControlChar)) is handled my Numeric
+Keyboard control (TAB, cursor keys, [MUIA_ControlChar](MUI_Area.md/#MUIA_ControlChar)) is handled my Numeric
 class automatically, subclasses will not have to care about it.
 ## Attributes
 Attribute|Version|ISG|Type
@@ -72,12 +72,12 @@ Method|Version
 
 ## MUIA_Numeric_CheckAllSizes
 ### NAME
-[MUIA_Numeric_CheckAllSizes](MUI_Numeric/#MUIA_Numeric_CheckAllSizes) -- V11 [ISG], `BOOL`, 0x80421594
+[MUIA_Numeric_CheckAllSizes](MUI_Numeric.md/#MUIA_Numeric_CheckAllSizes) -- V11 [ISG], `BOOL`, 0x80421594
 
 ### FUNCTION
 Setting this attribute to TRUE will cause all values between
-[MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min) and [MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max) to be checked for their textual
-dimensions when being formatted using [MUIA_Numeric_Format](MUI_Numeric/#MUIA_Numeric_Format). This might be
+[MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min) and [MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max) to be checked for their textual
+dimensions when being formatted using [MUIA_Numeric_Format](MUI_Numeric.md/#MUIA_Numeric_Format). This might be
 necessary if the standard check for some very few certain values does not
 yield the largest text dimension and hence would cause graphical errors. The
 drawback is that setting up an object with this attribute set to TRUE might
@@ -86,16 +86,16 @@ take considerably more time than usual due to the additional overhead.
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min),
-[MUIA_Numeric_Format](MUI_Numeric/#MUIA_Numeric_Format)
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min),
+[MUIA_Numeric_Format](MUI_Numeric.md/#MUIA_Numeric_Format)
 
 ## MUIA_Numeric_Default
 ### NAME
-[MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default) -- V11 [ISG], `LONG`, 0x804263e8
+[MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default) -- V11 [ISG], `LONG`, 0x804263e8
 
 ### FUNCTION
 Adjust the default value for a numeric input/display gadget. When the object
-receives a [MUIM_Numeric_SetDefault](MUI_Numeric/#MUIM_Numeric_SetDefault) method, it sets its value to the one given
+receives a [MUIM_Numeric_SetDefault](MUI_Numeric.md/#MUIM_Numeric_SetDefault) method, it sets its value to the one given
 here.
 
 Each type of slider can have a default value to which the user can always return
@@ -108,63 +108,63 @@ on an active numeric gadget.
 Defaults to 0.
 
 ### SEE ALSO
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min),
-[MUIM_Numeric_SetDefault](MUI_Numeric/#MUIM_Numeric_SetDefault)
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min),
+[MUIM_Numeric_SetDefault](MUI_Numeric.md/#MUIM_Numeric_SetDefault)
 
 ## MUIA_Numeric_Format
 ### NAME
-[MUIA_Numeric_Format](MUI_Numeric/#MUIA_Numeric_Format) -- V11 [ISG], `STRPTR`, 0x804263e9
+[MUIA_Numeric_Format](MUI_Numeric.md/#MUIA_Numeric_Format) -- V11 [ISG], `STRPTR`, 0x804263e9
 
 ### FUNCTION
 printf-style string to describe the format of the slider display.
 
 Whenever a subclass of Numeric class thinks its time to render a new value, it
 doesn't simply write it to a string but instead calls
-[MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify). This method of Numeric class looks for the specified
-[MUIA_Numeric_Format](MUI_Numeric/#MUIA_Numeric_Format) in its data structures and fills a string with the
+[MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify). This method of Numeric class looks for the specified
+[MUIA_Numeric_Format](MUI_Numeric.md/#MUIA_Numeric_Format) in its data structures and fills a string with the
 current value. In detail, things work like his:
 
-- Some slider object (e.g. a knob) receives a [MUIM_Draw](MUI_Area/#MUIM_Draw) method.
-- The [MUIM_Draw](MUI_Area/#MUIM_Draw) implementation of the knob object reads the current value of
-  Numeric class and calls [MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify) with this value.
-- [MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify) of numeric class reads the current format and
+- Some slider object (e.g. a knob) receives a [MUIM_Draw](MUI_Area.md/#MUIM_Draw) method.
+- The [MUIM_Draw](MUI_Area.md/#MUIM_Draw) implementation of the knob object reads the current value of
+  Numeric class and calls [MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify) with this value.
+- [MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify) of numeric class reads the current format and
   sprintf()s the given value to a buffer. The buffer is returned the caller.
-- After all this stuff, the [MUIM_Draw](MUI_Area/#MUIM_Draw) implementation receives a nice string as
+- After all this stuff, the [MUIM_Draw](MUI_Area.md/#MUIM_Draw) implementation receives a nice string as
   result code and finally puts it somewhere into the window.
 
 All this method stuff might sound a bit crazy, but in fact its quite powerful.
 If you write a subclass of any of MUI's slider classes which simply replaces
-[MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify) with your own code, you can create any string you like
+[MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify) with your own code, you can create any string you like
 for display in these sliders. You might e.g. want to display a nice formatted
 time string (hh:mm:ss) in a slider knob which adjusts a number of seconds. Or
 you need to adjust a baudrate from a hand of predefined values. Just overrided
-[MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify) and you have the choice how the slider value translates
+[MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify) and you have the choice how the slider value translates
 into a string.
 
-If you don't override [MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify), the method reaches Numeric class w
-hich simply does a sprintf() with the defined [MUIA_Numeric_Format](MUI_Numeric/#MUIA_Numeric_Format).
+If you don't override [MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify), the method reaches Numeric class w
+hich simply does a sprintf() with the defined [MUIA_Numeric_Format](MUI_Numeric.md/#MUIA_Numeric_Format).
 
-Note well: The maximum length of the result string for [MUIA_Numeric_Format](MUI_Numeric/#MUIA_Numeric_Format) is
+Note well: The maximum length of the result string for [MUIA_Numeric_Format](MUI_Numeric.md/#MUIA_Numeric_Format) is
 limited to 32 characters. If you need more, you **MUST** override the method.
 
 Defaults to "%ld".
 
 ### SEE ALSO
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min),
-[MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify), [MUIM_Numeric_StringifyValue](MUI_Numeric/#MUIM_Numeric_StringifyValue)
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min),
+[MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify), [MUIM_Numeric_StringifyValue](MUI_Numeric.md/#MUIM_Numeric_StringifyValue)
 
 ## MUIA_Numeric_Max
 ### NAME
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max) -- V11 [ISG], `LONG`, 0x8042d78a
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max) -- V11 [ISG], `LONG`, 0x8042d78a
 
 ### FUNCTION
 Adjust the maximum value for a numeric input/display gadget. Numeric class
-will automatically clip its value to make it fit between [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min)
+will automatically clip its value to make it fit between [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min)
 and MUI_Numeric_Max. Also, minimum and maximum values are used for several
 internal calculations such as the maximum space required to display a
 numeric value.
 
-You may change [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min) and [MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max) with SetAttrs(), but
+You may change [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min) and [MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max) with SetAttrs(), but
 current MUI versions will **NOT** update the objects and with the window's
 width or height if your change causes the value display to change it's
 minimum and/or maximum pixel sizes. The slider position itself will be
@@ -176,32 +176,32 @@ limit for all tags.
 Defaults to 100.
 
 ### NOTES
-This attribute replaces the [MUIA_Slider_Max](MUI_Slider/#MUIA_Slider_Max) tag of previous MUI releases.
+This attribute replaces the [MUIA_Slider_Max](MUI_Slider.md/#MUIA_Slider_Max) tag of previous MUI releases.
 For compatibility reasons, both have the same hex value. Nevertheless,
-always use [MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max) in new code.
+always use [MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max) in new code.
 
-Setting [MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max) directly after [MUIA_NoNotify](MUI_Notify/#MUIA_NoNotify)=TRUE will disable a
-notification of [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value) in case the new maximum value is smaller
+Setting [MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max) directly after [MUIA_NoNotify](MUI_Notify.md/#MUIA_NoNotify)=TRUE will disable a
+notification of [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value) in case the new maximum value is smaller
 than the current value. The current value will be clipped accordingly to the
 new maximum value nevertheless.
 
 ### SEE ALSO
-[MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default),
-[MUIM_Numeric_GetPixelSize](MUI_Numeric/#MUIM_Numeric_GetPixelSize), [MUIM_Numeric_ValueToScale](MUI_Numeric/#MUIM_Numeric_ValueToScale),
-[MUIM_Numeric_ScaleToValue](MUI_Numeric/#MUIM_Numeric_ScaleToValue)
+[MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default),
+[MUIM_Numeric_GetPixelSize](MUI_Numeric.md/#MUIM_Numeric_GetPixelSize), [MUIM_Numeric_ValueToScale](MUI_Numeric.md/#MUIM_Numeric_ValueToScale),
+[MUIM_Numeric_ScaleToValue](MUI_Numeric.md/#MUIM_Numeric_ScaleToValue)
 
 ## MUIA_Numeric_Min
 ### NAME
-[MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min) -- V11 [ISG], `LONG`, 0x8042e404
+[MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min) -- V11 [ISG], `LONG`, 0x8042e404
 
 ### FUNCTION
 Adjust the minimum value for a numeric input/display gadget. Numeric class
-will automatically clip its value to make it fit between [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min)
+will automatically clip its value to make it fit between [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min)
 and MUI_Numeric_Max. Also, minimum and maximum values are used for several
 internal calculations such as the maximum space required to display a
 numeric value.
 
-You may change [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min) and [MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max) with SetAttrs(), but
+You may change [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min) and [MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max) with SetAttrs(), but
 current MUI versions will **NOT** update the objects and with the window's
 width or height if your change causes the value display to change it's
 minimum and/or maximum pixel sizes. The slider position itself will be
@@ -213,46 +213,46 @@ limit for all tags.
 Defaults to 0.
 
 ### NOTES
-This attribute replaces the [MUIA_Slider_Min](MUI_Slider/#MUIA_Slider_Min) tag of previous MUI releases.
+This attribute replaces the [MUIA_Slider_Min](MUI_Slider.md/#MUIA_Slider_Min) tag of previous MUI releases.
 For compatibility reasons, both have the same hex value. Nevertheless,
-always use [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min) in new code.
+always use [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min) in new code.
 
-Setting [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min) directly after [MUIA_NoNotify](MUI_Notify/#MUIA_NoNotify)=TRUE will disable a
-notification of [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value) in case the new minimum value is larger
+Setting [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min) directly after [MUIA_NoNotify](MUI_Notify.md/#MUIA_NoNotify)=TRUE will disable a
+notification of [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value) in case the new minimum value is larger
 than the current value. The current value will be clipped accordingly to the
 new minimum value nevertheless.
 
 ### SEE ALSO
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default),
-[MUIM_Numeric_GetPixelSize](MUI_Numeric/#MUIM_Numeric_GetPixelSize), [MUIM_Numeric_ValueToScale](MUI_Numeric/#MUIM_Numeric_ValueToScale),
-[MUIM_Numeric_ScaleToValue](MUI_Numeric/#MUIM_Numeric_ScaleToValue)
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default),
+[MUIM_Numeric_GetPixelSize](MUI_Numeric.md/#MUIM_Numeric_GetPixelSize), [MUIM_Numeric_ValueToScale](MUI_Numeric.md/#MUIM_Numeric_ValueToScale),
+[MUIM_Numeric_ScaleToValue](MUI_Numeric.md/#MUIM_Numeric_ScaleToValue)
 
 ## MUIA_Numeric_Reverse
 ### NAME
-[MUIA_Numeric_Reverse](MUI_Numeric/#MUIA_Numeric_Reverse) -- V11 [ISG], `BOOL`, 0x8042f2a0
+[MUIA_Numeric_Reverse](MUI_Numeric.md/#MUIA_Numeric_Reverse) -- V11 [ISG], `BOOL`, 0x8042f2a0
 
 ### FUNCTION
 Reverse the display of a numeric gadget.
 
-When set to TRUE, the [MUIM_Numeric_ScaleToValue](MUI_Numeric/#MUIM_Numeric_ScaleToValue) and
-[MUIM_Numeric_ValueToScale](MUI_Numeric/#MUIM_Numeric_ValueToScale) methods are effected in a way that makes your
+When set to TRUE, the [MUIM_Numeric_ScaleToValue](MUI_Numeric.md/#MUIM_Numeric_ScaleToValue) and
+[MUIM_Numeric_ValueToScale](MUI_Numeric.md/#MUIM_Numeric_ValueToScale) methods are effected in a way that makes your
 gadget behave "reverse". Its minimum numeric value will be mapped to the
 maximum scale value of the display and vice versa.
 
 Defaults to FALSE.
 
 ### NOTES
-This attribute replaces the [MUIA_Slider_Reverse](MUI_Slider/#MUIA_Slider_Reverse) tag of previous MUI
+This attribute replaces the [MUIA_Slider_Reverse](MUI_Slider.md/#MUIA_Slider_Reverse) tag of previous MUI
 releases. For compatibility reasons, both have the same hex value.
-Nevertheless, always use [MUIA_Numeric_Reverse](MUI_Numeric/#MUIA_Numeric_Reverse) in new code.
+Nevertheless, always use [MUIA_Numeric_Reverse](MUI_Numeric.md/#MUIA_Numeric_Reverse) in new code.
 
 ### SEE ALSO
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default),
-[MUIM_Numeric_ValueToScale](MUI_Numeric/#MUIM_Numeric_ValueToScale), [MUIM_Numeric_ScaleToValue](MUI_Numeric/#MUIM_Numeric_ScaleToValue)
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default),
+[MUIM_Numeric_ValueToScale](MUI_Numeric.md/#MUIM_Numeric_ValueToScale), [MUIM_Numeric_ScaleToValue](MUI_Numeric.md/#MUIM_Numeric_ScaleToValue)
 
 ## MUIA_Numeric_RevLeftRight
 ### NAME
-[MUIA_Numeric_RevLeftRight](MUI_Numeric/#MUIA_Numeric_RevLeftRight) -- V11 [ISG], `BOOL`, 0x804294a7
+[MUIA_Numeric_RevLeftRight](MUI_Numeric.md/#MUIA_Numeric_RevLeftRight) -- V11 [ISG], `BOOL`, 0x804294a7
 
 ### FUNCTION
 Reverse the function of left/right keys.
@@ -263,12 +263,12 @@ control for a slider gadget. This tag might help.
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default),
-[MUIA_Numeric_Reverse](MUI_Numeric/#MUIA_Numeric_Reverse), [MUIA_Numeric_RevUpDown](MUI_Numeric/#MUIA_Numeric_RevUpDown)
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default),
+[MUIA_Numeric_Reverse](MUI_Numeric.md/#MUIA_Numeric_Reverse), [MUIA_Numeric_RevUpDown](MUI_Numeric.md/#MUIA_Numeric_RevUpDown)
 
 ## MUIA_Numeric_RevUpDown
 ### NAME
-[MUIA_Numeric_RevUpDown](MUI_Numeric/#MUIA_Numeric_RevUpDown) -- V11 [ISG], `BOOL`, 0x804252dd
+[MUIA_Numeric_RevUpDown](MUI_Numeric.md/#MUIA_Numeric_RevUpDown) -- V11 [ISG], `BOOL`, 0x804252dd
 
 ### FUNCTION
 Reverse the function of up/down keys.
@@ -279,35 +279,35 @@ control for a slider gadget. This tag might help.
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default),
-[MUIA_Numeric_Reverse](MUI_Numeric/#MUIA_Numeric_Reverse), [MUIA_Numeric_RevUpDown](MUI_Numeric/#MUIA_Numeric_RevUpDown)
+[MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default),
+[MUIA_Numeric_Reverse](MUI_Numeric.md/#MUIA_Numeric_Reverse), [MUIA_Numeric_RevUpDown](MUI_Numeric.md/#MUIA_Numeric_RevUpDown)
 
 ## MUIA_Numeric_Value
 ### NAME
-[MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value) -- V11 [ISG], `LONG`, 0x8042ae3a
+[MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value) -- V11 [ISG], `LONG`, 0x8042ae3a
 
 ### FUNCTION
 Adjust the current value for a numeric input/display gadget. Numeric class
-will automatically clip this value to make it fit between [MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min)
+will automatically clip this value to make it fit between [MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min)
 and MUI_Numeric_Max.
 
-Whenever a new value is set, the object receices a new [MUIM_Draw](MUI_Area/#MUIM_Draw) method to
+Whenever a new value is set, the object receices a new [MUIM_Draw](MUI_Area.md/#MUIM_Draw) method to
 get a chance to update its display.
 
 Defaults to 0.
 
 ### NOTES
-This attribute replaces the [MUIA_Slider_Level](MUI_Slider/#MUIA_Slider_Level) tag of previous MUI releases.
+This attribute replaces the [MUIA_Slider_Level](MUI_Slider.md/#MUIA_Slider_Level) tag of previous MUI releases.
 For compatibility reasons, both have the same hex value. Nevertheless,
-always use [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value) in new code.
+always use [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value) in new code.
 
 ### SEE ALSO
-[MUIA_Numeric_Min](MUI_Numeric/#MUIA_Numeric_Min), [MUIA_Numeric_Max](MUI_Numeric/#MUIA_Numeric_Max), [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default),
-[MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify)
+[MUIA_Numeric_Min](MUI_Numeric.md/#MUIA_Numeric_Min), [MUIA_Numeric_Max](MUI_Numeric.md/#MUIA_Numeric_Max), [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default),
+[MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify)
 
 ## MUIM_Numeric_Decrease
 ### NAME
-[MUIM_Numeric_Decrease](MUI_Numeric/#MUIM_Numeric_Decrease) -- V11, 0x804243a7
+[MUIM_Numeric_Decrease](MUI_Numeric.md/#MUIM_Numeric_Decrease) -- V11, 0x804243a7
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Numeric_Decrease, LONG amount);`
@@ -320,11 +320,11 @@ Decrease the value of a numeric class object.
      amount to decrease the number by
 
 ### SEE ALSO
-[MUIM_Numeric_Increase](MUI_Numeric/#MUIM_Numeric_Increase), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value)
+[MUIM_Numeric_Increase](MUI_Numeric.md/#MUIM_Numeric_Increase), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value)
 
 ## MUIM_Numeric_Increase
 ### NAME
-[MUIM_Numeric_Increase](MUI_Numeric/#MUIM_Numeric_Increase) -- V11, 0x80426ecd
+[MUIM_Numeric_Increase](MUI_Numeric.md/#MUIM_Numeric_Increase) -- V11, 0x80426ecd
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Numeric_Increase, LONG amount);`
@@ -337,11 +337,11 @@ Increase the value of a numeric class object.
      amount to increase the number by
 
 ### SEE ALSO
-[MUIM_Numeric_Decrease](MUI_Numeric/#MUIM_Numeric_Decrease), [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value)
+[MUIM_Numeric_Decrease](MUI_Numeric.md/#MUIM_Numeric_Decrease), [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value)
 
 ## MUIM_Numeric_ScaleToValue
 ### NAME
-[MUIM_Numeric_ScaleToValue](MUI_Numeric/#MUIM_Numeric_ScaleToValue) -- V11, 0x8042032c
+[MUIM_Numeric_ScaleToValue](MUI_Numeric.md/#MUIM_Numeric_ScaleToValue) -- V11, 0x8042032c
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Numeric_ScaleToValue, LONG scalemin, LONG scalemax, LONG scale);`
@@ -365,24 +365,24 @@ The transformed value.
 
 ## MUIM_Numeric_SetDefault
 ### NAME
-[MUIM_Numeric_SetDefault](MUI_Numeric/#MUIM_Numeric_SetDefault) -- V11, 0x8042ab0a
+[MUIM_Numeric_SetDefault](MUI_Numeric.md/#MUIM_Numeric_SetDefault) -- V11, 0x8042ab0a
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Numeric_SetDefault);`
 
 ### FUNCTION
 This method does nothing but reset the value to its default. Defaults can be
-adjusted through [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default).
+adjusted through [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default).
 
 Only implementors of custom slider classes will need this method. Sending it
 from applications doesn't make any sense.
 
 ### SEE ALSO
-[MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric/#MUIA_Numeric_Default)
+[MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Default](MUI_Numeric.md/#MUIA_Numeric_Default)
 
 ## MUIM_Numeric_Stringify
 ### NAME
-[MUIM_Numeric_Stringify](MUI_Numeric/#MUIM_Numeric_Stringify) -- V11, 0x80424891
+[MUIM_Numeric_Stringify](MUI_Numeric.md/#MUIM_Numeric_Stringify) -- V11, 0x80424891
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Numeric_Stringify, LONG value);`
@@ -399,7 +399,7 @@ from applications doesn't make any sense.
      the value to be converted to a string
 
 ### EXAMPLE
-... somewhere in your [MUIM_Draw](MUI_Area/#MUIM_Draw) method ...
+... somewhere in your [MUIM_Draw](MUI_Area.md/#MUIM_Draw) method ...
 
 ```c++
 get(obj, MUIA_Numeric_Value, &val);
@@ -408,11 +408,11 @@ Text(rp, buf, strlen(buf));
 ```
 
 ### SEE ALSO
-[MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value), [MUIA_Numeric_Format](MUI_Numeric/#MUIA_Numeric_Format)
+[MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value), [MUIA_Numeric_Format](MUI_Numeric.md/#MUIA_Numeric_Format)
 
 ## MUIM_Numeric_ValueToScale
 ### NAME
-[MUIM_Numeric_ValueToScale](MUI_Numeric/#MUIM_Numeric_ValueToScale) -- V11, 0x80423e4f
+[MUIM_Numeric_ValueToScale](MUI_Numeric.md/#MUIM_Numeric_ValueToScale) -- V11, 0x80423e4f
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Numeric_ValueToScale, LONG scalemin, LONG scalemax);`

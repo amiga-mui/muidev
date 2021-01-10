@@ -2,7 +2,7 @@
 ## Super class
 [Area.mui](MUI_Area.md)
 ## Inherited by
-* [Fontdisplay.mui](MUI_Fontdisplay)
+* [Fontdisplay.mui](MUI_Fontdisplay.md)
 ## Background
 Text class allows generating objects that contain some kind of text. You can
 control the outfit of your text with some special control characters,
@@ -26,15 +26,15 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Text_Contents
 ### NAME
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents) -- V4 [ISG], `STRPTR`, 0x8042f8dc
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents) -- V4 [ISG], `STRPTR`, 0x8042f8dc
 
 ### FUNCTION
 String to be displayed in a text object.
 
 If the string is larger than available display space, it will be clipped.
-Setting [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents) to NULL results in an empty text object.
+Setting [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents) to NULL results in an empty text object.
 
-The string is copied into a private buffer (unless [MUIA_Text_Copy](MUI_Text/#MUIA_Text_Copy) is set to
+The string is copied into a private buffer (unless [MUIA_Text_Copy](MUI_Text.md/#MUIA_Text_Copy) is set to
 FALSE), you can destroy the original string after using this tag.
 
 Whenever MUI prints strings, they may contain some special character
@@ -177,11 +177,11 @@ would look like     |    MUI   |  <-- bold
                     | is magic |  <-- normal
 
 ### SEE ALSO
-[MUIA_Text_Data](MUI_Text/#MUIA_Text_Data), [MUIA_Text_SetMin](MUI_Text/#MUIA_Text_SetMin), [MUIA_Text_SetMax](MUI_Text/#MUIA_Text_SetMax), [MUIA_Text_PreParse](MUI_Text/#MUIA_Text_PreParse)
+[MUIA_Text_Data](MUI_Text.md/#MUIA_Text_Data), [MUIA_Text_SetMin](MUI_Text.md/#MUIA_Text_SetMin), [MUIA_Text_SetMax](MUI_Text.md/#MUIA_Text_SetMax), [MUIA_Text_PreParse](MUI_Text.md/#MUIA_Text_PreParse)
 
 ## MUIA_Text_ControlChar
 ### NAME
-[MUIA_Text_ControlChar](MUI_Text/#MUIA_Text_ControlChar) -- V20 [ISG], `char`, 0x8042e6d0
+[MUIA_Text_ControlChar](MUI_Text.md/#MUIA_Text_ControlChar) -- V20 [ISG], `char`, 0x8042e6d0
 
 ### FUNCTION
 If the character given here exists in the displayed string (no matter if
@@ -189,35 +189,35 @@ upper or lower case), it will be underlined. This makes it easy to create
 macros such as KeyButton() that specify the control char and the underline
 char at the same time.
 
-In contrast to [MUIA_Text_HiChar](MUI_Text/#MUIA_Text_HiChar) the underlining does NOT happen by inserting
+In contrast to [MUIA_Text_HiChar](MUI_Text.md/#MUIA_Text_HiChar) the underlining does NOT happen by inserting
 text styles as this might break other active styles.
 
 ### SEE ALSO
-[MUIA_Text_HiChar](MUI_Text/#MUIA_Text_HiChar), [MUIA_ControlChar](MUI_Area/#MUIA_ControlChar)
+[MUIA_Text_HiChar](MUI_Text.md/#MUIA_Text_HiChar), [MUIA_ControlChar](MUI_Area.md/#MUIA_ControlChar)
 
 ## MUIA_Text_Copy
 ### NAME
-[MUIA_Text_Copy](MUI_Text/#MUIA_Text_Copy) -- V20 [ISG], `BOOL`, 0x80427727
+[MUIA_Text_Copy](MUI_Text.md/#MUIA_Text_Copy) -- V20 [ISG], `BOOL`, 0x80427727
 
 ### FUNCTION
 When set to FALSE, the contents will not be copied to a private buffer.
 
-Defaults to TRUE, unless [MUIA_Text_HiChar](MUI_Text/#MUIA_Text_HiChar) is also specified.
+Defaults to TRUE, unless [MUIA_Text_HiChar](MUI_Text.md/#MUIA_Text_HiChar) is also specified.
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents), [MUIA_Text_HiChar](MUI_Text/#MUIA_Text_HiChar)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents), [MUIA_Text_HiChar](MUI_Text.md/#MUIA_Text_HiChar)
 
 ## MUIA_Text_Data
 ### NAME
-[MUIA_Text_Data](MUI_Text/#MUIA_Text_Data) -- V21 [ISG], `Object *`, 0x80424838
+[MUIA_Text_Data](MUI_Text.md/#MUIA_Text_Data) -- V21 [ISG], `Object *`, 0x80424838
 
 ### FUNCTION
 This attribute specifies the object's text wrapped in a Textdata object
 instead of directly as a string. This allows to set arbitrarily encoded text
 that will be converted to the local charset on the fly. The conversion will
-be done by invoking the Textdata object's [MUIM_Textdata_Convert](MUI_Textdata/#MUIM_Textdata_Convert) method. If
+be done by invoking the Textdata object's [MUIM_Textdata_Convert](MUI_Textdata.md/#MUIM_Textdata_Convert) method. If
 this attribute is omitted or passed a NULL pointer the normal text specified
-via [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents) will be used.
+via [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents) will be used.
 
 Defaults to NULL.
 
@@ -238,11 +238,11 @@ End;
 ```
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents), [MUIM_Textdata_Convert](MUI_Textdata/#MUIM_Textdata_Convert)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents), [MUIM_Textdata_Convert](MUI_Textdata.md/#MUIM_Textdata_Convert)
 
 ## MUIA_Text_HiChar
 ### NAME
-[MUIA_Text_HiChar](MUI_Text/#MUIA_Text_HiChar) -- V4 [I..], `char`, 0x804218ff
+[MUIA_Text_HiChar](MUI_Text.md/#MUIA_Text_HiChar) -- V4 [I..], `char`, 0x804218ff
 
 ### FUNCTION
 If the character given here exists in the displayed string (no matter if
@@ -251,11 +251,11 @@ macros such as KeyButton() that specify the control char and the underline
 char at the same time.
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents), [MUIA_ControlChar](MUI_Area/#MUIA_ControlChar)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents), [MUIA_ControlChar](MUI_Area.md/#MUIA_ControlChar)
 
 ## MUIA_Text_Marking
 ### NAME
-[MUIA_Text_Marking](MUI_Text/#MUIA_Text_Marking) -- V20 [I.G], `BOOL`, 0x8042f780
+[MUIA_Text_Marking](MUI_Text.md/#MUIA_Text_Marking) -- V20 [I.G], `BOOL`, 0x8042f780
 
 ### FUNCTION
 This attribute controls whether it is possible to mark the object's text
@@ -264,15 +264,15 @@ contents using the mouse and copy them to the clipboard.
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ## MUIA_Text_PreParse
 ### NAME
-[MUIA_Text_PreParse](MUI_Text/#MUIA_Text_PreParse) -- V4 [ISG], `STRPTR`, 0x8042566d
+[MUIA_Text_PreParse](MUI_Text.md/#MUIA_Text_PreParse) -- V4 [ISG], `STRPTR`, 0x8042566d
 
 ### FUNCTION
 String containing format definitions to be parsed before the text from
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents) is printed.
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents) is printed.
 
 Using this tag, you can easily define different formats, colors and styles
 without modifying the original string.
@@ -284,20 +284,20 @@ MUIA_Text_Contents, "foobar",
 ```
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ## MUIA_Text_SetMax
 ### NAME
-[MUIA_Text_SetMax](MUI_Text/#MUIA_Text_SetMax) -- V4 [I..], `BOOL`, 0x80424d0a
+[MUIA_Text_SetMax](MUI_Text.md/#MUIA_Text_SetMax) -- V4 [I..], `BOOL`, 0x80424d0a
 
 ### FUNCTION
 Boolean value to indicate wether the objects maximal width shall be
-calculated to fit the string given with [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents).
+calculated to fit the string given with [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents).
 
 When set to FALSE, maximum width is not limited.
 
 For a text object that needs to be updated (e.g. some information about your
-program's status) you would probably set [MUIA_Text_SetMax](MUI_Text/#MUIA_Text_SetMax) to FALSE to allow
+program's status) you would probably set [MUIA_Text_SetMax](MUI_Text.md/#MUIA_Text_SetMax) to FALSE to allow
 resizing of this object.
 
 For a label for one of your gadgets, you might want to give this tag a value
@@ -320,15 +320,15 @@ set(TX_Status, MUIA_Text_Contents, "writing...");
 ```
 
 ### SEE ALSO
-[MUIA_Text_SetMin](MUI_Text/#MUIA_Text_SetMin), [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_Text_SetMin](MUI_Text.md/#MUIA_Text_SetMin), [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ## MUIA_Text_SetMin
 ### NAME
-[MUIA_Text_SetMin](MUI_Text/#MUIA_Text_SetMin) -- V4 [I..], `BOOL`, 0x80424e10
+[MUIA_Text_SetMin](MUI_Text.md/#MUIA_Text_SetMin) -- V4 [I..], `BOOL`, 0x80424e10
 
 ### FUNCTION
 Boolean value to indicate wether the objects minimal width shall be
-calculated to fit the string given with [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents).
+calculated to fit the string given with [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents).
 
 When set to FALSE, minimum width will be set to 0 and the displayed string
 may be clipped.
@@ -336,11 +336,11 @@ may be clipped.
 Defaults to TRUE.
 
 ### SEE ALSO
-[MUIA_Text_SetMax](MUI_Text/#MUIA_Text_SetMax), [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_Text_SetMax](MUI_Text.md/#MUIA_Text_SetMax), [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ## MUIA_Text_SetVMax
 ### NAME
-[MUIA_Text_SetVMax](MUI_Text/#MUIA_Text_SetVMax) -- V11 [IS.], `BOOL`, 0x80420d8b
+[MUIA_Text_SetVMax](MUI_Text.md/#MUIA_Text_SetVMax) -- V11 [IS.], `BOOL`, 0x80420d8b
 
 ### FUNCTION
 Settings this to FALSE makes a TextObjects y-size unlimited.
@@ -349,7 +349,7 @@ Defaults to TRUE, which means the objects height is fixed.
 
 ## MUIA_Text_Shorten
 ### NAME
-[MUIA_Text_Shorten](MUI_Text/#MUIA_Text_Shorten) -- V20 [ISG], `LONG`, 0x80428bbd
+[MUIA_Text_Shorten](MUI_Text.md/#MUIA_Text_Shorten) -- V20 [ISG], `LONG`, 0x80428bbd
 
 ### SPECIAL INPUTS
   * MUIV_Text_Shorten_Nothing
@@ -367,7 +367,7 @@ space.
 MUIV_Text_Shorten_ElideLeft/Center/Right will shorten the text by replacing
 as many characters as necessary by inserting an ellipsis ("...") at the
 specified position.
-[MUIA_Text_Shortened](MUI_Text/#MUIA_Text_Shortened) can be used to check whether the text was actually
+[MUIA_Text_Shortened](MUI_Text.md/#MUIA_Text_Shortened) can be used to check whether the text was actually
 shortened or not.
 
 Defaults to MUIV_Text_Shorten_Nothing.
@@ -384,11 +384,11 @@ TX_Status = TextObject,
 ```
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents), [MUIA_Text_Shortened](MUI_Text/#MUIA_Text_Shortened)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents), [MUIA_Text_Shortened](MUI_Text.md/#MUIA_Text_Shortened)
 
 ## MUIA_Text_Shortened
 ### NAME
-[MUIA_Text_Shortened](MUI_Text/#MUIA_Text_Shortened) -- V20 [..G], `BOOL`, 0x80425a86
+[MUIA_Text_Shortened](MUI_Text.md/#MUIA_Text_Shortened) -- V20 [..G], `BOOL`, 0x80425a86
 
 ### FUNCTION
 This attribute can be used to check whether the text object's contents were
@@ -405,7 +405,7 @@ else
 ```
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents), [MUIA_Text_Shorten](MUI_Text/#MUIA_Text_Shorten)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents), [MUIA_Text_Shorten](MUI_Text.md/#MUIA_Text_Shorten)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

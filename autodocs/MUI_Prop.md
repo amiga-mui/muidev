@@ -24,7 +24,7 @@ Method|Version
 
 ## MUIA_Prop_DeltaFactor
 ### NAME
-[MUIA_Prop_DeltaFactor](MUI_Prop/#MUIA_Prop_DeltaFactor) -- V4 [ISG], `LONG`, 0x80427c5e
+[MUIA_Prop_DeltaFactor](MUI_Prop.md/#MUIA_Prop_DeltaFactor) -- V4 [ISG], `LONG`, 0x80427c5e
 
 ### FUNCTION
 Set or get an additional delta factor to speed up keyboard navigation. All
@@ -33,31 +33,31 @@ Set or get an additional delta factor to speed up keyboard navigation. All
 Defaults to 1.
 
 ### SEE ALSO
-[MUIA_Prop_Visible](MUI_Prop/#MUIA_Prop_Visible), [MUIA_Prop_Entries](MUI_Prop/#MUIA_Prop_Entries)
+[MUIA_Prop_Visible](MUI_Prop.md/#MUIA_Prop_Visible), [MUIA_Prop_Entries](MUI_Prop.md/#MUIA_Prop_Entries)
 
 ## MUIA_Prop_Entries
 ### NAME
-[MUIA_Prop_Entries](MUI_Prop/#MUIA_Prop_Entries) -- V4 [ISG], `LONG`, 0x8042fbdb
+[MUIA_Prop_Entries](MUI_Prop.md/#MUIA_Prop_Entries) -- V4 [ISG], `LONG`, 0x8042fbdb
 
 ### FUNCTION
 Set or get the total number of entries.
 
 ### SEE ALSO
-[MUIA_Prop_Horiz](MUI_Prop/#MUIA_Prop_Horiz), [MUIA_Prop_Visible](MUI_Prop/#MUIA_Prop_Visible), [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First)
+[MUIA_Prop_Horiz](MUI_Prop.md/#MUIA_Prop_Horiz), [MUIA_Prop_Visible](MUI_Prop.md/#MUIA_Prop_Visible), [MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First)
 
 ## MUIA_Prop_First
 ### NAME
-[MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First) -- V4 [ISG], `LONG`, 0x8042d4b2
+[MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First) -- V4 [ISG], `LONG`, 0x8042d4b2
 
 ### FUNCTION
 Set or get the number of the first entry.
 
 ### SEE ALSO
-[MUIA_Prop_Horiz](MUI_Prop/#MUIA_Prop_Horiz), [MUIA_Prop_Visible](MUI_Prop/#MUIA_Prop_Visible), [MUIA_Prop_Entries](MUI_Prop/#MUIA_Prop_Entries)
+[MUIA_Prop_Horiz](MUI_Prop.md/#MUIA_Prop_Horiz), [MUIA_Prop_Visible](MUI_Prop.md/#MUIA_Prop_Visible), [MUIA_Prop_Entries](MUI_Prop.md/#MUIA_Prop_Entries)
 
 ## MUIA_Prop_Horiz
 ### NAME
-[MUIA_Prop_Horiz](MUI_Prop/#MUIA_Prop_Horiz) -- V4 [I.G], `BOOL`, 0x8042f4f3
+[MUIA_Prop_Horiz](MUI_Prop.md/#MUIA_Prop_Horiz) -- V4 [I.G], `BOOL`, 0x8042f4f3
 
 ### FUNCTION
 Determine if you want a horizontal or a vertical prop gadget.
@@ -65,11 +65,11 @@ Determine if you want a horizontal or a vertical prop gadget.
 Defaults to FALSE, i.e. vertical.
 
 ### SEE ALSO
-[MUIA_Prop_Entries](MUI_Prop/#MUIA_Prop_Entries), [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First), [MUIA_Prop_Visible](MUI_Prop/#MUIA_Prop_Visible)
+[MUIA_Prop_Entries](MUI_Prop.md/#MUIA_Prop_Entries), [MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First), [MUIA_Prop_Visible](MUI_Prop.md/#MUIA_Prop_Visible)
 
 ## MUIA_Prop_Slider
 ### NAME
-[MUIA_Prop_Slider](MUI_Prop/#MUIA_Prop_Slider) -- V4 [ISG], `BOOL`, 0x80429c3a **(OBSOLETE)**
+[MUIA_Prop_Slider](MUI_Prop.md/#MUIA_Prop_Slider) -- V4 [ISG], `BOOL`, 0x80429c3a **(OBSOLETE)**
 
 ### FUNCTION
 OBSOLETE. DO NOT USE. PREVIOUSLY:
@@ -79,7 +79,7 @@ creating sliders, you normally don't need to care about this attribute.
 
 ## MUIA_Prop_UseWinBorder
 ### NAME
-[MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder) -- V13 [I..], `LONG`, 0x8042deee
+[MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder) -- V13 [I..], `LONG`, 0x8042deee
 
 ### SPECIAL INPUTS
   * MUIV_Prop_UseWinBorder_None
@@ -106,14 +106,14 @@ regardless what the user has configured.
 
 ### NOTES
 You **MUST** enable border scrollers for the parent window with the
-corresponding attributes (see below) before using [MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder).
+corresponding attributes (see below) before using [MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder).
 
 Obviously, you can only link exactly one prop gadget to one window scroller.
 Linking more than one gadget to the same window scroller will result in big
 confusion.
 
 To simplify programming, the classes Scrollbar class and Listview class also
-accept the [MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder) attribute and pass it on when creating their
+accept the [MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder) attribute and pass it on when creating their
 prop gadgets. This allows you to do something like
 
 ```c++
@@ -129,26 +129,26 @@ to create a listview thats controllable with a scrollbar in the right window
 border.
 
 Scrollgroup class (for virtual groups) features another attribute called
-[MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup/#MUIA_Scrollgroup_UseWinBorder), TRUE/FALSE to allow control of virtual group from
+[MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup.md/#MUIA_Scrollgroup_UseWinBorder), TRUE/FALSE to allow control of virtual group from
 window borders.
 
 ### SEE ALSO
-[MUIA_Window_UseBottomBorderScroller](MUI_Window/#MUIA_Window_UseBottomBorderScroller), [MUIA_Window_UseLeftBorderScroller](MUI_Window/#MUIA_Window_UseLeftBorderScroller),
-[MUIA_Window_UseRightBorderScroller](MUI_Window/#MUIA_Window_UseRightBorderScroller), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup/#MUIA_Scrollgroup_UseWinBorder)
+[MUIA_Window_UseBottomBorderScroller](MUI_Window.md/#MUIA_Window_UseBottomBorderScroller), [MUIA_Window_UseLeftBorderScroller](MUI_Window.md/#MUIA_Window_UseLeftBorderScroller),
+[MUIA_Window_UseRightBorderScroller](MUI_Window.md/#MUIA_Window_UseRightBorderScroller), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup.md/#MUIA_Scrollgroup_UseWinBorder)
 
 ## MUIA_Prop_Visible
 ### NAME
-[MUIA_Prop_Visible](MUI_Prop/#MUIA_Prop_Visible) -- V4 [ISG], `LONG`, 0x8042fea6
+[MUIA_Prop_Visible](MUI_Prop.md/#MUIA_Prop_Visible) -- V4 [ISG], `LONG`, 0x8042fea6
 
 ### FUNCTION
 Set or get the number of visible entries.
 
 ### SEE ALSO
-[MUIA_Prop_Horiz](MUI_Prop/#MUIA_Prop_Horiz), [MUIA_Prop_Entries](MUI_Prop/#MUIA_Prop_Entries), [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First)
+[MUIA_Prop_Horiz](MUI_Prop.md/#MUIA_Prop_Horiz), [MUIA_Prop_Entries](MUI_Prop.md/#MUIA_Prop_Entries), [MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First)
 
 ## MUIM_Prop_Decrease
 ### NAME
-[MUIM_Prop_Decrease](MUI_Prop/#MUIM_Prop_Decrease) -- V16, 0x80420dd1
+[MUIM_Prop_Decrease](MUI_Prop.md/#MUIM_Prop_Decrease) -- V16, 0x80420dd1
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Prop_Decrease, LONG amount);`
@@ -162,11 +162,11 @@ amount. Negative values are ok. Range checking is done automatically.
      amount to substract from the gadgets current position.
 
 ### SEE ALSO
-[MUIM_Prop_Increase](MUI_Prop/#MUIM_Prop_Increase), [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First)
+[MUIM_Prop_Increase](MUI_Prop.md/#MUIM_Prop_Increase), [MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First)
 
 ## MUIM_Prop_Increase
 ### NAME
-[MUIM_Prop_Increase](MUI_Prop/#MUIM_Prop_Increase) -- V16, 0x8042cac0
+[MUIM_Prop_Increase](MUI_Prop.md/#MUIM_Prop_Increase) -- V16, 0x8042cac0
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Prop_Increase, LONG amount);`
@@ -180,7 +180,7 @@ amount. Negative values are ok. Range checking is done automatically.
      amount to add to the gadgets current position.
 
 ### SEE ALSO
-[MUIM_Prop_Decrease](MUI_Prop/#MUIM_Prop_Decrease), [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First)
+[MUIM_Prop_Decrease](MUI_Prop.md/#MUIM_Prop_Decrease), [MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

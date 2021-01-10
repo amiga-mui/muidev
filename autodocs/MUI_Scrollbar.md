@@ -10,7 +10,7 @@ Since Scrollbar class is a subclass of Group class, every attribute and
 method is passed through to all of its children. Thus, you can talk and
 listen to a scrollbar as if it was just a single prop gadget.
 
-You can use the attribute [MUIA_Group_Horiz](MUI_Group/#MUIA_Group_Horiz) as with any other group to
+You can use the attribute [MUIA_Group_Horiz](MUI_Group.md/#MUIA_Group_Horiz) as with any other group to
 determine if the scrollbar should be horizontal or vertical. By default,
 a vertical scrollbar is generated.
 ## Attributes
@@ -21,7 +21,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Scrollbar_IncDecSize
 ### NAME
-[MUIA_Scrollbar_IncDecSize](MUI_Scrollbar/#MUIA_Scrollbar_IncDecSize) -- V20 [ISG], `ULONG`, 0x80426c07
+[MUIA_Scrollbar_IncDecSize](MUI_Scrollbar.md/#MUIA_Scrollbar_IncDecSize) -- V20 [ISG], `ULONG`, 0x80426c07
 
 ### FUNCTION
 Set the amount by which the scrollbar position is increased or decreased
@@ -31,7 +31,7 @@ Defaults to 1.
 
 ## MUIA_Scrollbar_Type
 ### NAME
-[MUIA_Scrollbar_Type](MUI_Scrollbar/#MUIA_Scrollbar_Type) -- V11 [I..], `LONG`, 0x8042fb6b
+[MUIA_Scrollbar_Type](MUI_Scrollbar.md/#MUIA_Scrollbar_Type) -- V11 [I..], `LONG`, 0x8042fb6b
 
 ### SPECIAL INPUTS
   * MUIV_Scrollbar_Type_Default

@@ -18,7 +18,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Scale_Horiz
 ### NAME
-[MUIA_Scale_Horiz](MUI_Scale/#MUIA_Scale_Horiz) -- V4 [ISG], `BOOL`, 0x8042919a
+[MUIA_Scale_Horiz](MUI_Scale.md/#MUIA_Scale_Horiz) -- V4 [ISG], `BOOL`, 0x8042919a
 
 ### FUNCTION
 Indicate whether you want a horizontal or a vertical scale.

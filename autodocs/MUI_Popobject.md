@@ -2,8 +2,8 @@
 ## Super class
 [Popstring.mui](MUI_Popstring.md)
 ## Inherited by
-* [Poplist.mui](MUI_Poplist)
-* [Popscreen.mui](MUI_Popscreen)
+* [Poplist.mui](MUI_Poplist.md)
+* [Popscreen.mui](MUI_Popscreen.md)
 ## Background
 Popobject class takes a MUI object as parameter uses this one as popup. You
 can e.g. simply create a listview object with some entries and the popobject
@@ -26,7 +26,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Popobject_Follow
 ### NAME
-[MUIA_Popobject_Follow](MUI_Popobject/#MUIA_Popobject_Follow) -- V7 [ISG], `BOOL`, 0x80424cb5
+[MUIA_Popobject_Follow](MUI_Popobject.md/#MUIA_Popobject_Follow) -- V7 [ISG], `BOOL`, 0x80424cb5
 
 ### FUNCTION
 Setting this attribute causes the popup window to follow its parent window
@@ -35,11 +35,11 @@ when its moved.
 Defaults to TRUE.
 
 ### SEE ALSO
-[MUIA_Popobject_Light](MUI_Popobject/#MUIA_Popobject_Light), [MUIA_Popobject_Volatile](MUI_Popobject/#MUIA_Popobject_Volatile).
+[MUIA_Popobject_Light](MUI_Popobject.md/#MUIA_Popobject_Light), [MUIA_Popobject_Volatile](MUI_Popobject.md/#MUIA_Popobject_Volatile).
 
 ## MUIA_Popobject_Light
 ### NAME
-[MUIA_Popobject_Light](MUI_Popobject/#MUIA_Popobject_Light) -- V7 [ISG], `BOOL`, 0x8042a5a3
+[MUIA_Popobject_Light](MUI_Popobject.md/#MUIA_Popobject_Light) -- V7 [ISG], `BOOL`, 0x8042a5a3
 
 ### FUNCTION
 This attribute causes the popup window to be border and titleless.
@@ -47,11 +47,11 @@ This attribute causes the popup window to be border and titleless.
 Defaults to TRUE
 
 ### SEE ALSO
-[MUIA_Popobject_Follow](MUI_Popobject/#MUIA_Popobject_Follow), [MUIA_Popobject_Volatile](MUI_Popobject/#MUIA_Popobject_Volatile)
+[MUIA_Popobject_Follow](MUI_Popobject.md/#MUIA_Popobject_Follow), [MUIA_Popobject_Volatile](MUI_Popobject.md/#MUIA_Popobject_Volatile)
 
 ## MUIA_Popobject_Object
 ### NAME
-[MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object) -- V7 [I.G], `Object *`, 0x804293e3
+[MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object) -- V7 [I.G], `Object *`, 0x804293e3
 
 ### FUNCTION
 Specify the object to pop up. Usually this is a relatively simple thing like
@@ -76,27 +76,27 @@ pop = PopobjectObject,
 ```
 
 ### SEE ALSO
-[MUIA_Popobject_StrObjHook](MUI_Popobject/#MUIA_Popobject_StrObjHook), [MUIA_Popobject_ObjStrHook](MUI_Popobject/#MUIA_Popobject_ObjStrHook),
-[MUIA_Popobject_Light](MUI_Popobject/#MUIA_Popobject_Light)
+[MUIA_Popobject_StrObjHook](MUI_Popobject.md/#MUIA_Popobject_StrObjHook), [MUIA_Popobject_ObjStrHook](MUI_Popobject.md/#MUIA_Popobject_ObjStrHook),
+[MUIA_Popobject_Light](MUI_Popobject.md/#MUIA_Popobject_Light)
 
 ## MUIA_Popobject_ObjStrHook
 ### NAME
-[MUIA_Popobject_ObjStrHook](MUI_Popobject/#MUIA_Popobject_ObjStrHook) -- V7 [ISG], `struct Hook *`, 0x8042db44
+[MUIA_Popobject_ObjStrHook](MUI_Popobject.md/#MUIA_Popobject_ObjStrHook) -- V7 [ISG], `struct Hook *`, 0x8042db44
 
 ### FUNCTION
 When a popup is closed, this hook is called. You can examine the state of
-your [MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object) and set the contents of the string gadget
+your [MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object) and set the contents of the string gadget
 respectively. The hook receives a pointer to itself in A0, a pointer to your
-[MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object) in A2 and a pointer to the embedded string object in
+[MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object) in A2 and a pointer to the embedded string object in
 A1.
 
 The hook will only be called when your popup is closed with a success value
 of TRUE. Otherwise, MUI closes the popup without taking further actions,
 just as if had never opened.
 
-Since MUI doesn't know anything about your [MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object), it's your
+Since MUI doesn't know anything about your [MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object), it's your
 task to tell when your popup is finished. You can terminate popups at
-any time by sending a [MUIM_Popstring_Close](MUI_Popstring/#MUIM_Popstring_Close) method:
+any time by sending a [MUIM_Popstring_Close](MUI_Popstring.md/#MUIM_Popstring_Close) method:
 
 ### EXAMPLE
 ```c++
@@ -118,13 +118,13 @@ SAVEDS ASM VOID ObjStrFunc(REG(a2) Object *list,REG(a1) Object *str)
 
 ## MUIA_Popobject_StrObjHook
 ### NAME
-[MUIA_Popobject_StrObjHook](MUI_Popobject/#MUIA_Popobject_StrObjHook) -- V7 [ISG], `struct Hook *`, 0x8042fbe1
+[MUIA_Popobject_StrObjHook](MUI_Popobject.md/#MUIA_Popobject_StrObjHook) -- V7 [ISG], `struct Hook *`, 0x8042fbe1
 
 ### FUNCTION
 Before the popup opens, this hook is called. You can use it to prepare your
-[MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object) according to the contents of the string gadget. The
+[MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object) according to the contents of the string gadget. The
 hook receives a pointer to itself in A0, a pointer to your
-[MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object) in A2 and a pointer to the embedded string object in
+[MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object) in A2 and a pointer to the embedded string object in
 A1.
 
 Return TRUE if you want the popup to appear, FALSE otherwise.
@@ -158,11 +158,11 @@ SAVEDS ASM LONG StrObjFunc(REG(a2) Object *list, REG(a1) Object *str)
 ```
 
 ### SEE ALSO
-[MUIA_Popobject_ObjStrHook](MUI_Popobject/#MUIA_Popobject_ObjStrHook), [MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object), [MUIA_Popobject_WindowHook](MUI_Popobject/#MUIA_Popobject_WindowHook)
+[MUIA_Popobject_ObjStrHook](MUI_Popobject.md/#MUIA_Popobject_ObjStrHook), [MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object), [MUIA_Popobject_WindowHook](MUI_Popobject.md/#MUIA_Popobject_WindowHook)
 
 ## MUIA_Popobject_Volatile
 ### NAME
-[MUIA_Popobject_Volatile](MUI_Popobject/#MUIA_Popobject_Volatile) -- V7 [ISG], `BOOL`, 0x804252ec
+[MUIA_Popobject_Volatile](MUI_Popobject.md/#MUIA_Popobject_Volatile) -- V7 [ISG], `BOOL`, 0x804252ec
 
 ### FUNCTION
 Setting this attribute causes the popup window to disappear when the
@@ -173,18 +173,18 @@ appears also.
 Defaults to TRUE.
 
 ### SEE ALSO
-[MUIA_Popobject_Light](MUI_Popobject/#MUIA_Popobject_Light), [MUIA_Popobject_Follow](MUI_Popobject/#MUIA_Popobject_Follow)
+[MUIA_Popobject_Light](MUI_Popobject.md/#MUIA_Popobject_Light), [MUIA_Popobject_Follow](MUI_Popobject.md/#MUIA_Popobject_Follow)
 
 ## MUIA_Popobject_WindowHook
 ### NAME
-[MUIA_Popobject_WindowHook](MUI_Popobject/#MUIA_Popobject_WindowHook) -- V9 [ISG], `struct Hook *`, 0x8042f194
+[MUIA_Popobject_WindowHook](MUI_Popobject.md/#MUIA_Popobject_WindowHook) -- V9 [ISG], `struct Hook *`, 0x8042f194
 
 ### FUNCTION
 If specified, this hook is called immediately after the popup's window
 object has been created but before this window is opened. You might e.g.
 want to add a cycle chain for the popup window here.
 
-The hook is called with a pointer to the pop object ([MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object))
+The hook is called with a pointer to the pop object ([MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object))
 in A2 and with a pointer to the window object that MUI generated to handle
 the popup in A1.
 
@@ -200,7 +200,7 @@ SAVEDS ASM VOID WindowFunc(REG(a2) Object *pop,REG(a1) Object *win)
 ```
 
 ### SEE ALSO
-[MUIA_Popobject_ObjStrHook](MUI_Popobject/#MUIA_Popobject_ObjStrHook), [MUIA_Popobject_Object](MUI_Popobject/#MUIA_Popobject_Object)
+[MUIA_Popobject_ObjStrHook](MUI_Popobject.md/#MUIA_Popobject_ObjStrHook), [MUIA_Popobject_Object](MUI_Popobject.md/#MUIA_Popobject_Object)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

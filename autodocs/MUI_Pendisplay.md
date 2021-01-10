@@ -2,7 +2,7 @@
 ## Super class
 [Area.mui](MUI_Area.md)
 ## Inherited by
-* [Poppen.mui](MUI_Poppen)
+* [Poppen.mui](MUI_Poppen.md)
 ## Background
 Pendisplay class takes a struct MUI_PenSpec and displays it. Its main use is
 to be sub-classed by Poppen class which adds a popup window to adjust the
@@ -25,32 +25,32 @@ Method|Version
 
 ## MUIA_Pendisplay_Pen
 ### NAME
-[MUIA_Pendisplay_Pen](MUI_Pendisplay/#MUIA_Pendisplay_Pen) -- V13 [..G], `ULONG`, 0x8042a748
+[MUIA_Pendisplay_Pen](MUI_Pendisplay.md/#MUIA_Pendisplay_Pen) -- V13 [..G], `ULONG`, 0x8042a748
 
 ### FUNCTION
-Between [MUIM_Setup](MUI_Area/#MUIM_Setup) and [MUIM_Cleanup](MUI_Area/#MUIM_Cleanup), this attribute returns the pen number
+Between [MUIM_Setup](MUI_Area.md/#MUIM_Setup) and [MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup), this attribute returns the pen number
 MUI uses for color representation of the current pendisplay object.
 
-This attribute returns -1 when outside of [MUIM_Setup](MUI_Area/#MUIM_Setup)/[MUIM_Cleanup](MUI_Area/#MUIM_Cleanup) or when
+This attribute returns -1 when outside of [MUIM_Setup](MUI_Area.md/#MUIM_Setup)/[MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup) or when
 the Pendisplay object didn't allocate a color on its own, e.g. because of
-[MUIA_Pendisplay_Reference](MUI_Pendisplay/#MUIA_Pendisplay_Reference).
+[MUIA_Pendisplay_Reference](MUI_Pendisplay.md/#MUIA_Pendisplay_Reference).
 
 ### SEE ALSO
-[MUIA_Pendisplay_Reference](MUI_Pendisplay/#MUIA_Pendisplay_Reference)
+[MUIA_Pendisplay_Reference](MUI_Pendisplay.md/#MUIA_Pendisplay_Reference)
 
 ## MUIA_Pendisplay_Reference
 ### NAME
-[MUIA_Pendisplay_Reference](MUI_Pendisplay/#MUIA_Pendisplay_Reference) -- V13 [ISG], `Object *`, 0x8042dc24
+[MUIA_Pendisplay_Reference](MUI_Pendisplay.md/#MUIA_Pendisplay_Reference) -- V13 [ISG], `Object *`, 0x8042dc24
 
 ### FUNCTION
 Display exactly this pen, don't allocate one on your own.
 
 ### SEE ALSO
-[MUIA_Pendisplay_Pen](MUI_Pendisplay/#MUIA_Pendisplay_Pen)
+[MUIA_Pendisplay_Pen](MUI_Pendisplay.md/#MUIA_Pendisplay_Pen)
 
 ## MUIA_Pendisplay_RGBcolor
 ### NAME
-[MUIA_Pendisplay_RGBcolor](MUI_Pendisplay/#MUIA_Pendisplay_RGBcolor) -- V11 [ISG], `struct MUI_RGBColor *`, 0x8042a1a9
+[MUIA_Pendisplay_RGBcolor](MUI_Pendisplay.md/#MUIA_Pendisplay_RGBcolor) -- V11 [ISG], `struct MUI_RGBColor *`, 0x8042a1a9
 
 ### FUNCTION
 This attribute can be used to set a pen spec via RGB values and to get the RGB
@@ -58,14 +58,14 @@ values of the currently set pen.
 
 ### NOTES
 Since MUI5.0 2020R1 every change of the color will trigger notifications on
-[MUIA_Pendisplay_Pen](MUI_Pendisplay/#MUIA_Pendisplay_Pen) and MUI_Pendisplay_Spec with the updated values.
+[MUIA_Pendisplay_Pen](MUI_Pendisplay.md/#MUIA_Pendisplay_Pen) and MUI_Pendisplay_Spec with the updated values.
 
 ### SEE ALSO
-[MUIA_Pendisplay_Pen](MUI_Pendisplay/#MUIA_Pendisplay_Pen), [MUIA_Pendisplay_Spec](MUI_Pendisplay/#MUIA_Pendisplay_Spec)
+[MUIA_Pendisplay_Pen](MUI_Pendisplay.md/#MUIA_Pendisplay_Pen), [MUIA_Pendisplay_Spec](MUI_Pendisplay.md/#MUIA_Pendisplay_Spec)
 
 ## MUIA_Pendisplay_Spec
 ### NAME
-[MUIA_Pendisplay_Spec](MUI_Pendisplay/#MUIA_Pendisplay_Spec) -- V11 [ISG], `struct MUI_PenSpec  *`, 0x8042a204
+[MUIA_Pendisplay_Spec](MUI_Pendisplay.md/#MUIA_Pendisplay_Spec) -- V11 [ISG], `struct MUI_PenSpec  *`, 0x8042a204
 
 ### FUNCTION
 The black box structure MUI_PenSpec specifies a drawing pen which should be
@@ -82,15 +82,15 @@ In allmost all cases you will use Poppen class which is a subclass of
 Pendisplay class.
 
 Since MUI5.0 2020R1 every change of the pen spec will trigger notifications on
-[MUIA_Pendisplay_Pen](MUI_Pendisplay/#MUIA_Pendisplay_Pen) and MUI_Pendisplay_RGBcolor with the updated values.
+[MUIA_Pendisplay_Pen](MUI_Pendisplay.md/#MUIA_Pendisplay_Pen) and MUI_Pendisplay_RGBcolor with the updated values.
 
 ### SEE ALSO
 muimaster.library/MUI_ObtainPen(), muimaster.library/MUI_ReleasePen(),
-[MUIA_Pendisplay_Pen](MUI_Pendisplay/#MUIA_Pendisplay_Pen), [MUIA_Pendisplay_RGBcolor](MUI_Pendisplay/#MUIA_Pendisplay_RGBcolor)
+[MUIA_Pendisplay_Pen](MUI_Pendisplay.md/#MUIA_Pendisplay_Pen), [MUIA_Pendisplay_RGBcolor](MUI_Pendisplay.md/#MUIA_Pendisplay_RGBcolor)
 
 ## MUIM_Pendisplay_SetColormap
 ### NAME
-[MUIM_Pendisplay_SetColormap](MUI_Pendisplay/#MUIM_Pendisplay_SetColormap) -- V13, 0x80426c80
+[MUIM_Pendisplay_SetColormap](MUI_Pendisplay.md/#MUIM_Pendisplay_SetColormap) -- V13, 0x80426c80
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Pendisplay_SetColormap, LONG colormap);`
@@ -102,11 +102,11 @@ Switch the pendisplay object to a specific colormap entry.
      colormap number
 
 ### SEE ALSO
-[MUIM_Pendisplay_SetMUIPen](MUI_Pendisplay/#MUIM_Pendisplay_SetMUIPen), [MUIM_Pendisplay_SetRGB](MUI_Pendisplay/#MUIM_Pendisplay_SetRGB)
+[MUIM_Pendisplay_SetMUIPen](MUI_Pendisplay.md/#MUIM_Pendisplay_SetMUIPen), [MUIM_Pendisplay_SetRGB](MUI_Pendisplay.md/#MUIM_Pendisplay_SetRGB)
 
 ## MUIM_Pendisplay_SetMUIPen
 ### NAME
-[MUIM_Pendisplay_SetMUIPen](MUI_Pendisplay/#MUIM_Pendisplay_SetMUIPen) -- V13, 0x8042039d
+[MUIM_Pendisplay_SetMUIPen](MUI_Pendisplay.md/#MUIM_Pendisplay_SetMUIPen) -- V13, 0x8042039d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Pendisplay_SetMUIPen, LONG muipen);`
@@ -120,11 +120,11 @@ Switch the pendisplay object to a specific MUI pen (MPEN_SHINE, MPEN_SHADOW,
      MUI pen number
 
 ### SEE ALSO
-[MUIM_Pendisplay_SetColormap](MUI_Pendisplay/#MUIM_Pendisplay_SetColormap), [MUIM_Pendisplay_SetRGB](MUI_Pendisplay/#MUIM_Pendisplay_SetRGB)
+[MUIM_Pendisplay_SetColormap](MUI_Pendisplay.md/#MUIM_Pendisplay_SetColormap), [MUIM_Pendisplay_SetRGB](MUI_Pendisplay.md/#MUIM_Pendisplay_SetRGB)
 
 ## MUIM_Pendisplay_SetRGB
 ### NAME
-[MUIM_Pendisplay_SetRGB](MUI_Pendisplay/#MUIM_Pendisplay_SetRGB) -- V13, 0x8042c131
+[MUIM_Pendisplay_SetRGB](MUI_Pendisplay.md/#MUIM_Pendisplay_SetRGB) -- V13, 0x8042c131
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Pendisplay_SetRGB, ULONG red, ULONG green, ULONG blue);`
@@ -143,7 +143,7 @@ Switch the pendisplay object to an RGB value.
      blue color value
 
 ### SEE ALSO
-[MUIM_Pendisplay_SetMUIPen](MUI_Pendisplay/#MUIM_Pendisplay_SetMUIPen), [MUIM_Pendisplay_SetColormap](MUI_Pendisplay/#MUIM_Pendisplay_SetColormap)
+[MUIM_Pendisplay_SetMUIPen](MUI_Pendisplay.md/#MUIM_Pendisplay_SetMUIPen), [MUIM_Pendisplay_SetColormap](MUI_Pendisplay.md/#MUIM_Pendisplay_SetColormap)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

@@ -9,7 +9,7 @@ Well known example are the selection for the type of list scrollbars in MUI
 prefs.
 
 To be acting as a group with fully clickable option items at least one object
-per option must have [MUIA_UserData](MUI_Notify/#MUIA_UserData) set to [MUIA_Selectgroup_Active](MUI_Selectgroup/#MUIA_Selectgroup_Active). Usually this
+per option must have [MUIA_UserData](MUI_Notify.md/#MUIA_UserData) set to [MUIA_Selectgroup_Active](MUI_Selectgroup.md/#MUIA_Selectgroup_Active). Usually this
 is done for the Radio button, as this kind of object is able to display the
 active state by itself.
 
@@ -47,7 +47,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Selectgroup_Active
 ### NAME
-[MUIA_Selectgroup_Active](MUI_Selectgroup/#MUIA_Selectgroup_Active) -- V21 [ISG], `LONG`, 0x80421788
+[MUIA_Selectgroup_Active](MUI_Selectgroup.md/#MUIA_Selectgroup_Active) -- V21 [ISG], `LONG`, 0x80421788
 
 ### SPECIAL INPUTS
   * MUIV_Selectgroup_Active_Next
@@ -57,8 +57,8 @@ Attribute|Version|ISG|Type
 This attributes defines the number of the active entry in the selection group.
 Valid range is from 0 for the first entry to NumEntries-1 for the last.
 
-Setting [MUIA_Selectgroup_Active](MUI_Selectgroup/#MUIA_Selectgroup_Active) causes the gadget to be updated. On the other
-hand, when the user plays around with the gadget, [MUIA_Selectgroup_Active](MUI_Selectgroup/#MUIA_Selectgroup_Active) will
+Setting [MUIA_Selectgroup_Active](MUI_Selectgroup.md/#MUIA_Selectgroup_Active) causes the gadget to be updated. On the other
+hand, when the user plays around with the gadget, [MUIA_Selectgroup_Active](MUI_Selectgroup.md/#MUIA_Selectgroup_Active) will
 always reflect the current state.
 
 Using MUIV_Selectgroup_Active_Next and MUIV_Selectgroup_Active_Prev as attribute

@@ -15,19 +15,19 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Rectangle_BarTitle
 ### NAME
-[MUIA_Rectangle_BarTitle](MUI_Rectangle/#MUIA_Rectangle_BarTitle) -- V11 [I.G], `STRPTR`, 0x80426689
+[MUIA_Rectangle_BarTitle](MUI_Rectangle.md/#MUIA_Rectangle_BarTitle) -- V11 [I.G], `STRPTR`, 0x80426689
 
 ### FUNCTION
 This attribute describes a text string which will be displayed in group
 title style centered in the rectangle. Really only makes sense for
-[MUIA_Rectangle_HBar](MUI_Rectangle/#MUIA_Rectangle_HBar) type objects.
+[MUIA_Rectangle_HBar](MUI_Rectangle.md/#MUIA_Rectangle_HBar) type objects.
 
 ### SEE ALSO
-[MUIA_Rectangle_HBar](MUI_Rectangle/#MUIA_Rectangle_HBar)
+[MUIA_Rectangle_HBar](MUI_Rectangle.md/#MUIA_Rectangle_HBar)
 
 ## MUIA_Rectangle_HBar
 ### NAME
-[MUIA_Rectangle_HBar](MUI_Rectangle/#MUIA_Rectangle_HBar) -- V7 [I.G], `BOOL`, 0x8042c943
+[MUIA_Rectangle_HBar](MUI_Rectangle.md/#MUIA_Rectangle_HBar) -- V7 [I.G], `BOOL`, 0x8042c943
 
 ### FUNCTION
 When set to TRUE, MUI draws a horizontal bar in the middle of the rectangle.
@@ -42,11 +42,11 @@ RectangleObject, MUIA_Rectangle_HBar, TRUE, MUIA_FixHeight, 8, End;
 ```
 
 ### SEE ALSO
-[MUIA_Rectangle_VBar](MUI_Rectangle/#MUIA_Rectangle_VBar)
+[MUIA_Rectangle_VBar](MUI_Rectangle.md/#MUIA_Rectangle_VBar)
 
 ## MUIA_Rectangle_VBar
 ### NAME
-[MUIA_Rectangle_VBar](MUI_Rectangle/#MUIA_Rectangle_VBar) -- V7 [I.G], `BOOL`, 0x80422204
+[MUIA_Rectangle_VBar](MUI_Rectangle.md/#MUIA_Rectangle_VBar) -- V7 [I.G], `BOOL`, 0x80422204
 
 ### FUNCTION
 When set to TRUE, MUI draws a vertical bar in the middle of the rectangle.
@@ -61,7 +61,7 @@ RectangleObject, MUIA_Rectangle_HBar, TRUE, MUIA_FixWidth, 8, End;
 ```
 
 ### SEE ALSO
-[MUIA_Rectangle_HBar](MUI_Rectangle/#MUIA_Rectangle_HBar)
+[MUIA_Rectangle_HBar](MUI_Rectangle.md/#MUIA_Rectangle_HBar)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

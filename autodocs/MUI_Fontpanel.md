@@ -13,7 +13,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Fontpanel_ShowCollection
 ### NAME
-[MUIA_Fontpanel_ShowCollection](MUI_Fontpanel/#MUIA_Fontpanel_ShowCollection) -- V20 [I..], `LONG`, 0x804225ea
+[MUIA_Fontpanel_ShowCollection](MUI_Fontpanel.md/#MUIA_Fontpanel_ShowCollection) -- V20 [I..], `LONG`, 0x804225ea
 
 ### SPECIAL INPUTS
   * MUIV_Fontpanel_ShowCollection_All

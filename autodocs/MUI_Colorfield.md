@@ -25,51 +25,51 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Colorfield_Blue
 ### NAME
-[MUIA_Colorfield_Blue](MUI_Colorfield/#MUIA_Colorfield_Blue) -- V4 [ISG], `ULONG`, 0x8042d3b0
+[MUIA_Colorfield_Blue](MUI_Colorfield.md/#MUIA_Colorfield_Blue) -- V4 [ISG], `ULONG`, 0x8042d3b0
 
 ### FUNCTION
 Set or get the 32-bit blue component of the fields color. Values range from
 0 (no blue) to $ffffffff (full blue).
 
 ### SEE ALSO
-[MUIA_Colorfield_Green](MUI_Colorfield/#MUIA_Colorfield_Green), [MUIA_Colorfield_Red](MUI_Colorfield/#MUIA_Colorfield_Red), [MUIA_Colorfield_RGB](MUI_Colorfield/#MUIA_Colorfield_RGB)
+[MUIA_Colorfield_Green](MUI_Colorfield.md/#MUIA_Colorfield_Green), [MUIA_Colorfield_Red](MUI_Colorfield.md/#MUIA_Colorfield_Red), [MUIA_Colorfield_RGB](MUI_Colorfield.md/#MUIA_Colorfield_RGB)
 
 ## MUIA_Colorfield_Green
 ### NAME
-[MUIA_Colorfield_Green](MUI_Colorfield/#MUIA_Colorfield_Green) -- V4 [ISG], `ULONG`, 0x80424466
+[MUIA_Colorfield_Green](MUI_Colorfield.md/#MUIA_Colorfield_Green) -- V4 [ISG], `ULONG`, 0x80424466
 
 ### FUNCTION
 Set or get the 32-bit green component of the fields color. Values range from
 0 (no green) to $ffffffff (full green).
 
 ### SEE ALSO
-[MUIA_Colorfield_Red](MUI_Colorfield/#MUIA_Colorfield_Red), [MUIA_Colorfield_Blue](MUI_Colorfield/#MUIA_Colorfield_Blue), [MUIA_Colorfield_RGB](MUI_Colorfield/#MUIA_Colorfield_RGB)
+[MUIA_Colorfield_Red](MUI_Colorfield.md/#MUIA_Colorfield_Red), [MUIA_Colorfield_Blue](MUI_Colorfield.md/#MUIA_Colorfield_Blue), [MUIA_Colorfield_RGB](MUI_Colorfield.md/#MUIA_Colorfield_RGB)
 
 ## MUIA_Colorfield_Pen
 ### NAME
-[MUIA_Colorfield_Pen](MUI_Colorfield/#MUIA_Colorfield_Pen) -- V4 [..G], `ULONG`, 0x8042713a
+[MUIA_Colorfield_Pen](MUI_Colorfield.md/#MUIA_Colorfield_Pen) -- V4 [..G], `ULONG`, 0x8042713a
 
 ### FUNCTION
 When specified, the colorfield uses exactly this pen instead of trying to
 obtain a new one.
 
 ### SEE ALSO
-[MUIA_Colorfield_RGB](MUI_Colorfield/#MUIA_Colorfield_RGB)
+[MUIA_Colorfield_RGB](MUI_Colorfield.md/#MUIA_Colorfield_RGB)
 
 ## MUIA_Colorfield_Red
 ### NAME
-[MUIA_Colorfield_Red](MUI_Colorfield/#MUIA_Colorfield_Red) -- V4 [ISG], `ULONG`, 0x804279f6
+[MUIA_Colorfield_Red](MUI_Colorfield.md/#MUIA_Colorfield_Red) -- V4 [ISG], `ULONG`, 0x804279f6
 
 ### FUNCTION
 Set or get the 32-bit red component of the fields color. Values range from 0
 (no red) to $ffffffff (full red).
 
 ### SEE ALSO
-[MUIA_Colorfield_Green](MUI_Colorfield/#MUIA_Colorfield_Green), [MUIA_Colorfield_Blue](MUI_Colorfield/#MUIA_Colorfield_Blue), [MUIA_Colorfield_RGB](MUI_Colorfield/#MUIA_Colorfield_RGB)
+[MUIA_Colorfield_Green](MUI_Colorfield.md/#MUIA_Colorfield_Green), [MUIA_Colorfield_Blue](MUI_Colorfield.md/#MUIA_Colorfield_Blue), [MUIA_Colorfield_RGB](MUI_Colorfield.md/#MUIA_Colorfield_RGB)
 
 ## MUIA_Colorfield_RGB
 ### NAME
-[MUIA_Colorfield_RGB](MUI_Colorfield/#MUIA_Colorfield_RGB) -- V4 [ISG], `ULONG *`, 0x8042677a
+[MUIA_Colorfield_RGB](MUI_Colorfield.md/#MUIA_Colorfield_RGB) -- V4 [ISG], `ULONG *`, 0x8042677a
 
 ### FUNCTION
 Set or get the red/green/blue values of a colorfield all at once. You pass
@@ -87,7 +87,7 @@ printf("red=%08lx green=%08lx blue=%08lx\n", rgb[0], rgb[1], rgb[2]);
 ```
 
 ### SEE ALSO
-[MUIA_Colorfield_Green](MUI_Colorfield/#MUIA_Colorfield_Green), [MUIA_Colorfield_Blue](MUI_Colorfield/#MUIA_Colorfield_Blue), [MUIA_Colorfield_Red](MUI_Colorfield/#MUIA_Colorfield_Red)
+[MUIA_Colorfield_Green](MUI_Colorfield.md/#MUIA_Colorfield_Green), [MUIA_Colorfield_Blue](MUI_Colorfield.md/#MUIA_Colorfield_Blue), [MUIA_Colorfield_Red](MUI_Colorfield.md/#MUIA_Colorfield_Red)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

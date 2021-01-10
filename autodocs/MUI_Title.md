@@ -57,7 +57,7 @@ Method|Version
 
 ## MUIA_Title_Clickable
 ### NAME
-[MUIA_Title_Clickable](MUI_Title/#MUIA_Title_Clickable) -- V20 [I..], `LONG`, 0x80425959
+[MUIA_Title_Clickable](MUI_Title.md/#MUIA_Title_Clickable) -- V20 [I..], `LONG`, 0x80425959
 
 ### FUNCTION
 Setting this attribute to FALSE will let the Title object ignore all clicks
@@ -67,11 +67,11 @@ Defaults to TRUE.
 
 ## MUIA_Title_Closable
 ### NAME
-[MUIA_Title_Closable](MUI_Title/#MUIA_Title_Closable) -- V20 [ISG], `BOOL`, 0x80420402
+[MUIA_Title_Closable](MUI_Title.md/#MUIA_Title_Closable) -- V20 [ISG], `BOOL`, 0x80420402
 
 ### FUNCTION
 Setting this attribute to TRUE will add a close button to each tab object.
-Clicking the close button will invoke the [MUIM_Title_Close](MUI_Title/#MUIM_Title_Close) method with a pointer
+Clicking the close button will invoke the [MUIM_Title_Close](MUI_Title.md/#MUIM_Title_Close) method with a pointer
 to the tab object the close buttons corresponds to. Title class will **NOT**
 close the tab itself. This task remains the responsibility of the implementing
 class and hence also requires the developer to implement a subclass of Title
@@ -83,11 +83,11 @@ Defaults to FALSE.
 See supplied Title demo.
 
 ### SEE ALSO
-[MUIM_Title_Close](MUI_Title/#MUIM_Title_Close)
+[MUIM_Title_Close](MUI_Title.md/#MUIM_Title_Close)
 
 ## MUIA_Title_EventHandlerPriority
 ### NAME
-[MUIA_Title_EventHandlerPriority](MUI_Title/#MUIA_Title_EventHandlerPriority) -- V20 [I..], `LONG`, 0x804286bc
+[MUIA_Title_EventHandlerPriority](MUI_Title.md/#MUIA_Title_EventHandlerPriority) -- V20 [I..], `LONG`, 0x804286bc
 
 ### SPECIAL INPUTS
   * MUIV_Title_EventHandlerPriority_Default
@@ -101,11 +101,11 @@ Defaults to MUIV_Title_EventHandlerPriority_Default.
 
 ## MUIA_Title_Newable
 ### NAME
-[MUIA_Title_Newable](MUI_Title/#MUIA_Title_Newable) -- V20 [ISG], `BOOL`, 0x80424145
+[MUIA_Title_Newable](MUI_Title.md/#MUIA_Title_Newable) -- V20 [ISG], `BOOL`, 0x80424145
 
 ### FUNCTION
 Setting this attribute to TRUE will add a "+" button after the rightmost tab
-object. Clicking the "+" button will invoke the [MUIM_Title_New](MUI_Title/#MUIM_Title_New) method to let the
+object. Clicking the "+" button will invoke the [MUIM_Title_New](MUI_Title.md/#MUIM_Title_New) method to let the
 application add a new title button object and a new page object. Title class
 will **NOT** add the new tab itself. This task remains the responsibility of
 the implementing class and hence also requires the developer to implement a
@@ -117,11 +117,11 @@ Defaults to FALSE.
 See supplied Title demo.
 
 ### SEE ALSO
-[MUIM_Title_New](MUI_Title/#MUIM_Title_New)
+[MUIM_Title_New](MUI_Title.md/#MUIM_Title_New)
 
 ## MUIA_Title_OnLastClose
 ### NAME
-[MUIA_Title_OnLastClose](MUI_Title/#MUIA_Title_OnLastClose) -- V21 [IS.], `LONG`, 0x804253cf
+[MUIA_Title_OnLastClose](MUI_Title.md/#MUIA_Title_OnLastClose) -- V21 [IS.], `LONG`, 0x804253cf
 
 ### SPECIAL INPUTS
   * MUIV_Title_OnLastClose_Remove
@@ -131,18 +131,18 @@ See supplied Title demo.
 This attribute defines how the object will react when the last tab is to be
 closed.
 Setting this attribute to MUIV_Title_OnLastClose_Remove will invoke the
-usual [MUIM_Title_Close](MUI_Title/#MUIM_Title_Close) method on the object. Setting the attribute to
+usual [MUIM_Title_Close](MUI_Title.md/#MUIM_Title_Close) method on the object. Setting the attribute to
 MUIV_Title_OnLastClose_WindowAction will trigger a close request on the
 object's window.
 
 Defaults to MUIV_Title_OnLastClose_Remove.
 
 ### SEE ALSO
-[MUIM_Title_Close](MUI_Title/#MUIM_Title_Close)
+[MUIM_Title_Close](MUI_Title.md/#MUIM_Title_Close)
 
 ## MUIA_Title_Position
 ### NAME
-[MUIA_Title_Position](MUI_Title/#MUIA_Title_Position) -- V20 [ISG], `LONG`, 0x804273a3
+[MUIA_Title_Position](MUI_Title.md/#MUIA_Title_Position) -- V20 [ISG], `LONG`, 0x804273a3
 
 ### SPECIAL INPUTS
   * MUIV_Title_Position_Top
@@ -159,7 +159,7 @@ Defaults to MUIV_Title_Position_Top.
 
 ## MUIA_Title_Sortable
 ### NAME
-[MUIA_Title_Sortable](MUI_Title/#MUIA_Title_Sortable) -- V20 [ISG], `BOOL`, 0x804211f1
+[MUIA_Title_Sortable](MUI_Title.md/#MUIA_Title_Sortable) -- V20 [ISG], `BOOL`, 0x804211f1
 
 ### FUNCTION
 Define whether the individual tabs can be rearranged by drag'n'drop
@@ -170,14 +170,14 @@ Defaults to FALSE.
 
 ## MUIM_Title_Close
 ### NAME
-[MUIM_Title_Close](MUI_Title/#MUIM_Title_Close) -- V20, 0x8042303a
+[MUIM_Title_Close](MUI_Title.md/#MUIM_Title_Close) -- V20, 0x8042303a
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Title_Close, Object *tito);`
 
 ### FUNCTION
 This method will be invoked with a pointer to the to be closed tab object
-when [MUIA_Title_Closable](MUI_Title/#MUIA_Title_Closable) is set to TRUE and the user clicks the close
+when [MUIA_Title_Closable](MUI_Title.md/#MUIA_Title_Closable) is set to TRUE and the user clicks the close
 button. The tab object as well as its corresponding page object will be
 removed and disposed.
 
@@ -191,11 +191,11 @@ eventually invoked a tiny little bit later as you might expect it.
 See supplied Titles demo.
 
 ### SEE ALSO
-[MUIA_Title_Closable](MUI_Title/#MUIA_Title_Closable)
+[MUIA_Title_Closable](MUI_Title.md/#MUIA_Title_Closable)
 
 ## MUIM_Title_FindPage
 ### NAME
-[MUIM_Title_FindPage](MUI_Title/#MUIM_Title_FindPage) -- V22, 0x80423d0d
+[MUIM_Title_FindPage](MUI_Title.md/#MUIM_Title_FindPage) -- V22, 0x80423d0d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Title_FindPage, Object *titlebutton);`
@@ -213,14 +213,14 @@ no valid page object.
 
 ## MUIM_Title_New
 ### NAME
-[MUIM_Title_New](MUI_Title/#MUIM_Title_New) -- V20, 0x804247a6
+[MUIM_Title_New](MUI_Title.md/#MUIM_Title_New) -- V20, 0x804247a6
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Title_New);`
 
 ### FUNCTION
 This method will be invoked whenever a new page is to be created when
-[MUIA_Title_Newable](MUI_Title/#MUIA_Title_Newable) is set to TRUE and the user clicked on the "New" button.
+[MUIA_Title_Newable](MUI_Title.md/#MUIA_Title_Newable) is set to TRUE and the user clicked on the "New" button.
 This method must add a new title button object to the Title object and a new
 page object to the surrounding Group object.
 
@@ -228,7 +228,7 @@ page object to the surrounding Group object.
 This method is actually not yet fully implemented.
 
 ### SEE ALSO
-[MUIA_Title_Newable](MUI_Title/#MUIA_Title_Newable)
+[MUIA_Title_Newable](MUI_Title.md/#MUIA_Title_Newable)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

@@ -20,25 +20,25 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Bodychunk_Body
 ### NAME
-[MUIA_Bodychunk_Body](MUI_Bodychunk/#MUIA_Bodychunk_Body) -- V8 [ISG], `UBYTE *`, 0x8042ca67
+[MUIA_Bodychunk_Body](MUI_Bodychunk.md/#MUIA_Bodychunk_Body) -- V8 [ISG], `UBYTE *`, 0x8042ca67
 
 ### FUNCTION
 Specify a pointer to the BODY data of your picture. This BODY data must
 follow normal IFF/ILBM conventions.
 
-You have to supply [MUIA_Bitmap_Width](MUI_Bitmap/#MUIA_Bitmap_Width), [MUIA_Bitmap_Height](MUI_Bitmap/#MUIA_Bitmap_Height) and
-[MUIA_Bodychunk_Depth](MUI_Bodychunk/#MUIA_Bodychunk_Depth) to describe the contents of the BODY data, otherwise
+You have to supply [MUIA_Bitmap_Width](MUI_Bitmap.md/#MUIA_Bitmap_Width), [MUIA_Bitmap_Height](MUI_Bitmap.md/#MUIA_Bitmap_Height) and
+[MUIA_Bodychunk_Depth](MUI_Bodychunk.md/#MUIA_Bodychunk_Depth) to describe the contents of the BODY data, otherwise
 MUI will fail to decompress it.
 
 Body data may be shared between different Bodychunk objects and does not
 need to be in chip ram.
 
 ### SEE ALSO
-[MUIA_Bodychunk_Depth](MUI_Bodychunk/#MUIA_Bodychunk_Depth), [MUIA_Bodychunk_Compression](MUI_Bodychunk/#MUIA_Bodychunk_Compression), [MUIA_Bodychunk_Masking](MUI_Bodychunk/#MUIA_Bodychunk_Masking)
+[MUIA_Bodychunk_Depth](MUI_Bodychunk.md/#MUIA_Bodychunk_Depth), [MUIA_Bodychunk_Compression](MUI_Bodychunk.md/#MUIA_Bodychunk_Compression), [MUIA_Bodychunk_Masking](MUI_Bodychunk.md/#MUIA_Bodychunk_Masking)
 
 ## MUIA_Bodychunk_Compression
 ### NAME
-[MUIA_Bodychunk_Compression](MUI_Bodychunk/#MUIA_Bodychunk_Compression) -- V8 [ISG], `UBYTE`, 0x8042de5f
+[MUIA_Bodychunk_Compression](MUI_Bodychunk.md/#MUIA_Bodychunk_Compression) -- V8 [ISG], `UBYTE`, 0x8042de5f
 
 ### FUNCTION
 MUI is able to uncompress byte&run compressed BODY chunks automatically. If
@@ -50,23 +50,23 @@ uncompressed. Using the Bodychunk class doesn't make much sense in this case
 since its main purpose is to save memory for big images.
 
 ### SEE ALSO
-[MUIA_Bodychunk_Masking](MUI_Bodychunk/#MUIA_Bodychunk_Masking), [MUIA_Bodychunk_Body](MUI_Bodychunk/#MUIA_Bodychunk_Body)
+[MUIA_Bodychunk_Masking](MUI_Bodychunk.md/#MUIA_Bodychunk_Masking), [MUIA_Bodychunk_Body](MUI_Bodychunk.md/#MUIA_Bodychunk_Body)
 
 ## MUIA_Bodychunk_Depth
 ### NAME
-[MUIA_Bodychunk_Depth](MUI_Bodychunk/#MUIA_Bodychunk_Depth) -- V8 [ISG], `LONG`, 0x8042c392
+[MUIA_Bodychunk_Depth](MUI_Bodychunk.md/#MUIA_Bodychunk_Depth) -- V8 [ISG], `LONG`, 0x8042c392
 
 ### FUNCTION
 Specify the depth of your picture here. This tag is required for correct
-BODY chunk parsing. Also remember to use [MUIA_Bodychunk_Masking](MUI_Bodychunk/#MUIA_Bodychunk_Masking) if your BODY
+BODY chunk parsing. Also remember to use [MUIA_Bodychunk_Masking](MUI_Bodychunk.md/#MUIA_Bodychunk_Masking) if your BODY
 data contains a masking bitplane.
 
 ### SEE ALSO
-[MUIA_Bodychunk_Body](MUI_Bodychunk/#MUIA_Bodychunk_Body), [MUIA_Bodychunk_Masking](MUI_Bodychunk/#MUIA_Bodychunk_Masking)
+[MUIA_Bodychunk_Body](MUI_Bodychunk.md/#MUIA_Bodychunk_Body), [MUIA_Bodychunk_Masking](MUI_Bodychunk.md/#MUIA_Bodychunk_Masking)
 
 ## MUIA_Bodychunk_Masking
 ### NAME
-[MUIA_Bodychunk_Masking](MUI_Bodychunk/#MUIA_Bodychunk_Masking) -- V8 [ISG], `UBYTE`, 0x80423b0e
+[MUIA_Bodychunk_Masking](MUI_Bodychunk.md/#MUIA_Bodychunk_Masking) -- V8 [ISG], `UBYTE`, 0x80423b0e
 
 ### FUNCTION
 You must indicate if your BODY data contains a masking plane. Currently, MUI
@@ -74,7 +74,7 @@ does not use this masking plane for any purpose, but this attribute is
 required to allow correct parsing of the BODY data.
 
 ### SEE ALSO
-[MUIA_Bodychunk_Body](MUI_Bodychunk/#MUIA_Bodychunk_Body), [MUIA_Bodychunk_Compression](MUI_Bodychunk/#MUIA_Bodychunk_Compression)
+[MUIA_Bodychunk_Body](MUI_Bodychunk.md/#MUIA_Bodychunk_Body), [MUIA_Bodychunk_Compression](MUI_Bodychunk.md/#MUIA_Bodychunk_Compression)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

@@ -25,12 +25,12 @@ Method|Version
 
 ## MUIA_Textdata_Contents
 ### NAME
-[MUIA_Textdata_Contents](MUI_Textdata/#MUIA_Textdata_Contents) -- V21 [I.G], `CONST_STRPTR`, 0x80420c3f
+[MUIA_Textdata_Contents](MUI_Textdata.md/#MUIA_Textdata_Contents) -- V21 [I.G], `CONST_STRPTR`, 0x80420c3f
 
 ### FUNCTION
 Define the object's text contents. MUI's Text class will convert this string
 to whatever encoding it requires before it is finally displayed on the
-screen using the [MUIM_Textdata_Convert](MUI_Textdata/#MUIM_Textdata_Convert) method.
+screen using the [MUIM_Textdata_Convert](MUI_Textdata.md/#MUIM_Textdata_Convert) method.
 
 There are some macros defined for convenience to cover the most common
 encodings:
@@ -41,11 +41,11 @@ encodings:
   * UTextdata(): a UTF-8 encoded string
 
 ### SEE ALSO
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ## MUIA_Textdata_Encoding
 ### NAME
-[MUIA_Textdata_Encoding](MUI_Textdata/#MUIA_Textdata_Encoding) -- V21 [I.G], `ULONG`, 0x8042c587
+[MUIA_Textdata_Encoding](MUI_Textdata.md/#MUIA_Textdata_Encoding) -- V21 [I.G], `ULONG`, 0x8042c587
 
 ### FUNCTION
 This attribute specifies the contents' encoding. It must be one of the MIB
@@ -54,29 +54,29 @@ numbers included in the mui.h header file.
 Defaults to the system's default charset.
 
 ### SEE ALSO
-[MUIA_Textdata_Contents](MUI_Textdata/#MUIA_Textdata_Contents)
+[MUIA_Textdata_Contents](MUI_Textdata.md/#MUIA_Textdata_Contents)
 
 ## MUIA_Textdata_SourceBytes
 ### NAME
-[MUIA_Textdata_SourceBytes](MUI_Textdata/#MUIA_Textdata_SourceBytes) -- V21 [I..], `LONG`, 0x804242c0
+[MUIA_Textdata_SourceBytes](MUI_Textdata.md/#MUIA_Textdata_SourceBytes) -- V21 [I..], `LONG`, 0x804242c0
 
 ### FUNCTION
 
 ### SEE ALSO
-[MUIA_Textdata_Contents](MUI_Textdata/#MUIA_Textdata_Contents)
+[MUIA_Textdata_Contents](MUI_Textdata.md/#MUIA_Textdata_Contents)
 
 ## MUIA_Textdata_SourceEncoding
 ### NAME
-[MUIA_Textdata_SourceEncoding](MUI_Textdata/#MUIA_Textdata_SourceEncoding) -- V21 [I..], `ULONG`, 0x80426d1a
+[MUIA_Textdata_SourceEncoding](MUI_Textdata.md/#MUIA_Textdata_SourceEncoding) -- V21 [I..], `ULONG`, 0x80426d1a
 
 ### FUNCTION
 
 ### SEE ALSO
-[MUIA_Textdata_Contents](MUI_Textdata/#MUIA_Textdata_Contents)
+[MUIA_Textdata_Contents](MUI_Textdata.md/#MUIA_Textdata_Contents)
 
 ## MUIM_Textdata_Convert
 ### NAME
-[MUIM_Textdata_Convert](MUI_Textdata/#MUIM_Textdata_Convert) -- V21, 0x80425988
+[MUIM_Textdata_Convert](MUI_Textdata.md/#MUIM_Textdata_Convert) -- V21, 0x80425988
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Textdata_Convert, ULONG encoding);`
@@ -94,7 +94,7 @@ A pointer to the converted string or NULL on failure. This string is
 strictly read-only.
 
 ### SEE ALSO
-[MUIA_Textdata_Contents](MUI_Textdata/#MUIA_Textdata_Contents)
+[MUIA_Textdata_Contents](MUI_Textdata.md/#MUIA_Textdata_Contents)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

@@ -10,7 +10,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Argstring_Contents
 ### NAME
-[MUIA_Argstring_Contents](MUI_Argstring/#MUIA_Argstring_Contents) -- V20 [ISG], `STRPTR`, 0x80429456
+[MUIA_Argstring_Contents](MUI_Argstring.md/#MUIA_Argstring_Contents) -- V20 [ISG], `STRPTR`, 0x80429456
 
 ### FUNCTION
 yet undocumented, please complain in mailinglist :)
@@ -22,7 +22,7 @@ yet undocumented, please complain in mailinglist :)
 
 ## MUIA_Argstring_Template
 ### NAME
-[MUIA_Argstring_Template](MUI_Argstring/#MUIA_Argstring_Template) -- V20 [ISG], `STRPTR`, 0x80422904
+[MUIA_Argstring_Template](MUI_Argstring.md/#MUIA_Argstring_Template) -- V20 [ISG], `STRPTR`, 0x80422904
 
 ### FUNCTION
 yet undocumented, please complain in mailinglist :)

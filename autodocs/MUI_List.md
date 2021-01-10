@@ -2,10 +2,10 @@
 ## Super class
 [Area.mui](MUI_Area.md)
 ## Inherited by
-* [Dirlist.mui](MUI_Dirlist)
-* [Floattext.mui](MUI_Floattext)
-* [Scrmodelist.mui](MUI_Scrmodelist)
-* [Volumelist.mui](MUI_Volumelist)
+* [Dirlist.mui](MUI_Dirlist.md)
+* [Floattext.mui](MUI_Floattext.md)
+* [Scrmodelist.mui](MUI_Scrmodelist.md)
+* [Volumelist.mui](MUI_Volumelist.md)
 ## Background
 MUI's list class is very powerful. It handles all types of entries, from a
 simple string to a complicated structure with many associated resources.
@@ -101,7 +101,7 @@ Method|Version
 
 ## MUIA_List_Active
 ### NAME
-[MUIA_List_Active](MUI_List/#MUIA_List_Active) -- V4 [ISG], `LONG`, 0x8042391c
+[MUIA_List_Active](MUI_List.md/#MUIA_List_Active) -- V4 [ISG], `LONG`, 0x8042391c
 
 ### SPECIAL INPUTS
   * MUIV_List_Active_Off
@@ -114,86 +114,86 @@ Method|Version
 
 ### FUNCTION
 Reading this attribute will return the number of the active entry (the one with
-the cursor on it). The result is between 0 and [MUIA_List_Entries](MUI_List/#MUIA_List_Entries)-1 or
+the cursor on it). The result is between 0 and [MUIA_List_Entries](MUI_List.md/#MUIA_List_Entries)-1 or
 MUIV_List_Active_Off, in which case there is currently no active entry.
 
 Setting the attribute will cause the list to move the cursor to the new
 position and scroll this position into the visible area.
 
 ### SEE ALSO
-[MUIA_List_Entries](MUI_List/#MUIA_List_Entries), [MUIA_List_First](MUI_List/#MUIA_List_First), [MUIA_List_Visible](MUI_List/#MUIA_List_Visible)
+[MUIA_List_Entries](MUI_List.md/#MUIA_List_Entries), [MUIA_List_First](MUI_List.md/#MUIA_List_First), [MUIA_List_Visible](MUI_List.md/#MUIA_List_Visible)
 
 ## MUIA_List_AdjustHeight
 ### NAME
-[MUIA_List_AdjustHeight](MUI_List/#MUIA_List_AdjustHeight) -- V4 [I..], `BOOL`, 0x8042850d
+[MUIA_List_AdjustHeight](MUI_List.md/#MUIA_List_AdjustHeight) -- V4 [I..], `BOOL`, 0x8042850d
 
 ### FUNCTION
-A list with [MUIA_List_AdjustHeight](MUI_List/#MUIA_List_AdjustHeight) set to TRUE is exactly as high as all of its
+A list with [MUIA_List_AdjustHeight](MUI_List.md/#MUIA_List_AdjustHeight) set to TRUE is exactly as high as all of its
 entries and not resizable. This is only possible when the list is filled
 **before** the window is opened.
 
 ### SEE ALSO
-[MUIA_List_AdjustWidth](MUI_List/#MUIA_List_AdjustWidth)
+[MUIA_List_AdjustWidth](MUI_List.md/#MUIA_List_AdjustWidth)
 
 ## MUIA_List_AdjustWidth
 ### NAME
-[MUIA_List_AdjustWidth](MUI_List/#MUIA_List_AdjustWidth) -- V4 [I..], `BOOL`, 0x8042354a
+[MUIA_List_AdjustWidth](MUI_List.md/#MUIA_List_AdjustWidth) -- V4 [I..], `BOOL`, 0x8042354a
 
 ### FUNCTION
-A list with [MUIA_List_AdjustWidth](MUI_List/#MUIA_List_AdjustWidth) set to TRUE is exactly as wide as the widest
+A list with [MUIA_List_AdjustWidth](MUI_List.md/#MUIA_List_AdjustWidth) set to TRUE is exactly as wide as the widest
 entry and not resizable. This is only possible when the list is filled
 **before** the window is opened.
 
 ### SEE ALSO
-[MUIA_List_AdjustHeight](MUI_List/#MUIA_List_AdjustHeight)
+[MUIA_List_AdjustHeight](MUI_List.md/#MUIA_List_AdjustHeight)
 
 ## MUIA_List_AgainClick
 ### NAME
-[MUIA_List_AgainClick](MUI_List/#MUIA_List_AgainClick) -- V20 [I.G], `BOOL`, 0x804214c2
+[MUIA_List_AgainClick](MUI_List.md/#MUIA_List_AgainClick) -- V20 [I.G], `BOOL`, 0x804214c2
 
 ### FUNCTION
 This attribute is set to TRUE whenever the user clicks on the same entry again,
 but not necessarily within the system's double click time.
 
 ### SEE ALSO
-[MUIA_List_DoubleClick](MUI_List/#MUIA_List_DoubleClick)
+[MUIA_List_DoubleClick](MUI_List.md/#MUIA_List_DoubleClick)
 
 ## MUIA_List_AutoLineHeight
 ### NAME
-[MUIA_List_AutoLineHeight](MUI_List/#MUIA_List_AutoLineHeight) -- V20 [I..], `BOOL`, 0x8042bc08
+[MUIA_List_AutoLineHeight](MUI_List.md/#MUIA_List_AutoLineHeight) -- V20 [I..], `BOOL`, 0x8042bc08
 
 ### FUNCTION
 Enables automatic line height calculation. Useful e.g. if you cannot predict a
 sensible line height.
 
 ### SEE ALSO
-[MUIA_List_LineHeight](MUI_List/#MUIA_List_LineHeight), [MUIA_List_MinLineHeight](MUI_List/#MUIA_List_MinLineHeight)
+[MUIA_List_LineHeight](MUI_List.md/#MUIA_List_LineHeight), [MUIA_List_MinLineHeight](MUI_List.md/#MUIA_List_MinLineHeight)
 
 ## MUIA_List_AutoVisible
 ### NAME
-[MUIA_List_AutoVisible](MUI_List/#MUIA_List_AutoVisible) -- V11 [ISG], `BOOL`, 0x8042a445
+[MUIA_List_AutoVisible](MUI_List.md/#MUIA_List_AutoVisible) -- V11 [ISG], `BOOL`, 0x8042a445
 
 ### FUNCTION
 Set this to make your lists automatically jump to the active entry when they are
 displayed.
 
 ### SEE ALSO
-[MUIA_List_Active](MUI_List/#MUIA_List_Active)
+[MUIA_List_Active](MUI_List.md/#MUIA_List_Active)
 
 ## MUIA_List_ClickColumn
 ### NAME
-[MUIA_List_ClickColumn](MUI_List/#MUIA_List_ClickColumn) -- V7 [..G], `LONG`, 0x8042d1b3
+[MUIA_List_ClickColumn](MUI_List.md/#MUIA_List_ClickColumn) -- V7 [..G], `LONG`, 0x8042d1b3
 
 ### FUNCTION
 When using a multi column list, this attribute contains the number of the
 column where the user clicked.
 
 ### SEE ALSO
-[MUIA_List_DefClickColumn](MUI_List/#MUIA_List_DefClickColumn)
+[MUIA_List_DefClickColumn](MUI_List.md/#MUIA_List_DefClickColumn)
 
 ## MUIA_List_ColumnOrder
 ### NAME
-[MUIA_List_ColumnOrder](MUI_List/#MUIA_List_ColumnOrder) -- V20 [.SG], `BYTE *`, 0x9d5100f6
+[MUIA_List_ColumnOrder](MUI_List.md/#MUIA_List_ColumnOrder) -- V20 [.SG], `BYTE *`, 0x9d5100f6
 
 ### FUNCTION
 Use this attribute to either get or set the current column order. Useful if you
@@ -215,7 +215,7 @@ set(obj, MUIA_List_ColumnOrder, order);
 
 ## MUIA_List_CompareHook
 ### NAME
-[MUIA_List_CompareHook](MUI_List/#MUIA_List_CompareHook) -- V4 [IS.], `struct Hook *`, 0x80425c14
+[MUIA_List_CompareHook](MUI_List.md/#MUIA_List_CompareHook) -- V4 [IS.], `struct Hook *`, 0x80425c14
 
 ### SPECIAL INPUTS
   * MUIV_List_CompareHook_String
@@ -223,7 +223,7 @@ set(obj, MUIA_List_ColumnOrder, order);
 
 ### FUNCTION
 If you plan to have the entries of your list sorted (either by inserting them
-sorted or by using the [MUIM_List_Sort](MUI_List/#MUIM_List_Sort) method) and if the entries of your list
+sorted or by using the [MUIM_List_Sort](MUI_List.md/#MUIM_List_Sort) method) and if the entries of your list
 are not simple strings, you **MUST** supply a compare hook.
 
 This hook will be called with one list element in A1 and another one in A2. You
@@ -239,7 +239,7 @@ These built-in compare hooks are available:
 
 **`MUIV_List_CompareHook_StringArray`**
      compare the strings of a multi column list in respect to the column  specified
-     by [MUIA_List_SortColumn](MUI_List/#MUIA_List_SortColumn).
+     by [MUIA_List_SortColumn](MUI_List.md/#MUIA_List_SortColumn).
 
 ### EXAMPLE
 ```c++
@@ -251,11 +251,11 @@ LONG SAVEDS ASM cmpfunc(REG(a1, char *s1), REG(a2, char *s2))
 ```
 
 ### SEE ALSO
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook)
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook)
 
 ## MUIA_List_ConstructHook
 ### NAME
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook) -- V4 [IS.], `struct Hook *`, 0x8042894f
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook) -- V4 [IS.], `struct Hook *`, 0x8042894f
 
 ### SPECIAL INPUTS
   * MUIV_List_ConstructHook_String
@@ -267,7 +267,7 @@ not insert the given pointer directly, but instead call the construct hook and
 add its result code.
 
 Imagine you want to display a list of entries in a directory. You could step
-through it using Examine()/ExNext() and directly use the [MUIM_List_Insert](MUI_List/#MUIM_List_Insert) method
+through it using Examine()/ExNext() and directly use the [MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert) method
 on your file info block buffer.
 
 Your construct hook will be called with this file info block as parameter, makes
@@ -283,7 +283,7 @@ used by your list entries. Clearing the list or disposing the list object will
 automatically remove all entries and thus free the associated resources.
 
 The construct hook will be called with the hook in A0, the data given to
-[MUIM_List_Insert](MUI_List/#MUIM_List_Insert) as message in register A1 and with pointer to a standard OS3.x
+[MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert) as message in register A1 and with pointer to a standard OS3.x
 memory pool in A2. If you want, you can use the exec or amiga.lib functions for
 allocating memory within this pool, but this is only an option.
 
@@ -300,11 +300,11 @@ These built-in construct hooks are available:
      internally to allow you destroying the originals. This is very useful for multi
      column lists. Of course you **MUST** also use
      MUIV_List_DestructHook_StringArray in this case. Additionally you **MUST**
-     use [MUIA_List_MaxColumns](MUI_List/#MUIA_List_MaxColumns) to specify the number of columns to be used.
+     use [MUIA_List_MaxColumns](MUI_List.md/#MUIA_List_MaxColumns) to specify the number of columns to be used.
 
 Without construct and destruct hooks you are responsible for either allocating
-and freeing entries yourself or for overloading [MUIM_List_Construct](MUI_List/#MUIM_List_Construct) and
-[MUIM_List_Destruct](MUI_List/#MUIM_List_Destruct).
+and freeing entries yourself or for overloading [MUIM_List_Construct](MUI_List.md/#MUIM_List_Construct) and
+[MUIM_List_Destruct](MUI_List.md/#MUIM_List_Destruct).
 
 ### EXAMPLE
 ```c++
@@ -329,22 +329,22 @@ void SAVEDS ASM desfunc(REG(a2, APTR pool), REG(a1, char *entry))
 ```
 
 ### SEE ALSO
-[MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook), [MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook), [MUIA_List_MaxColumns](MUI_List/#MUIA_List_MaxColumns)
+[MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook), [MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook), [MUIA_List_MaxColumns](MUI_List.md/#MUIA_List_MaxColumns)
 
 ## MUIA_List_DefClickColumn
 ### NAME
-[MUIA_List_DefClickColumn](MUI_List/#MUIA_List_DefClickColumn) -- V7 [ISG], `LONG`, 0x8042b296
+[MUIA_List_DefClickColumn](MUI_List.md/#MUIA_List_DefClickColumn) -- V7 [ISG], `LONG`, 0x8042b296
 
 ### FUNCTION
 When the listview is controlled with the keyboard and the user presses RETURN,
-the value given here will be used as default for [MUIA_List_ClickColumn](MUI_List/#MUIA_List_ClickColumn).
+the value given here will be used as default for [MUIA_List_ClickColumn](MUI_List.md/#MUIA_List_ClickColumn).
 
 ### SEE ALSO
-[MUIA_List_ClickColumn](MUI_List/#MUIA_List_ClickColumn)
+[MUIA_List_ClickColumn](MUI_List.md/#MUIA_List_ClickColumn)
 
 ## MUIA_List_DestructHook
 ### NAME
-[MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook) -- V4 [IS.], `struct Hook *`, 0x804297ce
+[MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook) -- V4 [IS.], `struct Hook *`, 0x804297ce
 
 ### SPECIAL INPUTS
   * MUIV_List_DestructHook_String
@@ -352,14 +352,14 @@ the value given here will be used as default for [MUIA_List_ClickColumn](MUI_Lis
 
 ### FUNCTION
 Set up a destruct hook for your list. For detailed explanation see
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook).
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook).
 
 ### SEE ALSO
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook), [MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook)
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook), [MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook)
 
 ## MUIA_List_DisplayHook
 ### NAME
-[MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook) -- V4 [IS.], `struct Hook *`, 0x8042b4d5
+[MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook) -- V4 [IS.], `struct Hook *`, 0x8042b4d5
 
 ### SPECIAL INPUTS
   * MUIV_List_DisplayHook_String
@@ -386,7 +386,7 @@ right aligned or centered columns.
 
 Without a display hook, MUI expects a simple one columned string list.
 
-See [MUIA_List_Format](MUI_List/#MUIA_List_Format) for details about column handling.
+See [MUIA_List_Format](MUI_List.md/#MUIA_List_Format) for details about column handling.
 
 Note: Since version 6 of MUI, the display hook also gets the position of the
 current entry as additional parameter. You can easily do e.g. some line
@@ -426,22 +426,22 @@ LONG SAVEDS ASM dispfunc(REG(a2) char **array, REG(a1, struct FileInfoBlock *fib
 ```
 
 ### SEE ALSO
-[MUIA_List_Format](MUI_List/#MUIA_List_Format), [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_List_Format](MUI_List.md/#MUIA_List_Format), [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ## MUIA_List_DoubleClick
 ### NAME
-[MUIA_List_DoubleClick](MUI_List/#MUIA_List_DoubleClick) -- V4 [I.G], `BOOL`, 0x80424635
+[MUIA_List_DoubleClick](MUI_List.md/#MUIA_List_DoubleClick) -- V4 [I.G], `BOOL`, 0x80424635
 
 ### FUNCTION
 This attribute is set to TRUE whenever the user double clicks on an entry in the
 list.
 
 ### SEE ALSO
-[MUIA_List_SelectChange](MUI_List/#MUIA_List_SelectChange)
+[MUIA_List_SelectChange](MUI_List.md/#MUIA_List_SelectChange)
 
 ## MUIA_List_DragSortable
 ### NAME
-[MUIA_List_DragSortable](MUI_List/#MUIA_List_DragSortable) -- V11 [ISG], `BOOL`, 0x80426099
+[MUIA_List_DragSortable](MUI_List.md/#MUIA_List_DragSortable) -- V11 [ISG], `BOOL`, 0x80426099
 
 ### FUNCTION
 If you set this attribute to TRUE, the user will be able to move around entries
@@ -449,7 +449,7 @@ in the list by using drag&drop.
 
 ## MUIA_List_DragType
 ### NAME
-[MUIA_List_DragType](MUI_List/#MUIA_List_DragType) -- V11 [ISG], `LONG`, 0x80425cd3
+[MUIA_List_DragType](MUI_List.md/#MUIA_List_DragType) -- V11 [ISG], `LONG`, 0x80425cd3
 
 ### SPECIAL INPUTS
   * MUIV_List_DragType_None
@@ -461,7 +461,7 @@ this for the listview class. Currently, only one drag type is defined.
 
 ## MUIA_List_DropMark
 ### NAME
-[MUIA_List_DropMark](MUI_List/#MUIA_List_DropMark) -- V11 [..G], `LONG`, 0x8042aba6
+[MUIA_List_DropMark](MUI_List.md/#MUIA_List_DropMark) -- V11 [..G], `LONG`, 0x8042aba6
 
 ### FUNCTION
 After a successfull drop operation, this attribute holds the position where we
@@ -472,7 +472,7 @@ See DragnDrop example program
 
 ## MUIA_List_Editable
 ### NAME
-[MUIA_List_Editable](MUI_List/#MUIA_List_Editable) -- V21 [ISG], `BOOL`, 0x8042f9b9
+[MUIA_List_Editable](MUI_List.md/#MUIA_List_Editable) -- V21 [ISG], `BOOL`, 0x8042f9b9
 
 ### FUNCTION
 Specify whether the list object allows entries to be edited.
@@ -480,21 +480,21 @@ Specify whether the list object allows entries to be edited.
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIM_List_Edit](MUI_List/#MUIM_List_Edit)
+[MUIM_List_Edit](MUI_List.md/#MUIM_List_Edit)
 
 ## MUIA_List_Entries
 ### NAME
-[MUIA_List_Entries](MUI_List/#MUIA_List_Entries) -- V4 [..G], `LONG`, 0x80421654
+[MUIA_List_Entries](MUI_List.md/#MUIA_List_Entries) -- V4 [..G], `LONG`, 0x80421654
 
 ### FUNCTION
 Get the current number of entries in the list.
 
 ### SEE ALSO
-[MUIA_List_First](MUI_List/#MUIA_List_First), [MUIA_List_Visible](MUI_List/#MUIA_List_Visible), [MUIA_List_Active](MUI_List/#MUIA_List_Active)
+[MUIA_List_First](MUI_List.md/#MUIA_List_First), [MUIA_List_Visible](MUI_List.md/#MUIA_List_Visible), [MUIA_List_Active](MUI_List.md/#MUIA_List_Active)
 
 ## MUIA_List_First
 ### NAME
-[MUIA_List_First](MUI_List/#MUIA_List_First) -- V4 [.SG], `LONG`, 0x804238d4
+[MUIA_List_First](MUI_List.md/#MUIA_List_First) -- V4 [.SG], `LONG`, 0x804238d4
 
 ### FUNCTION
 Get the number of the entry displayed on top of the list. You have to be
@@ -502,11 +502,11 @@ prepared to get a result of -1, which means that the list is not visible at all
 (e.g. when the window is iconifed).
 
 ### SEE ALSO
-[MUIA_List_Visible](MUI_List/#MUIA_List_Visible), [MUIA_List_Entries](MUI_List/#MUIA_List_Entries), [MUIA_List_Active](MUI_List/#MUIA_List_Active)
+[MUIA_List_Visible](MUI_List.md/#MUIA_List_Visible), [MUIA_List_Entries](MUI_List.md/#MUIA_List_Entries), [MUIA_List_Active](MUI_List.md/#MUIA_List_Active)
 
 ## MUIA_List_Format
 ### NAME
-[MUIA_List_Format](MUI_List/#MUIA_List_Format) -- V4 [ISG], `CONST_STRPTR`, 0x80423c0a
+[MUIA_List_Format](MUI_List.md/#MUIA_List_Format) -- V4 [ISG], `CONST_STRPTR`, 0x80423c0a
 
 ### FUNCTION
 MUI has the ability to handle multi column lists. To define how many columns
@@ -535,7 +535,7 @@ MAXWIDTH=MAW/K,BAR/S,ISOBJECT/S,H=HIDDEN/S,SORTABLE/S,ORDER/K,ELIDE=E/K
 
 **`PREPARSE`**
      A preparse value for this column. Setting this e.g. to "\33c" would make the
-     column centered. See [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents) for other control codes.
+     column centered. See [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents) for other control codes.
 
 **`WEIGHT`**
      The weight of the column. As with MUI's group class, columns are layouted with
@@ -572,7 +572,7 @@ MAXWIDTH=MAW/K,BAR/S,ISOBJECT/S,H=HIDDEN/S,SORTABLE/S,ORDER/K,ELIDE=E/K
 
 **`SORTABLE`**
      This column can be sorted alphabetically by clicking its title button. This
-     will also set the attribute [MUIA_List_SortColumn](MUI_List/#MUIA_List_SortColumn) accordingly. (V21)
+     will also set the attribute [MUIA_List_SortColumn](MUI_List.md/#MUIA_List_SortColumn) accordingly. (V21)
 
 **`ORDER`**
      Define the column sorting order. Valid orders are ASC or ASCENDING and DESC or
@@ -597,7 +597,7 @@ without special formatting.
 
 ### NOTES
 By the default a list can handle 64 columns, unless a different number was set
-by [MUIA_List_MaxColumns](MUI_List/#MUIA_List_MaxColumns).
+by [MUIA_List_MaxColumns](MUI_List.md/#MUIA_List_MaxColumns).
 
 With MUI4 the argument FIXWIDTH to set a fixed width was introduced. Although
 this argument is still supported it is recommended to use equal MINWIDTH and
@@ -651,23 +651,23 @@ MUIA_List_Format: "E=none,E=left,E=center,E=right"
 ```
 
 ### SEE ALSO
-[MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook), [MUIA_List_MaxColumns](MUI_List/#MUIA_List_MaxColumns), [MUIA_List_SortColumn](MUI_List/#MUIA_List_SortColumn),
-[MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook), [MUIA_List_MaxColumns](MUI_List.md/#MUIA_List_MaxColumns), [MUIA_List_SortColumn](MUI_List.md/#MUIA_List_SortColumn),
+[MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ## MUIA_List_HideColumn
 ### NAME
-[MUIA_List_HideColumn](MUI_List/#MUIA_List_HideColumn) -- V21 [IS.], `LONG`, 0x80428052
+[MUIA_List_HideColumn](MUI_List.md/#MUIA_List_HideColumn) -- V21 [IS.], `LONG`, 0x80428052
 
 ### FUNCTION
 Hide a shown column. This attribute can be used multiple times in a single
 SetAttrs() call to make more than one column invisible.
 
 ### SEE ALSO
-[MUIA_List_ShowColumn](MUI_List/#MUIA_List_ShowColumn), [MUIA_List_Format](MUI_List/#MUIA_List_Format)
+[MUIA_List_ShowColumn](MUI_List.md/#MUIA_List_ShowColumn), [MUIA_List_Format](MUI_List.md/#MUIA_List_Format)
 
 ## MUIA_List_HScrollerVisibility
 ### NAME
-[MUIA_List_HScrollerVisibility](MUI_List/#MUIA_List_HScrollerVisibility) -- V20 [I..], `LONG`, 0x804280a6
+[MUIA_List_HScrollerVisibility](MUI_List.md/#MUIA_List_HScrollerVisibility) -- V20 [I..], `LONG`, 0x804280a6
 
 ### SPECIAL INPUTS
   * MUIV_List_HScrollerVisibility_Always
@@ -690,7 +690,7 @@ Please do **NOT** override the user's prefs unless you have a good reason!
 
 ## MUIA_List_Input
 ### NAME
-[MUIA_List_Input](MUI_List/#MUIA_List_Input) -- V4 [I..], `BOOL`, 0x8042682d
+[MUIA_List_Input](MUI_List.md/#MUIA_List_Input) -- V4 [I..], `BOOL`, 0x8042682d
 
 ### FUNCTION
 Setting this to FALSE will result in a read only list view.
@@ -698,30 +698,30 @@ Setting this to FALSE will result in a read only list view.
 Defaults to TRUE.
 
 ### SEE ALSO
-[MUIA_List_MultiSelect](MUI_List/#MUIA_List_MultiSelect)
+[MUIA_List_MultiSelect](MUI_List.md/#MUIA_List_MultiSelect)
 
 ## MUIA_List_InsertPosition
 ### NAME
-[MUIA_List_InsertPosition](MUI_List/#MUIA_List_InsertPosition) -- V9 [..G], `LONG`, 0x8042d0cd
+[MUIA_List_InsertPosition](MUI_List.md/#MUIA_List_InsertPosition) -- V9 [..G], `LONG`, 0x8042d0cd
 
 ### FUNCTION
-After insertion of an element with [MUIM_List_Insert](MUI_List/#MUIM_List_Insert), you can query the position
+After insertion of an element with [MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert), you can query the position
 of the new entry by getting this attribute.
 
 ## MUIA_List_LineHeight
 ### NAME
-[MUIA_List_LineHeight](MUI_List/#MUIA_List_LineHeight) -- V20 [.SG], `ULONG`, 0x80425880
+[MUIA_List_LineHeight](MUI_List.md/#MUIA_List_LineHeight) -- V20 [.SG], `ULONG`, 0x80425880
 
 ### FUNCTION
 Sets the absolute line height for lists in pixels. Useful e.g. if you need to
 enforce a specific height.
 
 ### SEE ALSO
-[MUIA_List_AutoLineHeight](MUI_List/#MUIA_List_AutoLineHeight), [MUIA_List_MinLineHeight](MUI_List/#MUIA_List_MinLineHeight)
+[MUIA_List_AutoLineHeight](MUI_List.md/#MUIA_List_AutoLineHeight), [MUIA_List_MinLineHeight](MUI_List.md/#MUIA_List_MinLineHeight)
 
 ## MUIA_List_MaxColumns
 ### NAME
-[MUIA_List_MaxColumns](MUI_List/#MUIA_List_MaxColumns) -- V21 [I..], `LONG`, 0x8042a98b
+[MUIA_List_MaxColumns](MUI_List.md/#MUIA_List_MaxColumns) -- V21 [I..], `LONG`, 0x8042a98b
 
 ### FUNCTION
 Specify the number of columns the list can handle at most.
@@ -734,22 +734,22 @@ MUIV_List_ConstructHook_StringArray is used as construct hook. Otherwise MUI
 will assume the wrong number of columns.
 
 ### SEE ALSO
-[MUIA_List_Format](MUI_List/#MUIA_List_Format)
+[MUIA_List_Format](MUI_List.md/#MUIA_List_Format)
 
 ## MUIA_List_MinLineHeight
 ### NAME
-[MUIA_List_MinLineHeight](MUI_List/#MUIA_List_MinLineHeight) -- V4 [IS.], `LONG`, 0x8042d1c3
+[MUIA_List_MinLineHeight](MUI_List.md/#MUIA_List_MinLineHeight) -- V4 [IS.], `LONG`, 0x8042d1c3
 
 ### FUNCTION
 Sets the minimum line height for lists in pixels. Useful e.g. if you have custom
 images.
 
 ### SEE ALSO
-[MUIA_List_AutoLineHeight](MUI_List/#MUIA_List_AutoLineHeight), [MUIA_List_LineHeight](MUI_List/#MUIA_List_LineHeight)
+[MUIA_List_AutoLineHeight](MUI_List.md/#MUIA_List_AutoLineHeight), [MUIA_List_LineHeight](MUI_List.md/#MUIA_List_LineHeight)
 
 ## MUIA_List_MultiSelect
 ### NAME
-[MUIA_List_MultiSelect](MUI_List/#MUIA_List_MultiSelect) -- V7 [I..], `LONG`, 0x80427e08
+[MUIA_List_MultiSelect](MUI_List.md/#MUIA_List_MultiSelect) -- V7 [I..], `LONG`, 0x80427e08
 
 ### SPECIAL INPUTS
   * MUIV_List_MultiSelect_None
@@ -776,16 +776,16 @@ Four possibilities exist for a listviews multi select capabilities:
 Please do **NOT** override the user's prefs unless you have a good reason!
 
 ### SEE ALSO
-[MUIA_List_MultiTestHook](MUI_List/#MUIA_List_MultiTestHook)
+[MUIA_List_MultiTestHook](MUI_List.md/#MUIA_List_MultiTestHook)
 
 ## MUIA_List_MultiTestHook
 ### NAME
-[MUIA_List_MultiTestHook](MUI_List/#MUIA_List_MultiTestHook) -- V4 [IS.], `struct Hook *`, 0x8042c2c6
+[MUIA_List_MultiTestHook](MUI_List.md/#MUIA_List_MultiTestHook) -- V4 [IS.], `struct Hook *`, 0x8042c2c6
 
 ### FUNCTION
 If you plan to have a multi selecting list but not all of your entries are
 actually multi selectable (e.g. in a file requester), you can supply a
-[MUIA_List_MultiTestHook](MUI_List/#MUIA_List_MultiTestHook).
+[MUIA_List_MultiTestHook](MUI_List.md/#MUIA_List_MultiTestHook).
 
 It will be called with a pointer to an entry in A1 and should return TRUE if the
 entry is multi selectable, FALSE otherwise.
@@ -803,11 +803,11 @@ LONG SAVEDS ASM mtfunc(REG(a1, struct FileInfoBlock *fib))
 ```
 
 ### SEE ALSO
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook)
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook)
 
 ## MUIA_List_Pool
 ### NAME
-[MUIA_List_Pool](MUI_List/#MUIA_List_Pool) -- V13 [I.G], `APTR`, 0x80423431
+[MUIA_List_Pool](MUI_List.md/#MUIA_List_Pool) -- V13 [I.G], `APTR`, 0x80423431
 
 ### FUNCTION
 Pass something from CreatePool() here if you don't want the list to create its
@@ -816,41 +816,41 @@ use semaphore protection when accessing the pool, you must **NOT** use pools
 which are accessed from other tasks than the application's main task.
 
 ### SEE ALSO
-[MUIA_List_PoolPuddleSize](MUI_List/#MUIA_List_PoolPuddleSize), [MUIA_List_PoolThreshSize](MUI_List/#MUIA_List_PoolThreshSize)
+[MUIA_List_PoolPuddleSize](MUI_List.md/#MUIA_List_PoolPuddleSize), [MUIA_List_PoolThreshSize](MUI_List.md/#MUIA_List_PoolThreshSize)
 
 ## MUIA_List_PoolPuddleSize
 ### NAME
-[MUIA_List_PoolPuddleSize](MUI_List/#MUIA_List_PoolPuddleSize) -- V13 [I..], `ULONG`, 0x8042a4eb
+[MUIA_List_PoolPuddleSize](MUI_List.md/#MUIA_List_PoolPuddleSize) -- V13 [I..], `ULONG`, 0x8042a4eb
 
 ### FUNCTION
 Specify the puddle size for the lists memory pool. This value is ignored if you
-specify your own pool with [MUIA_List_Pool](MUI_List/#MUIA_List_Pool).
+specify your own pool with [MUIA_List_Pool](MUI_List.md/#MUIA_List_Pool).
 
 Defaults to 2048.
 
 ### SEE ALSO
-[MUIA_List_PoolThreshSize](MUI_List/#MUIA_List_PoolThreshSize), [MUIA_List_Pool](MUI_List/#MUIA_List_Pool)
+[MUIA_List_PoolThreshSize](MUI_List.md/#MUIA_List_PoolThreshSize), [MUIA_List_Pool](MUI_List.md/#MUIA_List_Pool)
 
 ## MUIA_List_PoolThreshSize
 ### NAME
-[MUIA_List_PoolThreshSize](MUI_List/#MUIA_List_PoolThreshSize) -- V13 [I..], `ULONG`, 0x8042c48c
+[MUIA_List_PoolThreshSize](MUI_List.md/#MUIA_List_PoolThreshSize) -- V13 [I..], `ULONG`, 0x8042c48c
 
 ### FUNCTION
 Specify the thresh size for the lists memory pool. This value is ignored if you
-specify your own pool with [MUIA_List_Pool](MUI_List/#MUIA_List_Pool).
+specify your own pool with [MUIA_List_Pool](MUI_List.md/#MUIA_List_Pool).
 
 Defaults to 1024.
 
 ### SEE ALSO
-[MUIA_List_PoolPuddleSize](MUI_List/#MUIA_List_PoolPuddleSize), [MUIA_List_Pool](MUI_List/#MUIA_List_Pool)
+[MUIA_List_PoolPuddleSize](MUI_List.md/#MUIA_List_PoolPuddleSize), [MUIA_List_Pool](MUI_List.md/#MUIA_List_Pool)
 
 ## MUIA_List_Quiet
 ### NAME
-[MUIA_List_Quiet](MUI_List/#MUIA_List_Quiet) -- V4 [.SG], `BOOL`, 0x8042d8c7
+[MUIA_List_Quiet](MUI_List.md/#MUIA_List_Quiet) -- V4 [.SG], `BOOL`, 0x8042d8c7
 
 ### FUNCTION
 If you add/remove lots of entries to/from a currently visible list, this will
-cause lots of screen action and slow down the operation. Setting [MUIA_List_Quiet](MUI_List/#MUIA_List_Quiet)
+cause lots of screen action and slow down the operation. Setting [MUIA_List_Quiet](MUI_List.md/#MUIA_List_Quiet)
 to TRUE will temporarily prevent the list from being refreshed, this refresh
 will take place only once when you set it back to FALSE again.
 
@@ -862,11 +862,11 @@ set(list, MUIA_List_Quiet, FALSE);
 ```
 
 ### SEE ALSO
-[MUIM_List_Clear](MUI_List/#MUIM_List_Clear), [MUIM_List_Insert](MUI_List/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List/#MUIM_List_Remove)
+[MUIM_List_Clear](MUI_List.md/#MUIM_List_Clear), [MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List.md/#MUIM_List_Remove)
 
 ## MUIA_List_ScrollerPos
 ### NAME
-[MUIA_List_ScrollerPos](MUI_List/#MUIA_List_ScrollerPos) -- V10 [I..], `LONG`, 0x8042b1b4
+[MUIA_List_ScrollerPos](MUI_List.md/#MUIA_List_ScrollerPos) -- V10 [I..], `LONG`, 0x8042b1b4
 
 ### SPECIAL INPUTS
   * MUIV_List_ScrollerPos_Default
@@ -911,7 +911,7 @@ DoMethod(list, MUIM_Notify, MUIA_List_TopPixel, MUIV_EveryTime,
 
 ## MUIA_List_SelectChange
 ### NAME
-[MUIA_List_SelectChange](MUI_List/#MUIA_List_SelectChange) -- V4 [..G], `BOOL`, 0x8042178f
+[MUIA_List_SelectChange](MUI_List.md/#MUIA_List_SelectChange) -- V4 [..G], `BOOL`, 0x8042178f
 
 ### FUNCTION
 This attribute is set to TRUE whenever the selection state of one or more items
@@ -919,22 +919,22 @@ in the list is changing. You can use this e.g. if you want to display the number
 of selected items in a status line.
 
 ### SEE ALSO
-[MUIA_List_MultiSelect](MUI_List/#MUIA_List_MultiSelect)
+[MUIA_List_MultiSelect](MUI_List.md/#MUIA_List_MultiSelect)
 
 ## MUIA_List_ShowColumn
 ### NAME
-[MUIA_List_ShowColumn](MUI_List/#MUIA_List_ShowColumn) -- V21 [IS.], `LONG`, 0x8042c840
+[MUIA_List_ShowColumn](MUI_List.md/#MUIA_List_ShowColumn) -- V21 [IS.], `LONG`, 0x8042c840
 
 ### FUNCTION
 Show a hidden column. This attribute can be used multiple times in a single
 SetAttrs() call make more than one column visible.
 
 ### SEE ALSO
-[MUIA_List_HideColumn](MUI_List/#MUIA_List_HideColumn), [MUIA_List_Format](MUI_List/#MUIA_List_Format)
+[MUIA_List_HideColumn](MUI_List.md/#MUIA_List_HideColumn), [MUIA_List_Format](MUI_List.md/#MUIA_List_Format)
 
 ## MUIA_List_ShowDropMarks
 ### NAME
-[MUIA_List_ShowDropMarks](MUI_List/#MUIA_List_ShowDropMarks) -- V11 [ISG], `BOOL`, 0x8042c6f3
+[MUIA_List_ShowDropMarks](MUI_List.md/#MUIA_List_ShowDropMarks) -- V11 [ISG], `BOOL`, 0x8042c6f3
 
 ### FUNCTION
 If a list supports Drag & Drop, it usually indicates the place where a new line
@@ -945,22 +945,22 @@ position anyway, e.g. because your list is always alphabetically sorted. You
 should set this attribute to FALSE in these cases.
 
 ### SEE ALSO
-[MUIA_List_DropMark](MUI_List/#MUIA_List_DropMark)
+[MUIA_List_DropMark](MUI_List.md/#MUIA_List_DropMark)
 
 ## MUIA_List_SortColumn
 ### NAME
-[MUIA_List_SortColumn](MUI_List/#MUIA_List_SortColumn) -- V21 [ISG], `LONG`, 0x8042cafb
+[MUIA_List_SortColumn](MUI_List.md/#MUIA_List_SortColumn) -- V21 [ISG], `LONG`, 0x8042cafb
 
 ### FUNCTION
 When using a multi column list, this attribute contains the number of the
 current sorting column.
 
 ### SEE ALSO
-[MUIA_List_ClickColumn](MUI_List/#MUIA_List_ClickColumn)
+[MUIA_List_ClickColumn](MUI_List.md/#MUIA_List_ClickColumn)
 
 ## MUIA_List_SourceArray
 ### NAME
-[MUIA_List_SourceArray](MUI_List/#MUIA_List_SourceArray) -- V4 [I..], `APTR`, 0x8042c0a0
+[MUIA_List_SourceArray](MUI_List.md/#MUIA_List_SourceArray) -- V4 [I..], `APTR`, 0x8042c0a0
 
 ### FUNCTION
 The NULL terminated array given here is immediately inserted into the list after
@@ -988,14 +988,14 @@ LV_Keys = ListviewObject,
 
 ## MUIA_List_Stripes
 ### NAME
-[MUIA_List_Stripes](MUI_List/#MUIA_List_Stripes) -- V21 [ISG], `BOOL`, 0x8042a308
+[MUIA_List_Stripes](MUI_List.md/#MUIA_List_Stripes) -- V21 [ISG], `BOOL`, 0x8042a308
 
 ### FUNCTION
 Set this attribute to TRUE to enable the user configurable row striping effect.
 
 ## MUIA_List_Title
 ### NAME
-[MUIA_List_Title](MUI_List/#MUIA_List_Title) -- V6 [ISG], `CONST_STRPTR`, 0x80423e66
+[MUIA_List_Title](MUI_List.md/#MUIA_List_Title) -- V6 [ISG], `CONST_STRPTR`, 0x80423e66
 
 ### FUNCTION
 Specify a title for the list. The title is displayed at the very first line and
@@ -1040,18 +1040,18 @@ LONG SAVEDS ASM DisplayFunc(REG(a2, char **array), REG(a1, struct Entry *e))
 ```
 
 ### SEE ALSO
-[MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook)
+[MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook)
 
 ## MUIA_List_TitleArray
 ### NAME
-[MUIA_List_TitleArray](MUI_List/#MUIA_List_TitleArray) -- V21 [ISG], `CONST_STRPTR *`, 0x80427d95
+[MUIA_List_TitleArray](MUI_List.md/#MUIA_List_TitleArray) -- V21 [ISG], `CONST_STRPTR *`, 0x80427d95
 
 ### FUNCTION
 Specify an array of title strings for the list. The titles are displayed at the
 very first line and doesn't scroll away when the list's top position moves.
 
-This attribute is preferred over [MUIA_List_Title](MUI_List/#MUIA_List_Title). Neither the list's display
-hook nor the [MUIM_List_Display](MUI_List/#MUIM_List_Display) method will be called to obtain the column title
+This attribute is preferred over [MUIA_List_Title](MUI_List.md/#MUIA_List_Title). Neither the list's display
+hook nor the [MUIM_List_Display](MUI_List.md/#MUIM_List_Display) method will be called to obtain the column title
 strings in case a valid array is specified.
 
 ### NOTES
@@ -1074,11 +1074,11 @@ End;
 ```
 
 ### SEE ALSO
-[MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook), [MUIA_List_Title](MUI_List/#MUIA_List_Title), [MUIM_List_Display](MUI_List/#MUIM_List_Display)
+[MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook), [MUIA_List_Title](MUI_List.md/#MUIA_List_Title), [MUIM_List_Display](MUI_List.md/#MUIM_List_Display)
 
 ## MUIA_List_TitleClick
 ### NAME
-[MUIA_List_TitleClick](MUI_List/#MUIA_List_TitleClick) -- V20 [..G], `LONG`, 0x80422fd9
+[MUIA_List_TitleClick](MUI_List.md/#MUIA_List_TitleClick) -- V20 [..G], `LONG`, 0x80422fd9
 
 ### FUNCTION
 This attribute is set to the column index number whenever the user clicks on a
@@ -1086,7 +1086,7 @@ column title button.
 
 ## MUIA_List_TopPixel
 ### NAME
-[MUIA_List_TopPixel](MUI_List/#MUIA_List_TopPixel) -- V4 [..G], `LONG`, 0x80429df3
+[MUIA_List_TopPixel](MUI_List.md/#MUIA_List_TopPixel) -- V4 [..G], `LONG`, 0x80429df3
 
 ### FUNCTION
 Specifies the top position of a list's scrollbar in terms of pixels. Setting
@@ -1114,23 +1114,23 @@ DoMethod(list, MUIM_Notify, MUIA_List_TopPixel, MUIV_EveryTime,
 ```
 
 ### SEE ALSO
-[MUIA_List_TotalPixel](MUI_List/#MUIA_List_TotalPixel), [MUIA_List_VisiblePixel](MUI_List/#MUIA_List_VisiblePixel)
+[MUIA_List_TotalPixel](MUI_List.md/#MUIA_List_TotalPixel), [MUIA_List_VisiblePixel](MUI_List.md/#MUIA_List_VisiblePixel)
 
 ## MUIA_List_TotalPixel
 ### NAME
-[MUIA_List_TotalPixel](MUI_List/#MUIA_List_TotalPixel) -- V4 [..G], `LONG`, 0x8042a8f5
+[MUIA_List_TotalPixel](MUI_List.md/#MUIA_List_TotalPixel) -- V4 [..G], `LONG`, 0x8042a8f5
 
 ### FUNCTION
 Returns the number of pixels that all list items do require to be displayed
-completely. Use this value in combination with [MUIA_List_VisiblePixel](MUI_List/#MUIA_List_VisiblePixel) and
-[MUIA_List_TopPixel](MUI_List/#MUIA_List_TopPixel) if you need to connect a custom scrollbar with the list.
+completely. Use this value in combination with [MUIA_List_VisiblePixel](MUI_List.md/#MUIA_List_VisiblePixel) and
+[MUIA_List_TopPixel](MUI_List.md/#MUIA_List_TopPixel) if you need to connect a custom scrollbar with the list.
 
 ### SEE ALSO
-[MUIA_List_TopPixel](MUI_List/#MUIA_List_TopPixel), [MUIA_List_VisiblePixel](MUI_List/#MUIA_List_VisiblePixel)
+[MUIA_List_TopPixel](MUI_List.md/#MUIA_List_TopPixel), [MUIA_List_VisiblePixel](MUI_List.md/#MUIA_List_VisiblePixel)
 
 ## MUIA_List_Visible
 ### NAME
-[MUIA_List_Visible](MUI_List/#MUIA_List_Visible) -- V4 [..G], `LONG`, 0x8042191f
+[MUIA_List_Visible](MUI_List.md/#MUIA_List_Visible) -- V4 [..G], `LONG`, 0x8042191f
 
 ### FUNCTION
 Get the current number of visible entries in the list. You have to be prepared
@@ -1138,23 +1138,23 @@ to get a result of -1, which means that the list is not visible at all (e.g.
 when the window is iconifed).
 
 ### SEE ALSO
-[MUIA_List_First](MUI_List/#MUIA_List_First), [MUIA_List_Entries](MUI_List/#MUIA_List_Entries), [MUIA_List_Active](MUI_List/#MUIA_List_Active)
+[MUIA_List_First](MUI_List.md/#MUIA_List_First), [MUIA_List_Entries](MUI_List.md/#MUIA_List_Entries), [MUIA_List_Active](MUI_List.md/#MUIA_List_Active)
 
 ## MUIA_List_VisiblePixel
 ### NAME
-[MUIA_List_VisiblePixel](MUI_List/#MUIA_List_VisiblePixel) -- V4 [..G], `LONG`, 0x804273e9
+[MUIA_List_VisiblePixel](MUI_List.md/#MUIA_List_VisiblePixel) -- V4 [..G], `LONG`, 0x804273e9
 
 ### FUNCTION
 Returns the list size as number of currently visible vertical pixels. Use this
-value in combination with [MUIA_List_TopPixel](MUI_List/#MUIA_List_TopPixel) and [MUIA_List_TotalPixel](MUI_List/#MUIA_List_TotalPixel) if you
+value in combination with [MUIA_List_TopPixel](MUI_List.md/#MUIA_List_TopPixel) and [MUIA_List_TotalPixel](MUI_List.md/#MUIA_List_TotalPixel) if you
 need to connect a custom scrollbar with the list.
 
 ### SEE ALSO
-[MUIA_List_TopPixel](MUI_List/#MUIA_List_TopPixel), [MUIA_List_TotalPixel](MUI_List/#MUIA_List_TotalPixel)
+[MUIA_List_TopPixel](MUI_List.md/#MUIA_List_TopPixel), [MUIA_List_TotalPixel](MUI_List.md/#MUIA_List_TotalPixel)
 
 ## MUIM_List_Clear
 ### NAME
-[MUIM_List_Clear](MUI_List/#MUIM_List_Clear) -- V4, 0x8042ad89
+[MUIM_List_Clear](MUI_List.md/#MUIM_List_Clear) -- V4, 0x8042ad89
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Clear);`
@@ -1163,21 +1163,21 @@ need to connect a custom scrollbar with the list.
 Clear the list, all entries are removed. If a destruct hook is set it will be
 called for every entry.
 
-Setting [MUIA_List_Quiet](MUI_List/#MUIA_List_Quiet) to TRUE before clearing the list will defer the visual
-update of the list until [MUIA_List_Quiet](MUI_List/#MUIA_List_Quiet) is set back to FALSE again.
+Setting [MUIA_List_Quiet](MUI_List.md/#MUIA_List_Quiet) to TRUE before clearing the list will defer the visual
+update of the list until [MUIA_List_Quiet](MUI_List.md/#MUIA_List_Quiet) is set back to FALSE again.
 
 ### SEE ALSO
-[MUIM_List_Insert](MUI_List/#MUIM_List_Insert), [MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook), [MUIA_List_Quiet](MUI_List/#MUIA_List_Quiet)
+[MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert), [MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook), [MUIA_List_Quiet](MUI_List.md/#MUIA_List_Quiet)
 
 ## MUIM_List_Compare
 ### NAME
-[MUIM_List_Compare](MUI_List/#MUIM_List_Compare) -- V20, 0x80421b68
+[MUIM_List_Compare](MUI_List.md/#MUIM_List_Compare) -- V20, 0x80421b68
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Compare, APTR entry1, APTR entry2, LONG column);`
 
 ### FUNCTION
-Compare two list items. This method is meant to replace [MUIA_List_CompareHook](MUI_List/#MUIA_List_CompareHook)
+Compare two list items. This method is meant to replace [MUIA_List_CompareHook](MUI_List.md/#MUIA_List_CompareHook)
 for subclasses of List class.
 
 ### INPUTS
@@ -1225,18 +1225,18 @@ LONG myListCompare(struct IClass *cl, Object *obj,
 ```
 
 ### SEE ALSO
-[MUIA_List_CompareHook](MUI_List/#MUIA_List_CompareHook)
+[MUIA_List_CompareHook](MUI_List.md/#MUIA_List_CompareHook)
 
 ## MUIM_List_Construct
 ### NAME
-[MUIM_List_Construct](MUI_List/#MUIM_List_Construct) -- V20, 0x8042d662
+[MUIM_List_Construct](MUI_List.md/#MUIM_List_Construct) -- V20, 0x8042d662
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Construct, APTR entry, APTR pool);`
 
 ### FUNCTION
 Construct a new list item. This method is meant to replace
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook) for subclasses of List class.
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook) for subclasses of List class.
 
 ### INPUTS
 **`APTR entry`**
@@ -1249,11 +1249,11 @@ Construct a new list item. This method is meant to replace
 Return a pointer to the newly created list item, or NULL upon failure.
 
 ### SEE ALSO
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook), [MUIM_List_Destruct](MUI_List/#MUIM_List_Destruct)
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook), [MUIM_List_Destruct](MUI_List.md/#MUIM_List_Destruct)
 
 ## MUIM_List_CreateEditObject
 ### NAME
-[MUIM_List_CreateEditObject](MUI_List/#MUIM_List_CreateEditObject) -- V21, 0x804219ae
+[MUIM_List_CreateEditObject](MUI_List.md/#MUIM_List_CreateEditObject) -- V21, 0x804219ae
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_CreateEditObject, LONG row, LONG column, APTR entry);`
@@ -1261,7 +1261,7 @@ Return a pointer to the newly created list item, or NULL upon failure.
 ### FUNCTION
 Create an object for inline editing. This method must be overloaded by a
 subclass of List class. The supplied row and column values are the same as the
-ones passed to [MUIM_List_Edit](MUI_List/#MUIM_List_Edit) while "entry" points to the to be edited list
+ones passed to [MUIM_List_Edit](MUI_List.md/#MUIM_List_Edit) while "entry" points to the to be edited list
 entry.
 
 NEVER dispose the created object on your own. This will be done by List class
@@ -1297,11 +1297,11 @@ ULONG myListCreateEditObject(struct IClass *cl, Object *obj,
 ```
 
 ### SEE ALSO
-[MUIA_List_Editable](MUI_List/#MUIA_List_Editable), [MUIM_List_Edit](MUI_List/#MUIM_List_Edit), [MUIM_List_EditDone](MUI_List/#MUIM_List_EditDone), List1 demo source
+[MUIA_List_Editable](MUI_List.md/#MUIA_List_Editable), [MUIM_List_Edit](MUI_List.md/#MUIM_List_Edit), [MUIM_List_EditDone](MUI_List.md/#MUIM_List_EditDone), List1 demo source
 
 ## MUIM_List_CreateImage
 ### NAME
-[MUIM_List_CreateImage](MUI_List/#MUIM_List_CreateImage) -- V11, 0x80429804
+[MUIM_List_CreateImage](MUI_List.md/#MUIM_List_CreateImage) -- V11, 0x80429804
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_CreateImage, Object *obj, ULONG flags);`
@@ -1311,15 +1311,15 @@ If you want to have custom images in a listview (e.g. like the little monitor
 icons in PSI), you should create them as Bitmap objects (or Bodychunk objects)
 in the setup method of your list class (use a subclass!).
 
-After that, pass the newly created object pointer to [MUIM_List_CreateImage](MUI_List/#MUIM_List_CreateImage) and
+After that, pass the newly created object pointer to [MUIM_List_CreateImage](MUI_List.md/#MUIM_List_CreateImage) and
 use the result in your display hook with
 
 \33O[%08lx]
 
-where %08lx must be replaced by the pointer you got from [MUIM_List_CreateImage](MUI_List/#MUIM_List_CreateImage).
+where %08lx must be replaced by the pointer you got from [MUIM_List_CreateImage](MUI_List.md/#MUIM_List_CreateImage).
 
 When your list is done (i.e. in the Cleanup method), kill your image with
-[MUIM_List_DeleteImage](MUI_List/#MUIM_List_DeleteImage) and dispose your object.
+[MUIM_List_DeleteImage](MUI_List.md/#MUIM_List_DeleteImage) and dispose your object.
 
 ### INPUTS
 **`Object *obj`**
@@ -1339,34 +1339,34 @@ be considered an error.
 See ScreenList class in screen inspector source code psi.c
 
 ### SEE ALSO
-[MUIM_List_DeleteImage](MUI_List/#MUIM_List_DeleteImage)
+[MUIM_List_DeleteImage](MUI_List.md/#MUIM_List_DeleteImage)
 
 ## MUIM_List_DeleteImage
 ### NAME
-[MUIM_List_DeleteImage](MUI_List/#MUIM_List_DeleteImage) -- V11, 0x80420f58
+[MUIM_List_DeleteImage](MUI_List.md/#MUIM_List_DeleteImage) -- V11, 0x80420f58
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_DeleteImage, APTR listimg);`
 
 ### FUNCTION
-Delete the image pointer returned from [MUIM_List_CreateImage](MUI_List/#MUIM_List_CreateImage).
+Delete the image pointer returned from [MUIM_List_CreateImage](MUI_List.md/#MUIM_List_CreateImage).
 
 ### INPUTS
 **`APTR listimg`**
-     the image pointer returned from [MUIM_List_CreateImage](MUI_List/#MUIM_List_CreateImage).
+     the image pointer returned from [MUIM_List_CreateImage](MUI_List.md/#MUIM_List_CreateImage).
 
 ### SEE ALSO
-[MUIM_List_DeleteImage](MUI_List/#MUIM_List_DeleteImage)
+[MUIM_List_DeleteImage](MUI_List.md/#MUIM_List_DeleteImage)
 
 ## MUIM_List_Destruct
 ### NAME
-[MUIM_List_Destruct](MUI_List/#MUIM_List_Destruct) -- V20, 0x80427d51
+[MUIM_List_Destruct](MUI_List.md/#MUIM_List_Destruct) -- V20, 0x80427d51
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Destruct, APTR entry, APTR pool);`
 
 ### FUNCTION
-Destruct a list item. This method is meant to replace [MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook) for
+Destruct a list item. This method is meant to replace [MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook) for
 subclasses of List class.
 
 ### INPUTS
@@ -1377,18 +1377,18 @@ subclasses of List class.
      memory pool pointer.
 
 ### SEE ALSO
-[MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook), [MUIM_List_Construct](MUI_List/#MUIM_List_Construct)
+[MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook), [MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook), [MUIM_List_Construct](MUI_List.md/#MUIM_List_Construct)
 
 ## MUIM_List_Display
 ### NAME
-[MUIM_List_Display](MUI_List/#MUIM_List_Display) -- V20, 0x80425377
+[MUIM_List_Display](MUI_List.md/#MUIM_List_Display) -- V20, 0x80425377
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Display, APTR entry, CONST_STRPTR *array, LONG row);`
 
 ### FUNCTION
 Display a list item on the screen. This method is meant to replace
-[MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook) for subclasses of List class.
+[MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook) for subclasses of List class.
 
 ### INPUTS
 **`APTR entry`**
@@ -1402,25 +1402,25 @@ Display a list item on the screen. This method is meant to replace
      current row number (V21).
 
 If entry is NULL you are supposed to return strings for the list's title, unless
-they are supplied by [MUIA_List_TitleArray](MUI_List/#MUIA_List_TitleArray) already.
+they are supplied by [MUIA_List_TitleArray](MUI_List.md/#MUIA_List_TitleArray) already.
 
 ### SEE ALSO
-[MUIA_List_DisplayHook](MUI_List/#MUIA_List_DisplayHook), [MUIA_List_Format](MUI_List/#MUIA_List_Format), [MUIA_List_MaxColumns](MUI_List/#MUIA_List_MaxColumns),
-[MUIA_List_TitleArray](MUI_List/#MUIA_List_TitleArray)
+[MUIA_List_DisplayHook](MUI_List.md/#MUIA_List_DisplayHook), [MUIA_List_Format](MUI_List.md/#MUIA_List_Format), [MUIA_List_MaxColumns](MUI_List.md/#MUIA_List_MaxColumns),
+[MUIA_List_TitleArray](MUI_List.md/#MUIA_List_TitleArray)
 
 ## MUIM_List_Edit
 ### NAME
-[MUIM_List_Edit](MUI_List/#MUIM_List_Edit) -- V21, 0x8042843d
+[MUIM_List_Edit](MUI_List.md/#MUIM_List_Edit) -- V21, 0x8042843d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Edit, LONG row, LONG column);`
 
 ### FUNCTION
 Edit a list item "inline" withing the list. The supplied row and column numbers
-will be propagated to the methods [MUIM_List_CreateEditObject](MUI_List/#MUIM_List_CreateEditObject) and
-[MUIM_List_EditDone](MUI_List/#MUIM_List_EditDone). Internally [MUIM_List_Edit](MUI_List/#MUIM_List_Edit) will call
-[MUIM_List_CreateEditObject](MUI_List/#MUIM_List_CreateEditObject) whenever it is necessary to create a new object for
-editing. Eventually [MUIM_List_EditDone](MUI_List/#MUIM_List_EditDone) will be called to signal the end of the
+will be propagated to the methods [MUIM_List_CreateEditObject](MUI_List.md/#MUIM_List_CreateEditObject) and
+[MUIM_List_EditDone](MUI_List.md/#MUIM_List_EditDone). Internally [MUIM_List_Edit](MUI_List.md/#MUIM_List_Edit) will call
+[MUIM_List_CreateEditObject](MUI_List.md/#MUIM_List_CreateEditObject) whenever it is necessary to create a new object for
+editing. Eventually [MUIM_List_EditDone](MUI_List.md/#MUIM_List_EditDone) will be called to signal the end of the
 editing action.
 
 Custom classes should call DoSuperMethod() in case editing is allowed for the
@@ -1457,12 +1457,12 @@ ULONG myListEdit(struct IClass *cl, Object *obj,
 ```
 
 ### SEE ALSO
-[MUIA_List_Editable](MUI_List/#MUIA_List_Editable), [MUIM_List_CreateEditObject](MUI_List/#MUIM_List_CreateEditObject), [MUIM_List_EditDone](MUI_List/#MUIM_List_EditDone),
+[MUIA_List_Editable](MUI_List.md/#MUIA_List_Editable), [MUIM_List_CreateEditObject](MUI_List.md/#MUIM_List_CreateEditObject), [MUIM_List_EditDone](MUI_List.md/#MUIM_List_EditDone),
 List1 demo source
 
 ## MUIM_List_EditDone
 ### NAME
-[MUIM_List_EditDone](MUI_List/#MUIM_List_EditDone) -- V21, 0x80423ab3
+[MUIM_List_EditDone](MUI_List.md/#MUIM_List_EditDone) -- V21, 0x80423ab3
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_EditDone, LONG row, LONG column, APTR entry, Object *editobj);`
@@ -1512,11 +1512,11 @@ ULONG myListEditDone(struct IClass *cl, Object *obj,
 ```
 
 ### SEE ALSO
-[MUIA_List_Editable](MUI_List/#MUIA_List_Editable), [MUIM_List_Edit](MUI_List/#MUIM_List_Edit), List1 demo source
+[MUIA_List_Editable](MUI_List.md/#MUIA_List_Editable), [MUIM_List_Edit](MUI_List.md/#MUIM_List_Edit), List1 demo source
 
 ## MUIM_List_EndEdit
 ### NAME
-[MUIM_List_EndEdit](MUI_List/#MUIM_List_EndEdit) -- V22, 0x804203ee
+[MUIM_List_EndEdit](MUI_List.md/#MUIM_List_EndEdit) -- V22, 0x804203ee
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_EndEdit, ULONG mode);`
@@ -1535,11 +1535,11 @@ application.
 A boolean value indicating whether editing really ended or not.
 
 ### SEE ALSO
-[MUIA_List_Editable](MUI_List/#MUIA_List_Editable), [MUIM_List_Edit](MUI_List/#MUIM_List_Edit), List1 demo source
+[MUIA_List_Editable](MUI_List.md/#MUIA_List_Editable), [MUIM_List_Edit](MUI_List.md/#MUIM_List_Edit), List1 demo source
 
 ## MUIM_List_Exchange
 ### NAME
-[MUIM_List_Exchange](MUI_List/#MUIM_List_Exchange) -- V4, 0x8042468c
+[MUIM_List_Exchange](MUI_List.md/#MUIM_List_Exchange) -- V4, 0x8042468c
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Exchange, LONG pos1, LONG pos2);`
@@ -1563,11 +1563,11 @@ Possible special values since muimaster.library V9:
   * MUIV_List_Exchange_Previous -4 /* only valid for second parameter */
 
 ### SEE ALSO
-[MUIM_List_Insert](MUI_List/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List/#MUIM_List_Remove), [MUIM_List_Move](MUI_List/#MUIM_List_Move)
+[MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List.md/#MUIM_List_Remove), [MUIM_List_Move](MUI_List.md/#MUIM_List_Move)
 
 ## MUIM_List_GetEntry
 ### NAME
-[MUIM_List_GetEntry](MUI_List/#MUIM_List_GetEntry) -- V4, 0x804280ec
+[MUIM_List_GetEntry](MUI_List.md/#MUIM_List_GetEntry) -- V4, 0x804280ec
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_GetEntry, LONG pos, APTR *entry);`
@@ -1602,11 +1602,11 @@ for(i=0;;i++)
 ```
 
 ### SEE ALSO
-[MUIM_List_Insert](MUI_List/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List/#MUIM_List_Remove)
+[MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List.md/#MUIM_List_Remove)
 
 ## MUIM_List_Insert
 ### NAME
-[MUIM_List_Insert](MUI_List/#MUIM_List_Insert) -- V4, 0x80426c87
+[MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert) -- V4, 0x80426c87
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Insert, APTR *entries, LONG count, LONG pos);`
@@ -1654,19 +1654,19 @@ DoMethod(list, MUIM_List_Insert, str, -1, MUIV_List_Insert_Bottom);
 ```
 
 ### SEE ALSO
-[MUIM_List_Remove](MUI_List/#MUIM_List_Remove), [MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook)
+[MUIM_List_Remove](MUI_List.md/#MUIM_List_Remove), [MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook)
 
 ## MUIM_List_InsertSingle
 ### NAME
-[MUIM_List_InsertSingle](MUI_List/#MUIM_List_InsertSingle) -- V7, 0x804254d5
+[MUIM_List_InsertSingle](MUI_List.md/#MUIM_List_InsertSingle) -- V7, 0x804254d5
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_InsertSingle, APTR entry, LONG pos);`
 
 ### FUNCTION
-Insert one new entry into a list. Using [MUIM_List_Insert](MUI_List/#MUIM_List_Insert) has caused some
+Insert one new entry into a list. Using [MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert) has caused some
 confusion since it takes an array to items instead a single item. To insert
-single items, [MUIM_List_InsertSingle](MUI_List/#MUIM_List_InsertSingle) is the better choice.
+single items, [MUIM_List_InsertSingle](MUI_List.md/#MUIM_List_InsertSingle) is the better choice.
 
 When the list has a construct hook, the given pointer won't be inserted directly
 but instead passed through to the construct hook.
@@ -1692,11 +1692,11 @@ DoMethod(list, MUIM_List_InsertSingle, "foobar", MUIV_List_Insert_Bottom);
 ```
 
 ### SEE ALSO
-[MUIM_List_Remove](MUI_List/#MUIM_List_Remove), [MUIA_List_ConstructHook](MUI_List/#MUIA_List_ConstructHook), [MUIM_List_InsertSingle](MUI_List/#MUIM_List_InsertSingle)
+[MUIM_List_Remove](MUI_List.md/#MUIM_List_Remove), [MUIA_List_ConstructHook](MUI_List.md/#MUIA_List_ConstructHook), [MUIM_List_InsertSingle](MUI_List.md/#MUIM_List_InsertSingle)
 
 ## MUIM_List_Jump
 ### NAME
-[MUIM_List_Jump](MUI_List/#MUIM_List_Jump) -- V4, 0x8042baab
+[MUIM_List_Jump](MUI_List.md/#MUIM_List_Jump) -- V4, 0x8042baab
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Jump, LONG pos);`
@@ -1705,7 +1705,7 @@ DoMethod(list, MUIM_List_InsertSingle, "foobar", MUIV_List_Insert_Bottom);
 Scroll any entry into the visible part of a list.
 
 Note: Jumping to an entry doesn't mean to make this entry the active one. This
-can be done by setting the [MUIA_List_Active](MUI_List/#MUIA_List_Active) attribute.
+can be done by setting the [MUIA_List_Active](MUI_List.md/#MUIA_List_Active) attribute.
 
 ### INPUTS
 **`LONG pos`**
@@ -1719,11 +1719,11 @@ DoMethod(list, MUIM_List_Jump, 42);
 ```
 
 ### SEE ALSO
-[MUIA_List_Active](MUI_List/#MUIA_List_Active)
+[MUIA_List_Active](MUI_List.md/#MUIA_List_Active)
 
 ## MUIM_List_Move
 ### NAME
-[MUIM_List_Move](MUI_List/#MUIM_List_Move) -- V9, 0x804253c2
+[MUIM_List_Move](MUI_List.md/#MUIM_List_Move) -- V9, 0x804253c2
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Move, LONG from, LONG to);`
@@ -1747,11 +1747,11 @@ Possible special values since muimaster.library V9:
   * MUIV_List_Move_Previous -4 /* only valid for second parameter */
 
 ### SEE ALSO
-[MUIM_List_Insert](MUI_List/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List/#MUIM_List_Remove), [MUIM_List_Exchange](MUI_List/#MUIM_List_Exchange)
+[MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert), [MUIM_List_Remove](MUI_List.md/#MUIM_List_Remove), [MUIM_List_Exchange](MUI_List.md/#MUIM_List_Exchange)
 
 ## MUIM_List_NextSelected
 ### NAME
-[MUIM_List_NextSelected](MUI_List/#MUIM_List_NextSelected) -- V6, 0x80425f17
+[MUIM_List_NextSelected](MUI_List.md/#MUIM_List_NextSelected) -- V6, 0x80425f17
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_NextSelected, LONG *pos);`
@@ -1790,11 +1790,11 @@ for (;;)
 ```
 
 ### SEE ALSO
-[MUIM_List_Select](MUI_List/#MUIM_List_Select)
+[MUIM_List_Select](MUI_List.md/#MUIM_List_Select)
 
 ## MUIM_List_QueryColumnWidth
 ### NAME
-[MUIM_List_QueryColumnWidth](MUI_List/#MUIM_List_QueryColumnWidth) -- V11, 0x8042e09e
+[MUIM_List_QueryColumnWidth](MUI_List.md/#MUIM_List_QueryColumnWidth) -- V11, 0x8042e09e
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_QueryColumnWidth, LONG colnr);`
@@ -1812,7 +1812,7 @@ column does not exist.
 
 ## MUIM_List_Redraw
 ### NAME
-[MUIM_List_Redraw](MUI_List/#MUIM_List_Redraw) -- V4, 0x80427993
+[MUIM_List_Redraw](MUI_List.md/#MUIM_List_Redraw) -- V4, 0x80427993
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Redraw, LONG pos, APTR entry);`
@@ -1840,7 +1840,7 @@ DoMethod(list, MUIM_List_Redraw, MUIV_List_Redraw_All, NULL);
 
 ## MUIM_List_Remove
 ### NAME
-[MUIM_List_Remove](MUI_List/#MUIM_List_Remove) -- V4, 0x8042647e
+[MUIM_List_Remove](MUI_List.md/#MUIM_List_Remove) -- V4, 0x8042647e
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Remove, LONG pos);`
@@ -1866,11 +1866,11 @@ DoMethod(btdel, MUIM_Notify, MUIA_Pressed, FALSE,
 ```
 
 ### SEE ALSO
-[MUIM_List_Insert](MUI_List/#MUIM_List_Insert), [MUIA_List_DestructHook](MUI_List/#MUIA_List_DestructHook)
+[MUIM_List_Insert](MUI_List.md/#MUIM_List_Insert), [MUIA_List_DestructHook](MUI_List.md/#MUIA_List_DestructHook)
 
 ## MUIM_List_Select
 ### NAME
-[MUIM_List_Select](MUI_List/#MUIM_List_Select) -- V4, 0x804252d8
+[MUIM_List_Select](MUI_List.md/#MUIM_List_Select) -- V4, 0x804252d8
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Select, LONG pos, LONG seltype, LONG *state);`
@@ -1899,7 +1899,7 @@ Since version V9 of muimaster.library:
 If pos==MUIV_List_Select_All and seltype==MUIV_List_Select_Ask, state will be
 filled with the total number of selected entries.
 
-Only list objects with [MUIA_List_MultiSelect](MUI_List/#MUIA_List_MultiSelect)=TRUE can have more than one entry
+Only list objects with [MUIA_List_MultiSelect](MUI_List.md/#MUIA_List_MultiSelect)=TRUE can have more than one entry
 selected. Selecting multiple entries for non-multiselection list will keep the
 last selected entry in selected state only.
 
@@ -1915,11 +1915,11 @@ DoMethod(list, MUIM_List_Select, MUIV_List_Select_All,
 ```
 
 ### SEE ALSO
-[MUIA_List_MultiTestHook](MUI_List/#MUIA_List_MultiTestHook)
+[MUIA_List_MultiTestHook](MUI_List.md/#MUIA_List_MultiTestHook)
 
 ## MUIM_List_Sort
 ### NAME
-[MUIM_List_Sort](MUI_List/#MUIM_List_Sort) -- V4, 0x80422275
+[MUIM_List_Sort](MUI_List.md/#MUIM_List_Sort) -- V4, 0x80422275
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_Sort);`
@@ -1929,11 +1929,11 @@ Sort the list. MUI uses an iterative quicksort algorithm, no stack problems will
 occur.
 
 ### SEE ALSO
-[MUIA_List_CompareHook](MUI_List/#MUIA_List_CompareHook), [MUIM_List_Compare](MUI_List/#MUIM_List_Compare)
+[MUIA_List_CompareHook](MUI_List.md/#MUIA_List_CompareHook), [MUIM_List_Compare](MUI_List.md/#MUIM_List_Compare)
 
 ## MUIM_List_SortEntries
 ### NAME
-[MUIM_List_SortEntries](MUI_List/#MUIM_List_SortEntries) -- V22, 0x80429e32
+[MUIM_List_SortEntries](MUI_List.md/#MUIM_List_SortEntries) -- V22, 0x80429e32
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_SortEntries, APTR *entries);`
@@ -1950,11 +1950,11 @@ The list MUST be terminated by a NULL entry.
 A boolean value indicating whether the sorting succeeded or not.
 
 ### SEE ALSO
-[MUIA_List_CompareHook](MUI_List/#MUIA_List_CompareHook), [MUIM_List_Compare](MUI_List/#MUIM_List_Compare), [MUIM_List_Sort](MUI_List/#MUIM_List_Sort)
+[MUIA_List_CompareHook](MUI_List.md/#MUIA_List_CompareHook), [MUIM_List_Compare](MUI_List.md/#MUIM_List_Compare), [MUIM_List_Sort](MUI_List.md/#MUIM_List_Sort)
 
 ## MUIM_List_TestPos
 ### NAME
-[MUIM_List_TestPos](MUI_List/#MUIM_List_TestPos) -- V11, 0x80425f48
+[MUIM_List_TestPos](MUI_List.md/#MUIM_List_TestPos) -- V11, 0x80425f48
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_List_TestPos, LONG x, LONG y, struct MUI_List_TestPos_Result *res);`

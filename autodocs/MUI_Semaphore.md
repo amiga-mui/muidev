@@ -2,10 +2,10 @@
 ## Super class
 rootclass
 ## Inherited by
-* [Datamap.mui](MUI_Datamap)
-* [Dataspace.mui](MUI_Dataspace)
-* [Objectmap.mui](MUI_Objectmap)
-* [Process.mui](MUI_Process)
+* [Datamap.mui](MUI_Datamap.md)
+* [Dataspace.mui](MUI_Dataspace.md)
+* [Objectmap.mui](MUI_Objectmap.md)
+* [Process.mui](MUI_Process.md)
 ## Background
 The semaphore class helps to access dataspace objects from different tasks.
 Its methods are identical to the exec.library semaphore functions and work
@@ -21,7 +21,7 @@ Method|Version
 
 ## MUIM_Semaphore_Attempt
 ### NAME
-[MUIM_Semaphore_Attempt](MUI_Semaphore/#MUIM_Semaphore_Attempt) -- V11, 0x80426ce2
+[MUIM_Semaphore_Attempt](MUI_Semaphore.md/#MUIM_Semaphore_Attempt) -- V11, 0x80426ce2
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Semaphore_Attempt);`
@@ -31,12 +31,12 @@ Emulates exec.library/AttemptSemaphore.
 
 ### SEE ALSO
 exec.library/AttemptSemaphore,
-[MUIM_Semaphore_Obtain](MUI_Semaphore/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_ObtainShared](MUI_Semaphore/#MUIM_Semaphore_ObtainShared), [MUIM_Semaphore_Release](MUI_Semaphore/#MUIM_Semaphore_Release),
-[MUIM_Semaphore_AttemptShared](MUI_Semaphore/#MUIM_Semaphore_AttemptShared)
+[MUIM_Semaphore_Obtain](MUI_Semaphore.md/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_ObtainShared](MUI_Semaphore.md/#MUIM_Semaphore_ObtainShared), [MUIM_Semaphore_Release](MUI_Semaphore.md/#MUIM_Semaphore_Release),
+[MUIM_Semaphore_AttemptShared](MUI_Semaphore.md/#MUIM_Semaphore_AttemptShared)
 
 ## MUIM_Semaphore_AttemptShared
 ### NAME
-[MUIM_Semaphore_AttemptShared](MUI_Semaphore/#MUIM_Semaphore_AttemptShared) -- V11, 0x80422551
+[MUIM_Semaphore_AttemptShared](MUI_Semaphore.md/#MUIM_Semaphore_AttemptShared) -- V11, 0x80422551
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Semaphore_AttemptShared);`
@@ -47,12 +47,12 @@ The autodocs suggested pre-V39 fixes are already implemented.
 
 ### SEE ALSO
 exec.library/AttemptSemaphoreShared,
-[MUIM_Semaphore_Obtain](MUI_Semaphore/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_ObtainShared](MUI_Semaphore/#MUIM_Semaphore_ObtainShared), [MUIM_Semaphore_Release](MUI_Semaphore/#MUIM_Semaphore_Release),
-[MUIM_Semaphore_Attempt](MUI_Semaphore/#MUIM_Semaphore_Attempt)
+[MUIM_Semaphore_Obtain](MUI_Semaphore.md/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_ObtainShared](MUI_Semaphore.md/#MUIM_Semaphore_ObtainShared), [MUIM_Semaphore_Release](MUI_Semaphore.md/#MUIM_Semaphore_Release),
+[MUIM_Semaphore_Attempt](MUI_Semaphore.md/#MUIM_Semaphore_Attempt)
 
 ## MUIM_Semaphore_Obtain
 ### NAME
-[MUIM_Semaphore_Obtain](MUI_Semaphore/#MUIM_Semaphore_Obtain) -- V11, 0x804276f0
+[MUIM_Semaphore_Obtain](MUI_Semaphore.md/#MUIM_Semaphore_Obtain) -- V11, 0x804276f0
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Semaphore_Obtain);`
@@ -62,12 +62,12 @@ Emulates exec.library/ObtainSemaphore.
 
 ### SEE ALSO
 exec.library/ObtainSemaphore,
-[MUIM_Semaphore_AttemptShared](MUI_Semaphore/#MUIM_Semaphore_AttemptShared), [MUIM_Semaphore_ObtainShared](MUI_Semaphore/#MUIM_Semaphore_ObtainShared),
-[MUIM_Semaphore_Release](MUI_Semaphore/#MUIM_Semaphore_Release), [MUIM_Semaphore_Attempt](MUI_Semaphore/#MUIM_Semaphore_Attempt)
+[MUIM_Semaphore_AttemptShared](MUI_Semaphore.md/#MUIM_Semaphore_AttemptShared), [MUIM_Semaphore_ObtainShared](MUI_Semaphore.md/#MUIM_Semaphore_ObtainShared),
+[MUIM_Semaphore_Release](MUI_Semaphore.md/#MUIM_Semaphore_Release), [MUIM_Semaphore_Attempt](MUI_Semaphore.md/#MUIM_Semaphore_Attempt)
 
 ## MUIM_Semaphore_ObtainShared
 ### NAME
-[MUIM_Semaphore_ObtainShared](MUI_Semaphore/#MUIM_Semaphore_ObtainShared) -- V11, 0x8042ea02
+[MUIM_Semaphore_ObtainShared](MUI_Semaphore.md/#MUIM_Semaphore_ObtainShared) -- V11, 0x8042ea02
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Semaphore_ObtainShared);`
@@ -78,12 +78,12 @@ The autodocs suggested pre-V39 fixes are already implemented.
 
 ### SEE ALSO
 exec.library/ObtainSemaphoreShared,
-[MUIM_Semaphore_AttemptShared](MUI_Semaphore/#MUIM_Semaphore_AttemptShared), [MUIM_Semaphore_Obtain](MUI_Semaphore/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_Release](MUI_Semaphore/#MUIM_Semaphore_Release),
-[MUIM_Semaphore_Attempt](MUI_Semaphore/#MUIM_Semaphore_Attempt)
+[MUIM_Semaphore_AttemptShared](MUI_Semaphore.md/#MUIM_Semaphore_AttemptShared), [MUIM_Semaphore_Obtain](MUI_Semaphore.md/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_Release](MUI_Semaphore.md/#MUIM_Semaphore_Release),
+[MUIM_Semaphore_Attempt](MUI_Semaphore.md/#MUIM_Semaphore_Attempt)
 
 ## MUIM_Semaphore_Release
 ### NAME
-[MUIM_Semaphore_Release](MUI_Semaphore/#MUIM_Semaphore_Release) -- V11, 0x80421f2d
+[MUIM_Semaphore_Release](MUI_Semaphore.md/#MUIM_Semaphore_Release) -- V11, 0x80421f2d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Semaphore_Release);`
@@ -93,8 +93,8 @@ Emulates exec.library/ReleaseSemaphore.
 
 ### SEE ALSO
 exec.library/ReleaseSemaphore,
-[MUIM_Semaphore_AttemptShared](MUI_Semaphore/#MUIM_Semaphore_AttemptShared), [MUIM_Semaphore_Obtain](MUI_Semaphore/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_Release](MUI_Semaphore/#MUIM_Semaphore_Release),
-[MUIM_Semaphore_Attempt](MUI_Semaphore/#MUIM_Semaphore_Attempt)
+[MUIM_Semaphore_AttemptShared](MUI_Semaphore.md/#MUIM_Semaphore_AttemptShared), [MUIM_Semaphore_Obtain](MUI_Semaphore.md/#MUIM_Semaphore_Obtain), [MUIM_Semaphore_Release](MUI_Semaphore.md/#MUIM_Semaphore_Release),
+[MUIM_Semaphore_Attempt](MUI_Semaphore.md/#MUIM_Semaphore_Attempt)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

@@ -25,7 +25,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Virtgroup_Height
 ### NAME
-[MUIA_Virtgroup_Height](MUI_Virtgroup/#MUIA_Virtgroup_Height) -- V6 [..G], `LONG`, 0x80423038
+[MUIA_Virtgroup_Height](MUI_Virtgroup.md/#MUIA_Virtgroup_Height) -- V6 [..G], `LONG`, 0x80423038
 
 ### FUNCTION
 Read the virtual height of a virtual group.
@@ -34,11 +34,11 @@ This attribute is quite senseless, better use a scrollgroup object to
 control the virtual group.
 
 ### SEE ALSO
-[MUIA_Virtgroup_Width](MUI_Virtgroup/#MUIA_Virtgroup_Width), [MUIA_Virtgroup_Left](MUI_Virtgroup/#MUIA_Virtgroup_Left), [MUIA_Virtgroup_Top](MUI_Virtgroup/#MUIA_Virtgroup_Top)
+[MUIA_Virtgroup_Width](MUI_Virtgroup.md/#MUIA_Virtgroup_Width), [MUIA_Virtgroup_Left](MUI_Virtgroup.md/#MUIA_Virtgroup_Left), [MUIA_Virtgroup_Top](MUI_Virtgroup.md/#MUIA_Virtgroup_Top)
 
 ## MUIA_Virtgroup_Input
 ### NAME
-[MUIA_Virtgroup_Input](MUI_Virtgroup/#MUIA_Virtgroup_Input) -- V11 [I..], `BOOL`, 0x80427f7e
+[MUIA_Virtgroup_Input](MUI_Virtgroup.md/#MUIA_Virtgroup_Input) -- V11 [I..], `BOOL`, 0x80427f7e
 
 ### FUNCTION
 Specify if a virtual group should be moveable by clicking into it and
@@ -48,7 +48,7 @@ Defaults to TRUE.
 
 ## MUIA_Virtgroup_Left
 ### NAME
-[MUIA_Virtgroup_Left](MUI_Virtgroup/#MUIA_Virtgroup_Left) -- V6 [ISG], `LONG`, 0x80429371
+[MUIA_Virtgroup_Left](MUI_Virtgroup.md/#MUIA_Virtgroup_Left) -- V6 [ISG], `LONG`, 0x80429371
 
 ### FUNCTION
 Get/set the virtual left edge of a virtual group. The left edge will
@@ -58,11 +58,11 @@ This attribute is quite senseless, better use a scrollgroup object to
 control the virtual group.
 
 ### SEE ALSO
-[MUIA_Virtgroup_Width](MUI_Virtgroup/#MUIA_Virtgroup_Width), [MUIA_Virtgroup_Height](MUI_Virtgroup/#MUIA_Virtgroup_Height), [MUIA_Virtgroup_Top](MUI_Virtgroup/#MUIA_Virtgroup_Top)
+[MUIA_Virtgroup_Width](MUI_Virtgroup.md/#MUIA_Virtgroup_Width), [MUIA_Virtgroup_Height](MUI_Virtgroup.md/#MUIA_Virtgroup_Height), [MUIA_Virtgroup_Top](MUI_Virtgroup.md/#MUIA_Virtgroup_Top)
 
 ## MUIA_Virtgroup_Top
 ### NAME
-[MUIA_Virtgroup_Top](MUI_Virtgroup/#MUIA_Virtgroup_Top) -- V6 [ISG], `LONG`, 0x80425200
+[MUIA_Virtgroup_Top](MUI_Virtgroup.md/#MUIA_Virtgroup_Top) -- V6 [ISG], `LONG`, 0x80425200
 
 ### FUNCTION
 Get/set the virtual top edge of a virtual group. The top edge will
@@ -72,11 +72,11 @@ This attribute is quite senseless, better use a scrollgroup object to
 control the virtual group.
 
 ### SEE ALSO
-[MUIA_Virtgroup_Width](MUI_Virtgroup/#MUIA_Virtgroup_Width), [MUIA_Virtgroup_Height](MUI_Virtgroup/#MUIA_Virtgroup_Height), [MUIA_Virtgroup_Left](MUI_Virtgroup/#MUIA_Virtgroup_Left)
+[MUIA_Virtgroup_Width](MUI_Virtgroup.md/#MUIA_Virtgroup_Width), [MUIA_Virtgroup_Height](MUI_Virtgroup.md/#MUIA_Virtgroup_Height), [MUIA_Virtgroup_Left](MUI_Virtgroup.md/#MUIA_Virtgroup_Left)
 
 ## MUIA_Virtgroup_TryFit
 ### NAME
-[MUIA_Virtgroup_TryFit](MUI_Virtgroup/#MUIA_Virtgroup_TryFit) -- V20 [ISG], `BOOL`, 0x80429427
+[MUIA_Virtgroup_TryFit](MUI_Virtgroup.md/#MUIA_Virtgroup_TryFit) -- V20 [ISG], `BOOL`, 0x80429427
 
 ### FUNCTION
 During a layout, the virtgroup will first try to force a window size large
@@ -85,7 +85,7 @@ gets resized to the maximum allowed by the screen size.
 
 ## MUIA_Virtgroup_Width
 ### NAME
-[MUIA_Virtgroup_Width](MUI_Virtgroup/#MUIA_Virtgroup_Width) -- V6 [..G], `LONG`, 0x80427c49
+[MUIA_Virtgroup_Width](MUI_Virtgroup.md/#MUIA_Virtgroup_Width) -- V6 [..G], `LONG`, 0x80427c49
 
 ### FUNCTION
 Read the virtual width of a virtual group.
@@ -94,7 +94,7 @@ This attribute is quite senseless, better use a scrollgroup object to
 control the virtual group.
 
 ### SEE ALSO
-[MUIA_Virtgroup_Height](MUI_Virtgroup/#MUIA_Virtgroup_Height), [MUIA_Virtgroup_Left](MUI_Virtgroup/#MUIA_Virtgroup_Left), [MUIA_Virtgroup_Top](MUI_Virtgroup/#MUIA_Virtgroup_Top)
+[MUIA_Virtgroup_Height](MUI_Virtgroup.md/#MUIA_Virtgroup_Height), [MUIA_Virtgroup_Left](MUI_Virtgroup.md/#MUIA_Virtgroup_Left), [MUIA_Virtgroup_Top](MUI_Virtgroup.md/#MUIA_Virtgroup_Top)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

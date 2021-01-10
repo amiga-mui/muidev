@@ -45,7 +45,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Boopsi_Class
 ### NAME
-[MUIA_Boopsi_Class](MUI_Boopsi/#MUIA_Boopsi_Class) -- V4 [ISG], `struct IClass *`, 0x80426999
+[MUIA_Boopsi_Class](MUI_Boopsi.md/#MUIA_Boopsi_Class) -- V4 [ISG], `struct IClass *`, 0x80426999
 
 ### FUNCTION
 Pointer to the (private) class you want to create a BOOPSI object from.
@@ -55,20 +55,20 @@ MakeClass().
 Of course you may not free the class until you're done with your object.
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ## MUIA_Boopsi_ClassID
 ### NAME
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID) -- V4 [ISG], `STRPTR`, 0x8042bfa3
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID) -- V4 [ISG], `STRPTR`, 0x8042bfa3
 
 ### FUNCTION
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID) specifies the name for the public BOOPSI class you want
-to create an object of. It will only be used when [MUIA_Boopsi_Class](MUI_Boopsi/#MUIA_Boopsi_Class) is NULL.
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID) specifies the name for the public BOOPSI class you want
+to create an object of. It will only be used when [MUIA_Boopsi_Class](MUI_Boopsi.md/#MUIA_Boopsi_Class) is NULL.
 
 The public class must be in memory before you can create an instance of it,
 you will have to open the required class library by hand.
 
-Note the string given to [MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID) must remain valid until you're
+Note the string given to [MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID) must remain valid until you're
 done with the object.
 
 ### EXAMPLE
@@ -99,11 +99,11 @@ CloseLibrary(cwbase);
 ```
 
 ### SEE ALSO
-[MUIA_Boopsi_Class](MUI_Boopsi/#MUIA_Boopsi_Class)
+[MUIA_Boopsi_Class](MUI_Boopsi.md/#MUIA_Boopsi_Class)
 
 ## MUIA_Boopsi_MaxHeight
 ### NAME
-[MUIA_Boopsi_MaxHeight](MUI_Boopsi/#MUIA_Boopsi_MaxHeight) -- V4 [ISG], `ULONG`, 0x8042757f
+[MUIA_Boopsi_MaxHeight](MUI_Boopsi.md/#MUIA_Boopsi_MaxHeight) -- V4 [ISG], `ULONG`, 0x8042757f
 
 ### FUNCTION
 For MUI's automatic layout system, it's required that objects know their
@@ -111,20 +111,20 @@ minimum and maximums sizes. Since BOOPSI gadgets don't support this feature,
 you will have to help MUI and adjust these values by hand.
 
 Defaults:
-  [MUIA_Boopsi_MinWidth](MUI_Boopsi/#MUIA_Boopsi_MinWidth)  - 1 pixel
-  [MUIA_Boopsi_MinHeight](MUI_Boopsi/#MUIA_Boopsi_MinHeight) - 1 pixel
-  [MUIA_Boopsi_MaxWidth](MUI_Boopsi/#MUIA_Boopsi_MaxWidth)  - unlimited
-  [MUIA_Boopsi_MaxHeight](MUI_Boopsi/#MUIA_Boopsi_MaxHeight) - unlimited
+  [MUIA_Boopsi_MinWidth](MUI_Boopsi.md/#MUIA_Boopsi_MinWidth)  - 1 pixel
+  [MUIA_Boopsi_MinHeight](MUI_Boopsi.md/#MUIA_Boopsi_MinHeight) - 1 pixel
+  [MUIA_Boopsi_MaxWidth](MUI_Boopsi.md/#MUIA_Boopsi_MaxWidth)  - unlimited
+  [MUIA_Boopsi_MaxHeight](MUI_Boopsi.md/#MUIA_Boopsi_MaxHeight) - unlimited
 
 ### EXAMPLE
-see [MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+see [MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ## MUIA_Boopsi_MaxWidth
 ### NAME
-[MUIA_Boopsi_MaxWidth](MUI_Boopsi/#MUIA_Boopsi_MaxWidth) -- V4 [ISG], `ULONG`, 0x8042bcb1
+[MUIA_Boopsi_MaxWidth](MUI_Boopsi.md/#MUIA_Boopsi_MaxWidth) -- V4 [ISG], `ULONG`, 0x8042bcb1
 
 ### FUNCTION
 For MUI's automatic layout system, it's required that objects know their
@@ -132,20 +132,20 @@ minimum and maximums sizes. Since BOOPSI gadgets don't support this feature,
 you will have to help MUI and adjust these values by hand.
 
 Defaults:
-  [MUIA_Boopsi_MinWidth](MUI_Boopsi/#MUIA_Boopsi_MinWidth)  - 1 pixel
-  [MUIA_Boopsi_MinHeight](MUI_Boopsi/#MUIA_Boopsi_MinHeight) - 1 pixel
-  [MUIA_Boopsi_MaxWidth](MUI_Boopsi/#MUIA_Boopsi_MaxWidth)  - unlimited
-  [MUIA_Boopsi_MaxHeight](MUI_Boopsi/#MUIA_Boopsi_MaxHeight) - unlimited
+  [MUIA_Boopsi_MinWidth](MUI_Boopsi.md/#MUIA_Boopsi_MinWidth)  - 1 pixel
+  [MUIA_Boopsi_MinHeight](MUI_Boopsi.md/#MUIA_Boopsi_MinHeight) - 1 pixel
+  [MUIA_Boopsi_MaxWidth](MUI_Boopsi.md/#MUIA_Boopsi_MaxWidth)  - unlimited
+  [MUIA_Boopsi_MaxHeight](MUI_Boopsi.md/#MUIA_Boopsi_MaxHeight) - unlimited
 
 ### EXAMPLE
-see [MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+see [MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ## MUIA_Boopsi_MinHeight
 ### NAME
-[MUIA_Boopsi_MinHeight](MUI_Boopsi/#MUIA_Boopsi_MinHeight) -- V4 [ISG], `ULONG`, 0x80422c93
+[MUIA_Boopsi_MinHeight](MUI_Boopsi.md/#MUIA_Boopsi_MinHeight) -- V4 [ISG], `ULONG`, 0x80422c93
 
 ### FUNCTION
 For MUI's automatic layout system, it's required that objects know their
@@ -153,20 +153,20 @@ minimum and maximums sizes. Since BOOPSI gadgets don't support this feature,
 you will have to help MUI and adjust these values by hand.
 
 Defaults:
-  [MUIA_Boopsi_MinWidth](MUI_Boopsi/#MUIA_Boopsi_MinWidth)  - 1 pixel
-  [MUIA_Boopsi_MinHeight](MUI_Boopsi/#MUIA_Boopsi_MinHeight) - 1 pixel
-  [MUIA_Boopsi_MaxWidth](MUI_Boopsi/#MUIA_Boopsi_MaxWidth)  - unlimited
-  [MUIA_Boopsi_MaxHeight](MUI_Boopsi/#MUIA_Boopsi_MaxHeight) - unlimited
+  [MUIA_Boopsi_MinWidth](MUI_Boopsi.md/#MUIA_Boopsi_MinWidth)  - 1 pixel
+  [MUIA_Boopsi_MinHeight](MUI_Boopsi.md/#MUIA_Boopsi_MinHeight) - 1 pixel
+  [MUIA_Boopsi_MaxWidth](MUI_Boopsi.md/#MUIA_Boopsi_MaxWidth)  - unlimited
+  [MUIA_Boopsi_MaxHeight](MUI_Boopsi.md/#MUIA_Boopsi_MaxHeight) - unlimited
 
 ### EXAMPLE
-see [MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+see [MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ## MUIA_Boopsi_MinWidth
 ### NAME
-[MUIA_Boopsi_MinWidth](MUI_Boopsi/#MUIA_Boopsi_MinWidth) -- V4 [ISG], `ULONG`, 0x80428fb2
+[MUIA_Boopsi_MinWidth](MUI_Boopsi.md/#MUIA_Boopsi_MinWidth) -- V4 [ISG], `ULONG`, 0x80428fb2
 
 ### FUNCTION
 For MUI's automatic layout system, it's required that objects know their
@@ -174,26 +174,26 @@ minimum and maximums sizes. Since BOOPSI gadgets don't support this feature,
 you will have to help MUI and adjust these values by hand.
 
 Defaults:
-  [MUIA_Boopsi_MinWidth](MUI_Boopsi/#MUIA_Boopsi_MinWidth)  - 1 pixel
-  [MUIA_Boopsi_MinHeight](MUI_Boopsi/#MUIA_Boopsi_MinHeight) - 1 pixel
-  [MUIA_Boopsi_MaxWidth](MUI_Boopsi/#MUIA_Boopsi_MaxWidth)  - unlimited
-  [MUIA_Boopsi_MaxHeight](MUI_Boopsi/#MUIA_Boopsi_MaxHeight) - unlimited
+  [MUIA_Boopsi_MinWidth](MUI_Boopsi.md/#MUIA_Boopsi_MinWidth)  - 1 pixel
+  [MUIA_Boopsi_MinHeight](MUI_Boopsi.md/#MUIA_Boopsi_MinHeight) - 1 pixel
+  [MUIA_Boopsi_MaxWidth](MUI_Boopsi.md/#MUIA_Boopsi_MaxWidth)  - unlimited
+  [MUIA_Boopsi_MaxHeight](MUI_Boopsi.md/#MUIA_Boopsi_MaxHeight) - unlimited
 
 ### EXAMPLE
-see [MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+see [MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ## MUIA_Boopsi_Object
 ### NAME
-[MUIA_Boopsi_Object](MUI_Boopsi/#MUIA_Boopsi_Object) -- V4 [..G], `Object *`, 0x80420178
+[MUIA_Boopsi_Object](MUI_Boopsi.md/#MUIA_Boopsi_Object) -- V4 [..G], `Object *`, 0x80420178
 
 ### FUNCTION
 No input, just an output since this attribute is only getable. What MUI
 returns when generating a BoopsiObject is a standard MUI object, not a
 pointer to the BOOPSI gadget itself. In case you really need this BOOPSI
-gadget pointer, you can obtain it by getting [MUIA_Boopsi_Object](MUI_Boopsi/#MUIA_Boopsi_Object) from the MUI
+gadget pointer, you can obtain it by getting [MUIA_Boopsi_Object](MUI_Boopsi.md/#MUIA_Boopsi_Object) from the MUI
 object.
 
 Since MUI passes along every unknown attribute to the BOOPSI gadget, there
@@ -202,11 +202,11 @@ should be no need for this tag anyway.
 Note that the BOOPSI object pointer is only valid when the window is open!
 
 ### SEE ALSO
-[MUIA_Boopsi_Class](MUI_Boopsi/#MUIA_Boopsi_Class), [MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+[MUIA_Boopsi_Class](MUI_Boopsi.md/#MUIA_Boopsi_Class), [MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ## MUIA_Boopsi_Remember
 ### NAME
-[MUIA_Boopsi_Remember](MUI_Boopsi/#MUIA_Boopsi_Remember) -- V4 [I..], `ULONG`, 0x8042f4bd
+[MUIA_Boopsi_Remember](MUI_Boopsi.md/#MUIA_Boopsi_Remember) -- V4 [I..], `ULONG`, 0x8042f4bd
 
 ### FUNCTION
 Most BOOPSI objects are kind of silly, they don't support automatic resizing
@@ -222,21 +222,21 @@ Before disposing the BOOPSI object, the remember tags are read and stored in
 a private buffer. After regeneration, the contents of this buffer are passed
 back to the BOOPSI object again.
 
-Note that you can define up to five [MUIA_Boopsi_Remember](MUI_Boopsi/#MUIA_Boopsi_Remember) tags.
+Note that you can define up to five [MUIA_Boopsi_Remember](MUI_Boopsi.md/#MUIA_Boopsi_Remember) tags.
 
 ### BUGS
 The remember procedure will not work when the attributes you want to
 remember are just pointers to data stored somewhere in the BOOPSI object.
 
 ### EXAMPLE
-see [MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+see [MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID)
 
 ## MUIA_Boopsi_Smart
 ### NAME
-[MUIA_Boopsi_Smart](MUI_Boopsi/#MUIA_Boopsi_Smart) -- V9 [I..], `BOOL`, 0x8042b8d7
+[MUIA_Boopsi_Smart](MUI_Boopsi.md/#MUIA_Boopsi_Smart) -- V9 [I..], `BOOL`, 0x8042b8d7
 
 ### FUNCTION
 Specify TRUE for smart BOOPSI gadgets that allow resizing, e.g. the
@@ -244,7 +244,7 @@ textfield.class. In this case, MUI will not dispose and recreate the object.
 
 ## MUIA_Boopsi_TagDrawInfo
 ### NAME
-[MUIA_Boopsi_TagDrawInfo](MUI_Boopsi/#MUIA_Boopsi_TagDrawInfo) -- V4 [ISG], `ULONG`, 0x8042bae7
+[MUIA_Boopsi_TagDrawInfo](MUI_Boopsi.md/#MUIA_Boopsi_TagDrawInfo) -- V4 [ISG], `ULONG`, 0x8042bae7
 
 ### FUNCTION
 Unfortunately, most BOOPSI gadgets need information on the display
@@ -258,7 +258,7 @@ At this time, MUI fills some values about display environment into the
 BOOPSI objects creation tag list. You have to tell MUI, what tags are
 actually needed.
 
-With [MUIA_Boopsi_TagDrawInfo](MUI_Boopsi/#MUIA_Boopsi_TagDrawInfo) you can tell MUI where to fill in a needed
+With [MUIA_Boopsi_TagDrawInfo](MUI_Boopsi.md/#MUIA_Boopsi_TagDrawInfo) you can tell MUI where to fill in a needed
 DrawInfo structure.
 
 ### EXAMPLE
@@ -281,11 +281,11 @@ BoopsiObject,
 ```
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID), [MUIA_Boopsi_TagScreen](MUI_Boopsi/#MUIA_Boopsi_TagScreen), [MUIA_Boopsi_TagWindow](MUI_Boopsi/#MUIA_Boopsi_TagWindow)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID), [MUIA_Boopsi_TagScreen](MUI_Boopsi.md/#MUIA_Boopsi_TagScreen), [MUIA_Boopsi_TagWindow](MUI_Boopsi.md/#MUIA_Boopsi_TagWindow)
 
 ## MUIA_Boopsi_TagScreen
 ### NAME
-[MUIA_Boopsi_TagScreen](MUI_Boopsi/#MUIA_Boopsi_TagScreen) -- V4 [ISG], `ULONG`, 0x8042bc71
+[MUIA_Boopsi_TagScreen](MUI_Boopsi.md/#MUIA_Boopsi_TagScreen) -- V4 [ISG], `ULONG`, 0x8042bc71
 
 ### FUNCTION
 Unfortunately, most BOOPSI gadgets need information on the display
@@ -299,7 +299,7 @@ At this time, MUI fills some values about display environment into the
 BOOPSI objects creation tag list. You have to tell MUI, what tags are
 actually needed.
 
-With [MUIA_Boopsi_TagScreen](MUI_Boopsi/#MUIA_Boopsi_TagScreen) you can tell MUI where to fill in a needed
+With [MUIA_Boopsi_TagScreen](MUI_Boopsi.md/#MUIA_Boopsi_TagScreen) you can tell MUI where to fill in a needed
 Screen structure.
 
 ### EXAMPLE
@@ -322,11 +322,11 @@ BoopsiObject,
 ```
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID), [MUIA_Boopsi_TagDrawInfo](MUI_Boopsi/#MUIA_Boopsi_TagDrawInfo), [MUIA_Boopsi_TagWindow](MUI_Boopsi/#MUIA_Boopsi_TagWindow)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID), [MUIA_Boopsi_TagDrawInfo](MUI_Boopsi.md/#MUIA_Boopsi_TagDrawInfo), [MUIA_Boopsi_TagWindow](MUI_Boopsi.md/#MUIA_Boopsi_TagWindow)
 
 ## MUIA_Boopsi_TagWindow
 ### NAME
-[MUIA_Boopsi_TagWindow](MUI_Boopsi/#MUIA_Boopsi_TagWindow) -- V4 [ISG], `ULONG`, 0x8042e11d
+[MUIA_Boopsi_TagWindow](MUI_Boopsi.md/#MUIA_Boopsi_TagWindow) -- V4 [ISG], `ULONG`, 0x8042e11d
 
 ### FUNCTION
 Unfortunately, most BOOPSI gadgets need information on the display
@@ -340,7 +340,7 @@ At this time, MUI fills some values about display environment into the
 BOOPSI objects creation tag list. You have to tell MUI, what tags are
 actually needed.
 
-With [MUIA_Boopsi_TagWindow](MUI_Boopsi/#MUIA_Boopsi_TagWindow) you can tell MUI where to fill in a needed
+With [MUIA_Boopsi_TagWindow](MUI_Boopsi.md/#MUIA_Boopsi_TagWindow) you can tell MUI where to fill in a needed
 Window structure.
 
 ### EXAMPLE
@@ -363,7 +363,7 @@ BoopsiObject,
 ```
 
 ### SEE ALSO
-[MUIA_Boopsi_ClassID](MUI_Boopsi/#MUIA_Boopsi_ClassID), [MUIA_Boopsi_TagDrawInfo](MUI_Boopsi/#MUIA_Boopsi_TagDrawInfo), [MUIA_Boopsi_TagWindow](MUI_Boopsi/#MUIA_Boopsi_TagWindow)
+[MUIA_Boopsi_ClassID](MUI_Boopsi.md/#MUIA_Boopsi_ClassID), [MUIA_Boopsi_TagDrawInfo](MUI_Boopsi.md/#MUIA_Boopsi_TagDrawInfo), [MUIA_Boopsi_TagWindow](MUI_Boopsi.md/#MUIA_Boopsi_TagWindow)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

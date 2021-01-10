@@ -29,7 +29,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Aboutmui_Application
 ### NAME
-[MUIA_Aboutmui_Application](MUI_Aboutmui/#MUIA_Aboutmui_Application) -- V11 [I..], `Object *`, 0x80422523
+[MUIA_Aboutmui_Application](MUI_Aboutmui.md/#MUIA_Aboutmui_Application) -- V11 [I..], `Object *`, 0x80422523
 
 ### FUNCTION
 Inform the Aboutmui object about the application. If you don't specifiy this,

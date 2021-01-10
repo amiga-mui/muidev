@@ -2,7 +2,7 @@
 ## Super class
 [Group.mui](MUI_Group.md)
 ## Inherited by
-* [Penadjust.mui](MUI_Penadjust)
+* [Penadjust.mui](MUI_Penadjust.md)
 ## Background
 Register class is a special class for handling multi page groups. Using this
 class, you only have to supply an array of strings, describing the
@@ -16,7 +16,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Register_Frame
 ### NAME
-[MUIA_Register_Frame](MUI_Register/#MUIA_Register_Frame) -- V7 [I.G], `BOOL`, 0x8042349b **(OBSOLETE)**
+[MUIA_Register_Frame](MUI_Register.md/#MUIA_Register_Frame) -- V7 [I.G], `BOOL`, 0x8042349b **(OBSOLETE)**
 
 ### FUNCTION
 
@@ -26,11 +26,11 @@ cycle gadget looking, you will get a group frame, otherwise you won't get
 any frame at all since register groups are framed anyway.
 
 ### SEE ALSO
-[MUIA_Register_Titles](MUI_Register/#MUIA_Register_Titles)
+[MUIA_Register_Titles](MUI_Register.md/#MUIA_Register_Titles)
 
 ## MUIA_Register_Titles
 ### NAME
-[MUIA_Register_Titles](MUI_Register/#MUIA_Register_Titles) -- V7 [ISG], `STRPTR *`, 0x804297ec
+[MUIA_Register_Titles](MUI_Register.md/#MUIA_Register_Titles) -- V7 [ISG], `STRPTR *`, 0x804297ec
 
 ### SPECIAL INPUTS
   * MUIV_Register_Titles_UData

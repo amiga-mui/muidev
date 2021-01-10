@@ -29,17 +29,17 @@ Method|Version
 
 ## MUIA_Dataspace_Count
 ### NAME
-[MUIA_Dataspace_Count](MUI_Dataspace/#MUIA_Dataspace_Count) -- V20 [..G], `ULONG`, 0x8042e7ea
+[MUIA_Dataspace_Count](MUI_Dataspace.md/#MUIA_Dataspace_Count) -- V20 [..G], `ULONG`, 0x8042e7ea
 
 ### FUNCTION
 Determine the number of entries in the Dataspace object.
 
 ### SEE ALSO
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), [MUIM_Dataspace_Remove](MUI_Dataspace/#MUIM_Dataspace_Remove)
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), [MUIM_Dataspace_Remove](MUI_Dataspace.md/#MUIM_Dataspace_Remove)
 
 ## MUIA_Dataspace_Pool
 ### NAME
-[MUIA_Dataspace_Pool](MUI_Dataspace/#MUIA_Dataspace_Pool) -- V11 [I..], `APTR`, 0x80424cf9
+[MUIA_Dataspace_Pool](MUI_Dataspace.md/#MUIA_Dataspace_Pool) -- V11 [I..], `APTR`, 0x80424cf9
 
 ### FUNCTION
 If you specify a memory pool from exec.library/CreatePool() here, the
@@ -49,11 +49,11 @@ If you omit this tag or pass NULL, the dataspace object will create its own
 memory pool instead.
 
 ### SEE ALSO
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), exec.library/CreatePool
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), exec.library/CreatePool
 
 ## MUIM_Dataspace_Add
 ### NAME
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add) -- V11, 0x80423366
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add) -- V11, 0x80423366
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_Add, CONST_APTR data, LONG len, ULONG id);`
@@ -80,11 +80,11 @@ Returns NULL on failure (probably because of a memory shortage) or some non
 NULL value on success.
 
 ### SEE ALSO
-[MUIM_Dataspace_Remove](MUI_Dataspace/#MUIM_Dataspace_Remove), [MUIM_Dataspace_Find](MUI_Dataspace/#MUIM_Dataspace_Find)
+[MUIM_Dataspace_Remove](MUI_Dataspace.md/#MUIM_Dataspace_Remove), [MUIM_Dataspace_Find](MUI_Dataspace.md/#MUIM_Dataspace_Find)
 
 ## MUIM_Dataspace_Clear
 ### NAME
-[MUIM_Dataspace_Clear](MUI_Dataspace/#MUIM_Dataspace_Clear) -- V11, 0x8042b6c9
+[MUIM_Dataspace_Clear](MUI_Dataspace.md/#MUIM_Dataspace_Clear) -- V11, 0x8042b6c9
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_Clear);`
@@ -102,11 +102,11 @@ All entries will be removed from the dataspace. The return value of this
 method is currently undefined.
 
 ### SEE ALSO
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), [MUIM_Dataspace_Remove](MUI_Dataspace/#MUIM_Dataspace_Remove), [MUIM_Dataspace_Merge](MUI_Dataspace/#MUIM_Dataspace_Merge)
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), [MUIM_Dataspace_Remove](MUI_Dataspace.md/#MUIM_Dataspace_Remove), [MUIM_Dataspace_Merge](MUI_Dataspace.md/#MUIM_Dataspace_Merge)
 
 ## MUIM_Dataspace_Find
 ### NAME
-[MUIM_Dataspace_Find](MUI_Dataspace/#MUIM_Dataspace_Find) -- V11, 0x8042832c
+[MUIM_Dataspace_Find](MUI_Dataspace.md/#MUIM_Dataspace_Find) -- V11, 0x8042832c
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_Find, ULONG id);`
@@ -122,14 +122,14 @@ dataspace.
 ### RESULT
 Returns NULL on failure (entry not found) or some non NULL value on success.
 A non NULL return value will point to the data area which has been added
-before using [MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add).
+before using [MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add).
 
 ### SEE ALSO
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), [MUIM_Dataspace_Get](MUI_Dataspace/#MUIM_Dataspace_Get), [MUIM_Dataspace_Remove](MUI_Dataspace/#MUIM_Dataspace_Remove)
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), [MUIM_Dataspace_Get](MUI_Dataspace.md/#MUIM_Dataspace_Get), [MUIM_Dataspace_Remove](MUI_Dataspace.md/#MUIM_Dataspace_Remove)
 
 ## MUIM_Dataspace_Get
 ### NAME
-[MUIM_Dataspace_Get](MUI_Dataspace/#MUIM_Dataspace_Get) -- V21, 0x8042483f
+[MUIM_Dataspace_Get](MUI_Dataspace.md/#MUIM_Dataspace_Get) -- V21, 0x8042483f
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_Get, ULONG id, ULONG *size);`
@@ -148,22 +148,22 @@ dataspace.
 ### RESULT
 Returns NULL on failure (entry not found) or some non NULL value on success.
 A non NULL return value will point to the data area which has been added
-before using [MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add). Additionally the size of the entry will be
+before using [MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add). Additionally the size of the entry will be
 returned in the size parameter.
 
 ### SEE ALSO
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), [MUIM_Dataspace_Find](MUI_Dataspace/#MUIM_Dataspace_Find), [MUIM_Dataspace_Remove](MUI_Dataspace/#MUIM_Dataspace_Remove)
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), [MUIM_Dataspace_Find](MUI_Dataspace.md/#MUIM_Dataspace_Find), [MUIM_Dataspace_Remove](MUI_Dataspace.md/#MUIM_Dataspace_Remove)
 
 ## MUIM_Dataspace_Merge
 ### NAME
-[MUIM_Dataspace_Merge](MUI_Dataspace/#MUIM_Dataspace_Merge) -- V11, 0x80423e2b
+[MUIM_Dataspace_Merge](MUI_Dataspace.md/#MUIM_Dataspace_Merge) -- V11, 0x80423e2b
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_Merge, Object *dataspace);`
 
 ### FUNCTION
 This method adds all the contents of the merge dataspace specified as
-parameter to the objects dataspace. As with [MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), entries with
+parameter to the objects dataspace. As with [MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), entries with
 equal IDs will be replaced.
 
 ### INPUTS
@@ -176,11 +176,11 @@ dataspace. If this number doesn't match the number of entries in the merge
 dataspace, something probably went wrong.
 
 ### SEE ALSO
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), [MUIM_Dataspace_Remove](MUI_Dataspace/#MUIM_Dataspace_Remove)
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), [MUIM_Dataspace_Remove](MUI_Dataspace.md/#MUIM_Dataspace_Remove)
 
 ## MUIM_Dataspace_ReadIFF
 ### NAME
-[MUIM_Dataspace_ReadIFF](MUI_Dataspace/#MUIM_Dataspace_ReadIFF) -- V11, 0x80420dfb
+[MUIM_Dataspace_ReadIFF](MUI_Dataspace.md/#MUIM_Dataspace_ReadIFF) -- V11, 0x80420dfb
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_ReadIFF, struct IFFHandle *handle);`
@@ -196,25 +196,25 @@ and does nothing but ReadChunkBytes() until all dataspace entries of the
 current chunk are read.
 
 ### NOTES
-Do not call [MUIM_Dataspace_ReadIFF](MUI_Dataspace/#MUIM_Dataspace_ReadIFF) if your handle is positioned on chunks
-that were not written with [MUIM_Dataspace_WriteIFF](MUI_Dataspace/#MUIM_Dataspace_WriteIFF) or strange things may
+Do not call [MUIM_Dataspace_ReadIFF](MUI_Dataspace.md/#MUIM_Dataspace_ReadIFF) if your handle is positioned on chunks
+that were not written with [MUIM_Dataspace_WriteIFF](MUI_Dataspace.md/#MUIM_Dataspace_WriteIFF) or strange things may
 happen!
 
 ### INPUTS
 **`struct IFFHandle *handle`**
      pointer to a struct IFFHandle from iffparse.library/AllocIFF(). The
      handle must already be open, initialized for reading and positioned
-     on a chunk that was created with [MUIM_Dataspace_WriteIFF](MUI_Dataspace/#MUIM_Dataspace_WriteIFF).
+     on a chunk that was created with [MUIM_Dataspace_WriteIFF](MUI_Dataspace.md/#MUIM_Dataspace_WriteIFF).
 
 ### RESULT
 Returns 0 on success or some IFFERR_xxx on failure.
 
 ### SEE ALSO
-[MUIM_Dataspace_WriteIFF](MUI_Dataspace/#MUIM_Dataspace_WriteIFF), iffparse.library/AllocIFF
+[MUIM_Dataspace_WriteIFF](MUI_Dataspace.md/#MUIM_Dataspace_WriteIFF), iffparse.library/AllocIFF
 
 ## MUIM_Dataspace_Remove
 ### NAME
-[MUIM_Dataspace_Remove](MUI_Dataspace/#MUIM_Dataspace_Remove) -- V11, 0x8042dce1
+[MUIM_Dataspace_Remove](MUI_Dataspace.md/#MUIM_Dataspace_Remove) -- V11, 0x8042dce1
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_Remove, ULONG id);`
@@ -231,11 +231,11 @@ Returns NULL if no entry with the given ID was found in the dataspace or
 some non NULL value on success.
 
 ### SEE ALSO
-[MUIM_Dataspace_Add](MUI_Dataspace/#MUIM_Dataspace_Add), [MUIM_Dataspace_Find](MUI_Dataspace/#MUIM_Dataspace_Find)
+[MUIM_Dataspace_Add](MUI_Dataspace.md/#MUIM_Dataspace_Add), [MUIM_Dataspace_Find](MUI_Dataspace.md/#MUIM_Dataspace_Find)
 
 ## MUIM_Dataspace_WriteIFF
 ### NAME
-[MUIM_Dataspace_WriteIFF](MUI_Dataspace/#MUIM_Dataspace_WriteIFF) -- V11, 0x80425e8e
+[MUIM_Dataspace_WriteIFF](MUI_Dataspace.md/#MUIM_Dataspace_WriteIFF) -- V11, 0x80425e8e
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dataspace_WriteIFF, struct IFFHandle *handle, ULONG type, ULONG id);`
@@ -262,7 +262,7 @@ WriteChunkBytes() and the chunk is terminated with PopChunk().
 Returns 0 on success or some IFFERR_xxx on failure.
 
 ### SEE ALSO
-[MUIM_Dataspace_ReadIFF](MUI_Dataspace/#MUIM_Dataspace_ReadIFF), iffparse.library/AllocIFF
+[MUIM_Dataspace_ReadIFF](MUI_Dataspace.md/#MUIM_Dataspace_ReadIFF), iffparse.library/AllocIFF
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

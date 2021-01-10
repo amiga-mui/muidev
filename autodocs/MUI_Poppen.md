@@ -11,13 +11,13 @@ selected color. When the user hits the button, a Popup window containing a
 Penadjust object opens up and lets the user choose change the color.
 
 You can control the window title of the popup window using the
-[MUIA_Window_Title](MUI_Window/#MUIA_Window_Title) on the Poppen object. It will remember its value and use
+[MUIA_Window_Title](MUI_Window.md/#MUIA_Window_Title) on the Poppen object. It will remember its value and use
 it when creating the popup window.
 
 As most MUI popups, the Penadjust popup window runs asynchronously and stays
 there until the user terminates it with "OK" or "Cancel". Furthermore, if
 the popup window is automatically cancelled if the pop button receives a
-[MUIM_Cleanup](MUI_Area/#MUIM_Cleanup) method.
+[MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup) method.
 
 Anyway, you don't have to care about the internals of this class. Just
 create it like
@@ -30,7 +30,7 @@ obj = MUI_NewObject(MUIC_Poppen,
 ```
 
 somewhere in your prefs window and everything will be fine. You can get/set
-the current color from a Poppen object by using the [MUIA_Pendisplay_Spec](MUI_Pendisplay/#MUIA_Pendisplay_Spec)
+the current color from a Poppen object by using the [MUIA_Pendisplay_Spec](MUI_Pendisplay.md/#MUIA_Pendisplay_Spec)
 attribute. The resulting struct MUI_SpenSpec may then be saved somewhere in
 your preferences and used as parameter for MUI_ObtainPen() and
 MUI_ReleasePen().

@@ -17,28 +17,28 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Dtpic_Alpha
 ### NAME
-[MUIA_Dtpic_Alpha](MUI_Dtpic/#MUIA_Dtpic_Alpha) -- V20 [ISG], `LONG`, 0x8042b4db
+[MUIA_Dtpic_Alpha](MUI_Dtpic.md/#MUIA_Dtpic_Alpha) -- V20 [ISG], `LONG`, 0x8042b4db
 
 ### FUNCTION
 Specify an additional alpha value to be applied when blitting the loaded
-image onto the screen. The value of [MUIA_Dtpic_Alpha](MUI_Dtpic/#MUIA_Dtpic_Alpha) is an 8bit value
+image onto the screen. The value of [MUIA_Dtpic_Alpha](MUI_Dtpic.md/#MUIA_Dtpic_Alpha) is an 8bit value
 specifying the intensity of the alpha blitting. You usually want to specify
 0xff. Alpha blitting won't work on CLUT (i.e. depth <= 8 bit) screens.
 
 ## MUIA_Dtpic_DarkenSelState
 ### NAME
-[MUIA_Dtpic_DarkenSelState](MUI_Dtpic/#MUIA_Dtpic_DarkenSelState) -- V20 [I.G], `BOOL`, 0x80423247
+[MUIA_Dtpic_DarkenSelState](MUI_Dtpic.md/#MUIA_Dtpic_DarkenSelState) -- V20 [I.G], `BOOL`, 0x80423247
 
 ### FUNCTION
 If set to TRUE the image's brightness will decreased by 50% whenever the
 left mouse button is pressed on the object.
 
 ### SEE ALSO
-[MUIA_Dtpic_LightenOnMouse](MUI_Dtpic/#MUIA_Dtpic_LightenOnMouse)
+[MUIA_Dtpic_LightenOnMouse](MUI_Dtpic.md/#MUIA_Dtpic_LightenOnMouse)
 
 ## MUIA_Dtpic_Fade
 ### NAME
-[MUIA_Dtpic_Fade](MUI_Dtpic/#MUIA_Dtpic_Fade) -- V20 [ISG], `LONG`, 0x80420429
+[MUIA_Dtpic_Fade](MUI_Dtpic.md/#MUIA_Dtpic_Fade) -- V20 [ISG], `LONG`, 0x80420429
 
 ### FUNCTION
 Setting this attribute to a positive value while also changing the image's alpha
@@ -61,22 +61,22 @@ SetAttrs(obj,
 ```
 
 ### SEE ALSO
-[MUIA_Dtpic_Alpha](MUI_Dtpic/#MUIA_Dtpic_Alpha)
+[MUIA_Dtpic_Alpha](MUI_Dtpic.md/#MUIA_Dtpic_Alpha)
 
 ## MUIA_Dtpic_LightenOnMouse
 ### NAME
-[MUIA_Dtpic_LightenOnMouse](MUI_Dtpic/#MUIA_Dtpic_LightenOnMouse) -- V20 [I.G], `BOOL`, 0x8042966a
+[MUIA_Dtpic_LightenOnMouse](MUI_Dtpic.md/#MUIA_Dtpic_LightenOnMouse) -- V20 [I.G], `BOOL`, 0x8042966a
 
 ### FUNCTION
 If set to TRUE the image's brightness will increased by 20% whenever the
 mouse is moved over the object.
 
 ### SEE ALSO
-[MUIA_Dtpic_DarkenSelState](MUI_Dtpic/#MUIA_Dtpic_DarkenSelState)
+[MUIA_Dtpic_DarkenSelState](MUI_Dtpic.md/#MUIA_Dtpic_DarkenSelState)
 
 ## MUIA_Dtpic_Name
 ### NAME
-[MUIA_Dtpic_Name](MUI_Dtpic/#MUIA_Dtpic_Name) -- V18 [ISG], `STRPTR`, 0x80423d72
+[MUIA_Dtpic_Name](MUI_Dtpic.md/#MUIA_Dtpic_Name) -- V18 [ISG], `STRPTR`, 0x80423d72
 
 ### FUNCTION
 Specify the name of the image file to be loaded using datatypes.library. This

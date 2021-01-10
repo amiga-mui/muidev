@@ -75,33 +75,33 @@ Method|Version
 
 ## MUIA_Application_Active
 ### NAME
-[MUIA_Application_Active](MUI_Application/#MUIA_Application_Active) -- V4 [ISG], `BOOL`, 0x804260ab
+[MUIA_Application_Active](MUI_Application.md/#MUIA_Application_Active) -- V4 [ISG], `BOOL`, 0x804260ab
 
 ### FUNCTION
 This attribute reflects the state that the user adjusted with commodities
 Exchange. MUI itself doesn't pay any attention to it, this is up to you.
 
 ### SEE ALSO
-[MUIA_Application_Broker](MUI_Application/#MUIA_Application_Broker)
+[MUIA_Application_Broker](MUI_Application.md/#MUIA_Application_Broker)
 
 ## MUIA_Application_Author
 ### NAME
-[MUIA_Application_Author](MUI_Application/#MUIA_Application_Author) -- V4 [I.G], `STRPTR`, 0x80424842
+[MUIA_Application_Author](MUI_Application.md/#MUIA_Application_Author) -- V4 [I.G], `STRPTR`, 0x80424842
 
 ### FUNCTION
 Name of the application's author.
 
 ### EXAMPLE
-see [MUIA_Application_Title](MUI_Application/#MUIA_Application_Title)
+see [MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title)
 
 ### SEE ALSO
-[MUIA_Application_Title](MUI_Application/#MUIA_Application_Title), [MUIA_Application_Copyright](MUI_Application/#MUIA_Application_Copyright),
-[MUIA_Application_Version](MUI_Application/#MUIA_Application_Version), [MUIA_Application_Description](MUI_Application/#MUIA_Application_Description),
-[MUIA_Application_Base](MUI_Application/#MUIA_Application_Base)
+[MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title), [MUIA_Application_Copyright](MUI_Application.md/#MUIA_Application_Copyright),
+[MUIA_Application_Version](MUI_Application.md/#MUIA_Application_Version), [MUIA_Application_Description](MUI_Application.md/#MUIA_Application_Description),
+[MUIA_Application_Base](MUI_Application.md/#MUIA_Application_Base)
 
 ## MUIA_Application_Base
 ### NAME
-[MUIA_Application_Base](MUI_Application/#MUIA_Application_Base) -- V4 [I.G], `STRPTR`, 0x8042e07a
+[MUIA_Application_Base](MUI_Application.md/#MUIA_Application_Base) -- V4 [I.G], `STRPTR`, 0x8042e07a
 
 ### FUNCTION
 The basename for an application. This name is used for the builtin ARexx
@@ -111,7 +111,7 @@ A basename must neither contain spaces nor any special characters such as
 ":/()#?*...".
 
 When your program is a single task application (i.e.
-[MUIA_Application_SingleTask](MUI_Application/#MUIA_Application_SingleTask) is TRUE), the base name will be used without
+[MUIA_Application_SingleTask](MUI_Application.md/#MUIA_Application_SingleTask) is TRUE), the base name will be used without
 further modification.
 
 Otherwise, it gets a ".1", ".2", etc. appended, depending on how many
@@ -120,15 +120,15 @@ ARexx port, you can query the base name attribute after the application is
 created.
 
 ### EXAMPLE
-see [MUIA_Application_Title](MUI_Application/#MUIA_Application_Title)
+see [MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title)
 
 ### SEE ALSO
-[MUIA_Application_Title](MUI_Application/#MUIA_Application_Title), [MUIA_Application_Version](MUI_Application/#MUIA_Application_Version), [MUIA_Application_Author](MUI_Application/#MUIA_Application_Author),
-[MUIA_Application_Copyright](MUI_Application/#MUIA_Application_Copyright), [MUIA_Application_Description](MUI_Application/#MUIA_Application_Description)
+[MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title), [MUIA_Application_Version](MUI_Application.md/#MUIA_Application_Version), [MUIA_Application_Author](MUI_Application.md/#MUIA_Application_Author),
+[MUIA_Application_Copyright](MUI_Application.md/#MUIA_Application_Copyright), [MUIA_Application_Description](MUI_Application.md/#MUIA_Application_Description)
 
 ## MUIA_Application_Broker
 ### NAME
-[MUIA_Application_Broker](MUI_Application/#MUIA_Application_Broker) -- V4 [..G], `CxObj *`, 0x8042dbce
+[MUIA_Application_Broker](MUI_Application.md/#MUIA_Application_Broker) -- V4 [..G], `CxObj *`, 0x8042dbce
 
 ### FUNCTION
 If you need to attach some additional commodities objects to your
@@ -140,7 +140,7 @@ MUI will free the complete broker when the application is disposed, no need
 for you to free your objects yourself.
 
 To receive input from your objects, you will also need to install a
-[MUIA_Application_BrokerHook](MUI_Application/#MUIA_Application_BrokerHook).
+[MUIA_Application_BrokerHook](MUI_Application.md/#MUIA_Application_BrokerHook).
 
 ### NOTES
 You must be prepared to receive a NULL pointer. In this case, the
@@ -148,11 +148,11 @@ commodities interface is not available, maybe because the user installed a
 light version of MUI.
 
 ### SEE ALSO
-[MUIA_Application_BrokerHook](MUI_Application/#MUIA_Application_BrokerHook)
+[MUIA_Application_BrokerHook](MUI_Application.md/#MUIA_Application_BrokerHook)
 
 ## MUIA_Application_BrokerHook
 ### NAME
-[MUIA_Application_BrokerHook](MUI_Application/#MUIA_Application_BrokerHook) -- V4 [ISG], `struct Hook *`, 0x80428f4b
+[MUIA_Application_BrokerHook](MUI_Application.md/#MUIA_Application_BrokerHook) -- V4 [ISG], `struct Hook *`, 0x80428f4b
 
 ### FUNCTION
 You specify a pointer to hook structure. The function will be called
@@ -167,11 +167,11 @@ The commodities interface isn't available in the memory saving "light"
 version of MUI. Your hook will never be called in this case.
 
 ### SEE ALSO
-[MUIA_Application_Broker](MUI_Application/#MUIA_Application_Broker)
+[MUIA_Application_Broker](MUI_Application.md/#MUIA_Application_Broker)
 
 ## MUIA_Application_BrokerPort
 ### NAME
-[MUIA_Application_BrokerPort](MUI_Application/#MUIA_Application_BrokerPort) -- V6 [..G], `struct MsgPort *`, 0x8042e0ad
+[MUIA_Application_BrokerPort](MUI_Application.md/#MUIA_Application_BrokerPort) -- V6 [..G], `struct MsgPort *`, 0x8042e0ad
 
 ### FUNCTION
 Get a pointer to the application's commodities message port. If you want to
@@ -184,21 +184,21 @@ commodities interface is not available, maybe because the user installed a
 light version of MUI.
 
 ### SEE ALSO
-[MUIA_Application_BrokerHook](MUI_Application/#MUIA_Application_BrokerHook)
+[MUIA_Application_BrokerHook](MUI_Application.md/#MUIA_Application_BrokerHook)
 
 ## MUIA_Application_BrokerPri
 ### NAME
-[MUIA_Application_BrokerPri](MUI_Application/#MUIA_Application_BrokerPri) -- V6 [I.G], `LONG`, 0x8042c8d0
+[MUIA_Application_BrokerPri](MUI_Application.md/#MUIA_Application_BrokerPri) -- V6 [I.G], `LONG`, 0x8042c8d0
 
 ### FUNCTION
 Adjust the priority of an application's broker.
 
 ### SEE ALSO
-[MUIA_Application_BrokerHook](MUI_Application/#MUIA_Application_BrokerHook)
+[MUIA_Application_BrokerHook](MUI_Application.md/#MUIA_Application_BrokerHook)
 
 ## MUIA_Application_Commands
 ### NAME
-[MUIA_Application_Commands](MUI_Application/#MUIA_Application_Commands) -- V4 [ISG], `struct MUI_Command *`, 0x80428648
+[MUIA_Application_Commands](MUI_Application.md/#MUIA_Application_Commands) -- V4 [ISG], `struct MUI_Command *`, 0x80428648
 
 ### FUNCTION
 This attribute allows an application to include its own set of ARexx
@@ -244,10 +244,10 @@ If you have some simple ARexx commands that just emulate some user action
 (e.g. clicking a button), you can use the magic cookie MC_TEMPLATE_ID for
 mc_Template and a return ID value for mc_Parameters. In this case, MUI will
 do no argument parsing and instead simply return the specified ID value on
-the next call to [MUIM_Application_Input](MUI_Application/#MUIM_Application_Input).
+the next call to [MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input).
 
 For more sophisticated possibilities in ARexx callback hooks, please refer
-to [MUIA_Application_RexxMsg](MUI_Application/#MUIA_Application_RexxMsg) and [MUIA_Application_RexxString](MUI_Application/#MUIA_Application_RexxString).
+to [MUIA_Application_RexxMsg](MUI_Application.md/#MUIA_Application_RexxMsg) and [MUIA_Application_RexxString](MUI_Application.md/#MUIA_Application_RexxString).
 
 ### EXAMPLE
 ```c++
@@ -260,39 +260,39 @@ static struct MUI_Command commands[] =
 ```
 
 ### SEE ALSO
-[MUIA_Application_RexxMsg](MUI_Application/#MUIA_Application_RexxMsg), [MUIA_Application_RexxString](MUI_Application/#MUIA_Application_RexxString)
+[MUIA_Application_RexxMsg](MUI_Application.md/#MUIA_Application_RexxMsg), [MUIA_Application_RexxString](MUI_Application.md/#MUIA_Application_RexxString)
 
 ## MUIA_Application_Copyright
 ### NAME
-[MUIA_Application_Copyright](MUI_Application/#MUIA_Application_Copyright) -- V4 [I.G], `STRPTR`, 0x8042ef4d
+[MUIA_Application_Copyright](MUI_Application.md/#MUIA_Application_Copyright) -- V4 [I.G], `STRPTR`, 0x8042ef4d
 
 ### FUNCTION
 A copyright string, containing the year and the company.
 
 ### EXAMPLE
-see [MUIA_Application_Title](MUI_Application/#MUIA_Application_Title)
+see [MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title)
 
 ### SEE ALSO
-[MUIA_Application_Title](MUI_Application/#MUIA_Application_Title), [MUIA_Application_Version](MUI_Application/#MUIA_Application_Version), [MUIA_Application_Author](MUI_Application/#MUIA_Application_Author),
-[MUIA_Application_Description](MUI_Application/#MUIA_Application_Description), [MUIA_Application_Base](MUI_Application/#MUIA_Application_Base)
+[MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title), [MUIA_Application_Version](MUI_Application.md/#MUIA_Application_Version), [MUIA_Application_Author](MUI_Application.md/#MUIA_Application_Author),
+[MUIA_Application_Description](MUI_Application.md/#MUIA_Application_Description), [MUIA_Application_Base](MUI_Application.md/#MUIA_Application_Base)
 
 ## MUIA_Application_Description
 ### NAME
-[MUIA_Application_Description](MUI_Application/#MUIA_Application_Description) -- V4 [I.G], `STRPTR`, 0x80421fc6
+[MUIA_Application_Description](MUI_Application.md/#MUIA_Application_Description) -- V4 [I.G], `STRPTR`, 0x80421fc6
 
 ### FUNCTION
 Short description, about 40 characters. Shown e.g. in commodities exchange.
 
 ### EXAMPLE
-see [MUIA_Application_Title](MUI_Application/#MUIA_Application_Title)
+see [MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title)
 
 ### SEE ALSO
-[MUIA_Application_Title](MUI_Application/#MUIA_Application_Title), [MUIA_Application_Version](MUI_Application/#MUIA_Application_Version), [MUIA_Application_Author](MUI_Application/#MUIA_Application_Author),
-[MUIA_Application_Copyright](MUI_Application/#MUIA_Application_Copyright), [MUIA_Application_Base](MUI_Application/#MUIA_Application_Base)
+[MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title), [MUIA_Application_Version](MUI_Application.md/#MUIA_Application_Version), [MUIA_Application_Author](MUI_Application.md/#MUIA_Application_Author),
+[MUIA_Application_Copyright](MUI_Application.md/#MUIA_Application_Copyright), [MUIA_Application_Base](MUI_Application.md/#MUIA_Application_Base)
 
 ## MUIA_Application_DiskObject
 ### NAME
-[MUIA_Application_DiskObject](MUI_Application/#MUIA_Application_DiskObject) -- V4 [ISG], `struct DiskObject *`, 0x804235cb
+[MUIA_Application_DiskObject](MUI_Application.md/#MUIA_Application_DiskObject) -- V4 [ISG], `struct DiskObject *`, 0x804235cb
 
 ### FUNCTION
 Pointer to a struct DiskObject, e.g. obtained from GetDiskObject(). If
@@ -313,34 +313,34 @@ MUIA_Application_DiskObject, dobj,
 ```
 
 ### SEE ALSO
-[MUIA_Application_Iconified](MUI_Application/#MUIA_Application_Iconified)
+[MUIA_Application_Iconified](MUI_Application.md/#MUIA_Application_Iconified)
 
 ## MUIA_Application_DoubleStart
 ### NAME
-[MUIA_Application_DoubleStart](MUI_Application/#MUIA_Application_DoubleStart) -- V4 [..G], `BOOL`, 0x80423bc6
+[MUIA_Application_DoubleStart](MUI_Application.md/#MUIA_Application_DoubleStart) -- V4 [..G], `BOOL`, 0x80423bc6
 
 ### FUNCTION
 This attribute is set automatically when the user tries to start a
-[MUIA_Application_SingleTask](MUI_Application/#MUIA_Application_SingleTask) application twice. You can react on this and
+[MUIA_Application_SingleTask](MUI_Application.md/#MUIA_Application_SingleTask) application twice. You can react on this and
 take appropriate actions, e.g. pop up a requester or quit yourself.
 
 ### SEE ALSO
-[MUIA_Application_SingleTask](MUI_Application/#MUIA_Application_SingleTask)
+[MUIA_Application_SingleTask](MUI_Application.md/#MUIA_Application_SingleTask)
 
 ## MUIA_Application_DropObject
 ### NAME
-[MUIA_Application_DropObject](MUI_Application/#MUIA_Application_DropObject) -- V5 [IS.], `Object *`, 0x80421266
+[MUIA_Application_DropObject](MUI_Application.md/#MUIA_Application_DropObject) -- V5 [IS.], `Object *`, 0x80421266
 
 ### FUNCTION
 If your application is iconified and the user drops icons onto the AppIcon,
 the object specified here will receive the AppMessage.
 
 ### SEE ALSO
-[MUIA_Window_AppWindow](MUI_Window/#MUIA_Window_AppWindow), [MUIM_CallHook](MUI_Notify/#MUIM_CallHook)
+[MUIA_Window_AppWindow](MUI_Window.md/#MUIA_Window_AppWindow), [MUIM_CallHook](MUI_Notify.md/#MUIM_CallHook)
 
 ## MUIA_Application_ForceQuit
 ### NAME
-[MUIA_Application_ForceQuit](MUI_Application/#MUIA_Application_ForceQuit) -- V8 [.SG], `BOOL`, 0x804257df
+[MUIA_Application_ForceQuit](MUI_Application.md/#MUIA_Application_ForceQuit) -- V8 [.SG], `BOOL`, 0x804257df
 
 ### FUNCTION
 When your input loop receives a MUIV_Application_ReturnID_Quit, you should
@@ -352,24 +352,24 @@ your application.
 
 ## MUIA_Application_HelpFile
 ### NAME
-[MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile) -- V8 [ISG], `STRPTR`, 0x804293f4
+[MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile) -- V8 [ISG], `STRPTR`, 0x804293f4
 
 ### FUNCTION
 This attribute allows defining an AmigaGuide style file to be displayed when
 the user requests online help.
 
 When the HELP button is pressed and the application defines a
-[MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile), MUI tries to obtain [MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode) from the
-current object (the one under the mouse pointer). If [MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode) is not
+[MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile), MUI tries to obtain [MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode) from the
+current object (the one under the mouse pointer). If [MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode) is not
 defined, MUI continues asking the parent object for this attribute (usually
 a group, but remember: the parent of a windows root object is the window
 itself, the parent of a window is the application).
 
-When a non NULL [MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode) is found, the same procedure is applied to
-[MUIA_HelpLine](MUI_Notify/#MUIA_HelpLine). Then MUI puts the application to sleep and displays the file
-at the position specified with [MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode) and/or [MUIA_HelpLine](MUI_Notify/#MUIA_HelpLine).
+When a non NULL [MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode) is found, the same procedure is applied to
+[MUIA_HelpLine](MUI_Notify.md/#MUIA_HelpLine). Then MUI puts the application to sleep and displays the file
+at the position specified with [MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode) and/or [MUIA_HelpLine](MUI_Notify.md/#MUIA_HelpLine).
 
-This behaviour allows you to define one [MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile) for your
+This behaviour allows you to define one [MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile) for your
 application object  and different help nodes and lines for your
 application's windows and/or gadgets.
 
@@ -409,16 +409,16 @@ chapter somewhere else in the Play window.
 
 ### NOTES
 Since muimaster.library V8, this attribute replaces the old and obsolete
-[MUIA_HelpFile](MUI_Notify/#MUIA_HelpFile) attribute. MUI no longer supports the possibility to specify
+[MUIA_HelpFile](MUI_Notify.md/#MUIA_HelpFile) attribute. MUI no longer supports the possibility to specify
 different help files for different parts of your application. This step was
 necessary due to some other internal changes and enhancements.
 
 ### SEE ALSO
-[MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode), [MUIA_HelpLine](MUI_Notify/#MUIA_HelpLine)
+[MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode), [MUIA_HelpLine](MUI_Notify.md/#MUIA_HelpLine)
 
 ## MUIA_Application_Iconified
 ### NAME
-[MUIA_Application_Iconified](MUI_Application/#MUIA_Application_Iconified) -- V4 [.SG], `BOOL`, 0x8042a07f
+[MUIA_Application_Iconified](MUI_Application.md/#MUIA_Application_Iconified) -- V4 [.SG], `BOOL`, 0x8042a07f
 
 ### FUNCTION
 Setting this attribute to TRUE causes the application to become iconified.
@@ -430,7 +430,7 @@ border or uses commodities Exchange to hide your application's interface.
 
 There is no way for you to prevent your application from being iconified.
 However, you can react on the iconification by listening to the
-[MUIA_Application_Iconified](MUI_Application/#MUIA_Application_Iconified) attribute with notification. This allows you to
+[MUIA_Application_Iconified](MUI_Application.md/#MUIA_Application_Iconified) attribute with notification. This allows you to
 free some resources you don't need in iconified state.
 
 When an application is iconified and you try to open a window, the window
@@ -454,35 +454,35 @@ DoMethod(app,MUIM_Notify,
 ```
 
 ### SEE ALSO
-[MUIA_Application_DiskObject](MUI_Application/#MUIA_Application_DiskObject)
+[MUIA_Application_DiskObject](MUI_Application.md/#MUIA_Application_DiskObject)
 
 ## MUIA_Application_IconifyTitle
 ### NAME
-[MUIA_Application_IconifyTitle](MUI_Application/#MUIA_Application_IconifyTitle) -- V18 [ISG], `STRPTR`, 0x80422cb8
+[MUIA_Application_IconifyTitle](MUI_Application.md/#MUIA_Application_IconifyTitle) -- V18 [ISG], `STRPTR`, 0x80422cb8
 
 ### FUNCTION
 Setting this attribute lets you use a different name than the application's
 title for the iconification icon and/or menu. The supplied name will be copied
 internally.
 
-Defaults to the same name as supplied for [MUIA_Application_Title](MUI_Application/#MUIA_Application_Title).
+Defaults to the same name as supplied for [MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title).
 
 ### SEE ALSO
-[MUIA_Application_Title](MUI_Application/#MUIA_Application_Title)
+[MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title)
 
 ## MUIA_Application_Menu
 ### NAME
-[MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu) -- V4 [I.G], `struct NewMenu *`, 0x80420e1f **(OBSOLETE)**
+[MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu) -- V4 [I.G], `struct NewMenu *`, 0x80420e1f **(OBSOLETE)**
 
 ### FUNCTION
-Obsolete, use [MUIA_Application_Menustrip](MUI_Application/#MUIA_Application_Menustrip) instead.
+Obsolete, use [MUIA_Application_Menustrip](MUI_Application.md/#MUIA_Application_Menustrip) instead.
 
 ### SEE ALSO
-[MUIA_Application_Menustrip](MUI_Application/#MUIA_Application_Menustrip)
+[MUIA_Application_Menustrip](MUI_Application.md/#MUIA_Application_Menustrip)
 
 ## MUIA_Application_MenuAction
 ### NAME
-[MUIA_Application_MenuAction](MUI_Application/#MUIA_Application_MenuAction) -- V4 [..G], `ULONG`, 0x80428961
+[MUIA_Application_MenuAction](MUI_Application.md/#MUIA_Application_MenuAction) -- V4 [..G], `ULONG`, 0x80428961
 
 ### FUNCTION
 Whenever a menu item is selected, this attribute will be set to the
@@ -490,24 +490,24 @@ corresponding UserData field of the gadtools NewMenu structure. This allows
 reacting on menu items via broadcasting.
 
 ### SEE ALSO
-[MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu), [MUIA_Application_MenuAction](MUI_Application/#MUIA_Application_MenuAction)
+[MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu), [MUIA_Application_MenuAction](MUI_Application.md/#MUIA_Application_MenuAction)
 
 ## MUIA_Application_MenuHelp
 ### NAME
-[MUIA_Application_MenuHelp](MUI_Application/#MUIA_Application_MenuHelp) -- V4 [..G], `ULONG`, 0x8042540b
+[MUIA_Application_MenuHelp](MUI_Application.md/#MUIA_Application_MenuHelp) -- V4 [..G], `ULONG`, 0x8042540b
 
 ### FUNCTION
 Whenever a menu item is selected with the help key, this attribute will be
 set to the corresponding UserData field of the gadtools NewMenu structure.
-Together with [MUIM_Application_ShowHelp](MUI_Application/#MUIM_Application_ShowHelp) this allows creation of menu help
+Together with [MUIM_Application_ShowHelp](MUI_Application.md/#MUIM_Application_ShowHelp) this allows creation of menu help
 texts.
 
 ### SEE ALSO
-[MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu), [MUIA_Application_ShowHelp](MUI_Application/#MUIA_Application_ShowHelp)
+[MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu), [MUIA_Application_ShowHelp](MUI_Application.md/#MUIA_Application_ShowHelp)
 
 ## MUIA_Application_Menustrip
 ### NAME
-[MUIA_Application_Menustrip](MUI_Application/#MUIA_Application_Menustrip) -- V8 [I.G], `Object *`, 0x804252d9
+[MUIA_Application_Menustrip](MUI_Application.md/#MUIA_Application_Menustrip) -- V8 [I.G], `Object *`, 0x804252d9
 
 ### FUNCTION
 Specify a menu strip object for the application. The object is treated as a
@@ -518,8 +518,8 @@ Menustrip objects defined for the application are used as menu for every
 window of the application, as long as the window doesn't define its private
 menu.
 
-[MUIA_Application_Menustrip](MUI_Application/#MUIA_Application_Menustrip) replaces the old and obsolete
-[MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu) tag.
+[MUIA_Application_Menustrip](MUI_Application.md/#MUIA_Application_Menustrip) replaces the old and obsolete
+[MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu) tag.
 
 Usually, you will create the menu object with MUI's builtin object library
 from a gadtools NewMenu structure, but its also OK to define the menu tree
@@ -527,7 +527,7 @@ from a gadtools NewMenu structure, but its also OK to define the menu tree
 
 ## MUIA_Application_RexxHook
 ### NAME
-[MUIA_Application_RexxHook](MUI_Application/#MUIA_Application_RexxHook) -- V7 [ISG], `struct Hook *`, 0x80427c42
+[MUIA_Application_RexxHook](MUI_Application.md/#MUIA_Application_RexxHook) -- V7 [ISG], `struct Hook *`, 0x80427c42
 
 ### FUNCTION
 When specified, MUI calls this hook whenever a rexx message  arrives and MUI
@@ -536,14 +536,14 @@ be called with a pointer to itself in A0, a pointer to the application
 object in A2 and a pointer to a struct RexxMsg in A1.
 
 The return code from the hook is used as result code when replying the
-message, the secondary result can be set with [MUIA_Application_RexxString](MUI_Application/#MUIA_Application_RexxString).
+message, the secondary result can be set with [MUIA_Application_RexxString](MUI_Application.md/#MUIA_Application_RexxString).
 
 ### SEE ALSO
-[MUIA_Application_Commands](MUI_Application/#MUIA_Application_Commands)
+[MUIA_Application_Commands](MUI_Application.md/#MUIA_Application_Commands)
 
 ## MUIA_Application_RexxMsg
 ### NAME
-[MUIA_Application_RexxMsg](MUI_Application/#MUIA_Application_RexxMsg) -- V4 [..G], `struct RxMsg *`, 0x8042fd88
+[MUIA_Application_RexxMsg](MUI_Application.md/#MUIA_Application_RexxMsg) -- V4 [..G], `struct RxMsg *`, 0x8042fd88
 
 ### FUNCTION
 Within an ARexx callback hook, you can obtain a pointer to the RexxMsg that
@@ -551,11 +551,11 @@ came with the command. This allows you to use some ARexx support functions
 coming with amiga.lib.
 
 ### SEE ALSO
-[MUIA_Application_Commands](MUI_Application/#MUIA_Application_Commands), [MUIA_Application_RexxString](MUI_Application/#MUIA_Application_RexxString)
+[MUIA_Application_Commands](MUI_Application.md/#MUIA_Application_Commands), [MUIA_Application_RexxString](MUI_Application.md/#MUIA_Application_RexxString)
 
 ## MUIA_Application_RexxString
 ### NAME
-[MUIA_Application_RexxString](MUI_Application/#MUIA_Application_RexxString) -- V4 [.S.], `STRPTR`, 0x8042d711
+[MUIA_Application_RexxString](MUI_Application.md/#MUIA_Application_RexxString) -- V4 [.S.], `STRPTR`, 0x8042d711
 
 ### FUNCTION
 ARexx allows returning a string as result of a function call. This attribute
@@ -564,11 +564,11 @@ allows setting the result string within an ARexx callback hook.
 The string is temporarily copied.
 
 ### SEE ALSO
-[MUIA_Application_Commands](MUI_Application/#MUIA_Application_Commands), [MUIA_Application_RexxMsg](MUI_Application/#MUIA_Application_RexxMsg)
+[MUIA_Application_Commands](MUI_Application.md/#MUIA_Application_Commands), [MUIA_Application_RexxMsg](MUI_Application.md/#MUIA_Application_RexxMsg)
 
 ## MUIA_Application_SingleTask
 ### NAME
-[MUIA_Application_SingleTask](MUI_Application/#MUIA_Application_SingleTask) -- V4 [I..], `BOOL`, 0x8042a2c8
+[MUIA_Application_SingleTask](MUI_Application.md/#MUIA_Application_SingleTask) -- V4 [I..], `BOOL`, 0x8042a2c8
 
 ### FUNCTION
 Boolean value to indicate whether or not your application is a single task
@@ -576,18 +576,18 @@ program. When set to TRUE, MUI will refuse to create more than one
 application object.
 
 In this case, the already running application gets its
-[MUIA_Application_DoubleStart](MUI_Application/#MUIA_Application_DoubleStart) attribute set to TRUE. You  can listen to this
+[MUIA_Application_DoubleStart](MUI_Application.md/#MUIA_Application_DoubleStart) attribute set to TRUE. You  can listen to this
 and take appropriate actions, e.g. pop up a requester.
 
 Examples for single task applications are the system preferences program.
 It doesn't make sense for them to run more than once.
 
 ### SEE ALSO
-[MUIA_Application_DoubleStart](MUI_Application/#MUIA_Application_DoubleStart)
+[MUIA_Application_DoubleStart](MUI_Application.md/#MUIA_Application_DoubleStart)
 
 ## MUIA_Application_Sleep
 ### NAME
-[MUIA_Application_Sleep](MUI_Application/#MUIA_Application_Sleep) -- V4 [.SG], `BOOL`, 0x80425711
+[MUIA_Application_Sleep](MUI_Application.md/#MUIA_Application_Sleep) -- V4 [.SG], `BOOL`, 0x80425711
 
 ### FUNCTION
 This attribute can be used to put a whole application to sleep. All open
@@ -613,11 +613,11 @@ set(app, MUIA_Application_Sleep, FALSE); // wake up
 ```
 
 ### SEE ALSO
-[MUIM_Application_InputBuffered](MUI_Application/#MUIM_Application_InputBuffered), [MUIA_Window_Sleep](MUI_Window/#MUIA_Window_Sleep)
+[MUIM_Application_InputBuffered](MUI_Application.md/#MUIM_Application_InputBuffered), [MUIA_Window_Sleep](MUI_Window.md/#MUIA_Window_Sleep)
 
 ## MUIA_Application_Title
 ### NAME
-[MUIA_Application_Title](MUI_Application/#MUIA_Application_Title) -- V4 [I.G], `STRPTR`, 0x804281b8
+[MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title) -- V4 [I.G], `STRPTR`, 0x804281b8
 
 ### FUNCTION
 This tag defines the title of an application. The title is e.g. shown in
@@ -644,23 +644,23 @@ ApplicationObject,
 ```
 
 ### SEE ALSO
-[MUIA_Application_Version](MUI_Application/#MUIA_Application_Version), [MUIA_Application_Copyright](MUI_Application/#MUIA_Application_Copyright),
-[MUIA_Application_Author](MUI_Application/#MUIA_Application_Author), [MUIA_Application_Description](MUI_Application/#MUIA_Application_Description), [MUIA_Application_Base](MUI_Application/#MUIA_Application_Base)
+[MUIA_Application_Version](MUI_Application.md/#MUIA_Application_Version), [MUIA_Application_Copyright](MUI_Application.md/#MUIA_Application_Copyright),
+[MUIA_Application_Author](MUI_Application.md/#MUIA_Application_Author), [MUIA_Application_Description](MUI_Application.md/#MUIA_Application_Description), [MUIA_Application_Base](MUI_Application.md/#MUIA_Application_Base)
 
 ## MUIA_Application_UseCommodities
 ### NAME
-[MUIA_Application_UseCommodities](MUI_Application/#MUIA_Application_UseCommodities) -- V10 [I..], `BOOL`, 0x80425ee5
+[MUIA_Application_UseCommodities](MUI_Application.md/#MUIA_Application_UseCommodities) -- V10 [I..], `BOOL`, 0x80425ee5
 
 ### FUNCTION
 When set to FALSE, the application will run without a commodities interface.
 Think very well before using this tag!
 
 ### SEE ALSO
-[MUIA_Application_UseRexx](MUI_Application/#MUIA_Application_UseRexx)
+[MUIA_Application_UseRexx](MUI_Application.md/#MUIA_Application_UseRexx)
 
 ## MUIA_Application_UsedClasses
 ### NAME
-[MUIA_Application_UsedClasses](MUI_Application/#MUIA_Application_UsedClasses) -- V20 [ISG], `STRPTR *`, 0x8042e9a7
+[MUIA_Application_UsedClasses](MUI_Application.md/#MUIA_Application_UsedClasses) -- V20 [ISG], `STRPTR *`, 0x8042e9a7
 
 ### FUNCTION
 Tell the MUI system what external classes your application might use.
@@ -715,22 +715,22 @@ app = ApplicationObject,
 ```
 
 ### SEE ALSO
-[MUIM_Application_OpenConfigWindow](MUI_Application/#MUIM_Application_OpenConfigWindow)
+[MUIM_Application_OpenConfigWindow](MUI_Application.md/#MUIM_Application_OpenConfigWindow)
 
 ## MUIA_Application_UseRexx
 ### NAME
-[MUIA_Application_UseRexx](MUI_Application/#MUIA_Application_UseRexx) -- V10 [I..], `BOOL`, 0x80422387
+[MUIA_Application_UseRexx](MUI_Application.md/#MUIA_Application_UseRexx) -- V10 [I..], `BOOL`, 0x80422387
 
 ### FUNCTION
 When set to FALSE, the application will run without an ARexx interface.
 Think very well before using this tag!
 
 ### SEE ALSO
-[MUIA_Application_UseCommodities](MUI_Application/#MUIA_Application_UseCommodities)
+[MUIA_Application_UseCommodities](MUI_Application.md/#MUIA_Application_UseCommodities)
 
 ## MUIA_Application_UseScreenNotify
 ### NAME
-[MUIA_Application_UseScreenNotify](MUI_Application/#MUIA_Application_UseScreenNotify) -- V20 [I..], `BOOL`, 0x80420861
+[MUIA_Application_UseScreenNotify](MUI_Application.md/#MUIA_Application_UseScreenNotify) -- V20 [I..], `BOOL`, 0x80420861
 
 ### FUNCTION
 When set to FALSE, the application will not automatically close and reopen
@@ -740,7 +740,7 @@ Workbench close its screen.
 
 ## MUIA_Application_Version
 ### NAME
-[MUIA_Application_Version](MUI_Application/#MUIA_Application_Version) -- V4 [I.G], `STRPTR`, 0x8042b33f
+[MUIA_Application_Version](MUI_Application.md/#MUIA_Application_Version) -- V4 [I.G], `STRPTR`, 0x8042b33f
 
 ### FUNCTION
 Define a version string for an application. This string should follow
@@ -748,15 +748,15 @@ standard version string conventions, but must **NOT** contain a leading
 "\0".
 
 ### EXAMPLE
-see [MUIA_Application_Title](MUI_Application/#MUIA_Application_Title)
+see [MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title)
 
 ### SEE ALSO
-[MUIA_Application_Title](MUI_Application/#MUIA_Application_Title), [MUIA_Application_Copyright](MUI_Application/#MUIA_Application_Copyright), [MUIA_Application_Author](MUI_Application/#MUIA_Application_Author),
-[MUIA_Application_Description](MUI_Application/#MUIA_Application_Description), [MUIA_Application_Base](MUI_Application/#MUIA_Application_Base)
+[MUIA_Application_Title](MUI_Application.md/#MUIA_Application_Title), [MUIA_Application_Copyright](MUI_Application.md/#MUIA_Application_Copyright), [MUIA_Application_Author](MUI_Application.md/#MUIA_Application_Author),
+[MUIA_Application_Description](MUI_Application.md/#MUIA_Application_Description), [MUIA_Application_Base](MUI_Application.md/#MUIA_Application_Base)
 
 ## MUIA_Application_Window
 ### NAME
-[MUIA_Application_Window](MUI_Application/#MUIA_Application_Window) -- V4 [I..], `Object *`, 0x8042bfe0
+[MUIA_Application_Window](MUI_Application.md/#MUIA_Application_Window) -- V4 [I..], `Object *`, 0x8042bfe0
 
 ### FUNCTION
 A pointer to a MUI object of Window class. An application may have any
@@ -787,7 +787,7 @@ Please refer to one of the example programs.
 
 ## MUIA_Application_WindowList
 ### NAME
-[MUIA_Application_WindowList](MUI_Application/#MUIA_Application_WindowList) -- V13 [..G], `struct List *`, 0x80429abe
+[MUIA_Application_WindowList](MUI_Application.md/#MUIA_Application_WindowList) -- V13 [..G], `struct List *`, 0x80429abe
 
 ### FUNCTION
 This attribute returns a pointer to the exec list structure which contains
@@ -799,7 +799,7 @@ The returned list is strictly read-only!
 
 ## MUIM_Application_AboutMUI
 ### NAME
-[MUIM_Application_AboutMUI](MUI_Application/#MUIM_Application_AboutMUI) -- V14, 0x8042d21d
+[MUIM_Application_AboutMUI](MUI_Application.md/#MUIM_Application_AboutMUI) -- V14, 0x8042d21d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_AboutMUI, Object *refwindow);`
@@ -825,7 +825,7 @@ DoMethod(aboutmenu,
 
 ## MUIM_Application_AddInputHandler
 ### NAME
-[MUIM_Application_AddInputHandler](MUI_Application/#MUIM_Application_AddInputHandler) -- V11, 0x8042f099
+[MUIM_Application_AddInputHandler](MUI_Application.md/#MUIM_Application_AddInputHandler) -- V11, 0x8042f099
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_AddInputHandler, struct MUI_InputHandlerNode *ihnode);`
@@ -866,14 +866,14 @@ while(DoMethod(app, MUIM_Application_NewInput, &sigs) != MUIV_Application_Return
 
 To be able to react on signals, you must fill out a MUI_InputHandlerNode
 structure (probably located in your class' instance data) and call
-[MUIM_Application_AddInputHandler](MUI_Application/#MUIM_Application_AddInputHandler) with the structure as parameter. From now
+[MUIM_Application_AddInputHandler](MUI_Application.md/#MUIM_Application_AddInputHandler) with the structure as parameter. From now
 on, your class will receive the specified method whenever one of the given
 signals arrives.
 
 Since we're talking about a method of application class here, it's clear
 that you cannot call it until you know about your application object. Good
-places for [MUIM_Application_AddInputHandler](MUI_Application/#MUIM_Application_AddInputHandler)/RemInputHandler are probably the
-[MUIM_Setup](MUI_Area/#MUIM_Setup)/[MUIM_Cleanup](MUI_Area/#MUIM_Cleanup) methods of your class.
+places for [MUIM_Application_AddInputHandler](MUI_Application.md/#MUIM_Application_AddInputHandler)/RemInputHandler are probably the
+[MUIM_Setup](MUI_Area.md/#MUIM_Setup)/[MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup) methods of your class.
 
 ### INPUTS
 **`struct MUI_InputHandlerNode *ihnode`**
@@ -898,7 +898,7 @@ The MUI_InputHandlerNode structure consists of these fields:
      method that you want to receive when one of ihn_Signals is set.
 
 ### RESULT
-[MUIM_Application_AddInputHandler](MUI_Application/#MUIM_Application_AddInputHandler) cannot fail, the result value of the method
+[MUIM_Application_AddInputHandler](MUI_Application.md/#MUIM_Application_AddInputHandler) cannot fail, the result value of the method
 is currently undefined.
 
 ### NOTES
@@ -925,7 +925,7 @@ use ihn_Signals when MUIIHNF_TIMER is set.
 
 Besides from MUIIHNF_TIMER and ihn_Millis instead of ihn_Signals, using the
 timer is similiar to other input handlers. Removing with
-[MUIM_Application_RemInputHandler](MUI_Application/#MUIM_Application_RemInputHandler) is not different at all.
+[MUIM_Application_RemInputHandler](MUI_Application.md/#MUIM_Application_RemInputHandler) is not different at all.
 
 ### EXAMPLE
 OM_NEW:
@@ -946,7 +946,7 @@ OM_DISPOSE:
   DeleteMsgPort(data->port);
 ```
 
-[MUIM_Setup](MUI_Area/#MUIM_Setup):
+[MUIM_Setup](MUI_Area.md/#MUIM_Setup):
 ```c++
   data->req->tr_node.io_Command = TR_ADDREQUEST;
   data->req->tr_time.tv_secs    = 1;
@@ -955,7 +955,7 @@ OM_DISPOSE:
   DoMethod(_app(obj), MUIM_Application_AddInputHandler, &data->ihnode);
 ```
 
-[MUIM_Cleanup](MUI_Area/#MUIM_Cleanup):
+[MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup):
 ```c++
   DoMethod(_app(obj), MUIM_Application_RemInputHandler, &data->ihnode);
   if (!CheckIO(data->req)) AbortIO(data->req);
@@ -983,11 +983,11 @@ MY_TRIGGER_METHOD:
 ```
 
 ### SEE ALSO
-[MUIM_Application_RemInputHandler](MUI_Application/#MUIM_Application_RemInputHandler), [MUIM_Application_Input](MUI_Application/#MUIM_Application_Input)
+[MUIM_Application_RemInputHandler](MUI_Application.md/#MUIM_Application_RemInputHandler), [MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input)
 
 ## MUIM_Application_BuildSettingsPanel
 ### NAME
-[MUIM_Application_BuildSettingsPanel](MUI_Application/#MUIM_Application_BuildSettingsPanel) -- V20, 0x8042b58f
+[MUIM_Application_BuildSettingsPanel](MUI_Application.md/#MUIM_Application_BuildSettingsPanel) -- V20, 0x8042b58f
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_BuildSettingsPanel, ULONG number);`
@@ -998,7 +998,7 @@ See Animal demo for details.
 
 ## MUIM_Application_CheckRefresh
 ### NAME
-[MUIM_Application_CheckRefresh](MUI_Application/#MUIM_Application_CheckRefresh) -- V11, 0x80424d68
+[MUIM_Application_CheckRefresh](MUI_Application.md/#MUIM_Application_CheckRefresh) -- V11, 0x80424d68
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_CheckRefresh);`
@@ -1014,7 +1014,7 @@ main loop. However, if you e.g. spawn some kind of synchronous requester
 The result is that the user may see a damaged MUI window if he moves around
 a file requester and MUI is configured for simple refresh.
 
-[MUIA_Application_CheckRefresh](MUI_Application/#MUIA_Application_CheckRefresh) is the solution for this problem. Just open
+[MUIA_Application_CheckRefresh](MUI_Application.md/#MUIA_Application_CheckRefresh) is the solution for this problem. Just open
 your requesters with
 
 ```c++
@@ -1034,15 +1034,15 @@ VOID SAVEDS ASM IntuiMsgFunc(REG(a1, struct IntuiMessage *imsg), REG(a2, struct 
 
 ### RESULT
 Windows with damage will be refreshed. This may result in MUI calling
-[MUIM_Draw](MUI_Area/#MUIM_Draw) of some of your custom classes. The result value of this method is
+[MUIM_Draw](MUI_Area.md/#MUIM_Draw) of some of your custom classes. The result value of this method is
 undefined.
 
 ### SEE ALSO
-[MUIM_Application_InputBuffered](MUI_Application/#MUIM_Application_InputBuffered)
+[MUIM_Application_InputBuffered](MUI_Application.md/#MUIM_Application_InputBuffered)
 
 ## MUIM_Application_DefaultConfigItem
 ### NAME
-[MUIM_Application_DefaultConfigItem](MUI_Application/#MUIM_Application_DefaultConfigItem) -- V20, 0x8042d934
+[MUIM_Application_DefaultConfigItem](MUI_Application.md/#MUIM_Application_DefaultConfigItem) -- V20, 0x8042d934
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_DefaultConfigItem, ULONG cfgid);`
@@ -1059,13 +1059,13 @@ See Animal demo for details.
 
 ## MUIM_Application_Execute
 ### NAME
-[MUIM_Application_Execute](MUI_Application/#MUIM_Application_Execute) -- V20, 0x804253f3
+[MUIM_Application_Execute](MUI_Application.md/#MUIM_Application_Execute) -- V20, 0x804253f3
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_Execute);`
 
 ### FUNCTION
-[MUIM_Application_Execute](MUI_Application/#MUIM_Application_Execute) implements the ideal main loop of a MUI
+[MUIM_Application_Execute](MUI_Application.md/#MUIM_Application_Execute) implements the ideal main loop of a MUI
 application for simplicity.
 
 Basically the method looks like this
@@ -1083,14 +1083,14 @@ while(DoMethod(obj, MUIM_Application_NewInput, &signals) != MUIV_Application_Ret
 }
 ```
 
-This method does exactly the same as [MUIM_Application_Run](MUI_Application/#MUIM_Application_Run).
+This method does exactly the same as [MUIM_Application_Run](MUI_Application.md/#MUIM_Application_Run).
 
 ### SEE ALSO
-[MUIM_Application_NewInput](MUI_Application/#MUIM_Application_NewInput), [MUIM_Application_Run](MUI_Application/#MUIM_Application_Run)
+[MUIM_Application_NewInput](MUI_Application.md/#MUIM_Application_NewInput), [MUIM_Application_Run](MUI_Application.md/#MUIM_Application_Run)
 
 ## MUIM_Application_GetMenuCheck
 ### NAME
-[MUIM_Application_GetMenuCheck](MUI_Application/#MUIM_Application_GetMenuCheck) -- V4, 0x8042c0a7 **(OBSOLETE)**
+[MUIM_Application_GetMenuCheck](MUI_Application.md/#MUIM_Application_GetMenuCheck) -- V4, 0x8042c0a7 **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_GetMenuCheck, ULONG MenuID);`
@@ -1105,11 +1105,11 @@ return the state of the first item it finds.
      the value you wrote into the UserData field of struct NewMenu.
 
 ### SEE ALSO
-[MUIM_Application_SetMenuCheck](MUI_Application/#MUIM_Application_SetMenuCheck), [MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu)
+[MUIM_Application_SetMenuCheck](MUI_Application.md/#MUIM_Application_SetMenuCheck), [MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu)
 
 ## MUIM_Application_GetMenuState
 ### NAME
-[MUIM_Application_GetMenuState](MUI_Application/#MUIM_Application_GetMenuState) -- V4, 0x8042a58f **(OBSOLETE)**
+[MUIM_Application_GetMenuState](MUI_Application.md/#MUIM_Application_GetMenuState) -- V4, 0x8042a58f **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_GetMenuState, ULONG MenuID);`
@@ -1124,11 +1124,11 @@ first item it finds.
      the value you wrote into the UserData field of struct NewMenu.
 
 ### SEE ALSO
-[MUIM_Application_SetMenuState](MUI_Application/#MUIM_Application_SetMenuState), [MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu)
+[MUIM_Application_SetMenuState](MUI_Application.md/#MUIM_Application_SetMenuState), [MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu)
 
 ## MUIM_Application_Input
 ### NAME
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input) -- V4, 0x8042d0f5 **(OBSOLETE)**
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input) -- V4, 0x8042d0f5 **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_Input, ULONG *signal);`
@@ -1153,8 +1153,8 @@ the appropriate actions.
 
 Now let's have a look on a usual input loop of a MUI application. Imagine you
 have a Play and a Cancel button and have previously told them to return
-ID_PLAY and ID_CANCEL when pressed (see [MUIM_Notify](MUI_Notify/#MUIM_Notify) and
-[MUIM_Application_ReturnID](MUI_Application/#MUIM_Application_ReturnID) on information about these topics). Your input
+ID_PLAY and ID_CANCEL when pressed (see [MUIM_Notify](MUI_Notify.md/#MUIM_Notify) and
+[MUIM_Application_ReturnID](MUI_Application.md/#MUIM_Application_ReturnID) on information about these topics). Your input
 loop would look like this:
 
 ```c++
@@ -1180,13 +1180,13 @@ while(running)
 
 So what is happening here?
 
-First, you have to call the [MUIM_Application_Input](MUI_Application/#MUIM_Application_Input) method. You supply the
+First, you have to call the [MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input) method. You supply the
 address of a ULONG as parameter, thats where MUI fills in the signals it
 needs. Note that you can call the input method at any time, regardless of
 signal setting. MUI will simply return when there is nothing to do.
 
 In case the user pressed the Play or the Cancel button,
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input) will return ID_PLAY or ID_CANCEL. Otherwise you will
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input) will return ID_PLAY or ID_CANCEL. Otherwise you will
 receive a 0, that's why you cannot use 0 as one of your ID values.
 
 There is one predefined ID called MUIV_Application_ReturnID_Quit. This will
@@ -1210,19 +1210,19 @@ don't, you will annoy your user!
 If your program needs to be in a state where you are for some reasons unable
 to call the input method for a considerable amount of time (maybe half a
 second or more), you should put your application to sleep. See
-[MUIA_Application_Sleep](MUI_Application/#MUIA_Application_Sleep) on how to do this.
+[MUIA_Application_Sleep](MUI_Application.md/#MUIA_Application_Sleep) on how to do this.
 
 ### INPUTS
 **`ULONG *signal`**
      a pointer to a ULONG value containing the result of Wait().
 
 ### SEE ALSO
-[MUIA_Application_Sleep](MUI_Application/#MUIA_Application_Sleep), [MUIM_Application_InputBuffered](MUI_Application/#MUIM_Application_InputBuffered),
-[MUIM_Application_NewInput](MUI_Application/#MUIM_Application_NewInput)
+[MUIA_Application_Sleep](MUI_Application.md/#MUIA_Application_Sleep), [MUIM_Application_InputBuffered](MUI_Application.md/#MUIM_Application_InputBuffered),
+[MUIM_Application_NewInput](MUI_Application.md/#MUIM_Application_NewInput)
 
 ## MUIM_Application_InputBuffered
 ### NAME
-[MUIM_Application_InputBuffered](MUI_Application/#MUIM_Application_InputBuffered) -- V4, 0x80427e59
+[MUIM_Application_InputBuffered](MUI_Application.md/#MUIM_Application_InputBuffered) -- V4, 0x80427e59
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_InputBuffered);`
@@ -1237,7 +1237,7 @@ However, this will make it impossible for the user to resize your
 application's windows or iconify it, he will have to wait until you are done
 with your operation.
 
-[MUIM_Application_InputBuffered](MUI_Application/#MUIM_Application_InputBuffered) offers a solution for this problem. Using
+[MUIM_Application_InputBuffered](MUI_Application.md/#MUIM_Application_InputBuffered) offers a solution for this problem. Using
 this method, you needn't set to sleep your application. Just call it on a
 regular basis and MUI will be able to handle all actions concerning the GUI.
 You do not need to pay attention on return values, they remain on an
@@ -1255,38 +1255,38 @@ for (track=0; track<80; track++)
 ```
 
 ### SEE ALSO
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input), [MUIA_Application_Sleep](MUI_Application/#MUIA_Application_Sleep)
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input), [MUIA_Application_Sleep](MUI_Application.md/#MUIA_Application_Sleep)
 
 ## MUIM_Application_Load
 ### NAME
-[MUIM_Application_Load](MUI_Application/#MUIM_Application_Load) -- V4, 0x8042f90d
+[MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load) -- V4, 0x8042f90d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_Load, CONST_STRPTR name);`
 
 ### FUNCTION
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save), [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load) and [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) offer an easy
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save), [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load) and [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) offer an easy
 way of saving and loading a programs configuration.
 
-Each object with a non NULL [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) will get its contents saved during
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save) and restored during [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load). This makes
+Each object with a non NULL [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) will get its contents saved during
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save) and restored during [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load). This makes
 it very easy to design a configuration window with "Save", "Use" and
 "Cancel" buttons to allow saving & loading of settings. When the application
-starts, you would just have to call [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load) and the stored
+starts, you would just have to call [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load) and the stored
 settings will be read and installed.
 
 Not all classes are able to import and export their contents. Currently,
-you may define a [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) for
+you may define a [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) for
 
-  * String class   - [MUIA_String_Contents](MUI_String/#MUIA_String_Contents) is ex/imported.
-  * Radio class    - [MUIA_Radio_Active](MUI_Radio/#MUIA_Radio_Active) is ex/imported.
-  * Cycle class    - [MUIA_Cycle_Active](MUI_Cycle/#MUIA_Cycle_Active) is ex/imported.
-  * List class     - [MUIA_List_Active](MUI_List/#MUIA_List_Active) is ex/imported.
-  * Text class     - [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents) is ex/imported.
-  * Numeric class  - [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value) is ex/imported.
-  * Area class     - [MUIA_Selected](MUI_Area/#MUIA_Selected) is ex/imported (e.g. for Checkmark gadgets)
-  * Menuitem class - [MUIA_Menuitem_Checked](MUI_Menuitem/#MUIA_Menuitem_Checked) is ex/imported (V9).
-  * Group class    - [MUIA_Group_ActivePage](MUI_Group/#MUIA_Group_ActivePage) is ex/imported (V8).
+  * String class   - [MUIA_String_Contents](MUI_String.md/#MUIA_String_Contents) is ex/imported.
+  * Radio class    - [MUIA_Radio_Active](MUI_Radio.md/#MUIA_Radio_Active) is ex/imported.
+  * Cycle class    - [MUIA_Cycle_Active](MUI_Cycle.md/#MUIA_Cycle_Active) is ex/imported.
+  * List class     - [MUIA_List_Active](MUI_List.md/#MUIA_List_Active) is ex/imported.
+  * Text class     - [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents) is ex/imported.
+  * Numeric class  - [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value) is ex/imported.
+  * Area class     - [MUIA_Selected](MUI_Area.md/#MUIA_Selected) is ex/imported (e.g. for Checkmark gadgets)
+  * Menuitem class - [MUIA_Menuitem_Checked](MUI_Menuitem.md/#MUIA_Menuitem_Checked) is ex/imported (V9).
+  * Group class    - [MUIA_Group_ActivePage](MUI_Group.md/#MUIA_Group_ActivePage) is ex/imported (V8).
 
 ### INPUTS
 **`CONST_STRPTR name`**
@@ -1298,22 +1298,22 @@ you may define a [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) for
 see the sample program "Settings.c"
 
 ### SEE ALSO
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save), [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID), [MUIM_Export](MUI_Notify/#MUIM_Export), [MUIM_Import](MUI_Notify/#MUIM_Import)
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save), [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID), [MUIM_Export](MUI_Notify.md/#MUIM_Export), [MUIM_Import](MUI_Notify.md/#MUIM_Import)
 
 ## MUIM_Application_NewInput
 ### NAME
-[MUIM_Application_NewInput](MUI_Application/#MUIM_Application_NewInput) -- V11, 0x80423ba6
+[MUIM_Application_NewInput](MUI_Application.md/#MUIM_Application_NewInput) -- V11, 0x80423ba6
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_NewInput, ULONG *signal);`
 
 ### FUNCTION
-This is an enhanced replacement for [MUIM_Application_Input](MUI_Application/#MUIM_Application_Input). It depends on
+This is an enhanced replacement for [MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input). It depends on
 receiving the return value from your Wait() or 0 as input to be able to
 perform the necessary actions more efficient.
 
-[MUIM_Application_NewInput](MUI_Application/#MUIM_Application_NewInput) is generally preferrable over
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input).
+[MUIM_Application_NewInput](MUI_Application.md/#MUIM_Application_NewInput) is generally preferrable over
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input).
 
 ### INPUTS
 **`ULONG *signal`**
@@ -1346,12 +1346,12 @@ perform the necessary actions more efficient.
 ```
 
 ### SEE ALSO
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input)
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input)
 
 
 ## MUIM_Application_OpenConfigWindow
 ### NAME
-[MUIM_Application_OpenConfigWindow](MUI_Application/#MUIM_Application_OpenConfigWindow) -- V11, 0x804299ba
+[MUIM_Application_OpenConfigWindow](MUI_Application.md/#MUIM_Application_OpenConfigWindow) -- V11, 0x804299ba
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_OpenConfigWindow, ULONG flags, STRPTR classid);`
@@ -1360,7 +1360,7 @@ perform the necessary actions more efficient.
 Since MUI 3, applications can open their own MUI configuration window to
 allow users to adjust the local preferences without the need of an external
 program. Programmers are supposed to include a "Settings/MUI..." menu item
-which simply calls [MUIM_Application_OpenConfigWindow](MUI_Application/#MUIM_Application_OpenConfigWindow). MUI will then
+which simply calls [MUIM_Application_OpenConfigWindow](MUI_Application.md/#MUIM_Application_OpenConfigWindow). MUI will then
 automatically show the preferences window without blocking the rest of the
 program.
 
@@ -1370,18 +1370,18 @@ program.
 
 ## MUIM_Application_PushMethod
 ### NAME
-[MUIM_Application_PushMethod](MUI_Application/#MUIM_Application_PushMethod) -- V4, 0x80429ef8
+[MUIM_Application_PushMethod](MUI_Application.md/#MUIM_Application_PushMethod) -- V4, 0x80429ef8
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_PushMethod, Object *dest, LONG count, /* ... */);`
 
 ### FUNCTION
 Usually, you may not talk to the MUI system from two tasks at the same time.
-[MUIM_Application_PushMethod](MUI_Application/#MUIM_Application_PushMethod) provides some kind of solution for this problem.
+[MUIM_Application_PushMethod](MUI_Application.md/#MUIM_Application_PushMethod) provides some kind of solution for this problem.
 
 This (and only this) method may be called from a second task. It takes
 another method as parameter and puts in onto a private stack of the
-application object. The next time [MUIM_Application_Input](MUI_Application/#MUIM_Application_Input) is called, the
+application object. The next time [MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input) is called, the
 pushed method will be executed in the context of the current task.
 
 ### INPUTS
@@ -1406,14 +1406,14 @@ ULONG methodid = DoMethod(app, MUIM_Application_PushMethod,
 ```
 
 ### NOTES
-[MUIM_Application_PushMethod](MUI_Application/#MUIM_Application_PushMethod) has a limit of 7 arguments!
+[MUIM_Application_PushMethod](MUI_Application.md/#MUIM_Application_PushMethod) has a limit of 7 arguments!
 
 ### SEE ALSO
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input)
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input)
 
 ## MUIM_Application_RemInputHandler
 ### NAME
-[MUIM_Application_RemInputHandler](MUI_Application/#MUIM_Application_RemInputHandler) -- V11, 0x8042e7af
+[MUIM_Application_RemInputHandler](MUI_Application.md/#MUIM_Application_RemInputHandler) -- V11, 0x8042e7af
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_RemInputHandler, struct MUI_InputHandlerNode *ihnode);`
@@ -1425,31 +1425,31 @@ nodes any time as long as you know about your application object.
 
 ### INPUTS
 **`struct MUI_InputHandlerNode *ihnode`**
-     input handler node structure you passed to [MUIM_Application_AddInputHandler](MUI_Application/#MUIM_Application_AddInputHandler)
+     input handler node structure you passed to [MUIM_Application_AddInputHandler](MUI_Application.md/#MUIM_Application_AddInputHandler)
      previously.
 
 ### RESULT
-[MUIM_Application_RemInputHandler](MUI_Application/#MUIM_Application_RemInputHandler) cannot fail, the result value of the method
+[MUIM_Application_RemInputHandler](MUI_Application.md/#MUIM_Application_RemInputHandler) cannot fail, the result value of the method
 is currently undefined.
 
 ### SEE ALSO
-[MUIM_Application_AddInputHandler](MUI_Application/#MUIM_Application_AddInputHandler), [MUIM_Application_Input](MUI_Application/#MUIM_Application_Input)
+[MUIM_Application_AddInputHandler](MUI_Application.md/#MUIM_Application_AddInputHandler), [MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input)
 
 ## MUIM_Application_ReturnID
 ### NAME
-[MUIM_Application_ReturnID](MUI_Application/#MUIM_Application_ReturnID) -- V4, 0x804276ef
+[MUIM_Application_ReturnID](MUI_Application.md/#MUIM_Application_ReturnID) -- V4, 0x804276ef
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_ReturnID, ULONG retid);`
 
 ### FUNCTION
 Tell MUI to return the given ID with the next call to
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input).
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input).
 
 Together with the MUI's notification mechanism, this method connects your
 user interface and your program. If you e.g. want to be informed if the user
 presses a "Play" button, you would have define an ID for this action and set
-up a notification event with [MUIM_Notify](MUI_Notify/#MUIM_Notify).
+up a notification event with [MUIM_Notify](MUI_Notify.md/#MUIM_Notify).
 
 You can use any long word as return id, except from -255 up to 0. These
 values are reserved for MUI's internal use and for special return values
@@ -1490,17 +1490,17 @@ while(running)
 ```
 
 ### SEE ALSO
-[MUIM_Application_Input](MUI_Application/#MUIM_Application_Input), [MUIM_Notify](MUI_Notify/#MUIM_Notify)
+[MUIM_Application_Input](MUI_Application.md/#MUIM_Application_Input), [MUIM_Notify](MUI_Notify.md/#MUIM_Notify)
 
 ## MUIM_Application_Run
 ### NAME
-[MUIM_Application_Run](MUI_Application/#MUIM_Application_Run) -- V20, 0x90420103
+[MUIM_Application_Run](MUI_Application.md/#MUIM_Application_Run) -- V20, 0x90420103
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_Run);`
 
 ### FUNCTION
-[MUIM_Application_Run](MUI_Application/#MUIM_Application_Run) implements the ideal main loop of an MUI application
+[MUIM_Application_Run](MUI_Application.md/#MUIM_Application_Run) implements the ideal main loop of an MUI application
 for simplicity.
 
 Basically the method looks like this
@@ -1518,41 +1518,41 @@ while(DoMethod(obj, MUIM_Application_NewInput, &signals) != MUIV_Application_Ret
 }
 ```
 
-This method does exactly the same as [MUIM_Application_Execute](MUI_Application/#MUIM_Application_Execute).
+This method does exactly the same as [MUIM_Application_Execute](MUI_Application.md/#MUIM_Application_Execute).
 
 ### SEE ALSO
-[MUIM_Application_Execute](MUI_Application/#MUIM_Application_Execute), [MUIM_Application_NewInput](MUI_Application/#MUIM_Application_NewInput)
+[MUIM_Application_Execute](MUI_Application.md/#MUIM_Application_Execute), [MUIM_Application_NewInput](MUI_Application.md/#MUIM_Application_NewInput)
 
 ## MUIM_Application_Save
 ### NAME
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save) -- V4, 0x804227ef
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save) -- V4, 0x804227ef
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_Save, CONST_STRPTR name);`
 
 ### FUNCTION
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save), [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load) and [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) offer an easy
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save), [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load) and [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) offer an easy
 way of saving and loading a programs configuration.
 
-Each gadget with a non NULL [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) will get its contents saved during
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save) and restored during [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load). This makes
+Each gadget with a non NULL [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) will get its contents saved during
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save) and restored during [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load). This makes
 it very easy to design a configuration window with "Save", "Use" and
 "Cancel" buttons to allow the user storing the settings. When the
-application starts, you would just have to call [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load) and
+application starts, you would just have to call [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load) and
 the stored settings will be read and installed.
 
 Not all classes are able to import and export their contents. Currently, you
-may define a [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) for
+may define a [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) for
 
-  * String class   - [MUIA_String_Contents](MUI_String/#MUIA_String_Contents) is ex/imported.
-  * Radio class    - [MUIA_Radio_Active](MUI_Radio/#MUIA_Radio_Active) is ex/imported.
-  * Cycle class    - [MUIA_Cycle_Active](MUI_Cycle/#MUIA_Cycle_Active) is ex/imported.
-  * List class     - [MUIA_List_Active](MUI_List/#MUIA_List_Active) is /ex/imported.
-  * Text class     - [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents) is ex/imported.
-  * Numeric class  - [MUIA_Numeric_Value](MUI_Numeric/#MUIA_Numeric_Value) is ex/imported.
-  * Area class     - [MUIA_Selected](MUI_Area/#MUIA_Selected) is ex/imported (e.g. for Checkmark gadgets)
-  * Menuitem class - [MUIA_Menuitem_Checked](MUI_Menuitem/#MUIA_Menuitem_Checked) is ex/imported (V9).
-  * Group class    - [MUIA_Group_ActivePage](MUI_Group/#MUIA_Group_ActivePage) is ex/imported (V8).
+  * String class   - [MUIA_String_Contents](MUI_String.md/#MUIA_String_Contents) is ex/imported.
+  * Radio class    - [MUIA_Radio_Active](MUI_Radio.md/#MUIA_Radio_Active) is ex/imported.
+  * Cycle class    - [MUIA_Cycle_Active](MUI_Cycle.md/#MUIA_Cycle_Active) is ex/imported.
+  * List class     - [MUIA_List_Active](MUI_List.md/#MUIA_List_Active) is /ex/imported.
+  * Text class     - [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents) is ex/imported.
+  * Numeric class  - [MUIA_Numeric_Value](MUI_Numeric.md/#MUIA_Numeric_Value) is ex/imported.
+  * Area class     - [MUIA_Selected](MUI_Area.md/#MUIA_Selected) is ex/imported (e.g. for Checkmark gadgets)
+  * Menuitem class - [MUIA_Menuitem_Checked](MUI_Menuitem.md/#MUIA_Menuitem_Checked) is ex/imported (V9).
+  * Group class    - [MUIA_Group_ActivePage](MUI_Group.md/#MUIA_Group_ActivePage) is ex/imported (V8).
 
 ### INPUTS
 **`CONST_STRPTR name`**
@@ -1566,11 +1566,11 @@ may define a [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) for
 see the sample program "Settings.c"
 
 ### SEE ALSO
-[MUIM_Application_Load](MUI_Application/#MUIM_Application_Load), [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID), [MUIM_Export](MUI_Notify/#MUIM_Export), [MUIM_Import](MUI_Notify/#MUIM_Import)
+[MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load), [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID), [MUIM_Export](MUI_Notify.md/#MUIM_Export), [MUIM_Import](MUI_Notify.md/#MUIM_Import)
 
 ## MUIM_Application_SetConfigItem
 ### NAME
-[MUIM_Application_SetConfigItem](MUI_Application/#MUIM_Application_SetConfigItem) -- V11, 0x80424a80
+[MUIM_Application_SetConfigItem](MUI_Application.md/#MUIM_Application_SetConfigItem) -- V11, 0x80424a80
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_SetConfigItem, ULONG item, CONST_APTR data);`
@@ -1580,7 +1580,7 @@ Private method, only for PSI.
 
 ## MUIM_Application_SetMenuCheck
 ### NAME
-[MUIM_Application_SetMenuCheck](MUI_Application/#MUIM_Application_SetMenuCheck) -- V4, 0x8042a707 **(OBSOLETE)**
+[MUIM_Application_SetMenuCheck](MUI_Application.md/#MUIM_Application_SetMenuCheck) -- V4, 0x8042a707 **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_SetMenuCheck, ULONG MenuID, LONG stat);`
@@ -1597,11 +1597,11 @@ subwindows for menu items with the given ID and set/clear all found entries.
      TRUE to set checkmark, FALSE to clear
 
 ### SEE ALSO
-[MUIM_Application_GetMenuCheck](MUI_Application/#MUIM_Application_GetMenuCheck), [MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu)
+[MUIM_Application_GetMenuCheck](MUI_Application.md/#MUIM_Application_GetMenuCheck), [MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu)
 
 ## MUIM_Application_SetMenuState
 ### NAME
-[MUIM_Application_SetMenuState](MUI_Application/#MUIM_Application_SetMenuState) -- V4, 0x80428bef **(OBSOLETE)**
+[MUIM_Application_SetMenuState](MUI_Application.md/#MUIM_Application_SetMenuState) -- V4, 0x80428bef **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_SetMenuState, ULONG MenuID, LONG stat);`
@@ -1618,11 +1618,11 @@ menu items with the given ID and enable/disable all found entries.
      TRUE to enable item, FALSE to disable.
 
 ### SEE ALSO
-[MUIM_Application_GetMenuState](MUI_Application/#MUIM_Application_GetMenuState), [MUIA_Application_Menu](MUI_Application/#MUIA_Application_Menu)
+[MUIM_Application_GetMenuState](MUI_Application.md/#MUIM_Application_GetMenuState), [MUIA_Application_Menu](MUI_Application.md/#MUIA_Application_Menu)
 
 ## MUIM_Application_ShowHelp
 ### NAME
-[MUIM_Application_ShowHelp](MUI_Application/#MUIM_Application_ShowHelp) -- V4, 0x80426479
+[MUIM_Application_ShowHelp](MUI_Application.md/#MUIM_Application_ShowHelp) -- V4, 0x80426479
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_ShowHelp, Object *window, CONST_STRPTR name, CONST_STRPTR node, LONG line);`
@@ -1645,7 +1645,7 @@ help nodes and everything will be handled automatically.
 
 **`CONST_STRPTR name`**
      name of the help file. If set to NULL, MUI will use
-     the contents of [MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile) instead
+     the contents of [MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile) instead
      (since muimaster.library V18).
 
 **`CONST_STRPTR node`**
@@ -1655,17 +1655,17 @@ help nodes and everything will be handled automatically.
      line number.
 
 ### SEE ALSO
-[MUIA_HelpFile](MUI_Notify/#MUIA_HelpFile), [MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode), [MUIA_HelpLine](MUI_Notify/#MUIA_HelpLine)
+[MUIA_HelpFile](MUI_Notify.md/#MUIA_HelpFile), [MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode), [MUIA_HelpLine](MUI_Notify.md/#MUIA_HelpLine)
 
 ## MUIM_Application_UnpushMethod
 ### NAME
-[MUIM_Application_UnpushMethod](MUI_Application/#MUIM_Application_UnpushMethod) -- V20, 0x804211dd
+[MUIM_Application_UnpushMethod](MUI_Application.md/#MUIM_Application_UnpushMethod) -- V20, 0x804211dd
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Application_UnpushMethod, Object *targetobj, ULONG methodid, ULONG method);`
 
 ### FUNCTION
-Kill a method scheduled for execution by [MUIM_Application_PushMethod](MUI_Application/#MUIM_Application_PushMethod). This
+Kill a method scheduled for execution by [MUIM_Application_PushMethod](MUI_Application.md/#MUIM_Application_PushMethod). This
 method will work only if the method wasn't executed yet. Each method in a
 queue is matched to the values supplied. If any of arguments is 0/NULL it is
 not taken into account. If all arguments are 0/NULL then all methods will be
@@ -1673,10 +1673,10 @@ removed from the queue!
 
 ### INPUTS
 **`Object *targetobj`**
-     object which was a target for [MUIM_Application_PushMethod](MUI_Application/#MUIM_Application_PushMethod).
+     object which was a target for [MUIM_Application_PushMethod](MUI_Application.md/#MUIM_Application_PushMethod).
 
 **`ULONG methodid`**
-     method identifier returned by [MUIM_Application_PushMethod](MUI_Application/#MUIM_Application_PushMethod).
+     method identifier returned by [MUIM_Application_PushMethod](MUI_Application.md/#MUIM_Application_PushMethod).
 
 **`ULONG method`**
      method which was supposed to be executed.
@@ -1703,7 +1703,7 @@ DoMethod(appobj, MUIM_Application_UnpushMethod, obj, 0, MUIM_TestMethod);
 ```
 
 ### SEE ALSO
-[MUIM_Application_PushMethod](MUI_Application/#MUIM_Application_PushMethod)
+[MUIM_Application_PushMethod](MUI_Application.md/#MUIM_Application_PushMethod)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

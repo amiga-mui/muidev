@@ -9,8 +9,8 @@ your users to dynamically change the weight of your children.
 Since MUI5 2018R1 (muimaster.library 21.121) Balance class implements the
 additional features of BetterBalance.mcc. This means that the user can save
 and restore the balanced weights of the neighboring objects for each Balance
-object with a unique [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) during [MUIM_Application_Save](MUI_Application/#MUIM_Application_Save) and
-[MUIM_Application_Load](MUI_Application/#MUIM_Application_Load).
+object with a unique [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) during [MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save) and
+[MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load).
 
 Something like this will automatically restore and save the weights of the two
 Rectangle objects:
@@ -31,7 +31,7 @@ DoMethod(app, MUIM_Application_Load, MUIV_Application_Load_ENV);
 DoMethod(app, MUIM_Application_Save, MUIV_Application_Save_ENV);
 ```
 
-Of course the application might override [MUIM_Application_SnapshotWindow](MUI_Application/#MUIM_Application_SnapshotWindow) to save
+Of course the application might override [MUIM_Application_SnapshotWindow](MUI_Application.md/#MUIM_Application_SnapshotWindow) to save
 the weight during snapshotting the window or provide a special "Save" button for
 that purpose.
 
@@ -43,7 +43,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Balance_Quiet
 ### NAME
-[MUIA_Balance_Quiet](MUI_Balance/#MUIA_Balance_Quiet) -- V20 [I..], `LONG`, 0x80427486
+[MUIA_Balance_Quiet](MUI_Balance.md/#MUIA_Balance_Quiet) -- V20 [I..], `LONG`, 0x80427486
 
 ### FUNCTION
 If set to TRUE the balance object will show its frame only if the mouse is

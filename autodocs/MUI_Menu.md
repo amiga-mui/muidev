@@ -14,36 +14,36 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Menu_CopyStrings
 ### NAME
-[MUIA_Menu_CopyStrings](MUI_Menu/#MUIA_Menu_CopyStrings) -- V20 [I..], `BOOL`, 0x8042dbe2
+[MUIA_Menu_CopyStrings](MUI_Menu.md/#MUIA_Menu_CopyStrings) -- V20 [I..], `BOOL`, 0x8042dbe2
 
 ### FUNCTION
-Set to TRUE if the title string defined by [MUIA_Menu_Title](MUI_Menu/#MUIA_Menu_Title) is to be copied.
+Set to TRUE if the title string defined by [MUIA_Menu_Title](MUI_Menu.md/#MUIA_Menu_Title) is to be copied.
 Otherwise the title will be used directly and must remain valid throughout
 the object's life time.
 
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Menu_Title](MUI_Menu/#MUIA_Menu_Title)
+[MUIA_Menu_Title](MUI_Menu.md/#MUIA_Menu_Title)
 
 ## MUIA_Menu_Enabled
 ### NAME
-[MUIA_Menu_Enabled](MUI_Menu/#MUIA_Menu_Enabled) -- V8 [ISG], `BOOL`, 0x8042ed48
+[MUIA_Menu_Enabled](MUI_Menu.md/#MUIA_Menu_Enabled) -- V8 [ISG], `BOOL`, 0x8042ed48
 
 ### FUNCTION
 Enable or disable the complete menu.
 
 ## MUIA_Menu_Title
 ### NAME
-[MUIA_Menu_Title](MUI_Menu/#MUIA_Menu_Title) -- V8 [ISG], `STRPTR`, 0x8042a0e3
+[MUIA_Menu_Title](MUI_Menu.md/#MUIA_Menu_Title) -- V8 [ISG], `STRPTR`, 0x8042a0e3
 
 ### FUNCTION
 Describe the title of the menu. Note that the string is **NOT** copied (unless
-[MUIA_Menu_CopyStrings](MUI_Menu/#MUIA_Menu_CopyStrings) is set to TRUE) and must remain valid until the menu
+[MUIA_Menu_CopyStrings](MUI_Menu.md/#MUIA_Menu_CopyStrings) is set to TRUE) and must remain valid until the menu
 object is disposed.
 
 ### SEE ALSO
-[MUIA_Menu_Enabled](MUI_Menu/#MUIA_Menu_Enabled)
+[MUIA_Menu_Enabled](MUI_Menu.md/#MUIA_Menu_Enabled)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

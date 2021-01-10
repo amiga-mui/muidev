@@ -2,8 +2,8 @@
 ## Super class
 [Group.mui](MUI_Group.md)
 ## Inherited by
-* [Popasl.mui](MUI_Popasl)
-* [Popobject.mui](MUI_Popobject)
+* [Popasl.mui](MUI_Popasl.md)
+* [Popobject.mui](MUI_Popobject.md)
 ## Background
 Popstring class is the base class for creating so called popup objects.
 Usually, a popup consists of a string or text gadget, followed by a little
@@ -41,7 +41,7 @@ Method|Version
 
 ## MUIA_Popstring_Button
 ### NAME
-[MUIA_Popstring_Button](MUI_Popstring/#MUIA_Popstring_Button) -- V7 [I.G], `Object *`, 0x8042d0b9
+[MUIA_Popstring_Button](MUI_Popstring.md/#MUIA_Popstring_Button) -- V7 [I.G], `Object *`, 0x8042d0b9
 
 ### FUNCTION
 Specify the button object to be used in the popup. Depending on the type of
@@ -63,14 +63,14 @@ pop = PopstringObject,
 ```
 
 ### SEE ALSO
-[MUIA_Popstring_String](MUI_Popstring/#MUIA_Popstring_String), [MUIA_Popstring_OpenHook](MUI_Popstring/#MUIA_Popstring_OpenHook), [MUIA_Popstring_CloseHook](MUI_Popstring/#MUIA_Popstring_CloseHook)
+[MUIA_Popstring_String](MUI_Popstring.md/#MUIA_Popstring_String), [MUIA_Popstring_OpenHook](MUI_Popstring.md/#MUIA_Popstring_OpenHook), [MUIA_Popstring_CloseHook](MUI_Popstring.md/#MUIA_Popstring_CloseHook)
 
 ## MUIA_Popstring_CloseHook
 ### NAME
-[MUIA_Popstring_CloseHook](MUI_Popstring/#MUIA_Popstring_CloseHook) -- V7 [ISG], `struct Hook *`, 0x804256bf
+[MUIA_Popstring_CloseHook](MUI_Popstring.md/#MUIA_Popstring_CloseHook) -- V7 [ISG], `struct Hook *`, 0x804256bf
 
 ### FUNCTION
-Whenever the popup receives a [MUIM_Popstring_Close](MUI_Popstring/#MUIM_Popstring_Close) method and the popup is
+Whenever the popup receives a [MUIM_Popstring_Close](MUI_Popstring.md/#MUIM_Popstring_Close) method and the popup is
 currently opened, this hook will be called. It will receive a pointer to
 itself in register A0, a pointer to the complete popup object in A2 and a
 pointer to a struct
@@ -86,33 +86,33 @@ click in a listview) or was just cancelled (e.g. by pressing the popup
 button again for toggle popups).
 
 Due to internal message handling issues, calling the close hook is delayed
-until the next [MUIM_HandleInput](MUI_Area/#MUIM_HandleInput) method is called. This allows you to remove
+until the next [MUIM_HandleInput](MUI_Area.md/#MUIM_HandleInput) method is called. This allows you to remove
 and dispose windows without danger.
 
 ### SEE ALSO
-[MUIA_Popstring_OpenHook](MUI_Popstring/#MUIA_Popstring_OpenHook), [MUIM_Popstring_Open](MUI_Popstring/#MUIM_Popstring_Open), [MUIM_Popstring_Close](MUI_Popstring/#MUIM_Popstring_Close)
+[MUIA_Popstring_OpenHook](MUI_Popstring.md/#MUIA_Popstring_OpenHook), [MUIM_Popstring_Open](MUI_Popstring.md/#MUIM_Popstring_Open), [MUIM_Popstring_Close](MUI_Popstring.md/#MUIM_Popstring_Close)
 
 ## MUIA_Popstring_OpenHook
 ### NAME
-[MUIA_Popstring_OpenHook](MUI_Popstring/#MUIA_Popstring_OpenHook) -- V7 [ISG], `struct Hook *`, 0x80429d00
+[MUIA_Popstring_OpenHook](MUI_Popstring.md/#MUIA_Popstring_OpenHook) -- V7 [ISG], `struct Hook *`, 0x80429d00
 
 ### FUNCTION
-Whenever the popup receives a [MUIM_Popstring_Open](MUI_Popstring/#MUIM_Popstring_Open) method, this hook will be
+Whenever the popup receives a [MUIM_Popstring_Open](MUI_Popstring.md/#MUIM_Popstring_Open) method, this hook will be
 called. It will receive a pointer to itself in register A0, a pointer to the
 complete popup object in A2 and a pointer to a pointer (!) to the string
 object contained in the popup object in A1.
 
 When this hook returns TRUE, MUI assumes the popup was opened succesfully
-and will disabled the popup button (as long as [MUIA_Popstring_Toggle](MUI_Popstring/#MUIA_Popstring_Toggle) is not
+and will disabled the popup button (as long as [MUIA_Popstring_Toggle](MUI_Popstring.md/#MUIA_Popstring_Toggle) is not
 set). Return FALSE to indicate that something went wrong and the popup could
 not be opened.
 
 ### SEE ALSO
-[MUIA_Popstring_CloseHook](MUI_Popstring/#MUIA_Popstring_CloseHook), [MUIM_Popstring_Open](MUI_Popstring/#MUIM_Popstring_Open), [MUIM_Popstring_Close](MUI_Popstring/#MUIM_Popstring_Close)
+[MUIA_Popstring_CloseHook](MUI_Popstring.md/#MUIA_Popstring_CloseHook), [MUIM_Popstring_Open](MUI_Popstring.md/#MUIM_Popstring_Open), [MUIM_Popstring_Close](MUI_Popstring.md/#MUIM_Popstring_Close)
 
 ## MUIA_Popstring_String
 ### NAME
-[MUIA_Popstring_String](MUI_Popstring/#MUIA_Popstring_String) -- V7 [I.G], `Object *`, 0x804239ea
+[MUIA_Popstring_String](MUI_Popstring.md/#MUIA_Popstring_String) -- V7 [I.G], `Object *`, 0x804239ea
 
 ### FUNCTION
 Specify the string object to be used in the popup. This does not necessarily
@@ -133,11 +133,11 @@ pop = PopstringObject,
 ```
 
 ### SEE ALSO
-[MUIA_Popstring_Button](MUI_Popstring/#MUIA_Popstring_Button), [MUIA_Popstring_OpenHook](MUI_Popstring/#MUIA_Popstring_OpenHook), [MUIA_Popstring_CloseHook](MUI_Popstring/#MUIA_Popstring_CloseHook)
+[MUIA_Popstring_Button](MUI_Popstring.md/#MUIA_Popstring_Button), [MUIA_Popstring_OpenHook](MUI_Popstring.md/#MUIA_Popstring_OpenHook), [MUIA_Popstring_CloseHook](MUI_Popstring.md/#MUIA_Popstring_CloseHook)
 
 ## MUIA_Popstring_Toggle
 ### NAME
-[MUIA_Popstring_Toggle](MUI_Popstring/#MUIA_Popstring_Toggle) -- V7 [ISG], `BOOL`, 0x80422b7a
+[MUIA_Popstring_Toggle](MUI_Popstring.md/#MUIA_Popstring_Toggle) -- V7 [ISG], `BOOL`, 0x80422b7a
 
 ### FUNCTION
 Set/Clear the toggle mode for a popstring object. With toggling disabled,
@@ -146,18 +146,18 @@ opens. With toggling enabled, the popup button always stays enabled and can
 be used to cancel (== close with a FALSE return value) the popup.
 
 ### SEE ALSO
-[MUIA_Popstring_OpenHook](MUI_Popstring/#MUIA_Popstring_OpenHook)
+[MUIA_Popstring_OpenHook](MUI_Popstring.md/#MUIA_Popstring_OpenHook)
 
 ## MUIM_Popstring_Close
 ### NAME
-[MUIM_Popstring_Close](MUI_Popstring/#MUIM_Popstring_Close) -- V7, 0x8042dc52
+[MUIM_Popstring_Close](MUI_Popstring.md/#MUIM_Popstring_Close) -- V7, 0x8042dc52
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Popstring_Close, LONG result);`
 
 ### FUNCTION
 This method closes the popup. In fact, it only calls the predefined
-[MUIA_Popstring_CloseHook](MUI_Popstring/#MUIA_Popstring_CloseHook) with the supplied success parameter.
+[MUIA_Popstring_CloseHook](MUI_Popstring.md/#MUIA_Popstring_CloseHook) with the supplied success parameter.
 
 ### EXAMPLE
 ```c++
@@ -168,17 +168,17 @@ DoMethod(poplist, MUIM_Notify, MUIA_Listview_DoubleClick, TRUE,
 
 ## MUIM_Popstring_Open
 ### NAME
-[MUIM_Popstring_Open](MUI_Popstring/#MUIM_Popstring_Open) -- V7, 0x804258ba
+[MUIM_Popstring_Open](MUI_Popstring.md/#MUIM_Popstring_Open) -- V7, 0x804258ba
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Popstring_Open);`
 
 ### FUNCTION
 This method opens the popup. In fact, it only calls the predefined
-[MUIA_Popstring_OpenHook](MUI_Popstring/#MUIA_Popstring_OpenHook) and checks its return value. In case of TRUE, the
-popup button object is disabled as long as [MUIA_Popstring_Toggle](MUI_Popstring/#MUIA_Popstring_Toggle) is unset.
+[MUIA_Popstring_OpenHook](MUI_Popstring.md/#MUIA_Popstring_OpenHook) and checks its return value. In case of TRUE, the
+popup button object is disabled as long as [MUIA_Popstring_Toggle](MUI_Popstring.md/#MUIA_Popstring_Toggle) is unset.
 
-If the toggle mode is enabled, using [MUIA_Popstring_Open](MUI_Popstring/#MUIA_Popstring_Open) on a currently
+If the toggle mode is enabled, using [MUIA_Popstring_Open](MUI_Popstring.md/#MUIA_Popstring_Open) on a currently
 opened popup will result in closing this popup (i.e. calling the close hook)
 with a success value of FALSE.
 

@@ -11,7 +11,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Poplist_Array
 ### NAME
-[MUIA_Poplist_Array](MUI_Poplist/#MUIA_Poplist_Array) -- V8 [I..], `STRPTR *`, 0x8042084c
+[MUIA_Poplist_Array](MUI_Poplist.md/#MUIA_Poplist_Array) -- V8 [I..], `STRPTR *`, 0x8042084c
 
 ### FUNCTION
 A NULL terminated list of strings defining the contents of the poplist

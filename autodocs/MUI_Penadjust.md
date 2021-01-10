@@ -10,7 +10,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Penadjust_PSIMode
 ### NAME
-[MUIA_Penadjust_PSIMode](MUI_Penadjust/#MUIA_Penadjust_PSIMode) -- V11 [I..], `BOOL`, 0x80421cbb
+[MUIA_Penadjust_PSIMode](MUI_Penadjust.md/#MUIA_Penadjust_PSIMode) -- V11 [I..], `BOOL`, 0x80421cbb
 
 ### FUNCTION
 This attribute is only to be used by the public screen inspector.

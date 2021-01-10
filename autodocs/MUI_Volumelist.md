@@ -12,7 +12,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Volumelist_ExampleMode
 ### NAME
-[MUIA_Volumelist_ExampleMode](MUI_Volumelist/#MUIA_Volumelist_ExampleMode) -- V20 [I..], `BOOL`, 0x804246a5
+[MUIA_Volumelist_ExampleMode](MUI_Volumelist.md/#MUIA_Volumelist_ExampleMode) -- V20 [I..], `BOOL`, 0x804246a5
 
 ### FUNCTION
 Switches the list to example mode. Only one entry of each type will be

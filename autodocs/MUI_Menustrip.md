@@ -9,8 +9,8 @@ A Menustrip object doesn't feature many options itself, but as a subclass of
 Family class, it simply acts as father for multiple Menu objects.
 
 The Menustrip object is usually specified as a child of either Application
-class or Window class with the attributes [MUIA_Application_Menustrip](MUI_Application/#MUIA_Application_Menustrip) or
-[MUIA_Window_Menustrip](MUI_Window/#MUIA_Window_Menustrip).
+class or Window class with the attributes [MUIA_Application_Menustrip](MUI_Application.md/#MUIA_Application_Menustrip) or
+[MUIA_Window_Menustrip](MUI_Window.md/#MUIA_Window_Menustrip).
 ## Attributes
 Attribute|Version|ISG|Type
 ---------|-------|---|----
@@ -27,7 +27,7 @@ Method|Version
 
 ## MUIA_Menustrip_CaseSensitive
 ### NAME
-[MUIA_Menustrip_CaseSensitive](MUI_Menustrip/#MUIA_Menustrip_CaseSensitive) -- V20 [I.G], `BOOL`, 0x8042d718
+[MUIA_Menustrip_CaseSensitive](MUI_Menustrip.md/#MUIA_Menustrip_CaseSensitive) -- V20 [I.G], `BOOL`, 0x8042d718
 
 ### FUNCTION
 Set this attribute to TRUE in case the menu strip is using items with the
@@ -39,27 +39,27 @@ Defaults to FALSE.
 
 ## MUIA_Menustrip_Enabled
 ### NAME
-[MUIA_Menustrip_Enabled](MUI_Menustrip/#MUIA_Menustrip_Enabled) -- V8 [ISG], `BOOL`, 0x8042815b
+[MUIA_Menustrip_Enabled](MUI_Menustrip.md/#MUIA_Menustrip_Enabled) -- V8 [ISG], `BOOL`, 0x8042815b
 
 ### FUNCTION
 Enable or disable the complete menu strip.
 
 ## MUIM_Menustrip_ExitChange
 ### NAME
-[MUIM_Menustrip_ExitChange](MUI_Menustrip/#MUIM_Menustrip_ExitChange) -- V20, 0x8042ce4d
+[MUIM_Menustrip_ExitChange](MUI_Menustrip.md/#MUIM_Menustrip_ExitChange) -- V20, 0x8042ce4d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Menustrip_ExitChange);`
 
 ### FUNCTION
-Terminates [MUIM_Menustrip_InitChange](MUI_Menustrip/#MUIM_Menustrip_InitChange) state.
+Terminates [MUIM_Menustrip_InitChange](MUI_Menustrip.md/#MUIM_Menustrip_InitChange) state.
 
 ### SEE ALSO
-[MUIM_Menustrip_InitChange](MUI_Menustrip/#MUIM_Menustrip_InitChange)
+[MUIM_Menustrip_InitChange](MUI_Menustrip.md/#MUIM_Menustrip_InitChange)
 
 ## MUIM_Menustrip_InitChange
 ### NAME
-[MUIM_Menustrip_InitChange](MUI_Menustrip/#MUIM_Menustrip_InitChange) -- V20, 0x8042dcd9
+[MUIM_Menustrip_InitChange](MUI_Menustrip.md/#MUIM_Menustrip_InitChange) -- V20, 0x8042dcd9
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Menustrip_InitChange);`
@@ -70,7 +70,7 @@ possibility to dynamically add/remove items from menustrips, even when the
 window that contains these items is currently open. To be able to do this,
 you must first put the menustrip into a special "exchange" state by using
 this method. Then, you can add/remove item at will. When you're done, use
-[MUIM_Menustrip_ExitChange](MUI_Menustrip/#MUIM_Menustrip_ExitChange) to make MUI relayout the menustrip.
+[MUIM_Menustrip_ExitChange](MUI_Menustrip.md/#MUIM_Menustrip_ExitChange) to make MUI relayout the menustrip.
 
 ### EXAMPLE
 ```c++
@@ -87,11 +87,11 @@ if(DoMethod(strip, MUIM_Menustrip_InitChange))
 ```
 
 ### SEE ALSO
-[MUIM_Menustrip_ExitChange](MUI_Menustrip/#MUIM_Menustrip_ExitChange)
+[MUIM_Menustrip_ExitChange](MUI_Menustrip.md/#MUIM_Menustrip_ExitChange)
 
 ## MUIM_Menustrip_Popup
 ### NAME
-[MUIM_Menustrip_Popup](MUI_Menustrip/#MUIM_Menustrip_Popup) -- V20, 0x80420e76
+[MUIM_Menustrip_Popup](MUI_Menustrip.md/#MUIM_Menustrip_Popup) -- V20, 0x80420e76
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Menustrip_Popup, Object *parent, ULONG flags, LONG x, LONG y);`
@@ -115,11 +115,11 @@ Open a menustrip for user input even without active user interaction.
      the parent object's top coordinate.
 
 ### RESULT
-Returns the [MUIA_UserData](MUI_Notify/#MUIA_UserData) attribute of the selected item.
+Returns the [MUIA_UserData](MUI_Notify.md/#MUIA_UserData) attribute of the selected item.
 
 ## MUIM_Menustrip_WillOpen
 ### NAME
-[MUIM_Menustrip_WillOpen](MUI_Menustrip/#MUIM_Menustrip_WillOpen) -- V22, 0x804230e9
+[MUIM_Menustrip_WillOpen](MUI_Menustrip.md/#MUIM_Menustrip_WillOpen) -- V22, 0x804230e9
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Menustrip_WillOpen);`
@@ -131,7 +131,7 @@ The key function of the method is to let the application update the menu strip
 before it is actually opened.
 
 ### SEE ALSO
-[MUIM_Menustrip_Popup](MUI_Menustrip/#MUIM_Menustrip_Popup)
+[MUIM_Menustrip_Popup](MUI_Menustrip.md/#MUIM_Menustrip_Popup)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

@@ -2,7 +2,7 @@
 ## Super class
 [Notify.mui](MUI_Notify.md)
 ## Inherited by
-* [Aboutmui.mui](MUI_Aboutmui)
+* [Aboutmui.mui](MUI_Aboutmui.md)
 ## Background
 Objects of window class are used to generate windows and supply a place
 where MUI gadgets feel well. It handles the complicated task of window
@@ -14,9 +14,9 @@ in a window are children of the window, you cannot use MUI gadgets without
 having a parent MUI window.
 
 Creating a window object does not mean to open it instantly. This is done
-later by setting the window's [MUIA_Window_Open](MUI_Window/#MUIA_Window_Open) attribute. If your
+later by setting the window's [MUIA_Window_Open](MUI_Window.md/#MUIA_Window_Open) attribute. If your
 application has several windows, the usual way is to create them all at once
-at startup time and open/close it later just by setting [MUIA_Window_Open](MUI_Window/#MUIA_Window_Open).
+at startup time and open/close it later just by setting [MUIA_Window_Open](MUI_Window.md/#MUIA_Window_Open).
 
 There is no difference in talking to gadgets whether their parent window is
 open or not. If you e.g. set the contents of a string gadget in an open
@@ -91,7 +91,7 @@ Method|Version
 
 ## MUIA_Window_Activate
 ### NAME
-[MUIA_Window_Activate](MUI_Window/#MUIA_Window_Activate) -- V4 [ISG], `BOOL`, 0x80428d2f
+[MUIA_Window_Activate](MUI_Window.md/#MUIA_Window_Activate) -- V4 [ISG], `BOOL`, 0x80428d2f
 
 ### FUNCTION
 Setting this to TRUE will activate the window. Setting this to FALSE has no
@@ -103,7 +103,7 @@ inactive state.
 
 ## MUIA_Window_ActiveObject
 ### NAME
-[MUIA_Window_ActiveObject](MUI_Window/#MUIA_Window_ActiveObject) -- V4 [.SG], `Object *`, 0x80427925
+[MUIA_Window_ActiveObject](MUI_Window.md/#MUIA_Window_ActiveObject) -- V4 [.SG], `Object *`, 0x80427925
 
 ### SPECIAL INPUTS
   * MUIV_Window_ActiveObject_None
@@ -125,11 +125,11 @@ set(window, MUIA_Window_ActiveObject, okaybutton);
 ```
 
 ### SEE ALSO
-[MUIM_Window_SetCycleChain](MUI_Window/#MUIM_Window_SetCycleChain)
+[MUIM_Window_SetCycleChain](MUI_Window.md/#MUIM_Window_SetCycleChain)
 
 ## MUIA_Window_AltHeight
 ### NAME
-[MUIA_Window_AltHeight](MUI_Window/#MUIA_Window_AltHeight) -- V4 [I.G], `LONG`, 0x8042cce3
+[MUIA_Window_AltHeight](MUI_Window.md/#MUIA_Window_AltHeight) -- V4 [I.G], `LONG`, 0x8042cce3
 
 ### SPECIAL INPUTS
   * MUIV_Window_AltHeight_MinMax(p)
@@ -142,11 +142,11 @@ Specify the alternate (zoomed) height of a window. If not present, the
 alternate height will be the minimum height.
 
 ### SEE ALSO
-[MUIA_Window_Height](MUI_Window/#MUIA_Window_Height), [MUIA_Window_AltWidth](MUI_Window/#MUIA_Window_AltWidth)
+[MUIA_Window_Height](MUI_Window.md/#MUIA_Window_Height), [MUIA_Window_AltWidth](MUI_Window.md/#MUIA_Window_AltWidth)
 
 ## MUIA_Window_AltLeftEdge
 ### NAME
-[MUIA_Window_AltLeftEdge](MUI_Window/#MUIA_Window_AltLeftEdge) -- V4 [I.G], `LONG`, 0x80422d65
+[MUIA_Window_AltLeftEdge](MUI_Window.md/#MUIA_Window_AltLeftEdge) -- V4 [I.G], `LONG`, 0x80422d65
 
 ### SPECIAL INPUTS
   * MUIV_Window_AltLeftEdge_Centered
@@ -158,11 +158,11 @@ Specify the alternate (zoomed) left position of a window. This defaults to
 the standard left position.
 
 ### SEE ALSO
-[MUIA_Window_LeftEdge](MUI_Window/#MUIA_Window_LeftEdge), [MUIA_Window_AltTopEdge](MUI_Window/#MUIA_Window_AltTopEdge)
+[MUIA_Window_LeftEdge](MUI_Window.md/#MUIA_Window_LeftEdge), [MUIA_Window_AltTopEdge](MUI_Window.md/#MUIA_Window_AltTopEdge)
 
 ## MUIA_Window_AltTopEdge
 ### NAME
-[MUIA_Window_AltTopEdge](MUI_Window/#MUIA_Window_AltTopEdge) -- V4 [I.G], `LONG`, 0x8042e99b
+[MUIA_Window_AltTopEdge](MUI_Window.md/#MUIA_Window_AltTopEdge) -- V4 [I.G], `LONG`, 0x8042e99b
 
 ### SPECIAL INPUTS
   * MUIV_Window_AltTopEdge_Centered
@@ -175,11 +175,11 @@ Specify the alternate (zoomed) top position of a window. This defaults to
 the standard top position.
 
 ### SEE ALSO
-[MUIA_Window_TopEdge](MUI_Window/#MUIA_Window_TopEdge), [MUIA_Window_AltLeftEdge](MUI_Window/#MUIA_Window_AltLeftEdge)
+[MUIA_Window_TopEdge](MUI_Window.md/#MUIA_Window_TopEdge), [MUIA_Window_AltLeftEdge](MUI_Window.md/#MUIA_Window_AltLeftEdge)
 
 ## MUIA_Window_AltWidth
 ### NAME
-[MUIA_Window_AltWidth](MUI_Window/#MUIA_Window_AltWidth) -- V4 [I.G], `LONG`, 0x804260f4
+[MUIA_Window_AltWidth](MUI_Window.md/#MUIA_Window_AltWidth) -- V4 [I.G], `LONG`, 0x804260f4
 
 ### SPECIAL INPUTS
   * MUIV_Window_AltWidth_MinMax(p)
@@ -192,44 +192,44 @@ Specify the alternate (zoomed) width of a window. If not present, the
 alternate width will be the minimum width.
 
 ### SEE ALSO
-[MUIA_Window_Width](MUI_Window/#MUIA_Window_Width), [MUIA_Window_AltHeight](MUI_Window/#MUIA_Window_AltHeight)
+[MUIA_Window_Width](MUI_Window.md/#MUIA_Window_Width), [MUIA_Window_AltHeight](MUI_Window.md/#MUIA_Window_AltHeight)
 
 ## MUIA_Window_AppWindow
 ### NAME
-[MUIA_Window_AppWindow](MUI_Window/#MUIA_Window_AppWindow) -- V5 [I..], `BOOL`, 0x804280cf
+[MUIA_Window_AppWindow](MUI_Window.md/#MUIA_Window_AppWindow) -- V5 [I..], `BOOL`, 0x804280cf
 
 ### FUNCTION
 Setting this attribute to TRUE will make this window an AppWindow, the user
 will be able to drop icons on it. You can hear about these events by
-listening to the [MUIA_AppMessage](MUI_Notify/#MUIA_AppMessage) attribute.
+listening to the [MUIA_AppMessage](MUI_Notify.md/#MUIA_AppMessage) attribute.
 
 ### SEE ALSO
-[MUIA_AppMessage](MUI_Notify/#MUIA_AppMessage), [MUIA_Application_DropObject](MUI_Application/#MUIA_Application_DropObject)
+[MUIA_AppMessage](MUI_Notify.md/#MUIA_AppMessage), [MUIA_Application_DropObject](MUI_Application.md/#MUIA_Application_DropObject)
 
 ## MUIA_Window_Backdrop
 ### NAME
-[MUIA_Window_Backdrop](MUI_Window/#MUIA_Window_Backdrop) -- V4 [I..], `BOOL`, 0x8042c0bb
+[MUIA_Window_Backdrop](MUI_Window.md/#MUIA_Window_Backdrop) -- V4 [I..], `BOOL`, 0x8042c0bb
 
 ### FUNCTION
 Make the window a backdrop window.
 
 ## MUIA_Window_Borderless
 ### NAME
-[MUIA_Window_Borderless](MUI_Window/#MUIA_Window_Borderless) -- V4 [I..], `BOOL`, 0x80429b79
+[MUIA_Window_Borderless](MUI_Window.md/#MUIA_Window_Borderless) -- V4 [I..], `BOOL`, 0x80429b79
 
 ### FUNCTION
 Make the window borderless.
 
 ## MUIA_Window_CloseGadget
 ### NAME
-[MUIA_Window_CloseGadget](MUI_Window/#MUIA_Window_CloseGadget) -- V4 [I..], `BOOL`, 0x8042a110
+[MUIA_Window_CloseGadget](MUI_Window.md/#MUIA_Window_CloseGadget) -- V4 [I..], `BOOL`, 0x8042a110
 
 ### FUNCTION
 Set this to FALSE and your window will not have a close gadget.
 
 ## MUIA_Window_CloseRequest
 ### NAME
-[MUIA_Window_CloseRequest](MUI_Window/#MUIA_Window_CloseRequest) -- V4 [.SG], `BOOL`, 0x8042e86e
+[MUIA_Window_CloseRequest](MUI_Window.md/#MUIA_Window_CloseRequest) -- V4 [.SG], `BOOL`, 0x8042e86e
 
 ### FUNCTION
 When the user hits a windows close gadget, the window isn't closed
@@ -252,11 +252,11 @@ DoMethod(window, MUIM_Notify,
 ```
 
 ### SEE ALSO
-[MUIA_Window_Open](MUI_Window/#MUIA_Window_Open)
+[MUIA_Window_Open](MUI_Window.md/#MUIA_Window_Open)
 
 ## MUIA_Window_DefaultObject
 ### NAME
-[MUIA_Window_DefaultObject](MUI_Window/#MUIA_Window_DefaultObject) -- V4 [ISG], `Object *`, 0x804294d7
+[MUIA_Window_DefaultObject](MUI_Window.md/#MUIA_Window_DefaultObject) -- V4 [ISG], `Object *`, 0x804294d7
 
 ### FUNCTION
 The default object in a window receives keyboard input as long as no other
@@ -266,11 +266,11 @@ control it immediately without the need of several tab strokes for
 activation.
 
 ### SEE ALSO
-[MUIA_Window_ActiveObject](MUI_Window/#MUIA_Window_ActiveObject)
+[MUIA_Window_ActiveObject](MUI_Window.md/#MUIA_Window_ActiveObject)
 
 ## MUIA_Window_DepthGadget
 ### NAME
-[MUIA_Window_DepthGadget](MUI_Window/#MUIA_Window_DepthGadget) -- V4 [I..], `BOOL`, 0x80421923
+[MUIA_Window_DepthGadget](MUI_Window.md/#MUIA_Window_DepthGadget) -- V4 [I..], `BOOL`, 0x80421923
 
 ### FUNCTION
 Enable or disable the depth gadget. Defaults to TRUE.
@@ -279,7 +279,7 @@ There is no good reason to use this tag.
 
 ## MUIA_Window_DisableKeys
 ### NAME
-[MUIA_Window_DisableKeys](MUI_Window/#MUIA_Window_DisableKeys) -- V15 [ISG], `ULONG`, 0x80424c36
+[MUIA_Window_DisableKeys](MUI_Window.md/#MUIA_Window_DisableKeys) -- V15 [ISG], `ULONG`, 0x80424c36
 
 ### FUNCTION
 Disable internal handling of certain predefined keys. The keys to be
@@ -302,7 +302,7 @@ set(window, MUIA_Window_DisableKeys, 0);
 
 ## MUIA_Window_DragBar
 ### NAME
-[MUIA_Window_DragBar](MUI_Window/#MUIA_Window_DragBar) -- V4 [I..], `BOOL`, 0x8042045d
+[MUIA_Window_DragBar](MUI_Window.md/#MUIA_Window_DragBar) -- V4 [I..], `BOOL`, 0x8042045d
 
 ### FUNCTION
 Tell MUI to give your window a dragbar.
@@ -313,11 +313,11 @@ There is no good reason to disable the dragbar!
 
 ## MUIA_Window_DrawInfo
 ### NAME
-[MUIA_Window_DrawInfo](MUI_Window/#MUIA_Window_DrawInfo) -- V4 [..G], `struct DrawInfo *`, 0x80423726
+[MUIA_Window_DrawInfo](MUI_Window.md/#MUIA_Window_DrawInfo) -- V4 [..G], `struct DrawInfo *`, 0x80423726
 
 ### FUNCTION
 Get a pointer to the window's DrawInfo structure. This pointer is valid
-between [MUIM_Window_Setup](MUI_Window/#MUIM_Window_Setup) and [MUIM_Window_Cleanup](MUI_Window/#MUIM_Window_Cleanup) only and is strictly
+between [MUIM_Window_Setup](MUI_Window.md/#MUIM_Window_Setup) and [MUIM_Window_Cleanup](MUI_Window.md/#MUIM_Window_Cleanup) only and is strictly
 read-only.
 
 The main purpose of this attribute is the possibility to obtain a valid
@@ -325,29 +325,29 @@ DrawInfo pointer **before** the window is actually opened, i.e. to set up
 certain structures like Intuition images and menus.
 
 ### SEE ALSO
-[MUIM_Window_Setup](MUI_Window/#MUIM_Window_Setup), [MUIM_Window_Cleanup](MUI_Window/#MUIM_Window_Cleanup)
+[MUIM_Window_Setup](MUI_Window.md/#MUIM_Window_Setup), [MUIM_Window_Cleanup](MUI_Window.md/#MUIM_Window_Cleanup)
 
 ## MUIA_Window_FancyDrawing
 ### NAME
-[MUIA_Window_FancyDrawing](MUI_Window/#MUIA_Window_FancyDrawing) -- V8 [ISG], `BOOL`, 0x8042bd0e **(OBSOLETE)**
+[MUIA_Window_FancyDrawing](MUI_Window.md/#MUIA_Window_FancyDrawing) -- V8 [ISG], `BOOL`, 0x8042bd0e **(OBSOLETE)**
 
 ### FUNCTION
 This attribute used to allow a more relaxed way of drawing for custom
 classes. This behaviour is discouraged, the attribute is obsolete. The only
-place where a class is allowed to draw something is the [MUIM_Draw](MUI_Area/#MUIM_Draw) method.
+place where a class is allowed to draw something is the [MUIM_Draw](MUI_Area.md/#MUIM_Draw) method.
 Setting a few flags and calling MUI_Redraw() on your object is no major
 performance loss.
 
 OLD AND OBSOLETE DOCUMENTATION
-Usually, the only possible place to do some rendering is during a [MUIM_Draw](MUI_Area/#MUIM_Draw)
+Usually, the only possible place to do some rendering is during a [MUIM_Draw](MUI_Area.md/#MUIM_Draw)
 method. However, if you have a class that really requires very high
 graphical output speed (e.g. a module players scope or a game class), you
-can set [MUIA_Window_FancyDrawing](MUI_Window/#MUIA_Window_FancyDrawing) to TRUE.
+can set [MUIA_Window_FancyDrawing](MUI_Window.md/#MUIA_Window_FancyDrawing) to TRUE.
 
-This allows your class to render anywhere between [MUIM_Show](MUI_Area/#MUIM_Show) and [MUIM_Hide](MUI_Area/#MUIM_Hide),
+This allows your class to render anywhere between [MUIM_Show](MUI_Area.md/#MUIM_Show) and [MUIM_Hide](MUI_Area.md/#MUIM_Hide),
 e.g. directly after an attribute change with OM_SET or from a seperate task.
 
-Note that your rastport etc. is only valid between [MUIM_Show](MUI_Area/#MUIM_Show) and [MUIM_Hide](MUI_Area/#MUIM_Hide).
+Note that your rastport etc. is only valid between [MUIM_Show](MUI_Area.md/#MUIM_Show) and [MUIM_Hide](MUI_Area.md/#MUIM_Hide).
 Keep that in mind!
 
 When drawing from a seperate task, you have to clone the RastPort and use
@@ -357,13 +357,13 @@ Please use this attribute sparingly. It might prevent MUI from doing nice
 things with your window, e.g. building an automatic virtual group when the
 screen is too small.
 
-[MUIA_Window_FancyDrawing](MUI_Window/#MUIA_Window_FancyDrawing) is really only necessary for very few types of
-applications. You should use the traditional way ([MUIM_Draw](MUI_Area/#MUIM_Draw) and
+[MUIA_Window_FancyDrawing](MUI_Window.md/#MUIA_Window_FancyDrawing) is really only necessary for very few types of
+applications. You should use the traditional way ([MUIM_Draw](MUI_Area.md/#MUIM_Draw) and
 MUI_Redraw()) whenever and wherever possible!
 
 ## MUIA_Window_Height
 ### NAME
-[MUIA_Window_Height](MUI_Window/#MUIA_Window_Height) -- V4 [ISG], `LONG`, 0x80425846
+[MUIA_Window_Height](MUI_Window.md/#MUIA_Window_Height) -- V4 [ISG], `LONG`, 0x80425846
 
 ### SPECIAL INPUTS
   * MUIV_Window_Height_MinMax(p)
@@ -396,18 +396,18 @@ but instead use one of the following magic macros:
 
 Defaults to MUIV_Window_Height_Default.
 
-As long as your window has a window ID ([MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)), choosing a position
+As long as your window has a window ID ([MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)), choosing a position
 is not that important. MUI will always remember a window's last position and
 size and these values will simply override your settings. Positioning and
 sizing should be completely under user control, a programmer doesn't need to
 worry about it.
 
 ### SEE ALSO
-[MUIA_Window_Width](MUI_Window/#MUIA_Window_Width), [MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)
+[MUIA_Window_Width](MUI_Window.md/#MUIA_Window_Width), [MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)
 
 ## MUIA_Window_ID
 ### NAME
-[MUIA_Window_ID](MUI_Window/#MUIA_Window_ID) -- V4 [ISG], `ULONG`, 0x804201bd
+[MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID) -- V4 [ISG], `ULONG`, 0x804201bd
 
 ### FUNCTION
 For most of your windows, you should define a longword as ID value. Only a
@@ -419,11 +419,11 @@ controlled from ARexx.
 Of course all windows of your application must have unique IDs.
 
 ### SEE ALSO
-[MUIA_Window_LeftEdge](MUI_Window/#MUIA_Window_LeftEdge), [MUIM_Window_Snapshot](MUI_Window/#MUIM_Window_Snapshot)
+[MUIA_Window_LeftEdge](MUI_Window.md/#MUIA_Window_LeftEdge), [MUIM_Window_Snapshot](MUI_Window.md/#MUIM_Window_Snapshot)
 
 ## MUIA_Window_InputEvent
 ### NAME
-[MUIA_Window_InputEvent](MUI_Window/#MUIA_Window_InputEvent) -- V4 [..G], `struct InputEvent *`, 0x804247d8
+[MUIA_Window_InputEvent](MUI_Window.md/#MUIA_Window_InputEvent) -- V4 [..G], `struct InputEvent *`, 0x804247d8
 
 ### FUNCTION
 This attribute gets set whenever your window receives an input event. You can
@@ -431,7 +431,7 @@ react on this by creating a notification event containing a standard
 commodities.library input description string.
 
 Due to performance reasons, only IDCMP_RAWKEY, IDCMP_DISKINSERTED and
-IDCMP_DISKREMOVED events are translated to a [MUIA_Window_InputEvent](MUI_Window/#MUIA_Window_InputEvent)
+IDCMP_DISKREMOVED events are translated to a [MUIA_Window_InputEvent](MUI_Window.md/#MUIA_Window_InputEvent)
 notification.
 
 Prior to MUI 3.0, the input description string needed to remain valid as long as
@@ -440,7 +440,7 @@ speeding up the comparision and eliminating the need to keep the description
 strings allocated.
 
 ### NOTES
-Notification on [MUIA_Window_InputEvent](MUI_Window/#MUIA_Window_InputEvent) is inefficient. You should only use this
+Notification on [MUIA_Window_InputEvent](MUI_Window.md/#MUIA_Window_InputEvent) is inefficient. You should only use this
 notification for a few keyboard events that are "general" to the window, e.g.
 F-Keys for certain program actions. Keyboard control for single user interface
 elements should be implemented by using subclasses and requesting rawkey input
@@ -460,7 +460,7 @@ DoMethod(window, MUIM_Notify,
 
 ## MUIA_Window_IsSubWindow
 ### NAME
-[MUIA_Window_IsSubWindow](MUI_Window/#MUIA_Window_IsSubWindow) -- V4 [ISG], `BOOL`, 0x8042b5aa
+[MUIA_Window_IsSubWindow](MUI_Window.md/#MUIA_Window_IsSubWindow) -- V4 [ISG], `BOOL`, 0x8042b5aa
 
 ### FUNCTION
 Windows with this flag set to TRUE don't get disposed when the application
@@ -470,7 +470,7 @@ window object yourself during the OM_DISPOSE method of the parent object.
 
 ## MUIA_Window_LeftEdge
 ### NAME
-[MUIA_Window_LeftEdge](MUI_Window/#MUIA_Window_LeftEdge) -- V4 [ISG], `LONG`, 0x80426c65
+[MUIA_Window_LeftEdge](MUI_Window.md/#MUIA_Window_LeftEdge) -- V4 [ISG], `LONG`, 0x80426c65
 
 ### SPECIAL INPUTS
   * MUIV_Window_LeftEdge_Centered
@@ -489,31 +489,31 @@ value here but instead use one of the following macros:
 
 Defaults to MUIV_Window_LeftEdge_Centered.
 
-As long as your window has a window ID ([MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)), choosing a position
+As long as your window has a window ID ([MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)), choosing a position
 is not that important. MUI will always remember a window's last position and
 size and these values will simply override your settings. Positioning and
 sizing should be completely under user control, a programmer doesn't need to
 worry about it.
 
 ### SEE ALSO
-[MUIA_Window_TopEdge](MUI_Window/#MUIA_Window_TopEdge), [MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)
+[MUIA_Window_TopEdge](MUI_Window.md/#MUIA_Window_TopEdge), [MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)
 
 ## MUIA_Window_Menu
 ### NAME
-[MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu) -- V4 [I..], `struct NewMenu *`, 0x8042db94 **(OBSOLETE)**
+[MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu) -- V4 [I..], `struct NewMenu *`, 0x8042db94 **(OBSOLETE)**
 
 ### SPECIAL INPUTS
   * MUIV_Window_Menu_NoMenu
 
 ### FUNCTION
-Obsolete, use [MUIA_Window_Menustrip](MUI_Window/#MUIA_Window_Menustrip) instead.
+Obsolete, use [MUIA_Window_Menustrip](MUI_Window.md/#MUIA_Window_Menustrip) instead.
 
 ### SEE ALSO
-[MUIA_Window_Menustrip](MUI_Window/#MUIA_Window_Menustrip)
+[MUIA_Window_Menustrip](MUI_Window.md/#MUIA_Window_Menustrip)
 
 ## MUIA_Window_MenuAction
 ### NAME
-[MUIA_Window_MenuAction](MUI_Window/#MUIA_Window_MenuAction) -- V8 [ISG], `ULONG`, 0x80427521
+[MUIA_Window_MenuAction](MUI_Window.md/#MUIA_Window_MenuAction) -- V8 [ISG], `ULONG`, 0x80427521
 
 ### FUNCTION
 Whenever a menu item is selected, this attribute will be set to the
@@ -521,11 +521,11 @@ corresponding UserData field of the gadtools NewMenu structure. This allows
 reacting on menu items via broadcasting.
 
 ### SEE ALSO
-[MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu)
+[MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu)
 
 ## MUIA_Window_Menustrip
 ### NAME
-[MUIA_Window_Menustrip](MUI_Window/#MUIA_Window_Menustrip) -- V8 [ISG], `Object *`, 0x8042855e
+[MUIA_Window_Menustrip](MUI_Window.md/#MUIA_Window_Menustrip) -- V8 [ISG], `Object *`, 0x8042855e
 
 ### FUNCTION
 Specify a menu strip object for this window. The object is treated as a
@@ -534,24 +534,24 @@ child of the window and will be disposed when the window is disposed.
 Menustrip objects defined for a window will override an application's
 Menustrip object.
 
-[MUIA_Window_Menustrip](MUI_Window/#MUIA_Window_Menustrip) replaces the old and obsolete [MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu) tag.
+[MUIA_Window_Menustrip](MUI_Window.md/#MUIA_Window_Menustrip) replaces the old and obsolete [MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu) tag.
 
 Usually, you will create the menu object with MUI's builtin object library
 from a gadtools NewMenu structure, but its also OK to define the menu tree
 "by hand" using the Family class.
 
 If you have a global menu for all your application's windows but you want
-some windows to have no menu, use the [MUIA_Window_NoMenus](MUI_Window/#MUIA_Window_NoMenus) tag.
+some windows to have no menu, use the [MUIA_Window_NoMenus](MUI_Window.md/#MUIA_Window_NoMenus) tag.
 
 The attribute is ISG since muimaster.library 20.5855, IG with earlier
 versions.
 
 ### SEE ALSO
-[MUIA_Window_NoMenus](MUI_Window/#MUIA_Window_NoMenus)
+[MUIA_Window_NoMenus](MUI_Window.md/#MUIA_Window_NoMenus)
 
 ## MUIA_Window_MouseObject
 ### NAME
-[MUIA_Window_MouseObject](MUI_Window/#MUIA_Window_MouseObject) -- V10 [..G], `Object *`, 0x8042bf9b
+[MUIA_Window_MouseObject](MUI_Window.md/#MUIA_Window_MouseObject) -- V10 [..G], `Object *`, 0x8042bf9b
 
 ### FUNCTION
 Find out which object is currently below the mouse pointer. You can set up
@@ -561,40 +561,40 @@ event handler and query the attribute in your event scheduler.
 Always returns the deepest nested object.
 
 OLD AND OBSOLETE DOCUMENTATION
-When [MUIA_Window_NeedsMouseObject](MUI_Window/#MUIA_Window_NeedsMouseObject) is enabled for this window, you can setup
-notificationns on [MUIA_Window_MouseObject](MUI_Window/#MUIA_Window_MouseObject) to find out on which object the
+When [MUIA_Window_NeedsMouseObject](MUI_Window.md/#MUIA_Window_NeedsMouseObject) is enabled for this window, you can setup
+notificationns on [MUIA_Window_MouseObject](MUI_Window.md/#MUIA_Window_MouseObject) to find out on which object the
 mouse pointer is located.
 
 ### SEE ALSO
-[MUIA_Window_NeedsMouseObject](MUI_Window/#MUIA_Window_NeedsMouseObject)
+[MUIA_Window_NeedsMouseObject](MUI_Window.md/#MUIA_Window_NeedsMouseObject)
 
 ## MUIA_Window_NeedsMouseObject
 ### NAME
-[MUIA_Window_NeedsMouseObject](MUI_Window/#MUIA_Window_NeedsMouseObject) -- V10 [I..], `BOOL`, 0x8042372a **(OBSOLETE)**
+[MUIA_Window_NeedsMouseObject](MUI_Window.md/#MUIA_Window_NeedsMouseObject) -- V10 [I..], `BOOL`, 0x8042372a **(OBSOLETE)**
 
 ### FUNCTION
-Since MUI 4, [MUIA_Window_MouseObject](MUI_Window/#MUIA_Window_MouseObject) always triggers notification.
+Since MUI 4, [MUIA_Window_MouseObject](MUI_Window.md/#MUIA_Window_MouseObject) always triggers notification.
 
 OLD AND OBSOLETE DOCUMENTATION
-If you want to react on changes of the [MUIA_Window_MouseObject](MUI_Window/#MUIA_Window_MouseObject) attribute,
+If you want to react on changes of the [MUIA_Window_MouseObject](MUI_Window.md/#MUIA_Window_MouseObject) attribute,
 you have to set this to TRUE when creating your window.
 
 ### SEE ALSO
-[MUIA_Window_MouseObject](MUI_Window/#MUIA_Window_MouseObject)
+[MUIA_Window_MouseObject](MUI_Window.md/#MUIA_Window_MouseObject)
 
 ## MUIA_Window_NoMenus
 ### NAME
-[MUIA_Window_NoMenus](MUI_Window/#MUIA_Window_NoMenus) -- V4 [ISG], `BOOL`, 0x80429df5
+[MUIA_Window_NoMenus](MUI_Window.md/#MUIA_Window_NoMenus) -- V4 [ISG], `BOOL`, 0x80429df5
 
 ### FUNCTION
 Temporarily disable the menu strip of a window.
 
 ### SEE ALSO
-[MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu)
+[MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu)
 
 ## MUIA_Window_Opacity
 ### NAME
-[MUIA_Window_Opacity](MUI_Window/#MUIA_Window_Opacity) -- V20 [ISG], `LONG`, 0x80429617
+[MUIA_Window_Opacity](MUI_Window.md/#MUIA_Window_Opacity) -- V20 [ISG], `LONG`, 0x80429617
 
 ### FUNCTION
 Specify the opacity of a window. Transparent windows are supported by
@@ -604,7 +604,7 @@ Defaults to 255 (fully opaque).
 
 ## MUIA_Window_Open
 ### NAME
-[MUIA_Window_Open](MUI_Window/#MUIA_Window_Open) -- V4 [.SG], `BOOL`, 0x80428aa0
+[MUIA_Window_Open](MUI_Window.md/#MUIA_Window_Open) -- V4 [.SG], `BOOL`, 0x80428aa0
 
 ### FUNCTION
 This little attribute can be used to open and close a window. When opening a
@@ -615,7 +615,7 @@ When the minimum size of a window is too big to fit on the screen, MUI tries
 to reduce font sizes and does a new calculation. You should always design
 your windows to fit on a 640*200 screen with all fonts set to topaz/8.
 
-When a window is closed (and you specified a [MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)), MUI remembers
+When a window is closed (and you specified a [MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)), MUI remembers
 its position and size and uses these values during the next opening.
 
 In addition to that, MUI will also check the current activation state if a
@@ -623,12 +623,12 @@ window is going to be closed and if it was activated while closing took
 place, MUI will automatically activate another window of the application
 by analysing the activation priority.
 
-After setting [MUIA_Window_Open](MUI_Window/#MUIA_Window_Open) to TRUE, you should test if MUI was able to
+After setting [MUIA_Window_Open](MUI_Window.md/#MUIA_Window_Open) to TRUE, you should test if MUI was able to
 open the window by getting the attribute again. If you don't and if this was
 the only window of your application, the user won't be able to do any input
 and your application will seem to hang.
 
-If a window is already open and you perform a second "[MUIA_Window_Open](MUI_Window/#MUIA_Window_Open),
+If a window is already open and you perform a second "[MUIA_Window_Open](MUI_Window.md/#MUIA_Window_Open),
 TRUE" on it, MUI will bring that window to front and also activate it. So it
 is always be a wise decision to check the current open state before setting
 it to TRUE.
@@ -646,43 +646,43 @@ if(open == FALSE)
 ```
 
 ### SEE ALSO
-[MUIA_Window_RootObject](MUI_Window/#MUIA_Window_RootObject)
+[MUIA_Window_RootObject](MUI_Window.md/#MUIA_Window_RootObject)
 
 ## MUIA_Window_PublicScreen
 ### NAME
-[MUIA_Window_PublicScreen](MUI_Window/#MUIA_Window_PublicScreen) -- V6 [ISG], `STRPTR`, 0x804278e4
+[MUIA_Window_PublicScreen](MUI_Window.md/#MUIA_Window_PublicScreen) -- V6 [ISG], `STRPTR`, 0x804278e4
 
 ### FUNCTION
 Force the window to appear on the public screen who's name is specified by
 this attribute. This tag overrides the user preferences setting and is
-overridden by [MUIA_Window_Screen](MUI_Window/#MUIA_Window_Screen).
+overridden by [MUIA_Window_Screen](MUI_Window.md/#MUIA_Window_Screen).
 
 Please use this tag sparely, overriding user prefs is not a good idea!
 
 ### SEE ALSO
-[MUIA_Window_Screen](MUI_Window/#MUIA_Window_Screen)
+[MUIA_Window_Screen](MUI_Window.md/#MUIA_Window_Screen)
 
 ## MUIA_Window_RefWindow
 ### NAME
-[MUIA_Window_RefWindow](MUI_Window/#MUIA_Window_RefWindow) -- V4 [IS.], `Object *`, 0x804201f4
+[MUIA_Window_RefWindow](MUI_Window.md/#MUIA_Window_RefWindow) -- V4 [IS.], `Object *`, 0x804201f4
 
 ### FUNCTION
-Setting [MUIA_Window_RefWindow](MUI_Window/#MUIA_Window_RefWindow) to another MUI window object will make the
+Setting [MUIA_Window_RefWindow](MUI_Window.md/#MUIA_Window_RefWindow) to another MUI window object will make the
 left and top position relative to this reference window. Using
-[MUIA_Window_LeftEdge](MUI_Window/#MUIA_Window_LeftEdge), MUIV_Window_LeftEdge_Centered or [MUIA_Window_TopEdge](MUI_Window/#MUIA_Window_TopEdge),
+[MUIA_Window_LeftEdge](MUI_Window.md/#MUIA_Window_LeftEdge), MUIV_Window_LeftEdge_Centered or [MUIA_Window_TopEdge](MUI_Window.md/#MUIA_Window_TopEdge),
 MUIV_Window_TopEdge_Centered tag, you can easily open one window within
 another.
 
 Note that if your window has an id, the window will remember its last
 position and reopen there. Thus, this tag is only useful if you omit
-[MUIA_Window_ID](MUI_Window/#MUIA_Window_ID), maybe for some small requester windows.
+[MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID), maybe for some small requester windows.
 
 ### SEE ALSO
-[MUIA_Window_ID](MUI_Window/#MUIA_Window_ID), [MUIA_Window_LeftEdge](MUI_Window/#MUIA_Window_LeftEdge)
+[MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID), [MUIA_Window_LeftEdge](MUI_Window.md/#MUIA_Window_LeftEdge)
 
 ## MUIA_Window_RootObject
 ### NAME
-[MUIA_Window_RootObject](MUI_Window/#MUIA_Window_RootObject) -- V4 [ISG], `Object *`, 0x8042cba5
+[MUIA_Window_RootObject](MUI_Window.md/#MUIA_Window_RootObject) -- V4 [ISG], `Object *`, 0x8042cba5
 
 ### FUNCTION
 This is a pointer to a MUI object and defines the contents of your window.
@@ -699,7 +699,7 @@ task to dispose the former root object then as it is no longer a member of
 the window anymore.
 
 ### NOTES
-You can **only** use [MUIA_Window_RootObject](MUI_Window/#MUIA_Window_RootObject) in a SetAttrs() call if your
+You can **only** use [MUIA_Window_RootObject](MUI_Window.md/#MUIA_Window_RootObject) in a SetAttrs() call if your
 window is not open yet!
 
 ### EXAMPLE
@@ -713,37 +713,37 @@ End;
 ```
 
 ### SEE ALSO
-[MUIA_Window_Open](MUI_Window/#MUIA_Window_Open)
+[MUIA_Window_Open](MUI_Window.md/#MUIA_Window_Open)
 
 ## MUIA_Window_Screen
 ### NAME
-[MUIA_Window_Screen](MUI_Window/#MUIA_Window_Screen) -- V4 [ISG], `struct Screen *`, 0x8042df4f
+[MUIA_Window_Screen](MUI_Window.md/#MUIA_Window_Screen) -- V4 [ISG], `struct Screen *`, 0x8042df4f
 
 ### FUNCTION
 You can get a pointer to the parent screen of a window by  getting this
 attribute. The result will be NULL when the window is currently closed.
 
-Specifying [MUIA_Window_Screen](MUI_Window/#MUIA_Window_Screen) at object creation time or with a SetAttrs()
+Specifying [MUIA_Window_Screen](MUI_Window.md/#MUIA_Window_Screen) at object creation time or with a SetAttrs()
 call allows you to explicitly tell MUI on which screen the window should be
 opened. You normally won't need this feature and leave the decision about
 screens to the users preferences setting.
 
 ### SEE ALSO
-[MUIA_Window_PublicScreen](MUI_Window/#MUIA_Window_PublicScreen), [MUIA_Window_Window](MUI_Window/#MUIA_Window_Window)
+[MUIA_Window_PublicScreen](MUI_Window.md/#MUIA_Window_PublicScreen), [MUIA_Window_Window](MUI_Window.md/#MUIA_Window_Window)
 
 ## MUIA_Window_ScreenTitle
 ### NAME
-[MUIA_Window_ScreenTitle](MUI_Window/#MUIA_Window_ScreenTitle) -- V5 [ISG], `STRPTR`, 0x804234b0
+[MUIA_Window_ScreenTitle](MUI_Window.md/#MUIA_Window_ScreenTitle) -- V5 [ISG], `STRPTR`, 0x804234b0
 
 ### FUNCTION
 This text will appear in the screens title bar when the window is active.
 
 ### SEE ALSO
-[MUIA_Window_Title](MUI_Window/#MUIA_Window_Title)
+[MUIA_Window_Title](MUI_Window.md/#MUIA_Window_Title)
 
 ## MUIA_Window_SizeGadget
 ### NAME
-[MUIA_Window_SizeGadget](MUI_Window/#MUIA_Window_SizeGadget) -- V4 [I..], `BOOL`, 0x8042e33d
+[MUIA_Window_SizeGadget](MUI_Window.md/#MUIA_Window_SizeGadget) -- V4 [I..], `BOOL`, 0x8042e33d
 
 ### FUNCTION
 Tell MUI if you want a sizing gadget for this window. Usually you won't
@@ -752,14 +752,14 @@ when your window is not sizeable because of your gadget layout.
 
 ## MUIA_Window_SizeRight
 ### NAME
-[MUIA_Window_SizeRight](MUI_Window/#MUIA_Window_SizeRight) -- V4 [I..], `BOOL`, 0x80424780
+[MUIA_Window_SizeRight](MUI_Window.md/#MUIA_Window_SizeRight) -- V4 [I..], `BOOL`, 0x80424780
 
 ### FUNCTION
 When set to TRUE, the size gadget will reside in the right window border.
 
 ## MUIA_Window_Sleep
 ### NAME
-[MUIA_Window_Sleep](MUI_Window/#MUIA_Window_Sleep) -- V4 [.SG], `BOOL`, 0x8042e7db
+[MUIA_Window_Sleep](MUI_Window.md/#MUIA_Window_Sleep) -- V4 [.SG], `BOOL`, 0x8042e7db
 
 ### FUNCTION
 This attribute can be used to put a window to sleep. The window gets
@@ -775,21 +775,21 @@ Only opened windows can be put to sleep. However, currently closed windows
 can be taken out of sleep nevertheless.
 
 ### SEE ALSO
-[MUIA_Application_Sleep](MUI_Application/#MUIA_Application_Sleep)
+[MUIA_Application_Sleep](MUI_Application.md/#MUIA_Application_Sleep)
 
 ## MUIA_Window_Title
 ### NAME
-[MUIA_Window_Title](MUI_Window/#MUIA_Window_Title) -- V4 [ISG], `STRPTR`, 0x8042ad3d
+[MUIA_Window_Title](MUI_Window.md/#MUIA_Window_Title) -- V4 [ISG], `STRPTR`, 0x8042ad3d
 
 ### FUNCTION
 Specify the title of a window.
 
 ### SEE ALSO
-[MUIA_Window_ScreenTitle](MUI_Window/#MUIA_Window_ScreenTitle)
+[MUIA_Window_ScreenTitle](MUI_Window.md/#MUIA_Window_ScreenTitle)
 
 ## MUIA_Window_TopEdge
 ### NAME
-[MUIA_Window_TopEdge](MUI_Window/#MUIA_Window_TopEdge) -- V4 [ISG], `LONG`, 0x80427c66
+[MUIA_Window_TopEdge](MUI_Window.md/#MUIA_Window_TopEdge) -- V4 [ISG], `LONG`, 0x80427c66
 
 ### SPECIAL INPUTS
   * MUIV_Window_TopEdge_Centered
@@ -812,41 +812,41 @@ value here but instead use one of the following macros:
 
 Defaults to MUIV_Window_TopEdge_Centered.
 
-As long as your window has a window ID ([MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)), choosing a position
+As long as your window has a window ID ([MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)), choosing a position
 is not that important. MUI will always remember a window's last position and
 size and these values will simply override your settings. Positioning and
 sizing should be completely under user control, a programmer doesn't need to
 worry about it.
 
 ### SEE ALSO
-[MUIA_Window_LeftEdge](MUI_Window/#MUIA_Window_LeftEdge), [MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)
+[MUIA_Window_LeftEdge](MUI_Window.md/#MUIA_Window_LeftEdge), [MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)
 
 ## MUIA_Window_UseBottomBorderScroller
 ### NAME
-[MUIA_Window_UseBottomBorderScroller](MUI_Window/#MUIA_Window_UseBottomBorderScroller) -- V13 [ISG], `BOOL`, 0x80424e79
+[MUIA_Window_UseBottomBorderScroller](MUI_Window.md/#MUIA_Window_UseBottomBorderScroller) -- V13 [ISG], `BOOL`, 0x80424e79
 
 ### FUNCTION
 If set to TRUE, the window will feature a scrollbar in its bottom border.
 You must set this for the window object if any children are going to use
 this window border scroller, e.g. prop gadgets with the
-[MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder) attribute.
+[MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder) attribute.
 
 ### NOTES
 Obviously, scroll gadgets in window borders won't look good with borderless
 or non-resizable windows.
 
 ### SEE ALSO
-[MUIA_Window_UseLeftBorderScroller](MUI_Window/#MUIA_Window_UseLeftBorderScroller), [MUIA_Window_UseRightBorderScroller](MUI_Window/#MUIA_Window_UseRightBorderScroller),
-[MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup/#MUIA_Scrollgroup_UseWinBorder)
+[MUIA_Window_UseLeftBorderScroller](MUI_Window.md/#MUIA_Window_UseLeftBorderScroller), [MUIA_Window_UseRightBorderScroller](MUI_Window.md/#MUIA_Window_UseRightBorderScroller),
+[MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup.md/#MUIA_Scrollgroup_UseWinBorder)
 
 ## MUIA_Window_UseLeftBorderScroller
 ### NAME
-[MUIA_Window_UseLeftBorderScroller](MUI_Window/#MUIA_Window_UseLeftBorderScroller) -- V13 [ISG], `BOOL`, 0x8042433e
+[MUIA_Window_UseLeftBorderScroller](MUI_Window.md/#MUIA_Window_UseLeftBorderScroller) -- V13 [ISG], `BOOL`, 0x8042433e
 
 ### FUNCTION
 If set to TRUE, the window will feature a scrollbar in its left border. You
 must set this for the window object if any children are going to use this
-window border scroller, e.g. prop gadgets with the [MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder)
+window border scroller, e.g. prop gadgets with the [MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder)
 attribute.
 
 ### NOTES
@@ -854,17 +854,17 @@ Obviously, scroll gadgets in window borders won't look good with borderless
 or non-resizable windows.
 
 ### SEE ALSO
-[MUIA_Window_UseBottomBorderScroller](MUI_Window/#MUIA_Window_UseBottomBorderScroller), [MUIA_Window_UseRightBorderScroller](MUI_Window/#MUIA_Window_UseRightBorderScroller),
-[MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup/#MUIA_Scrollgroup_UseWinBorder)
+[MUIA_Window_UseBottomBorderScroller](MUI_Window.md/#MUIA_Window_UseBottomBorderScroller), [MUIA_Window_UseRightBorderScroller](MUI_Window.md/#MUIA_Window_UseRightBorderScroller),
+[MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup.md/#MUIA_Scrollgroup_UseWinBorder)
 
 ## MUIA_Window_UseRightBorderScroller
 ### NAME
-[MUIA_Window_UseRightBorderScroller](MUI_Window/#MUIA_Window_UseRightBorderScroller) -- V13 [ISG], `BOOL`, 0x8042c05e
+[MUIA_Window_UseRightBorderScroller](MUI_Window.md/#MUIA_Window_UseRightBorderScroller) -- V13 [ISG], `BOOL`, 0x8042c05e
 
 ### FUNCTION
 If set to TRUE, the window will feature a scrollbar in its right border. You
 must set this for the window object if any children are going to use this
-window border scroller, e.g. prop gadgets with the [MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder)
+window border scroller, e.g. prop gadgets with the [MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder)
 attribute.
 
 ### NOTES
@@ -872,12 +872,12 @@ Obviously, scroll gadgets in window borders won't look good with borderless
 or non-resizable windows.
 
 ### SEE ALSO
-[MUIA_Window_UseLeftBorderScroller](MUI_Window/#MUIA_Window_UseLeftBorderScroller), [MUIA_Window_UseBottomBorderScroller](MUI_Window/#MUIA_Window_UseBottomBorderScroller),
-[MUIA_Prop_UseWinBorder](MUI_Prop/#MUIA_Prop_UseWinBorder), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup/#MUIA_Scrollgroup_UseWinBorder)
+[MUIA_Window_UseLeftBorderScroller](MUI_Window.md/#MUIA_Window_UseLeftBorderScroller), [MUIA_Window_UseBottomBorderScroller](MUI_Window.md/#MUIA_Window_UseBottomBorderScroller),
+[MUIA_Prop_UseWinBorder](MUI_Prop.md/#MUIA_Prop_UseWinBorder), [MUIA_Scrollgroup_UseWinBorder](MUI_Scrollgroup.md/#MUIA_Scrollgroup_UseWinBorder)
 
 ## MUIA_Window_Width
 ### NAME
-[MUIA_Window_Width](MUI_Window/#MUIA_Window_Width) -- V4 [ISG], `LONG`, 0x8042dcae
+[MUIA_Window_Width](MUI_Window.md/#MUIA_Window_Width) -- V4 [ISG], `LONG`, 0x8042dcae
 
 ### SPECIAL INPUTS
   * MUIV_Window_Width_MinMax(p)
@@ -910,18 +910,18 @@ but instead use one of the following magic macros:
 
 Defaults to MUIV_Window_Width_Default.
 
-As long as your window has a window ID ([MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)), choosing a position
+As long as your window has a window ID ([MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)), choosing a position
 is not that important. MUI will always remember a window's last position and
 size and these values will simply override your settings. Positioning and
 sizing should be completely under user control, a programmer doesn't need to
 worry about it.
 
 ### SEE ALSO
-[MUIA_Window_Height](MUI_Window/#MUIA_Window_Height), [MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)
+[MUIA_Window_Height](MUI_Window.md/#MUIA_Window_Height), [MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)
 
 ## MUIA_Window_Window
 ### NAME
-[MUIA_Window_Window](MUI_Window/#MUIA_Window_Window) -- V4 [..G], `struct Window *`, 0x80426a42
+[MUIA_Window_Window](MUI_Window.md/#MUIA_Window_Window) -- V4 [..G], `struct Window *`, 0x80426a42
 
 ### FUNCTION
 When your window is open, you can obtain a pointer  to the intuition Window
@@ -931,11 +931,11 @@ Since the user can close your window any time (e.g. iconification), you must
 be prepared to receive a NULL pointer as result.
 
 ### SEE ALSO
-[MUIA_Window_Screen](MUI_Window/#MUIA_Window_Screen)
+[MUIA_Window_Screen](MUI_Window.md/#MUIA_Window_Screen)
 
 ## MUIM_Window_AddEventHandler
 ### NAME
-[MUIM_Window_AddEventHandler](MUI_Window/#MUIM_Window_AddEventHandler) -- V16, 0x804203b7
+[MUIM_Window_AddEventHandler](MUI_Window.md/#MUIM_Window_AddEventHandler) -- V16, 0x804203b7
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_AddEventHandler, struct MUI_EventHandlerNode *ehnode);`
@@ -943,15 +943,15 @@ be prepared to receive a NULL pointer as result.
 ### FUNCTION
 Event handlers introduced in muimaster.library V16 offer a new way for
 custom classes to receive user input. They work a little like the previously
-introduced input handlers ([MUIM_Application_AddInputHandler](MUI_Application/#MUIM_Application_AddInputHandler)). You fill out a
+introduced input handlers ([MUIM_Application_AddInputHandler](MUI_Application.md/#MUIM_Application_AddInputHandler)). You fill out a
 struct MUI_EventHandlerNode (preferably located somewhere in the instance
 data of your custom class) with the type of events you wish to receive and
-then call [MUIM_Window_AddEventHandler](MUI_Window/#MUIM_Window_AddEventHandler) to add your node to a windows event
+then call [MUIM_Window_AddEventHandler](MUI_Window.md/#MUIM_Window_AddEventHandler) to add your node to a windows event
 handler queue.
 
 Whenever an input event arrives, MUIs window class iterates through the list
 of event handlers. The class of the input event is matched against the event
-handlers class field and in case of a match, the method [MUIM_HandleEvent](MUI_Area/#MUIM_HandleEvent) is
+handlers class field and in case of a match, the method [MUIM_HandleEvent](MUI_Area.md/#MUIM_HandleEvent) is
 invoked on the specified object.
 
 Each event handler may decide to "eat" the input event by returning
@@ -960,13 +960,13 @@ iterating the handler queue after calling this handler.
 
 MUI follows certain priority rules when iterating through the handler queue
 of a window. If there are handler entries for the active object
-([MUIA_Window_ActiveObject](MUI_Window/#MUIA_Window_ActiveObject)) or for the default object
-([MUIA_Window_DefaultObject](MUI_Window/#MUIA_Window_DefaultObject)), their nodes are checked before all other nodes.
+([MUIA_Window_ActiveObject](MUI_Window.md/#MUIA_Window_ActiveObject)) or for the default object
+([MUIA_Window_DefaultObject](MUI_Window.md/#MUIA_Window_DefaultObject)), their nodes are checked before all other nodes.
 Active objects are checked before default objects. If there was no active
 and no default object or if none of them ate the event, the rest of the
 handler queue is checked according to their ehn_Priority field.
 
-A good place to add/remove event handlers is the [MUIM_Setup](MUI_Area/#MUIM_Setup)/[MUIM_Cleanup](MUI_Area/#MUIM_Cleanup)
+A good place to add/remove event handlers is the [MUIM_Setup](MUI_Area.md/#MUIM_Setup)/[MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup)
 method pair of your custom class.
 
 If you wish to change certain fields (e.g. ehn_Events) in an active handler
@@ -998,15 +998,15 @@ The MUI_EventHandlerNode structure consists of these fields:
 
 **`ehn_Class`**
      if you point this to your class, MUI will invoke
-     [MUIM_HandleEvent](MUI_Area/#MUIM_HandleEvent) with CoerceMethod(ehn_Class,...) instead as
+     [MUIM_HandleEvent](MUI_Area.md/#MUIM_HandleEvent) with CoerceMethod(ehn_Class,...) instead as
      with DoMethod(obj,...). This will bypass any subclasses you
      might have and directly hand the input event to your
-     dispatcher. If you don't set ehn_Class, [MUIM_HandleEvent](MUI_Area/#MUIM_HandleEvent) is
+     dispatcher. If you don't set ehn_Class, [MUIM_HandleEvent](MUI_Area.md/#MUIM_HandleEvent) is
      sent like any other method to the true class of your object.
      Since every class should add a handler itself if it needs
-     some input, [MUIM_HandleEvent](MUI_Area/#MUIM_HandleEvent) methods are different from other
+     some input, [MUIM_HandleEvent](MUI_Area.md/#MUIM_HandleEvent) methods are different from other
      MUI methods which usually travel from class to class in an
-     object's class tree. [MUIM_HandleEvent](MUI_Area/#MUIM_HandleEvent) is more treated like a
+     object's class tree. [MUIM_HandleEvent](MUI_Area.md/#MUIM_HandleEvent) is more treated like a
      hook function instead of a method: in almost all cases you
      will want it to be passed directly to a specific class
      dispatcher (by setting ehn_Class). Also, this dispatcher will
@@ -1014,7 +1014,7 @@ The MUI_EventHandlerNode structure consists of these fields:
      return directly.
 
 ### RESULT
-[MUIM_Window_AddEventHandler](MUI_Window/#MUIM_Window_AddEventHandler) cannot fail, the result value of the method is
+[MUIM_Window_AddEventHandler](MUI_Window.md/#MUIM_Window_AddEventHandler) cannot fail, the result value of the method is
 currently undefined.
 
 ### NOTES
@@ -1025,11 +1025,11 @@ calls MUI_RequestIDCMP(). Though the old functions will remain working for
 compatibility reasons, it's suggested that only event handlers are used in
 new code.
 
-You must match each [MUIM_Window_AddEventHandler](MUI_Window/#MUIM_Window_AddEventHandler) with exactly one
-[MUIM_Window_RemEventHandler](MUI_Window/#MUIM_Window_RemEventHandler) method.
+You must match each [MUIM_Window_AddEventHandler](MUI_Window.md/#MUIM_Window_AddEventHandler) with exactly one
+[MUIM_Window_RemEventHandler](MUI_Window.md/#MUIM_Window_RemEventHandler) method.
 
 ### EXAMPLE
-[MUIM_Setup](MUI_Area/#MUIM_Setup):
+[MUIM_Setup](MUI_Area.md/#MUIM_Setup):
 ```c++
 data->ehnode.ehn_Object = obj;
 data->ehnode.ehn_Class  = cl;
@@ -1037,7 +1037,7 @@ data->ehnode.ehn_Events = IDCMP_MOUSEBUTTONS;
 DoMethod(_win(obj), MUIM_Window_AddEventHandler, &data->ehnode);
 ```
 
-[MUIM_Cleanup](MUI_Area/#MUIM_Cleanup):
+[MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup):
 ```c++
 DoMethod(_win(obj), MUIM_Window_RemEventHandler, &data->ehnode);
 ```
@@ -1053,26 +1053,26 @@ More examples can be found in the MUI demo source codes that deal with
 custom classes.
 
 ### SEE ALSO
-[MUIM_Window_RemEventHandler](MUI_Window/#MUIM_Window_RemEventHandler), [MUIM_HandleEvent](MUI_Area/#MUIM_HandleEvent)
+[MUIM_Window_RemEventHandler](MUI_Window.md/#MUIM_Window_RemEventHandler), [MUIM_HandleEvent](MUI_Area.md/#MUIM_HandleEvent)
 
 ## MUIM_Window_Cleanup
 ### NAME
-[MUIM_Window_Cleanup](MUI_Window/#MUIM_Window_Cleanup) -- V18, 0x8042ab26
+[MUIM_Window_Cleanup](MUI_Window.md/#MUIM_Window_Cleanup) -- V18, 0x8042ab26
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_Cleanup);`
 
 ### FUNCTION
-This method is the analog cleanup method for window objects as [MUIM_Cleanup](MUI_Area/#MUIM_Cleanup)
+This method is the analog cleanup method for window objects as [MUIM_Cleanup](MUI_Area.md/#MUIM_Cleanup)
 is for all other kinds of objects. Perform all the work to clean up things
-that have been set up during [MUIM_Window_Setup](MUI_Window/#MUIM_Window_Setup).
+that have been set up during [MUIM_Window_Setup](MUI_Window.md/#MUIM_Window_Setup).
 
 ### SEE ALSO
-[MUIM_Window_Setup](MUI_Window/#MUIM_Window_Setup)
+[MUIM_Window_Setup](MUI_Window.md/#MUIM_Window_Setup)
 
 ## MUIM_Window_GetMenuCheck
 ### NAME
-[MUIM_Window_GetMenuCheck](MUI_Window/#MUIM_Window_GetMenuCheck) -- V4, 0x80420414 **(OBSOLETE)**
+[MUIM_Window_GetMenuCheck](MUI_Window.md/#MUIM_Window_GetMenuCheck) -- V4, 0x80420414 **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_GetMenuCheck, ULONG MenuID);`
@@ -1085,11 +1085,11 @@ Ask whether a checkmark menu item has its checkmark set or cleared.
      the value you wrote into the UserData field of struct NewMenu.
 
 ### SEE ALSO
-[MUIM_Window_SetMenuCheck](MUI_Window/#MUIM_Window_SetMenuCheck), [MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu)
+[MUIM_Window_SetMenuCheck](MUI_Window.md/#MUIM_Window_SetMenuCheck), [MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu)
 
 ## MUIM_Window_GetMenuState
 ### NAME
-[MUIM_Window_GetMenuState](MUI_Window/#MUIM_Window_GetMenuState) -- V4, 0x80420d2f **(OBSOLETE)**
+[MUIM_Window_GetMenuState](MUI_Window.md/#MUIM_Window_GetMenuState) -- V4, 0x80420d2f **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_GetMenuState, ULONG MenuID);`
@@ -1102,11 +1102,11 @@ Ask whether a menu item is enabled or disabled.
      the value you wrote into the UserData field of struct NewMenu.
 
 ### SEE ALSO
-[MUIM_Window_SetMenuState](MUI_Window/#MUIM_Window_SetMenuState), [MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu)
+[MUIM_Window_SetMenuState](MUI_Window.md/#MUIM_Window_SetMenuState), [MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu)
 
 ## MUIM_Window_RemEventHandler
 ### NAME
-[MUIM_Window_RemEventHandler](MUI_Window/#MUIM_Window_RemEventHandler) -- V16, 0x8042679e
+[MUIM_Window_RemEventHandler](MUI_Window.md/#MUIM_Window_RemEventHandler) -- V16, 0x8042679e
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_RemEventHandler, struct MUI_EventHandlerNode *ehnode);`
@@ -1116,23 +1116,23 @@ Remove an event handler.
 
 ### INPUTS
 **`struct MUI_EventHandlerNode *ehnode`**
-     event handler node structure you passed to [MUIM_Window_AddEventHandler](MUI_Window/#MUIM_Window_AddEventHandler)
+     event handler node structure you passed to [MUIM_Window_AddEventHandler](MUI_Window.md/#MUIM_Window_AddEventHandler)
      previously.
 
 ### RESULT
-[MUIM_Window_RemEventHandler](MUI_Window/#MUIM_Window_RemEventHandler) cannot fail, the result value of the method is
+[MUIM_Window_RemEventHandler](MUI_Window.md/#MUIM_Window_RemEventHandler) cannot fail, the result value of the method is
 currently undefined.
 
 ### NOTES
-Every call to [MUIM_Window_AddEventHandler](MUI_Window/#MUIM_Window_AddEventHandler) must be matched by exactly one
-call to [MUIM_Window_RemEventHandler](MUI_Window/#MUIM_Window_RemEventHandler).
+Every call to [MUIM_Window_AddEventHandler](MUI_Window.md/#MUIM_Window_AddEventHandler) must be matched by exactly one
+call to [MUIM_Window_RemEventHandler](MUI_Window.md/#MUIM_Window_RemEventHandler).
 
 ### SEE ALSO
-[MUIM_Window_RemEventHandler](MUI_Window/#MUIM_Window_RemEventHandler), [MUIM_HandleEvent](MUI_Area/#MUIM_HandleEvent)
+[MUIM_Window_RemEventHandler](MUI_Window.md/#MUIM_Window_RemEventHandler), [MUIM_HandleEvent](MUI_Area.md/#MUIM_HandleEvent)
 
 ## MUIM_Window_ScreenToBack
 ### NAME
-[MUIM_Window_ScreenToBack](MUI_Window/#MUIM_Window_ScreenToBack) -- V4, 0x8042913d
+[MUIM_Window_ScreenToBack](MUI_Window.md/#MUIM_Window_ScreenToBack) -- V4, 0x8042913d
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_ScreenToBack);`
@@ -1142,11 +1142,11 @@ Put the window's screen to back. This command is only valid when the window
 is opened.
 
 ### SEE ALSO
-[MUIM_Window_ScreenToFront](MUI_Window/#MUIM_Window_ScreenToFront), [MUIM_Window_ToBack](MUI_Window/#MUIM_Window_ToBack), [MUIM_Window_ToFront](MUI_Window/#MUIM_Window_ToFront)
+[MUIM_Window_ScreenToFront](MUI_Window.md/#MUIM_Window_ScreenToFront), [MUIM_Window_ToBack](MUI_Window.md/#MUIM_Window_ToBack), [MUIM_Window_ToFront](MUI_Window.md/#MUIM_Window_ToFront)
 
 ## MUIM_Window_ScreenToFront
 ### NAME
-[MUIM_Window_ScreenToFront](MUI_Window/#MUIM_Window_ScreenToFront) -- V4, 0x804227a4
+[MUIM_Window_ScreenToFront](MUI_Window.md/#MUIM_Window_ScreenToFront) -- V4, 0x804227a4
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_ScreenToFront);`
@@ -1156,11 +1156,11 @@ Put the window's screen to font. This command is only valid when the window
 is opened.
 
 ### SEE ALSO
-[MUIM_Window_ScreenToBack](MUI_Window/#MUIM_Window_ScreenToBack), [MUIM_Window_ToBack](MUI_Window/#MUIM_Window_ToBack), [MUIM_Window_ToFront](MUI_Window/#MUIM_Window_ToFront)
+[MUIM_Window_ScreenToBack](MUI_Window.md/#MUIM_Window_ScreenToBack), [MUIM_Window_ToBack](MUI_Window.md/#MUIM_Window_ToBack), [MUIM_Window_ToFront](MUI_Window.md/#MUIM_Window_ToFront)
 
 ## MUIM_Window_SetCycleChain
 ### NAME
-[MUIM_Window_SetCycleChain](MUI_Window/#MUIM_Window_SetCycleChain) -- V4, 0x80426510 **(OBSOLETE)**
+[MUIM_Window_SetCycleChain](MUI_Window.md/#MUIM_Window_SetCycleChain) -- V4, 0x80426510 **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_SetCycleChain, Object *obj[1]);`
@@ -1184,11 +1184,11 @@ DoMethod(window, MUIM_Window_SetCycleChain, str1, str2, slide1, list, radio, cyc
 ```
 
 ### SEE ALSO
-[MUIA_Window_ActiveObject](MUI_Window/#MUIA_Window_ActiveObject), [MUIA_CycleChain](MUI_Area/#MUIA_CycleChain)
+[MUIA_Window_ActiveObject](MUI_Window.md/#MUIA_Window_ActiveObject), [MUIA_CycleChain](MUI_Area.md/#MUIA_CycleChain)
 
 ## MUIM_Window_SetMenuCheck
 ### NAME
-[MUIM_Window_SetMenuCheck](MUI_Window/#MUIM_Window_SetMenuCheck) -- V4, 0x80422243 **(OBSOLETE)**
+[MUIM_Window_SetMenuCheck](MUI_Window.md/#MUIM_Window_SetMenuCheck) -- V4, 0x80422243 **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_SetMenuCheck, ULONG MenuID, LONG stat);`
@@ -1204,11 +1204,11 @@ Set or clear the checkmark of a menu item.
      TRUE to set checkmark, FALSE to clear
 
 ### SEE ALSO
-[MUIM_Window_GetMenuCheck](MUI_Window/#MUIM_Window_GetMenuCheck), [MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu)
+[MUIM_Window_GetMenuCheck](MUI_Window.md/#MUIM_Window_GetMenuCheck), [MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu)
 
 ## MUIM_Window_SetMenuState
 ### NAME
-[MUIM_Window_SetMenuState](MUI_Window/#MUIM_Window_SetMenuState) -- V4, 0x80422b5e **(OBSOLETE)**
+[MUIM_Window_SetMenuState](MUI_Window.md/#MUIM_Window_SetMenuState) -- V4, 0x80422b5e **(OBSOLETE)**
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_SetMenuState, ULONG MenuID, LONG stat);`
@@ -1224,17 +1224,17 @@ Enable or disable a menu item.
      TRUE to enable item, FALSE to disable.
 
 ### SEE ALSO
-[MUIM_Window_GetMenuState](MUI_Window/#MUIM_Window_GetMenuState), [MUIA_Window_Menu](MUI_Window/#MUIA_Window_Menu)
+[MUIM_Window_GetMenuState](MUI_Window.md/#MUIM_Window_GetMenuState), [MUIA_Window_Menu](MUI_Window.md/#MUIA_Window_Menu)
 
 ## MUIM_Window_Setup
 ### NAME
-[MUIM_Window_Setup](MUI_Window/#MUIM_Window_Setup) -- V18, 0x8042c34c
+[MUIM_Window_Setup](MUI_Window.md/#MUIM_Window_Setup) -- V18, 0x8042c34c
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_Setup);`
 
 ### FUNCTION
-This method is the analog setup method for window objects as [MUIM_Setup](MUI_Area/#MUIM_Setup) is
+This method is the analog setup method for window objects as [MUIM_Setup](MUI_Area.md/#MUIM_Setup) is
 for all other kinds of objects. If you need to initialize anything ahead of
 layouting and opening the window you can override this method.
 
@@ -1242,21 +1242,21 @@ Note: The window itself is neither opened yet, nor is any window dimension
 calculated yet.
 
 ### SEE ALSO
-[MUIM_Window_Cleanup](MUI_Window/#MUIM_Window_Cleanup)
+[MUIM_Window_Cleanup](MUI_Window.md/#MUIM_Window_Cleanup)
 
 ## MUIM_Window_Snapshot
 ### NAME
-[MUIM_Window_Snapshot](MUI_Window/#MUIM_Window_Snapshot) -- V11, 0x8042945e
+[MUIM_Window_Snapshot](MUI_Window.md/#MUIM_Window_Snapshot) -- V11, 0x8042945e
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_Snapshot, LONG flags);`
 
 ### FUNCTION
-[MUIM_Window_Snapshot](MUI_Window/#MUIM_Window_Snapshot) is the programmer's interface to MUI's window position
+[MUIM_Window_Snapshot](MUI_Window.md/#MUIM_Window_Snapshot) is the programmer's interface to MUI's window position
 remembering facility.
 
 ### NOTES
-Snapshotting a window is only possible if it has a non-NULL [MUIA_Window_ID](MUI_Window/#MUIA_Window_ID).
+Snapshotting a window is only possible if it has a non-NULL [MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID).
 
 ### INPUTS
 **`LONG flags`**
@@ -1267,11 +1267,11 @@ Snapshotting a window is only possible if it has a non-NULL [MUIA_Window_ID](MUI
         This is equal to the user clicking on the window's snapshot gadget.
 
 ### SEE ALSO
-[MUIA_Window_ID](MUI_Window/#MUIA_Window_ID)
+[MUIA_Window_ID](MUI_Window.md/#MUIA_Window_ID)
 
 ## MUIM_Window_ToBack
 ### NAME
-[MUIM_Window_ToBack](MUI_Window/#MUIM_Window_ToBack) -- V4, 0x8042152e
+[MUIM_Window_ToBack](MUI_Window.md/#MUIM_Window_ToBack) -- V4, 0x8042152e
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_ToBack);`
@@ -1281,11 +1281,11 @@ Put the window to back. When the window is not currently open, this command
 does simply nothing.
 
 ### SEE ALSO
-[MUIM_Window_ToFront](MUI_Window/#MUIM_Window_ToFront), [MUIM_Window_ScreenToBack](MUI_Window/#MUIM_Window_ScreenToBack), [MUIM_Window_ScreenToFront](MUI_Window/#MUIM_Window_ScreenToFront)
+[MUIM_Window_ToFront](MUI_Window.md/#MUIM_Window_ToFront), [MUIM_Window_ScreenToBack](MUI_Window.md/#MUIM_Window_ScreenToBack), [MUIM_Window_ScreenToFront](MUI_Window.md/#MUIM_Window_ScreenToFront)
 
 ## MUIM_Window_ToFront
 ### NAME
-[MUIM_Window_ToFront](MUI_Window/#MUIM_Window_ToFront) -- V4, 0x8042554f
+[MUIM_Window_ToFront](MUI_Window.md/#MUIM_Window_ToFront) -- V4, 0x8042554f
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Window_ToFront);`
@@ -1295,7 +1295,7 @@ Put the window to front. When the window is not currently open, this command
 does simply nothing.
 
 ### SEE ALSO
-[MUIM_Window_ToBack](MUI_Window/#MUIM_Window_ToBack), [MUIM_Window_ScreenToBack](MUI_Window/#MUIM_Window_ScreenToBack), [MUIM_Window_ScreenToFront](MUI_Window/#MUIM_Window_ScreenToFront)
+[MUIM_Window_ToBack](MUI_Window.md/#MUIM_Window_ToBack), [MUIM_Window_ScreenToBack](MUI_Window.md/#MUIM_Window_ScreenToBack), [MUIM_Window_ScreenToFront](MUI_Window.md/#MUIM_Window_ScreenToFront)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

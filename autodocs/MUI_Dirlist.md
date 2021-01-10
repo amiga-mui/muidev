@@ -17,13 +17,13 @@ you can include the GUI for selecting a call in your window with lots of
 other gadgets like "Play", "Delete", etc.
 
 Dirlist class offers all of a files attributes: name, size, date, time,
-flags and comment. Using the [MUIA_List_Format](MUI_List/#MUIA_List_Format) attribute, you can control
+flags and comment. Using the [MUIA_List_Format](MUI_List.md/#MUIA_List_Format) attribute, you can control
 which of them shall be displayed.
 
 If you want to read the entries of your directory, just send the dirlist
-object a [MUIM_List_GetEntry](MUI_List/#MUIM_List_GetEntry) method. You will receive a pointer to a struct
+object a [MUIM_List_GetEntry](MUI_List.md/#MUIM_List_GetEntry) method. You will receive a pointer to a struct
 FileInfoBlock which remains valid until your next call to
-[MUIM_List_GetEntry](MUI_List/#MUIM_List_GetEntry).
+[MUIM_List_GetEntry](MUI_List.md/#MUIM_List_GetEntry).
 ## Attributes
 Attribute|Version|ISG|Type
 ---------|-------|---|----
@@ -58,7 +58,7 @@ Method|Version
 
 ## MUIA_Dirlist_AcceptPattern
 ### NAME
-[MUIA_Dirlist_AcceptPattern](MUI_Dirlist/#MUIA_Dirlist_AcceptPattern) -- V4 [ISG], `STRPTR`, 0x8042760a
+[MUIA_Dirlist_AcceptPattern](MUI_Dirlist.md/#MUIA_Dirlist_AcceptPattern) -- V4 [ISG], `STRPTR`, 0x8042760a
 
 FUNCTIONS
 Entries not matching this pattern are rejected. Note that the pattern has to
@@ -66,25 +66,25 @@ be parsed with dos.library/ParsePatternNoCase().
 Since V20 empty strings are handled like no pattern string.
 
 ### SEE ALSO
-[MUIA_Dirlist_RejectPattern](MUI_Dirlist/#MUIA_Dirlist_RejectPattern), [MUIA_Dirlist_FilterDrawers](MUI_Dirlist/#MUIA_Dirlist_FilterDrawers)
+[MUIA_Dirlist_RejectPattern](MUI_Dirlist.md/#MUIA_Dirlist_RejectPattern), [MUIA_Dirlist_FilterDrawers](MUI_Dirlist.md/#MUIA_Dirlist_FilterDrawers)
 
 ## MUIA_Dirlist_Directory
 ### NAME
-[MUIA_Dirlist_Directory](MUI_Dirlist/#MUIA_Dirlist_Directory) -- V4 [ISG], `STRPTR`, 0x8042ea41
+[MUIA_Dirlist_Directory](MUI_Dirlist.md/#MUIA_Dirlist_Directory) -- V4 [ISG], `STRPTR`, 0x8042ea41
 
 ### FUNCTION
 Set a new directory for the dirlist object. Since reading a directory can
 take a long long time, MUI delegates this work to a sub task.
 
 Setting this attribute causes the object to clear the current directory (if
-any) and start loading a new one. [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) will be set to
+any) and start loading a new one. [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) will be set to
 MUIV_Dirlist_Status_Reading and the sub task will be launched.
 
-By listening to [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status), you can learn if the directory reading
+By listening to [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status), you can learn if the directory reading
 is completed or if something went wrong.
 
 A value of NULL just clears the current directory and sets
-[MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) to MUIV_Dirlist_Status_Invalid.
+[MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) to MUIV_Dirlist_Status_Invalid.
 
 ### EXAMPLE
 ```c++
@@ -92,21 +92,21 @@ set(dirobj, MUIA_Dirlist_Directory, "ftp:incoming");
 ```
 
 ### SEE ALSO
-[MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status)
+[MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status)
 
 ## MUIA_Dirlist_DrawersOnly
 ### NAME
-[MUIA_Dirlist_DrawersOnly](MUI_Dirlist/#MUIA_Dirlist_DrawersOnly) -- V4 [IS.], `BOOL`, 0x8042b379
+[MUIA_Dirlist_DrawersOnly](MUI_Dirlist.md/#MUIA_Dirlist_DrawersOnly) -- V4 [IS.], `BOOL`, 0x8042b379
 
 ### FUNCTION
 Indicate whether you only want drawers to be displayed.
 
 ### SEE ALSO
-[MUIA_Dirlist_Directory](MUI_Dirlist/#MUIA_Dirlist_Directory), [MUIA_Dirlist_FilesOnly](MUI_Dirlist/#MUIA_Dirlist_FilesOnly)
+[MUIA_Dirlist_Directory](MUI_Dirlist.md/#MUIA_Dirlist_Directory), [MUIA_Dirlist_FilesOnly](MUI_Dirlist.md/#MUIA_Dirlist_FilesOnly)
 
 ## MUIA_Dirlist_ExAllType
 ### NAME
-[MUIA_Dirlist_ExAllType](MUI_Dirlist/#MUIA_Dirlist_ExAllType) -- V20 [I.G], `ULONG`, 0x8042cd7c
+[MUIA_Dirlist_ExAllType](MUI_Dirlist.md/#MUIA_Dirlist_ExAllType) -- V20 [I.G], `ULONG`, 0x8042cd7c
 
 ### FUNCTION
 Set an ExAll() type to use. If you need the ExAllData structure in a Dirlist
@@ -123,34 +123,34 @@ if(xget(dirobj, MUIA_Dirlist_ExAllType) >= ED_OWNER)
 ```
 
 ### SEE ALSO
-[MUIA_Dirlist_FilterHook](MUI_Dirlist/#MUIA_Dirlist_FilterHook)
+[MUIA_Dirlist_FilterHook](MUI_Dirlist.md/#MUIA_Dirlist_FilterHook)
 
 ## MUIA_Dirlist_FilesOnly
 ### NAME
-[MUIA_Dirlist_FilesOnly](MUI_Dirlist/#MUIA_Dirlist_FilesOnly) -- V4 [IS.], `BOOL`, 0x8042896a
+[MUIA_Dirlist_FilesOnly](MUI_Dirlist.md/#MUIA_Dirlist_FilesOnly) -- V4 [IS.], `BOOL`, 0x8042896a
 
 ### FUNCTION
 Indicate whether you only want files to be displayed.
 
 ### SEE ALSO
-[MUIA_Dirlist_Directory](MUI_Dirlist/#MUIA_Dirlist_Directory), [MUIA_Dirlist_DrawersOnly](MUI_Dirlist/#MUIA_Dirlist_DrawersOnly)
+[MUIA_Dirlist_Directory](MUI_Dirlist.md/#MUIA_Dirlist_Directory), [MUIA_Dirlist_DrawersOnly](MUI_Dirlist.md/#MUIA_Dirlist_DrawersOnly)
 
 ## MUIA_Dirlist_FilterDrawers
 ### NAME
-[MUIA_Dirlist_FilterDrawers](MUI_Dirlist/#MUIA_Dirlist_FilterDrawers) -- V4 [IS.], `BOOL`, 0x80424ad2
+[MUIA_Dirlist_FilterDrawers](MUI_Dirlist.md/#MUIA_Dirlist_FilterDrawers) -- V4 [IS.], `BOOL`, 0x80424ad2
 
 ### FUNCTION
-Indicate whether you want drawers matched agains [MUIA_Dirlist_RejectPattern](MUI_Dirlist/#MUIA_Dirlist_RejectPattern)
-and [MUIA_Dirlist_AcceptPattern](MUI_Dirlist/#MUIA_Dirlist_AcceptPattern).
+Indicate whether you want drawers matched agains [MUIA_Dirlist_RejectPattern](MUI_Dirlist.md/#MUIA_Dirlist_RejectPattern)
+and [MUIA_Dirlist_AcceptPattern](MUI_Dirlist.md/#MUIA_Dirlist_AcceptPattern).
 
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Dirlist_RejectPattern](MUI_Dirlist/#MUIA_Dirlist_RejectPattern), [MUIA_Dirlist_AcceptPattern](MUI_Dirlist/#MUIA_Dirlist_AcceptPattern)
+[MUIA_Dirlist_RejectPattern](MUI_Dirlist.md/#MUIA_Dirlist_RejectPattern), [MUIA_Dirlist_AcceptPattern](MUI_Dirlist.md/#MUIA_Dirlist_AcceptPattern)
 
 ## MUIA_Dirlist_FilterHook
 ### NAME
-[MUIA_Dirlist_FilterHook](MUI_Dirlist/#MUIA_Dirlist_FilterHook) -- V4 [IS.], `struct Hook *`, 0x8042ae19
+[MUIA_Dirlist_FilterHook](MUI_Dirlist.md/#MUIA_Dirlist_FilterHook) -- V4 [IS.], `struct Hook *`, 0x8042ae19
 
 ### FUNCTION
 A hook to call for each file encountered. If the function returns TRUE, the
@@ -167,15 +167,15 @@ displayed. The function receives the following parameters:
      a pointer to an initialized ExAllData structure. This one is
      valid up to the ed_Comment field.
 
-All other filter attributes are ignored when a [MUIA_Dirlist_FilterHook](MUI_Dirlist/#MUIA_Dirlist_FilterHook) is
+All other filter attributes are ignored when a [MUIA_Dirlist_FilterHook](MUI_Dirlist.md/#MUIA_Dirlist_FilterHook) is
 set.
 
 ### SEE ALSO
-[MUIA_Dirlist_Directory](MUI_Dirlist/#MUIA_Dirlist_Directory)
+[MUIA_Dirlist_Directory](MUI_Dirlist.md/#MUIA_Dirlist_Directory)
 
 ## MUIA_Dirlist_MultiSelDirs
 ### NAME
-[MUIA_Dirlist_MultiSelDirs](MUI_Dirlist/#MUIA_Dirlist_MultiSelDirs) -- V6 [IS.], `BOOL`, 0x80428653
+[MUIA_Dirlist_MultiSelDirs](MUI_Dirlist.md/#MUIA_Dirlist_MultiSelDirs) -- V6 [IS.], `BOOL`, 0x80428653
 
 ### FUNCTION
 Allows multi selection of directories.
@@ -183,68 +183,68 @@ Allows multi selection of directories.
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Dirlist_FilterDrawers](MUI_Dirlist/#MUIA_Dirlist_FilterDrawers)
+[MUIA_Dirlist_FilterDrawers](MUI_Dirlist.md/#MUIA_Dirlist_FilterDrawers)
 
 ## MUIA_Dirlist_NumBytes
 ### NAME
-[MUIA_Dirlist_NumBytes](MUI_Dirlist/#MUIA_Dirlist_NumBytes) -- V4 [..G], `LONG`, 0x80429e26
+[MUIA_Dirlist_NumBytes](MUI_Dirlist.md/#MUIA_Dirlist_NumBytes) -- V4 [..G], `LONG`, 0x80429e26
 
 ### FUNCTION
-When [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
+When [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
 bytes occupied by the directory from this tag.
 
 ### SEE ALSO
-[MUIA_Dirlist_NumFiles](MUI_Dirlist/#MUIA_Dirlist_NumFiles), [MUIA_Dirlist_NumDrawers](MUI_Dirlist/#MUIA_Dirlist_NumDrawers)
+[MUIA_Dirlist_NumFiles](MUI_Dirlist.md/#MUIA_Dirlist_NumFiles), [MUIA_Dirlist_NumDrawers](MUI_Dirlist.md/#MUIA_Dirlist_NumDrawers)
 
 ## MUIA_Dirlist_NumBytes64
 ### NAME
-[MUIA_Dirlist_NumBytes64](MUI_Dirlist/#MUIA_Dirlist_NumBytes64) -- V20 [..G], `int64 *`, 0x80428050
+[MUIA_Dirlist_NumBytes64](MUI_Dirlist.md/#MUIA_Dirlist_NumBytes64) -- V20 [..G], `int64 *`, 0x80428050
 
 ### FUNCTION
-When [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
+When [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
 bytes occupied by the directory from this tag as 64bit value.
 
 ### SEE ALSO
-[MUIA_Dirlist_NumFiles](MUI_Dirlist/#MUIA_Dirlist_NumFiles), [MUIA_Dirlist_NumDrawers](MUI_Dirlist/#MUIA_Dirlist_NumDrawers)
+[MUIA_Dirlist_NumFiles](MUI_Dirlist.md/#MUIA_Dirlist_NumFiles), [MUIA_Dirlist_NumDrawers](MUI_Dirlist.md/#MUIA_Dirlist_NumDrawers)
 
 ## MUIA_Dirlist_NumDrawers
 ### NAME
-[MUIA_Dirlist_NumDrawers](MUI_Dirlist/#MUIA_Dirlist_NumDrawers) -- V4 [..G], `LONG`, 0x80429cb8
+[MUIA_Dirlist_NumDrawers](MUI_Dirlist.md/#MUIA_Dirlist_NumDrawers) -- V4 [..G], `LONG`, 0x80429cb8
 
 ### FUNCTION
-When [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
+When [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
 drawers in the displayed directory from this tag.
 
 ### SEE ALSO
-[MUIA_Dirlist_NumFiles](MUI_Dirlist/#MUIA_Dirlist_NumFiles), [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status)
+[MUIA_Dirlist_NumFiles](MUI_Dirlist.md/#MUIA_Dirlist_NumFiles), [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status)
 
 ## MUIA_Dirlist_NumFiles
 ### NAME
-[MUIA_Dirlist_NumFiles](MUI_Dirlist/#MUIA_Dirlist_NumFiles) -- V4 [..G], `LONG`, 0x8042a6f0
+[MUIA_Dirlist_NumFiles](MUI_Dirlist.md/#MUIA_Dirlist_NumFiles) -- V4 [..G], `LONG`, 0x8042a6f0
 
 ### FUNCTION
-When [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
+When [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid, you can obtain the number of
 files in the displayed directory from this tag.
 
 ### SEE ALSO
-[MUIA_Dirlist_NumDrawers](MUI_Dirlist/#MUIA_Dirlist_NumDrawers), [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status)
+[MUIA_Dirlist_NumDrawers](MUI_Dirlist.md/#MUIA_Dirlist_NumDrawers), [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status)
 
 ## MUIA_Dirlist_Path
 ### NAME
-[MUIA_Dirlist_Path](MUI_Dirlist/#MUIA_Dirlist_Path) -- V4 [..G], `STRPTR`, 0x80426176
+[MUIA_Dirlist_Path](MUI_Dirlist.md/#MUIA_Dirlist_Path) -- V4 [..G], `STRPTR`, 0x80426176
 
 ### FUNCTION
-When [MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid and you have an active entry
-in the list ([MUIA_List_Active](MUI_List/#MUIA_List_Active) not equal MUIV_List_Active_Off), you will
+When [MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) is MUIV_Dirlist_Valid and you have an active entry
+in the list ([MUIA_List_Active](MUI_List.md/#MUIA_List_Active) not equal MUIV_List_Active_Off), you will
 receive a pointer to the complete path specification of the selected file.
 Otherwise you get a NULL.
 
 ### SEE ALSO
-[MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status)
+[MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status)
 
 ## MUIA_Dirlist_Pattern
 ### NAME
-[MUIA_Dirlist_Pattern](MUI_Dirlist/#MUIA_Dirlist_Pattern) -- V20 [IS.], `STRPTR`, 0x8042c761
+[MUIA_Dirlist_Pattern](MUI_Dirlist.md/#MUIA_Dirlist_Pattern) -- V20 [IS.], `STRPTR`, 0x8042c761
 
 ### FUNCTION
 Set a DOS pattern to match all found file names against. The given pattern
@@ -257,21 +257,21 @@ set(dirobj, MUIA_Dirlist_Pattern, "#?.png");
 ```
 
 ### SEE ALSO
-[MUIA_Dirlist_AcceptPattern](MUI_Dirlist/#MUIA_Dirlist_AcceptPattern), [MUIA_Dirlist_RejectPattern](MUI_Dirlist/#MUIA_Dirlist_RejectPattern)
+[MUIA_Dirlist_AcceptPattern](MUI_Dirlist.md/#MUIA_Dirlist_AcceptPattern), [MUIA_Dirlist_RejectPattern](MUI_Dirlist.md/#MUIA_Dirlist_RejectPattern)
 
 ## MUIA_Dirlist_RejectIcons
 ### NAME
-[MUIA_Dirlist_RejectIcons](MUI_Dirlist/#MUIA_Dirlist_RejectIcons) -- V4 [IS.], `BOOL`, 0x80424808
+[MUIA_Dirlist_RejectIcons](MUI_Dirlist.md/#MUIA_Dirlist_RejectIcons) -- V4 [IS.], `BOOL`, 0x80424808
 
 ### FUNCTION
 Indicate whether you want icons (*.info files) to be rejected.
 
 ### SEE ALSO
-[MUIA_Dirlist_Directory](MUI_Dirlist/#MUIA_Dirlist_Directory)
+[MUIA_Dirlist_Directory](MUI_Dirlist.md/#MUIA_Dirlist_Directory)
 
 ## MUIA_Dirlist_RejectPattern
 ### NAME
-[MUIA_Dirlist_RejectPattern](MUI_Dirlist/#MUIA_Dirlist_RejectPattern) -- V4 [ISG], `STRPTR`, 0x804259c7
+[MUIA_Dirlist_RejectPattern](MUI_Dirlist.md/#MUIA_Dirlist_RejectPattern) -- V4 [ISG], `STRPTR`, 0x804259c7
 
 ### FUNCTION
 Entries matching this pattern are rejected. Note that the pattern has to be
@@ -279,11 +279,11 @@ parsed with dos.library/ParsePatternNoCase().
 Since V20 empty strings are handled like no pattern string.
 
 ### SEE ALSO
-[MUIA_Dirlist_AcceptPattern](MUI_Dirlist/#MUIA_Dirlist_AcceptPattern), [MUIA_Dirlist_FilterDrawers](MUI_Dirlist/#MUIA_Dirlist_FilterDrawers)
+[MUIA_Dirlist_AcceptPattern](MUI_Dirlist.md/#MUIA_Dirlist_AcceptPattern), [MUIA_Dirlist_FilterDrawers](MUI_Dirlist.md/#MUIA_Dirlist_FilterDrawers)
 
 ## MUIA_Dirlist_SortDirs
 ### NAME
-[MUIA_Dirlist_SortDirs](MUI_Dirlist/#MUIA_Dirlist_SortDirs) -- V4 [IS.], `LONG`, 0x8042bbb9
+[MUIA_Dirlist_SortDirs](MUI_Dirlist.md/#MUIA_Dirlist_SortDirs) -- V4 [IS.], `LONG`, 0x8042bbb9
 
 ### SPECIAL INPUTS
   * MUIV_Dirlist_SortDirs_First
@@ -294,21 +294,21 @@ Since V20 empty strings are handled like no pattern string.
 Adjust the place where directories shall be displayed.
 
 ### SEE ALSO
-[MUIA_Dirlist_SortHighLow](MUI_Dirlist/#MUIA_Dirlist_SortHighLow), [MUIA_Dirlist_SortType](MUI_Dirlist/#MUIA_Dirlist_SortType)
+[MUIA_Dirlist_SortHighLow](MUI_Dirlist.md/#MUIA_Dirlist_SortHighLow), [MUIA_Dirlist_SortType](MUI_Dirlist.md/#MUIA_Dirlist_SortType)
 
 ## MUIA_Dirlist_SortHighLow
 ### NAME
-[MUIA_Dirlist_SortHighLow](MUI_Dirlist/#MUIA_Dirlist_SortHighLow) -- V4 [IS.], `BOOL`, 0x80421896
+[MUIA_Dirlist_SortHighLow](MUI_Dirlist.md/#MUIA_Dirlist_SortHighLow) -- V4 [IS.], `BOOL`, 0x80421896
 
 ### FUNCTION
 Indicate if you want to sort your directory reversely.
 
 ### SEE ALSO
-[MUIA_Dirlist_SortType](MUI_Dirlist/#MUIA_Dirlist_SortType), [MUIA_Dirlist_SortDirs](MUI_Dirlist/#MUIA_Dirlist_SortDirs)
+[MUIA_Dirlist_SortType](MUI_Dirlist.md/#MUIA_Dirlist_SortType), [MUIA_Dirlist_SortDirs](MUI_Dirlist.md/#MUIA_Dirlist_SortDirs)
 
 ## MUIA_Dirlist_SortType
 ### NAME
-[MUIA_Dirlist_SortType](MUI_Dirlist/#MUIA_Dirlist_SortType) -- V4 [IS.], `LONG`, 0x804228bc
+[MUIA_Dirlist_SortType](MUI_Dirlist.md/#MUIA_Dirlist_SortType) -- V4 [IS.], `LONG`, 0x804228bc
 
 ### SPECIAL INPUTS
   * MUIV_Dirlist_SortType_Name
@@ -326,11 +326,11 @@ Indicate if you want to sort your directory reversely.
 Indicate what fields should be used as sort criteria.
 
 ### SEE ALSO
-[MUIA_Dirlist_SortDirs](MUI_Dirlist/#MUIA_Dirlist_SortDirs), [MUIA_Dirlist_SortHighLow](MUI_Dirlist/#MUIA_Dirlist_SortHighLow)
+[MUIA_Dirlist_SortDirs](MUI_Dirlist.md/#MUIA_Dirlist_SortDirs), [MUIA_Dirlist_SortHighLow](MUI_Dirlist.md/#MUIA_Dirlist_SortHighLow)
 
 ## MUIA_Dirlist_Status
 ### NAME
-[MUIA_Dirlist_Status](MUI_Dirlist/#MUIA_Dirlist_Status) -- V4 [..G], `LONG`, 0x804240de
+[MUIA_Dirlist_Status](MUI_Dirlist.md/#MUIA_Dirlist_Status) -- V4 [..G], `LONG`, 0x804240de
 
 ### SPECIAL INPUTS
   * MUIV_Dirlist_Status_Invalid
@@ -350,11 +350,11 @@ Read the status of the dirlist object. The result is one of
      object contains a valid directory.
 
 ### SEE ALSO
-[MUIA_Dirlist_Directory](MUI_Dirlist/#MUIA_Dirlist_Directory)
+[MUIA_Dirlist_Directory](MUI_Dirlist.md/#MUIA_Dirlist_Directory)
 
 ## MUIM_Dirlist_Rename
 ### NAME
-[MUIM_Dirlist_Rename](MUI_Dirlist/#MUIM_Dirlist_Rename) -- V21, 0x8042d336
+[MUIM_Dirlist_Rename](MUI_Dirlist.md/#MUIM_Dirlist_Rename) -- V21, 0x8042d336
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dirlist_Rename, LONG row, CONST_STRPTR newname);`
@@ -378,7 +378,7 @@ dos.library/IoErr(), dos.library/Rename()
 
 ## MUIM_Dirlist_ReRead
 ### NAME
-[MUIM_Dirlist_ReRead](MUI_Dirlist/#MUIM_Dirlist_ReRead) -- V4, 0x80422d71
+[MUIM_Dirlist_ReRead](MUI_Dirlist.md/#MUIM_Dirlist_ReRead) -- V4, 0x80422d71
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dirlist_ReRead);`
@@ -393,11 +393,11 @@ if(NewCallReceived())
 ```
 
 ### SEE ALSO
-[MUIA_Dirlist_Directory](MUI_Dirlist/#MUIA_Dirlist_Directory)
+[MUIA_Dirlist_Directory](MUI_Dirlist.md/#MUIA_Dirlist_Directory)
 
 ## MUIM_Dirlist_SetComment
 ### NAME
-[MUIM_Dirlist_SetComment](MUI_Dirlist/#MUIM_Dirlist_SetComment) -- V21, 0x8042b378
+[MUIM_Dirlist_SetComment](MUI_Dirlist.md/#MUIM_Dirlist_SetComment) -- V21, 0x8042b378
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dirlist_SetComment, LONG row, CONST_STRPTR comment);`
@@ -421,7 +421,7 @@ dos.library/IoErr(), dos.library/SetComment()
 
 ## MUIM_Dirlist_SetProtection
 ### NAME
-[MUIM_Dirlist_SetProtection](MUI_Dirlist/#MUIM_Dirlist_SetProtection) -- V21, 0x804202bb
+[MUIM_Dirlist_SetProtection](MUI_Dirlist.md/#MUIM_Dirlist_SetProtection) -- V21, 0x804202bb
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Dirlist_SetProtection, LONG row, ULONG flags);`

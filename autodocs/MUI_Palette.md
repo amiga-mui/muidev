@@ -33,7 +33,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Palette_Entries
 ### NAME
-[MUIA_Palette_Entries](MUI_Palette/#MUIA_Palette_Entries) -- V6 [I.G], `struct MUI_Palette_Entry *`, 0x8042a3d8
+[MUIA_Palette_Entries](MUI_Palette.md/#MUIA_Palette_Entries) -- V6 [I.G], `struct MUI_Palette_Entry *`, 0x8042a3d8
 
 ### FUNCTION
 Specify the colors that the user should be able to adjust with this palette
@@ -76,7 +76,7 @@ struct MUI_Palette_Entry
      the same mpe_Group get selected as well and get adjusted all at
      once.
      Entry concatenation can be changed by the user, as long as you
-     don't disable this feature with the [MUIA_Palette_Groupable](MUI_Palette/#MUIA_Palette_Groupable)
+     don't disable this feature with the [MUIA_Palette_Groupable](MUI_Palette.md/#MUIA_Palette_Groupable)
      attribute.
 
 ### EXAMPLE
@@ -98,11 +98,11 @@ static struct MUI_Palette_Entry SystemDefaultPalette[] =
 ```
 
 ### SEE ALSO
-[MUIA_Palette_Names](MUI_Palette/#MUIA_Palette_Names)
+[MUIA_Palette_Names](MUI_Palette.md/#MUIA_Palette_Names)
 
 ## MUIA_Palette_Groupable
 ### NAME
-[MUIA_Palette_Groupable](MUI_Palette/#MUIA_Palette_Groupable) -- V6 [ISG], `BOOL`, 0x80423e67
+[MUIA_Palette_Groupable](MUI_Palette.md/#MUIA_Palette_Groupable) -- V6 [ISG], `BOOL`, 0x80423e67
 
 ### FUNCTION
 Enables/disables palette color grouping.
@@ -110,11 +110,11 @@ Enables/disables palette color grouping.
 Defaults to TRUE.
 
 ### SEE ALSO
-[MUIA_Palette_Entries](MUI_Palette/#MUIA_Palette_Entries)
+[MUIA_Palette_Entries](MUI_Palette.md/#MUIA_Palette_Entries)
 
 ## MUIA_Palette_Names
 ### NAME
-[MUIA_Palette_Names](MUI_Palette/#MUIA_Palette_Names) -- V6 [ISG], `STRPTR *`, 0x8042c3a2
+[MUIA_Palette_Names](MUI_Palette.md/#MUIA_Palette_Names) -- V6 [ISG], `STRPTR *`, 0x8042c3a2
 
 ### FUNCTION
 Specify the names of a palette objects color entries. Without names, the
@@ -161,7 +161,7 @@ po = PaletteObject,
 ```
 
 ### SEE ALSO
-[MUIA_Palette_Entries](MUI_Palette/#MUIA_Palette_Entries)
+[MUIA_Palette_Entries](MUI_Palette.md/#MUIA_Palette_Entries)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

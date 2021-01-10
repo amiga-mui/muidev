@@ -11,7 +11,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Levelmeter_Label
 ### NAME
-[MUIA_Levelmeter_Label](MUI_Levelmeter/#MUIA_Levelmeter_Label) -- V11 [ISG], `STRPTR`, 0x80420dd5
+[MUIA_Levelmeter_Label](MUI_Levelmeter.md/#MUIA_Levelmeter_Label) -- V11 [ISG], `STRPTR`, 0x80420dd5
 
 ### FUNCTION
 Label string to be displayed in levelmeter objects. Limited to about six

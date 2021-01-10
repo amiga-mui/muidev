@@ -13,7 +13,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Cycle_Active
 ### NAME
-[MUIA_Cycle_Active](MUI_Cycle/#MUIA_Cycle_Active) -- V4 [ISG], `LONG`, 0x80421788
+[MUIA_Cycle_Active](MUI_Cycle.md/#MUIA_Cycle_Active) -- V4 [ISG], `LONG`, 0x80421788
 
 ### SPECIAL INPUTS
   * MUIV_Cycle_Active_Next
@@ -23,8 +23,8 @@ Attribute|Version|ISG|Type
 This attributes defines the number of the active entry in the cycle gadget.
 Valid range is from 0 for the first entry to NumEntries-1 for the last.
 
-Setting [MUIA_Cycle_Active](MUI_Cycle/#MUIA_Cycle_Active) causes the gadget to be updated. On the other
-hand, when the user plays around with the gadget, [MUIA_Cycle_Active](MUI_Cycle/#MUIA_Cycle_Active) will
+Setting [MUIA_Cycle_Active](MUI_Cycle.md/#MUIA_Cycle_Active) causes the gadget to be updated. On the other
+hand, when the user plays around with the gadget, [MUIA_Cycle_Active](MUI_Cycle.md/#MUIA_Cycle_Active) will
 always reflect the current state.
 
 Using MUIV_Cycle_Active_Next and MUIV_Cycle_Active_Prev as attribute value
@@ -37,11 +37,11 @@ set(cycleobj, MUIA_Cycle_Active, 3);
 ```
 
 ### SEE ALSO
-[MUIA_Cycle_Entries](MUI_Cycle/#MUIA_Cycle_Entries)
+[MUIA_Cycle_Entries](MUI_Cycle.md/#MUIA_Cycle_Entries)
 
 ## MUIA_Cycle_Entries
 ### NAME
-[MUIA_Cycle_Entries](MUI_Cycle/#MUIA_Cycle_Entries) -- V4 [IS.], `STRPTR *`, 0x80420629
+[MUIA_Cycle_Entries](MUI_Cycle.md/#MUIA_Cycle_Entries) -- V4 [IS.], `STRPTR *`, 0x80420629
 
 ### FUNCTION
 Here you can define what entries shall be displayed in your cycle gadget.
@@ -71,7 +71,7 @@ CY_Title = CycleObject,
 ```
 
 ### SEE ALSO
-[MUIA_Cycle_Active](MUI_Cycle/#MUIA_Cycle_Active), [MUIA_Text_Contents](MUI_Text/#MUIA_Text_Contents)
+[MUIA_Cycle_Active](MUI_Cycle.md/#MUIA_Cycle_Active), [MUIA_Text_Contents](MUI_Text.md/#MUIA_Text_Contents)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

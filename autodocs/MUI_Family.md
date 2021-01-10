@@ -2,9 +2,9 @@
 ## Super class
 [Notify.mui](MUI_Notify.md)
 ## Inherited by
-* [Menu.mui](MUI_Menu)
-* [Menuitem.mui](MUI_Menuitem)
-* [Menustrip.mui](MUI_Menustrip)
+* [Menu.mui](MUI_Menu.md)
+* [Menuitem.mui](MUI_Menuitem.md)
+* [Menustrip.mui](MUI_Menustrip.md)
 ## Background
 Family class is the base class for objects that are able to handle a list of
 children. This is e.g. the case for MUIs Menustrip, Menu and Menuitem
@@ -39,7 +39,7 @@ Method|Version
 
 ## MUIA_Family_Child
 ### NAME
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child) -- V8 [I..], `Object *`, 0x8042c696
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child) -- V8 [I..], `Object *`, 0x8042c696
 
 ### FUNCTION
 You supply a pointer to a previously created MUI object here. This object
@@ -48,7 +48,7 @@ will be added to family at family creation time.
 Of course you can specify any number of child objects, limited only by
 available memory.
 
-Normally, the value for a [MUIA_Family_Child](MUI_Family/#MUIA_Family_Child) tag is a direct call to another
+Normally, the value for a [MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child) tag is a direct call to another
 MUI_NewObject(), children are generated "on the fly".
 
 When a family is disposed, all of its children will also get deleted. If you
@@ -62,37 +62,37 @@ cause the complete call to fail without leaving back any previously created
 object.
 
 ### NOTES
-As a special case, [MUIA_Group_Child](MUI_Group/#MUIA_Group_Child) is also recognized and treated as
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child).
+As a special case, [MUIA_Group_Child](MUI_Group.md/#MUIA_Group_Child) is also recognized and treated as
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child).
 
 ### SEE ALSO
-[MUIM_Family_AddTail](MUI_Family/#MUIM_Family_AddTail), [MUIM_Family_Insert](MUI_Family/#MUIM_Family_Insert), [MUIM_Family_AddHead](MUI_Family/#MUIM_Family_AddHead),
-[MUIA_Family_Remove](MUI_Family/#MUIA_Family_Remove)
+[MUIM_Family_AddTail](MUI_Family.md/#MUIM_Family_AddTail), [MUIM_Family_Insert](MUI_Family.md/#MUIM_Family_Insert), [MUIM_Family_AddHead](MUI_Family.md/#MUIM_Family_AddHead),
+[MUIA_Family_Remove](MUI_Family.md/#MUIA_Family_Remove)
 
 ## MUIA_Family_ChildCount
 ### NAME
-[MUIA_Family_ChildCount](MUI_Family/#MUIA_Family_ChildCount) -- V20 [..G], `LONG`, 0x8042b25a
+[MUIA_Family_ChildCount](MUI_Family.md/#MUIA_Family_ChildCount) -- V20 [..G], `LONG`, 0x8042b25a
 
 ### FUNCTION
 Returns the number of family members of a family object.
 
 ### SEE ALSO
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIA_Family_List
 ### NAME
-[MUIA_Family_List](MUI_Family/#MUIA_Family_List) -- V8 [..G], `struct MinList *`, 0x80424b9e
+[MUIA_Family_List](MUI_Family.md/#MUIA_Family_List) -- V8 [..G], `struct MinList *`, 0x80424b9e
 
 ### FUNCTION
 Returns a pointer to a struct MinList which contains the children of a
 family object. You must parse this list with intuition.library/NextObject().
 
 ### SEE ALSO
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_AddHead
 ### NAME
-[MUIM_Family_AddHead](MUI_Family/#MUIM_Family_AddHead) -- V8, 0x8042e200
+[MUIM_Family_AddHead](MUI_Family.md/#MUIM_Family_AddHead) -- V8, 0x8042e200
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_AddHead, Object *obj);`
@@ -106,12 +106,12 @@ usually define which types of objects are possible within their family.
      the object to be added.
 
 ### SEE ALSO
-[MUIM_Family_AddTail](MUI_Family/#MUIM_Family_AddTail), [MUIM_Family_Insert](MUI_Family/#MUIM_Family_Insert), [MUIM_Family_Remove](MUI_Family/#MUIM_Family_Remove),
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIM_Family_AddTail](MUI_Family.md/#MUIM_Family_AddTail), [MUIM_Family_Insert](MUI_Family.md/#MUIM_Family_Insert), [MUIM_Family_Remove](MUI_Family.md/#MUIM_Family_Remove),
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_AddTail
 ### NAME
-[MUIM_Family_AddTail](MUI_Family/#MUIM_Family_AddTail) -- V8, 0x8042d752
+[MUIM_Family_AddTail](MUI_Family.md/#MUIM_Family_AddTail) -- V8, 0x8042d752
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_AddTail, Object *obj);`
@@ -127,12 +127,12 @@ This method does the same as OM_ADDMEMBER.
      the object to be added.
 
 ### SEE ALSO
-[MUIM_Family_AddHead](MUI_Family/#MUIM_Family_AddHead), [MUIM_Family_Insert](MUI_Family/#MUIM_Family_Insert), [MUIM_Family_Remove](MUI_Family/#MUIM_Family_Remove),
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIM_Family_AddHead](MUI_Family.md/#MUIM_Family_AddHead), [MUIM_Family_Insert](MUI_Family.md/#MUIM_Family_Insert), [MUIM_Family_Remove](MUI_Family.md/#MUIM_Family_Remove),
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_DoChildMethods
 ### NAME
-[MUIM_Family_DoChildMethods](MUI_Family/#MUIM_Family_DoChildMethods) -- V20, 0x80429a3c
+[MUIM_Family_DoChildMethods](MUI_Family.md/#MUIM_Family_DoChildMethods) -- V20, 0x80429a3c
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_DoChildMethods, /* ... */);`
@@ -145,11 +145,11 @@ Invoke a method on all children of a family.
      the destination method.
 
 ### SEE ALSO
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_GetChild
 ### NAME
-[MUIM_Family_GetChild](MUI_Family/#MUIM_Family_GetChild) -- V20, 0x8042c556
+[MUIM_Family_GetChild](MUI_Family.md/#MUIM_Family_GetChild) -- V20, 0x8042c556
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_GetChild, LONG nr, Object *ref);`
@@ -184,7 +184,7 @@ Either use a valid index number or one of these special values:
 **`MUIV_Family_GetChild_Iterate`**
      Iterate over the list of children. The reference object must point to an
      array of 32bit entries of which the first entry carries the byte size of
-     the whole array. Successive calls of [MUIM_Family_GetChild](MUI_Family/#MUIM_Family_GetChild) will then
+     the whole array. Successive calls of [MUIM_Family_GetChild](MUI_Family.md/#MUIM_Family_GetChild) will then
      return the single family childs.
 
 ### EXAMPLE
@@ -203,11 +203,11 @@ for(child = NULL; (child = (Object *)DoMethod(family, MUIM_Family_GetChild, MUIV
 ```
 
 ### SEE ALSO
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_Insert
 ### NAME
-[MUIM_Family_Insert](MUI_Family/#MUIM_Family_Insert) -- V8, 0x80424d34
+[MUIM_Family_Insert](MUI_Family.md/#MUIM_Family_Insert) -- V8, 0x80424d34
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_Insert, Object *obj, Object *pred);`
@@ -225,12 +225,12 @@ usually define which types of objects are possible within their family.
      be a member of the family.
 
 ### SEE ALSO
-[MUIM_Family_AddTail](MUI_Family/#MUIM_Family_AddTail), [MUIM_Family_AddHead](MUI_Family/#MUIM_Family_AddHead), [MUIM_Family_Remove](MUI_Family/#MUIM_Family_Remove),
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIM_Family_AddTail](MUI_Family.md/#MUIM_Family_AddTail), [MUIM_Family_AddHead](MUI_Family.md/#MUIM_Family_AddHead), [MUIM_Family_Remove](MUI_Family.md/#MUIM_Family_Remove),
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_Remove
 ### NAME
-[MUIM_Family_Remove](MUI_Family/#MUIM_Family_Remove) -- V8, 0x8042f8a9
+[MUIM_Family_Remove](MUI_Family.md/#MUIM_Family_Remove) -- V8, 0x8042f8a9
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_Remove, Object *obj);`
@@ -245,12 +245,12 @@ This method does the same as OM_REMMEMBER.
      the object to be removed.
 
 ### SEE ALSO
-[MUIM_Family_AddTail](MUI_Family/#MUIM_Family_AddTail), [MUIM_Family_Insert](MUI_Family/#MUIM_Family_Insert), [MUIM_Family_AddHead](MUI_Family/#MUIM_Family_AddHead),
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIM_Family_AddTail](MUI_Family.md/#MUIM_Family_AddTail), [MUIM_Family_Insert](MUI_Family.md/#MUIM_Family_Insert), [MUIM_Family_AddHead](MUI_Family.md/#MUIM_Family_AddHead),
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_Reorder
 ### NAME
-[MUIM_Family_Reorder](MUI_Family/#MUIM_Family_Reorder) -- V21, 0x80426008
+[MUIM_Family_Reorder](MUI_Family.md/#MUIM_Family_Reorder) -- V21, 0x80426008
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_Reorder, Object *after, Object *array[1]);`
@@ -274,11 +274,11 @@ DoMethod(family, MUIM_Family_Reorder, NULL, child1, child2, child3, NULL);
 ```
 
 ### SEE ALSO
-[MUIM_Family_Sort](MUI_Family/#MUIM_Family_Sort)
+[MUIM_Family_Sort](MUI_Family.md/#MUIM_Family_Sort)
 
 ## MUIM_Family_Sort
 ### NAME
-[MUIM_Family_Sort](MUI_Family/#MUIM_Family_Sort) -- V8, 0x80421c49
+[MUIM_Family_Sort](MUI_Family.md/#MUIM_Family_Sort) -- V8, 0x80421c49
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_Sort, Object *obj[1]);`
@@ -292,11 +292,11 @@ Sort the children of a family.
      order. The array must be terminated with a NULL entry.
 
 ### SEE ALSO
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ## MUIM_Family_Transfer
 ### NAME
-[MUIM_Family_Transfer](MUI_Family/#MUIM_Family_Transfer) -- V8, 0x8042c14a
+[MUIM_Family_Transfer](MUI_Family.md/#MUIM_Family_Transfer) -- V8, 0x8042c14a
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Family_Transfer, Object *family);`
@@ -310,7 +310,7 @@ the same order.
      the destination family.
 
 ### SEE ALSO
-[MUIA_Family_Child](MUI_Family/#MUIA_Family_Child)
+[MUIA_Family_Child](MUI_Family.md/#MUIA_Family_Child)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

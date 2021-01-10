@@ -2,8 +2,8 @@
 ## Super class
 [Area.mui](MUI_Area.md)
 ## Inherited by
-* [Boopsi.mui](MUI_Boopsi)
-* [Prop.mui](MUI_Prop)
+* [Boopsi.mui](MUI_Boopsi.md)
+* [Prop.mui](MUI_Prop.md)
 ## Background
 This is the base class for intuition gadgets in MUI windows.
 No further documentation is available at the moment.
@@ -14,7 +14,7 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Gadget_Gadget
 ### NAME
-[MUIA_Gadget_Gadget](MUI_Gadget/#MUIA_Gadget_Gadget) -- V11 [..G], `struct Gadget *`, 0x8042ec1a
+[MUIA_Gadget_Gadget](MUI_Gadget.md/#MUIA_Gadget_Gadget) -- V11 [..G], `struct Gadget *`, 0x8042ec1a
 
 ### FUNCTION
 Subclasses may obtain a pointer to the intuition gadget here.

@@ -2,22 +2,22 @@
 ## Super class
 [Area.mui](MUI_Area.md)
 ## Inherited by
-* [Argstring.mui](MUI_Argstring)
-* [Coloradjust.mui](MUI_Coloradjust)
-* [Cycle.mui](MUI_Cycle)
-* [Keyadjust.mui](MUI_Keyadjust)
-* [Listview.mui](MUI_Listview)
-* [Mccprefs.mui](MUI_Mccprefs)
-* [Palette.mui](MUI_Palette)
-* [Panel.mui](MUI_Panel)
-* [Popstring.mui](MUI_Popstring)
-* [Radio.mui](MUI_Radio)
-* [Register.mui](MUI_Register)
-* [Scrollbar.mui](MUI_Scrollbar)
-* [Scrollgroup.mui](MUI_Scrollgroup)
-* [Selectgroup.mui](MUI_Selectgroup)
-* [Title.mui](MUI_Title)
-* [Virtgroup.mui](MUI_Virtgroup)
+* [Argstring.mui](MUI_Argstring.md)
+* [Coloradjust.mui](MUI_Coloradjust.md)
+* [Cycle.mui](MUI_Cycle.md)
+* [Keyadjust.mui](MUI_Keyadjust.md)
+* [Listview.mui](MUI_Listview.md)
+* [Mccprefs.mui](MUI_Mccprefs.md)
+* [Palette.mui](MUI_Palette.md)
+* [Panel.mui](MUI_Panel.md)
+* [Popstring.mui](MUI_Popstring.md)
+* [Radio.mui](MUI_Radio.md)
+* [Register.mui](MUI_Register.md)
+* [Scrollbar.mui](MUI_Scrollbar.md)
+* [Scrollgroup.mui](MUI_Scrollgroup.md)
+* [Selectgroup.mui](MUI_Selectgroup.md)
+* [Title.mui](MUI_Title.md)
+* [Virtgroup.mui](MUI_Virtgroup.md)
 ## Background
 Group class is responsible for the complete layout of a MUI window. A group
 may contain any number of child objects, maybe buttons, cycle gadgets or
@@ -73,7 +73,7 @@ Method|Version
 
 ## MUIA_Group_ActivePage
 ### NAME
-[MUIA_Group_ActivePage](MUI_Group/#MUIA_Group_ActivePage) -- V5 [ISG], `LONG`, 0x80424199
+[MUIA_Group_ActivePage](MUI_Group.md/#MUIA_Group_ActivePage) -- V5 [ISG], `LONG`, 0x80424199
 
 ### SPECIAL INPUTS
   * MUIV_Group_ActivePage_First
@@ -101,11 +101,11 @@ PageGroup,
 Note: You may **never** supply an incorrect page value!
 
 ### SEE ALSO
-[MUIA_Group_PageMode](MUI_Group/#MUIA_Group_PageMode)
+[MUIA_Group_PageMode](MUI_Group.md/#MUIA_Group_PageMode)
 
 ## MUIA_Group_Child
 ### NAME
-[MUIA_Group_Child](MUI_Group/#MUIA_Group_Child) -- V4 [I..], `Object *`, 0x804226e6
+[MUIA_Group_Child](MUI_Group.md/#MUIA_Group_Child) -- V4 [I..], `Object *`, 0x804226e6
 
 ### FUNCTION
 You supply a pointer to a previously created MUI object here. This object
@@ -115,7 +115,7 @@ positioning the object.
 Of course you can specify any number of child objects, limited only by
 available memory.
 
-Normally, the value for a [MUIA_Group_Child](MUI_Group/#MUIA_Group_Child) tag is a direct call to another
+Normally, the value for a [MUIA_Group_Child](MUI_Group.md/#MUIA_Group_Child) tag is a direct call to another
 MUI_NewObject(), children are generated "on the fly".
 
 When a group is disposed, all of its children will also get deleted. If you
@@ -132,21 +132,21 @@ object.
 Please have a look at some of the supplied example programs.
 
 ### SEE ALSO
-[MUIA_Group_Horiz](MUI_Group/#MUIA_Group_Horiz)
+[MUIA_Group_Horiz](MUI_Group.md/#MUIA_Group_Horiz)
 
 ## MUIA_Group_ChildCount
 ### NAME
-[MUIA_Group_ChildCount](MUI_Group/#MUIA_Group_ChildCount) -- V20 [..G], `LONG`, 0x80420322
+[MUIA_Group_ChildCount](MUI_Group.md/#MUIA_Group_ChildCount) -- V20 [..G], `LONG`, 0x80420322
 
 ### FUNCTION
 Returns the number of group members of a group object.
 
 ### SEE ALSO
-[MUIA_Group_Child](MUI_Group/#MUIA_Group_Child)
+[MUIA_Group_Child](MUI_Group.md/#MUIA_Group_Child)
 
 ## MUIA_Group_ChildList
 ### NAME
-[MUIA_Group_ChildList](MUI_Group/#MUIA_Group_ChildList) -- V4 [..G], `struct List *`, 0x80424748
+[MUIA_Group_ChildList](MUI_Group.md/#MUIA_Group_ChildList) -- V4 [..G], `struct List *`, 0x80424748
 
 ### FUNCTION
 This attribute returns a pointer to a struct List in which a group manages
@@ -160,11 +160,11 @@ Never add or remove member directly, use the OM_ADDMEMBER/OM_REMMEMBER
 methods instead!
 
 ### SEE ALSO
-[MUIA_Group_Child](MUI_Group/#MUIA_Group_Child)
+[MUIA_Group_Child](MUI_Group.md/#MUIA_Group_Child)
 
 ## MUIA_Group_Columns
 ### NAME
-[MUIA_Group_Columns](MUI_Group/#MUIA_Group_Columns) -- V4 [IS.], `LONG`, 0x8042f416
+[MUIA_Group_Columns](MUI_Group.md/#MUIA_Group_Columns) -- V4 [IS.], `LONG`, 0x8042f416
 
 ### FUNCTION
 Indicate number of columns in a two dimensional group. If you use this tag,
@@ -187,8 +187,8 @@ and dimensions are handled this way:
 
 - the weight of a column/row is the sum of all objects in this column/row.
 
-Actually, there is no difference if you use [MUIA_Group_Columns](MUI_Group/#MUIA_Group_Columns) or
-[MUIA_Group_Rows](MUI_Group/#MUIA_Group_Rows).
+Actually, there is no difference if you use [MUIA_Group_Columns](MUI_Group.md/#MUIA_Group_Columns) or
+[MUIA_Group_Rows](MUI_Group.md/#MUIA_Group_Rows).
 
 ### EXAMPLE
 ```c++
@@ -206,11 +206,11 @@ GroupObject,
 ```
 
 ### SEE ALSO
-[MUIA_Group_Rows](MUI_Group/#MUIA_Group_Rows), [MUIA_Group_Horiz](MUI_Group/#MUIA_Group_Horiz)
+[MUIA_Group_Rows](MUI_Group.md/#MUIA_Group_Rows), [MUIA_Group_Horiz](MUI_Group.md/#MUIA_Group_Horiz)
 
 ## MUIA_Group_Forward
 ### NAME
-[MUIA_Group_Forward](MUI_Group/#MUIA_Group_Forward) -- V11 [.S.], `BOOL`, 0x80421422
+[MUIA_Group_Forward](MUI_Group.md/#MUIA_Group_Forward) -- V11 [.S.], `BOOL`, 0x80421422
 
 ### FUNCTION
 Attribute controlling behaviour of a SetAttrs() function. When added before
@@ -229,11 +229,11 @@ SetAttrs(group,
 ```
 
 ### SEE ALSO
-[MUIA_Group_ForwardDepth](MUI_Group/#MUIA_Group_ForwardDepth)
+[MUIA_Group_ForwardDepth](MUI_Group.md/#MUIA_Group_ForwardDepth)
 
 ## MUIA_Group_ForwardDepth
 ### NAME
-[MUIA_Group_ForwardDepth](MUI_Group/#MUIA_Group_ForwardDepth) -- V20 [.S.], `ULONG`, 0x80428488
+[MUIA_Group_ForwardDepth](MUI_Group.md/#MUIA_Group_ForwardDepth) -- V20 [.S.], `ULONG`, 0x80428488
 
 ### FUNCTION
 Attribute controlling behaviour of a SetAttrs() function. When added before
@@ -255,11 +255,11 @@ SetAttrs(group,
 ```
 
 ### SEE ALSO
-[MUIA_Group_Forward](MUI_Group/#MUIA_Group_Forward)
+[MUIA_Group_Forward](MUI_Group.md/#MUIA_Group_Forward)
 
 ## MUIA_Group_Horiz
 ### NAME
-[MUIA_Group_Horiz](MUI_Group/#MUIA_Group_Horiz) -- V4 [I..], `BOOL`, 0x8042536b
+[MUIA_Group_Horiz](MUI_Group.md/#MUIA_Group_Horiz) -- V4 [I..], `BOOL`, 0x8042536b
 
 ### FUNCTION
 Boolean value to indicate whether the objects in this group shall be
@@ -268,8 +268,8 @@ layouted horizontally or vertically.
 Defaults to FALSE.
 
 This is the easy way of telling your group how it has to look like. If you
-want two-dimensional groups, you have to use [MUIA_Group_Columns](MUI_Group/#MUIA_Group_Columns) or
-[MUIA_Group_Rows](MUI_Group/#MUIA_Group_Rows).
+want two-dimensional groups, you have to use [MUIA_Group_Columns](MUI_Group.md/#MUIA_Group_Columns) or
+[MUIA_Group_Rows](MUI_Group.md/#MUIA_Group_Rows).
 
 ### EXAMPLE
 ```c++
@@ -282,11 +282,11 @@ GroupObject,
 ```
 
 ### SEE ALSO
-[MUIA_Group_Columns](MUI_Group/#MUIA_Group_Columns), [MUIA_Group_Rows](MUI_Group/#MUIA_Group_Rows), [MUIA_Group_Child](MUI_Group/#MUIA_Group_Child)
+[MUIA_Group_Columns](MUI_Group.md/#MUIA_Group_Columns), [MUIA_Group_Rows](MUI_Group.md/#MUIA_Group_Rows), [MUIA_Group_Child](MUI_Group.md/#MUIA_Group_Child)
 
 ## MUIA_Group_HorizCenter
 ### NAME
-[MUIA_Group_HorizCenter](MUI_Group/#MUIA_Group_HorizCenter) -- V20 [ISG], `LONG`, 0x8042cc64
+[MUIA_Group_HorizCenter](MUI_Group.md/#MUIA_Group_HorizCenter) -- V20 [ISG], `LONG`, 0x8042cc64
 
 ### SPECIAL INPUTS
   * MUIV_Group_HorizCenter_Left
@@ -300,11 +300,11 @@ space the group wants it to fill this attributes defines the alignment.
 Defaults to MUIV_Group_HorizCenter_Center.
 
 ### SEE ALSO
-[MUIA_Group_VertCenter](MUI_Group/#MUIA_Group_VertCenter)
+[MUIA_Group_VertCenter](MUI_Group.md/#MUIA_Group_VertCenter)
 
 ## MUIA_Group_HorizSpacing
 ### NAME
-[MUIA_Group_HorizSpacing](MUI_Group/#MUIA_Group_HorizSpacing) -- V4 [ISG], `LONG`, 0x8042c651
+[MUIA_Group_HorizSpacing](MUI_Group.md/#MUIA_Group_HorizSpacing) -- V4 [ISG], `LONG`, 0x8042c651
 
 ### FUNCTION
 Number of pixels to be inserted between horizontal elements of a group.
@@ -313,11 +313,11 @@ Please use this tag wisely, you will override the user's prefered default
 setting!
 
 ### SEE ALSO
-[MUIA_Group_Spacing](MUI_Group/#MUIA_Group_Spacing), [MUIA_Group_VertSpacing](MUI_Group/#MUIA_Group_VertSpacing)
+[MUIA_Group_Spacing](MUI_Group.md/#MUIA_Group_Spacing), [MUIA_Group_VertSpacing](MUI_Group.md/#MUIA_Group_VertSpacing)
 
 ## MUIA_Group_LayoutHook
 ### NAME
-[MUIA_Group_LayoutHook](MUI_Group/#MUIA_Group_LayoutHook) -- V11 [I..], `struct Hook *`, 0x8042c3b2
+[MUIA_Group_LayoutHook](MUI_Group.md/#MUIA_Group_LayoutHook) -- V11 [I..], `struct Hook *`, 0x8042c3b2
 
 ### FUNCTION
 Since version 11 of muimaster.library, you have the ability to customize the
@@ -332,7 +332,7 @@ as MUI objects and which specifies a custom layout hook for the parent
 group. This hook is then responsible for placing the objects within the
 bounds of the parent group.
 
-As soon as you specify a [MUIA_Group_LayoutHook](MUI_Group/#MUIA_Group_LayoutHook), the builtin layout
+As soon as you specify a [MUIA_Group_LayoutHook](MUI_Group.md/#MUIA_Group_LayoutHook), the builtin layout
 calculation is skipped and your hook is called whenever MUI needs some
 information. Register A2 will contain a pointer to the parent group object
 and register A1 will contain a pointer to a struct MUI_LayoutMsg. The
@@ -381,12 +381,12 @@ muimaster.library/MUI_Layout()
 
 ## MUIA_Group_PageMode
 ### NAME
-[MUIA_Group_PageMode](MUI_Group/#MUIA_Group_PageMode) -- V5 [I..], `BOOL`, 0x80421a5f
+[MUIA_Group_PageMode](MUI_Group.md/#MUIA_Group_PageMode) -- V5 [I..], `BOOL`, 0x80421a5f
 
 ### FUNCTION
 Settings this attribute to TRUE makes the current group a page group. Page
 groups always display only one of their children. Which one can be adjusted
-with the [MUIA_Group_ActivePage](MUI_Group/#MUIA_Group_ActivePage) attribute.
+with the [MUIA_Group_ActivePage](MUI_Group.md/#MUIA_Group_ActivePage) attribute.
 
 Imagine you have a preferences window with several different pages, e.g. the
 MUI preferences with object, frame, image, font, screen, keyboard and system
@@ -422,11 +422,11 @@ objects in the cycle chain (as if they all were visible at the same time).
 demo program "Pages.c"
 
 ### SEE ALSO
-[MUIA_Group_ActivePage](MUI_Group/#MUIA_Group_ActivePage)
+[MUIA_Group_ActivePage](MUI_Group.md/#MUIA_Group_ActivePage)
 
 ## MUIA_Group_Rows
 ### NAME
-[MUIA_Group_Rows](MUI_Group/#MUIA_Group_Rows) -- V4 [IS.], `LONG`, 0x8042b68f
+[MUIA_Group_Rows](MUI_Group.md/#MUIA_Group_Rows) -- V4 [IS.], `LONG`, 0x8042b68f
 
 ### FUNCTION
 Indicate number of rows in a two dimensional group. If you use this tag, the
@@ -449,15 +449,15 @@ and dimensions are handled this way:
 
 - the weight of a column/row is the sum of all objects in this column/row.
 
-Actually, there is no difference if you use [MUIA_Group_Columns](MUI_Group/#MUIA_Group_Columns) or
-[MUIA_Group_Rows](MUI_Group/#MUIA_Group_Rows).
+Actually, there is no difference if you use [MUIA_Group_Columns](MUI_Group.md/#MUIA_Group_Columns) or
+[MUIA_Group_Rows](MUI_Group.md/#MUIA_Group_Rows).
 
 ### SEE ALSO
-[MUIA_Group_Columns](MUI_Group/#MUIA_Group_Columns), [MUIA_Group_Horiz](MUI_Group/#MUIA_Group_Horiz)
+[MUIA_Group_Columns](MUI_Group.md/#MUIA_Group_Columns), [MUIA_Group_Horiz](MUI_Group.md/#MUIA_Group_Horiz)
 
 ## MUIA_Group_SameHeight
 ### NAME
-[MUIA_Group_SameHeight](MUI_Group/#MUIA_Group_SameHeight) -- V4 [I..], `BOOL`, 0x8042037e
+[MUIA_Group_SameHeight](MUI_Group.md/#MUIA_Group_SameHeight) -- V4 [I..], `BOOL`, 0x8042037e
 
 ### FUNCTION
 Boolean value to indicate that all children of this group shall have the
@@ -466,21 +466,21 @@ VSpace(x) like objects. This makes it possible to, for example, have a fixed
 size spacing in a column of objects with a dynamical but yet equal height.
 
 ### BUGS
-Up to version 5 of groupclass, using [MUIA_Group_SameHeight](MUI_Group/#MUIA_Group_SameHeight) could make
+Up to version 5 of groupclass, using [MUIA_Group_SameHeight](MUI_Group.md/#MUIA_Group_SameHeight) could make
 objects larger than their maximum height. This has been fixed for version 6.
 
 ### SEE ALSO
-[MUIA_Group_SameSize](MUI_Group/#MUIA_Group_SameSize), [MUIA_Group_SameWidth](MUI_Group/#MUIA_Group_SameWidth)
+[MUIA_Group_SameSize](MUI_Group.md/#MUIA_Group_SameSize), [MUIA_Group_SameWidth](MUI_Group.md/#MUIA_Group_SameWidth)
 
 ## MUIA_Group_SameSize
 ### NAME
-[MUIA_Group_SameSize](MUI_Group/#MUIA_Group_SameSize) -- V4 [I..], `BOOL`, 0x80420860
+[MUIA_Group_SameSize](MUI_Group.md/#MUIA_Group_SameSize) -- V4 [I..], `BOOL`, 0x80420860
 
 ### FUNCTION
-This is a shorthand for [MUIA_Group_SameWidth](MUI_Group/#MUIA_Group_SameWidth) and [MUIA_Group_SameHeight](MUI_Group/#MUIA_Group_SameHeight), it
+This is a shorthand for [MUIA_Group_SameWidth](MUI_Group.md/#MUIA_Group_SameWidth) and [MUIA_Group_SameHeight](MUI_Group.md/#MUIA_Group_SameHeight), it
 sets both of these attributes at once.
 
-Using [MUIA_Group_SameSize](MUI_Group/#MUIA_Group_SameSize), you don't need to think if your group is
+Using [MUIA_Group_SameSize](MUI_Group.md/#MUIA_Group_SameSize), you don't need to think if your group is
 horizontal or vertical, both cases are handled automatically.
 
 Forcing all objects of a group to be the same size is e.g. useful for a row
@@ -492,7 +492,7 @@ from this rule. This makes it possible to, for example, have a fixed size
 spacing in a row of equally sized buttons.
 
 ### BUGS
-Up to version 5 of groupclass, using [MUIA_Group_SameSize](MUI_Group/#MUIA_Group_SameSize) could make objects
+Up to version 5 of groupclass, using [MUIA_Group_SameSize](MUI_Group.md/#MUIA_Group_SameSize) could make objects
 larger than their maximum size. This has been fixed for version 6.
 
 ### EXAMPLE
@@ -508,11 +508,11 @@ GroupObject,
 ```
 
 ### SEE ALSO
-[MUIA_Group_SameWidth](MUI_Group/#MUIA_Group_SameWidth), [MUIA_Group_SameHeight](MUI_Group/#MUIA_Group_SameHeight)
+[MUIA_Group_SameWidth](MUI_Group.md/#MUIA_Group_SameWidth), [MUIA_Group_SameHeight](MUI_Group.md/#MUIA_Group_SameHeight)
 
 ## MUIA_Group_SameWidth
 ### NAME
-[MUIA_Group_SameWidth](MUI_Group/#MUIA_Group_SameWidth) -- V4 [I..], `BOOL`, 0x8042b3ec
+[MUIA_Group_SameWidth](MUI_Group.md/#MUIA_Group_SameWidth) -- V4 [I..], `BOOL`, 0x8042b3ec
 
 ### FUNCTION
 Boolean value to indicate that all children of this group shall have the
@@ -521,25 +521,25 @@ HSpace(x) like objects. This makes it possible to, for example, have a fixed
 size spacing in a row of equally sized buttons.
 
 ### BUGS
-Up to version 5 of groupclass, using [MUIA_Group_SameWidth](MUI_Group/#MUIA_Group_SameWidth) could make objects
+Up to version 5 of groupclass, using [MUIA_Group_SameWidth](MUI_Group.md/#MUIA_Group_SameWidth) could make objects
 larger than their maximum width. This has been fixed for version 6.
 
 ### SEE ALSO
-[MUIA_Group_SameSize](MUI_Group/#MUIA_Group_SameSize), [MUIA_Group_SameHeight](MUI_Group/#MUIA_Group_SameHeight)
+[MUIA_Group_SameSize](MUI_Group.md/#MUIA_Group_SameSize), [MUIA_Group_SameHeight](MUI_Group.md/#MUIA_Group_SameHeight)
 
 ## MUIA_Group_Spacing
 ### NAME
-[MUIA_Group_Spacing](MUI_Group/#MUIA_Group_Spacing) -- V4 [IS.], `LONG`, 0x8042866d
+[MUIA_Group_Spacing](MUI_Group.md/#MUIA_Group_Spacing) -- V4 [IS.], `LONG`, 0x8042866d
 
 ### SPECIAL INPUTS
   * MUIV_Group_Spacing_Default
   * MUIV_Group_Spacing_Percent(p)
 
 ### FUNCTION
-This is a shorthand for [MUIA_Group_HorizSpacing](MUI_Group/#MUIA_Group_HorizSpacing) and [MUIA_Group_VertSpacing](MUI_Group/#MUIA_Group_VertSpacing),
+This is a shorthand for [MUIA_Group_HorizSpacing](MUI_Group.md/#MUIA_Group_HorizSpacing) and [MUIA_Group_VertSpacing](MUI_Group.md/#MUIA_Group_VertSpacing),
 it sets both of these attributes at once.
 
-Using [MUIA_Group_Spacing](MUI_Group/#MUIA_Group_Spacing), you don't need to think if your group is
+Using [MUIA_Group_Spacing](MUI_Group.md/#MUIA_Group_Spacing), you don't need to think if your group is
 horizontal or vertical, both cases are handled automatically.
 
 Note that setting a spacing value for a group overrides the user's default
@@ -557,11 +557,11 @@ GroupObject,
 ```
 
 ### SEE ALSO
-[MUIA_Group_HorizSpacing](MUI_Group/#MUIA_Group_HorizSpacing), [MUIA_Group_VertSpacing](MUI_Group/#MUIA_Group_VertSpacing)
+[MUIA_Group_HorizSpacing](MUI_Group.md/#MUIA_Group_HorizSpacing), [MUIA_Group_VertSpacing](MUI_Group.md/#MUIA_Group_VertSpacing)
 
 ## MUIA_Group_VertCenter
 ### NAME
-[MUIA_Group_VertCenter](MUI_Group/#MUIA_Group_VertCenter) -- V20 [ISG], `LONG`, 0x8042c008
+[MUIA_Group_VertCenter](MUI_Group.md/#MUIA_Group_VertCenter) -- V20 [ISG], `LONG`, 0x8042c008
 
 ### SPECIAL INPUTS
   * MUIV_Group_VertCenter_Top
@@ -575,11 +575,11 @@ space the group wants it to fill this attributes defines the alignment.
 Defaults to MUIV_Group_VertCenter_Center.
 
 ### SEE ALSO
-[MUIA_Group_HorizCenter](MUI_Group/#MUIA_Group_HorizCenter)
+[MUIA_Group_HorizCenter](MUI_Group.md/#MUIA_Group_HorizCenter)
 
 ## MUIA_Group_VertSpacing
 ### NAME
-[MUIA_Group_VertSpacing](MUI_Group/#MUIA_Group_VertSpacing) -- V4 [ISG], `LONG`, 0x8042e1bf
+[MUIA_Group_VertSpacing](MUI_Group.md/#MUIA_Group_VertSpacing) -- V4 [ISG], `LONG`, 0x8042e1bf
 
 ### FUNCTION
 Number of pixels to be inserted between vertical elements of a group.
@@ -588,11 +588,11 @@ Please use this tag wisely, you will override the user's prefered default
 setting!
 
 ### SEE ALSO
-[MUIA_Group_Spacing](MUI_Group/#MUIA_Group_Spacing), [MUIA_Group_HorizSpacing](MUI_Group/#MUIA_Group_HorizSpacing)
+[MUIA_Group_Spacing](MUI_Group.md/#MUIA_Group_Spacing), [MUIA_Group_HorizSpacing](MUI_Group.md/#MUIA_Group_HorizSpacing)
 
 ## MUIM_Group_AddHead
 ### NAME
-[MUIM_Group_AddHead](MUI_Group/#MUIM_Group_AddHead) -- V8, 0x8042e200
+[MUIM_Group_AddHead](MUI_Group.md/#MUIM_Group_AddHead) -- V8, 0x8042e200
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_AddHead, Object *obj);`
@@ -608,11 +608,11 @@ This method adds an object at the head of the group's object list.
 FALSE for failure, TRUE for success.
 
 ### SEE ALSO
-[MUIM_Group_AddTail](MUI_Group/#MUIM_Group_AddTail), [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange)
+[MUIM_Group_AddTail](MUI_Group.md/#MUIM_Group_AddTail), [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange)
 
 ## MUIM_Group_AddTail
 ### NAME
-[MUIM_Group_AddTail](MUI_Group/#MUIM_Group_AddTail) -- V8, 0x8042d752
+[MUIM_Group_AddTail](MUI_Group.md/#MUIM_Group_AddTail) -- V8, 0x8042d752
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_AddTail, Object *obj);`
@@ -628,30 +628,30 @@ This method adds an object at the tail of the group's object list.
 FALSE for failure, TRUE for success.
 
 ### SEE ALSO
-[MUIM_Group_AddHead](MUI_Group/#MUIM_Group_AddHead), [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange)
+[MUIM_Group_AddHead](MUI_Group.md/#MUIM_Group_AddHead), [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange)
 
 ## MUIM_Group_ExitChange
 ### NAME
-[MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange) -- V11, 0x8042d1cc
+[MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange) -- V11, 0x8042d1cc
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_ExitChange);`
 
 ### FUNCTION
-Terminates [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange) state.
+Terminates [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange) state.
 
 ### SEE ALSO
-[MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange), [MUIM_Group_ExitChange2](MUI_Group/#MUIM_Group_ExitChange2)
+[MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange), [MUIM_Group_ExitChange2](MUI_Group.md/#MUIM_Group_ExitChange2)
 
 ## MUIM_Group_ExitChange2
 ### NAME
-[MUIM_Group_ExitChange2](MUI_Group/#MUIM_Group_ExitChange2) -- V12, 0x8042e541
+[MUIM_Group_ExitChange2](MUI_Group.md/#MUIM_Group_ExitChange2) -- V12, 0x8042e541
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_ExitChange2, ULONG flags);`
 
 ### FUNCTION
-Terminates [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange) state, just like [MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange), but
+Terminates [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange) state, just like [MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange), but
 with the option to prevent a relayout of the group, even if the child list has
 been modified and would require a relayout otherwise.
 
@@ -661,11 +661,11 @@ been modified and would require a relayout otherwise.
      modification.
 
 ### SEE ALSO
-[MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange)
+[MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange)
 
 ## MUIM_Group_InitChange
 ### NAME
-[MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange) -- V11, 0x80420887
+[MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange) -- V11, 0x80420887
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_InitChange);`
@@ -676,7 +676,7 @@ possibility to dynamically add/remove children from groups, even when the
 window that contains these objects is currently open. To be able to do this,
 you must first put the group into a special "exchange" state by using this
 method. Then you can add/remove children at will. When you're done, use
-[MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange) to make MUI recalculate the display.
+[MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange) to make MUI recalculate the display.
 
 ### RESULT
 Returns NULL on failure.
@@ -696,11 +696,11 @@ if(DoMethod(group, MUIM_Group_InitChange))
 ```
 
 ### SEE ALSO
-[MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange)
+[MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange)
 
 ## MUIM_Group_MoveMember
 ### NAME
-[MUIM_Group_MoveMember](MUI_Group/#MUIM_Group_MoveMember) -- V16, 0x8042ff4e
+[MUIM_Group_MoveMember](MUI_Group.md/#MUIM_Group_MoveMember) -- V16, 0x8042ff4e
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_MoveMember, Object *o, LONG pos);`
@@ -724,7 +724,7 @@ then inserted according to the second parameter.
 The result value is currently undefined.
 
 ### NOTES
-Always enclose in [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange) and [MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange).
+Always enclose in [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange) and [MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange).
 
 ### EXAMPLE
 ```c++
@@ -745,11 +745,11 @@ if(DoMethod(hgr, MUIM_Group_InitChange))
 ```
 
 ### SEE ALSO
-[MUIM_Group_Sort](MUI_Group/#MUIM_Group_Sort), [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange)
+[MUIM_Group_Sort](MUI_Group.md/#MUIM_Group_Sort), [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange)
 
 ## MUIM_Group_Remove
 ### NAME
-[MUIM_Group_Remove](MUI_Group/#MUIM_Group_Remove) -- V8, 0x8042f8a9
+[MUIM_Group_Remove](MUI_Group.md/#MUIM_Group_Remove) -- V8, 0x8042f8a9
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_Remove, Object *obj);`
@@ -766,12 +766,12 @@ the same as OM_REMMEMBER.
 FALSE for failure, TRUE for success.
 
 ### SEE ALSO
-[MUIM_Group_AddHead](MUI_Group/#MUIM_Group_AddHead), [MUIM_Group_AddTail](MUI_Group/#MUIM_Group_AddTail), [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange),
-[MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange)
+[MUIM_Group_AddHead](MUI_Group.md/#MUIM_Group_AddHead), [MUIM_Group_AddTail](MUI_Group.md/#MUIM_Group_AddTail), [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange),
+[MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange)
 
 ## MUIM_Group_Reorder
 ### NAME
-[MUIM_Group_Reorder](MUI_Group/#MUIM_Group_Reorder) -- V21, 0x80426c3f
+[MUIM_Group_Reorder](MUI_Group.md/#MUIM_Group_Reorder) -- V21, 0x80426c3f
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_Reorder, Object *after, Object *array[1]);`
@@ -795,11 +795,11 @@ DoMethod(group, MUIM_Group_Reorder, NULL, child1, child2, child3, NULL);
 ```
 
 ### SEE ALSO
-[MUIM_Group_MoveMember](MUI_Group/#MUIM_Group_MoveMember), [MUIM_Group_Sort](MUI_Group/#MUIM_Group_Sort)
+[MUIM_Group_MoveMember](MUI_Group.md/#MUIM_Group_MoveMember), [MUIM_Group_Sort](MUI_Group.md/#MUIM_Group_Sort)
 
 ## MUIM_Group_Sort
 ### NAME
-[MUIM_Group_Sort](MUI_Group/#MUIM_Group_Sort) -- V4, 0x80427417
+[MUIM_Group_Sort](MUI_Group.md/#MUIM_Group_Sort) -- V4, 0x80427417
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Group_Sort, Object *obj[1]);`
@@ -831,7 +831,7 @@ DoMethod(hgr, MUIM_Group_Sort, o4, o3, o2, o1, NULL);
 ```
 
 ### SEE ALSO
-[MUIM_Group_MoveMember](MUI_Group/#MUIM_Group_MoveMember), [MUIM_Group_InitChange](MUI_Group/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group/#MUIM_Group_ExitChange)
+[MUIM_Group_MoveMember](MUI_Group.md/#MUIM_Group_MoveMember), [MUIM_Group_InitChange](MUI_Group.md/#MUIM_Group_InitChange), [MUIM_Group_ExitChange](MUI_Group.md/#MUIM_Group_ExitChange)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

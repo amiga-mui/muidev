@@ -2,11 +2,11 @@
 ## Super class
 rootclass
 ## Inherited by
-* [Application.mui](MUI_Application)
-* [Area.mui](MUI_Area)
-* [Family.mui](MUI_Family)
-* [Textdata.mui](MUI_Textdata)
-* [Window.mui](MUI_Window)
+* [Application.mui](MUI_Application.md)
+* [Area.mui](MUI_Area.md)
+* [Family.mui](MUI_Family.md)
+* [Textdata.mui](MUI_Textdata.md)
+* [Window.mui](MUI_Window.md)
 ## Background
 Notify class is superclass of all other MUI classes. It's main purpose is to
 handle MUI's notification mechanism, but it also contains some other methods
@@ -50,7 +50,7 @@ Method|Version
 
 ## MUIA_ApplicationObject
 ### NAME
-[MUIA_ApplicationObject](MUI_Notify/#MUIA_ApplicationObject) -- V4 [..G], `Object *`, 0x8042d3ee
+[MUIA_ApplicationObject](MUI_Notify.md/#MUIA_ApplicationObject) -- V4 [..G], `Object *`, 0x8042d3ee
 
 ### FUNCTION
 You can obtain a pointer to the application object that some gadget belongs
@@ -61,27 +61,27 @@ If your object is not currently attached to an application, you will receive
 NULL.
 
 ### SEE ALSO
-[MUIA_WindowObject](MUI_Area/#MUIA_WindowObject)
+[MUIA_WindowObject](MUI_Area.md/#MUIA_WindowObject)
 
 ## MUIA_AppMessage
 ### NAME
-[MUIA_AppMessage](MUI_Notify/#MUIA_AppMessage) -- V5 [..G], `struct AppMessage *`, 0x80421955
+[MUIA_AppMessage](MUI_Notify.md/#MUIA_AppMessage) -- V5 [..G], `struct AppMessage *`, 0x80421955
 
 ### FUNCTION
 When your window is an AppWindow, i.e. you have set the
-[MUIA_Window_AppWindow](MUI_Window/#MUIA_Window_AppWindow) attribute to TRUE, you will be able to get AppMessages
-by listening to [MUIA_AppMessage](MUI_Notify/#MUIA_AppMessage). Whenever an AppMessage arrives, this
+[MUIA_Window_AppWindow](MUI_Window.md/#MUIA_Window_AppWindow) attribute to TRUE, you will be able to get AppMessages
+by listening to [MUIA_AppMessage](MUI_Notify.md/#MUIA_AppMessage). Whenever an AppMessage arrives, this
 attribute will be set to a pointer to that message.
 
-[MUIA_AppMessage](MUI_Notify/#MUIA_AppMessage) is object specific. You can e.g. set up different
+[MUIA_AppMessage](MUI_Notify.md/#MUIA_AppMessage) is object specific. You can e.g. set up different
 notifications for different objects in your window, they will only get
 executed when icons are dropped over the specific object.
 
-If you wait on [MUIA_AppMessage](MUI_Notify/#MUIA_AppMessage) with a window object, your notify will always
+If you wait on [MUIA_AppMessage](MUI_Notify.md/#MUIA_AppMessage) with a window object, your notify will always
 get executed when icons are dropped on the window.
 
 ### NOTES
-- You should use the [MUIM_CallHook](MUI_Notify/#MUIM_CallHook) method to call a hook function when an
+- You should use the [MUIM_CallHook](MUI_Notify.md/#MUIM_CallHook) method to call a hook function when an
   AppMessage arrives (see below). The pointer to the AppMessage is valid
   only as long as the notification method is executed.
 
@@ -101,40 +101,40 @@ DoMethod(winobj, MUIM_Notify, MUIA_AppMessage, MUIV_EveryTime,
 ```
 
 ### SEE ALSO
-[MUIA_Window_AppWindow](MUI_Window/#MUIA_Window_AppWindow), [MUIA_Application_DropObject](MUI_Application/#MUIA_Application_DropObject), [MUIM_CallHook](MUI_Notify/#MUIM_CallHook)
+[MUIA_Window_AppWindow](MUI_Window.md/#MUIA_Window_AppWindow), [MUIA_Application_DropObject](MUI_Application.md/#MUIA_Application_DropObject), [MUIM_CallHook](MUI_Notify.md/#MUIM_CallHook)
 
 ## MUIA_HelpLine
 ### NAME
-[MUIA_HelpLine](MUI_Notify/#MUIA_HelpLine) -- V4 [ISG], `LONG`, 0x8042a825
+[MUIA_HelpLine](MUI_Notify.md/#MUIA_HelpLine) -- V4 [ISG], `LONG`, 0x8042a825
 
 ### FUNCTION
-Define a line in a help file specified with [MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile).
+Define a line in a help file specified with [MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile).
 
 ### SEE ALSO
-[MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile), [MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode)
+[MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile), [MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode)
 
 ## MUIA_HelpNode
 ### NAME
-[MUIA_HelpNode](MUI_Notify/#MUIA_HelpNode) -- V4 [ISG], `STRPTR`, 0x80420b85
+[MUIA_HelpNode](MUI_Notify.md/#MUIA_HelpNode) -- V4 [ISG], `STRPTR`, 0x80420b85
 
 ### FUNCTION
-Define a node in a help file specified with [MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile).
+Define a node in a help file specified with [MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile).
 
 ### SEE ALSO
-[MUIA_Application_HelpFile](MUI_Application/#MUIA_Application_HelpFile), [MUIA_HelpLine](MUI_Notify/#MUIA_HelpLine)
+[MUIA_Application_HelpFile](MUI_Application.md/#MUIA_Application_HelpFile), [MUIA_HelpLine](MUI_Notify.md/#MUIA_HelpLine)
 
 ## MUIA_NoNotify
 ### NAME
-[MUIA_NoNotify](MUI_Notify/#MUIA_NoNotify) -- V7 [.S.], `BOOL`, 0x804237f9
+[MUIA_NoNotify](MUI_Notify.md/#MUIA_NoNotify) -- V7 [.S.], `BOOL`, 0x804237f9
 
 ### FUNCTION
 If you set up a notify on an attibute to react on user input, you will also
 recognize events when you change this attribute under program control with
-SetAttrs(). Setting [MUIA_NoNotify](MUI_Notify/#MUIA_NoNotify) together with your attribute will prevent
+SetAttrs(). Setting [MUIA_NoNotify](MUI_Notify.md/#MUIA_NoNotify) together with your attribute will prevent
 this notification from being triggered.
 
 ### NOTES
-[MUIA_NoNotify](MUI_Notify/#MUIA_NoNotify) is a "one time" attribute. It is only valid during the current
+[MUIA_NoNotify](MUI_Notify.md/#MUIA_NoNotify) is a "one time" attribute. It is only valid during the current
 SetAttrs() call!
 
 ### EXAMPLE
@@ -147,16 +147,16 @@ SetAttrs(slider,
 
 ## MUIA_NoNotifyMethod
 ### NAME
-[MUIA_NoNotifyMethod](MUI_Notify/#MUIA_NoNotifyMethod) -- V20 [.S.], `ULONG`, 0x80420a74
+[MUIA_NoNotifyMethod](MUI_Notify.md/#MUIA_NoNotifyMethod) -- V20 [.S.], `ULONG`, 0x80420a74
 
 ### FUNCTION
-Similar to settings [MUIA_NoNotify](MUI_Notify/#MUIA_NoNotify) to TRUE to avoid triggering notifications
+Similar to settings [MUIA_NoNotify](MUI_Notify.md/#MUIA_NoNotify) to TRUE to avoid triggering notifications
 for specific attributes setting this attribute to a specific method ID will
 not trigger the corresponding method upon setting an attribute while all
 other notifications will still be triggered.
 
 ### NOTES
-[MUIA_NoNotifyMethod](MUI_Notify/#MUIA_NoNotifyMethod) is a "one time" attribute. It is only valid during the
+[MUIA_NoNotifyMethod](MUI_Notify.md/#MUIA_NoNotifyMethod) is a "one time" attribute. It is only valid during the
 current SetAttrs() call!
 
 ### EXAMPLE
@@ -171,24 +171,24 @@ SetAttrs(slider,
 
 ## MUIA_ObjectID
 ### NAME
-[MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) -- V11 [ISG], `ULONG`, 0x8042d76e
+[MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) -- V11 [ISG], `ULONG`, 0x8042d76e
 
 ### FUNCTION
-Objects with a non NULL [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) export their contents during
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save) and import them during [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load).
+Objects with a non NULL [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) export their contents during
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save) and import them during [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load).
 
 You have to use different ObjectIDs for your objects!
 
 ### NOTES
-This was previously called [MUIA_ExportID](MUI_Area/#MUIA_ExportID) and was placed in Area class
+This was previously called [MUIA_ExportID](MUI_Area.md/#MUIA_ExportID) and was placed in Area class
 (muimaster.library V11 and below).
 
 ### SEE ALSO
-[MUIM_Application_Save](MUI_Application/#MUIM_Application_Save), [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load)
+[MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save), [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load)
 
 ## MUIA_Parent
 ### NAME
-[MUIA_Parent](MUI_Notify/#MUIA_Parent) -- V11 [..G], `Object *`, 0x8042e35f
+[MUIA_Parent](MUI_Notify.md/#MUIA_Parent) -- V11 [..G], `Object *`, 0x8042e35f
 
 ### FUNCTION
 Get a pointer to the parent object of the current object. The parent object
@@ -196,23 +196,23 @@ is always the group/family object which contains the current object. If an
 object has no parent group, this attribute will be NULL.
 
 ### SEE ALSO
-[MUIA_Group_Child](MUI_Group/#MUIA_Group_Child)
+[MUIA_Group_Child](MUI_Group.md/#MUIA_Group_Child)
 
 ## MUIA_Revision
 ### NAME
-[MUIA_Revision](MUI_Notify/#MUIA_Revision) -- V4 [..G], `LONG`, 0x80427eaa
+[MUIA_Revision](MUI_Notify.md/#MUIA_Revision) -- V4 [..G], `LONG`, 0x80427eaa
 
 ### FUNCTION
-Get the revision number of an objects class. Although [MUIA_Revision](MUI_Notify/#MUIA_Revision) is
+Get the revision number of an objects class. Although [MUIA_Revision](MUI_Notify.md/#MUIA_Revision) is
 documented at notify class, you will of course receive the revision number
 of the object's true class.
 
 ### NOTES
 Please note that if you are a MUI custom class developer you need to catch
-the [MUIA_Version](MUI_Notify/#MUIA_Version)/Revision tag within a OM_GET method or otherwise your
+the [MUIA_Version](MUI_Notify.md/#MUIA_Version)/Revision tag within a OM_GET method or otherwise your
 object will probably return the wrong version/revision number.
 It is also important that your class only return the version number if the
-[MUIA_Version](MUI_Notify/#MUIA_Version)/Revision request had been directly performed on it. Therefore
+[MUIA_Version](MUI_Notify.md/#MUIA_Version)/Revision request had been directly performed on it. Therefore
 you are recommended to use the following statements within your OM_GET
 custom class method:
 
@@ -239,30 +239,30 @@ printf("String class version %ld.%ld\n", ver , rev);
 ```
 
 ### SEE ALSO
-[MUIA_Version](MUI_Notify/#MUIA_Version)
+[MUIA_Version](MUI_Notify.md/#MUIA_Version)
 
 ## MUIA_UserData
 ### NAME
-[MUIA_UserData](MUI_Notify/#MUIA_UserData) -- V4 [ISG], `ULONG`, 0x80420313
+[MUIA_UserData](MUI_Notify.md/#MUIA_UserData) -- V4 [ISG], `ULONG`, 0x80420313
 
 ### FUNCTION
 A general purpose value to fill in any kind of information.
 
 ## MUIA_Version
 ### NAME
-[MUIA_Version](MUI_Notify/#MUIA_Version) -- V4 [..G], `LONG`, 0x80422301
+[MUIA_Version](MUI_Notify.md/#MUIA_Version) -- V4 [..G], `LONG`, 0x80422301
 
 ### FUNCTION
-Get the version number of an objects class. Although [MUIA_Version](MUI_Notify/#MUIA_Version) is
+Get the version number of an objects class. Although [MUIA_Version](MUI_Notify.md/#MUIA_Version) is
 documented at notify class, you will of course receive the version number of
 the object's true class.
 
 ### NOTES
 Please note that if you are a MUI custom class developer you need to catch
-the [MUIA_Version](MUI_Notify/#MUIA_Version)/Revision tag within a OM_GET method or otherwise your
+the [MUIA_Version](MUI_Notify.md/#MUIA_Version)/Revision tag within a OM_GET method or otherwise your
 object will probably return the wrong version/revision number.
 It is also important that your class only return the version number if the
-[MUIA_Version](MUI_Notify/#MUIA_Version)/Revision request had been directly performed on it. Therefore
+[MUIA_Version](MUI_Notify.md/#MUIA_Version)/Revision request had been directly performed on it. Therefore
 you are recommended to use the following statements within your OM_GET
 custom class method:
 
@@ -289,18 +289,18 @@ printf("String class version %ld.%ld\n", ver , rev);
 ```
 
 ### SEE ALSO
-[MUIA_Revision](MUI_Notify/#MUIA_Revision)
+[MUIA_Revision](MUI_Notify.md/#MUIA_Revision)
 
 ## MUIM_CallHook
 ### NAME
-[MUIM_CallHook](MUI_Notify/#MUIM_CallHook) -- V4, 0x8042b96b
+[MUIM_CallHook](MUI_Notify.md/#MUIM_CallHook) -- V4, 0x8042b96b
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_CallHook, struct Hook *Hook, ULONG param1, /* ... */);`
 
 ### FUNCTION
 Call a standard amiga callback hook, defined by a Hook structure. Together
-with [MUIM_Notify](MUI_Notify/#MUIM_Notify), you can easily bind hooks to buttons, your hook will be
+with [MUIM_Notify](MUI_Notify.md/#MUIM_Notify), you can easily bind hooks to buttons, your hook will be
 called when the button is pressed.
 
 The hook will be called with a pointer to the hook structure in A0, a
@@ -338,19 +338,19 @@ the knob's current level in A1.
 
 ## MUIM_Export
 ### NAME
-[MUIM_Export](MUI_Notify/#MUIM_Export) -- V12, 0x80420f1c
+[MUIM_Export](MUI_Notify.md/#MUIM_Export) -- V12, 0x80420f1c
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Export, Object *dataspace);`
 
 ### FUNCTION
 This method is called for each object in the application tree (including
-menus) during execution of [MUIM_Application_Save](MUI_Application/#MUIM_Application_Save). Its purpose is to export
+menus) during execution of [MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save). Its purpose is to export
 an object's "contents" to a dataspace object for later saving to an IFF file.
 
 If you override this method to export your custom data, you are supposed to
-use your [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) as ID for the dataspace entry. Don't export if your
-[MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) is 0.
+use your [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) as ID for the dataspace entry. Don't export if your
+[MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) is 0.
 
 ### INPUTS
 **`Object *dataspace`**
@@ -378,11 +378,11 @@ ULONG mExport(struct IClass *cl, Object *obj, struct MUIP_Export *msg)
 ```
 
 ### SEE ALSO
-[MUIM_Import](MUI_Notify/#MUIM_Import), [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load), [MUIM_Application_Save](MUI_Application/#MUIM_Application_Save)
+[MUIM_Import](MUI_Notify.md/#MUIM_Import), [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load), [MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save)
 
 ## MUIM_FindObject
 ### NAME
-[MUIM_FindObject](MUI_Notify/#MUIM_FindObject) -- V13, 0x8042038f
+[MUIM_FindObject](MUI_Notify.md/#MUIM_FindObject) -- V13, 0x8042038f
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_FindObject, Object *findme);`
@@ -397,17 +397,17 @@ returned, TRUE otherwise.
      pointer to an object to be searched.
 
 ### SEE ALSO
-[MUIA_Parent](MUI_Notify/#MUIA_Parent)
+[MUIA_Parent](MUI_Notify.md/#MUIA_Parent)
 
 ## MUIM_FindUData
 ### NAME
-[MUIM_FindUData](MUI_Notify/#MUIM_FindUData) -- V8, 0x8042c196
+[MUIM_FindUData](MUI_Notify.md/#MUIM_FindUData) -- V8, 0x8042c196
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_FindUData, ULONG udata);`
 
 ### FUNCTION
-This method tests if the [MUIA_UserData](MUI_Notify/#MUIA_UserData) of the object contains the given
+This method tests if the [MUIA_UserData](MUI_Notify.md/#MUIA_UserData) of the object contains the given
 <udata> and returns the object pointer in this case.
 
 Although this is not very useful for single objects, performing this method
@@ -428,17 +428,17 @@ A pointer to the first object with the specified user data or NULL if no
 object is found.
 
 ### NOTES
-If you have many objects in your application, [MUIM_FindUData](MUI_Notify/#MUIM_FindUData) may take quite
+If you have many objects in your application, [MUIM_FindUData](MUI_Notify.md/#MUIM_FindUData) may take quite
 long. You can limit the amount of time by performing the method not on the
 application but on the window or even on the group/family your object is
 placed in.
 
 ### SEE ALSO
-[MUIM_GetUData](MUI_Notify/#MUIM_GetUData), [MUIM_SetUData](MUI_Notify/#MUIM_SetUData)
+[MUIM_GetUData](MUI_Notify.md/#MUIM_GetUData), [MUIM_SetUData](MUI_Notify.md/#MUIM_SetUData)
 
 ## MUIM_GetConfigItem
 ### NAME
-[MUIM_GetConfigItem](MUI_Notify/#MUIM_GetConfigItem) -- V11, 0x80423edb
+[MUIM_GetConfigItem](MUI_Notify.md/#MUIM_GetConfigItem) -- V11, 0x80423edb
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_GetConfigItem, ULONG id, ULONG *storage);`
@@ -459,13 +459,13 @@ item.
 
 ## MUIM_GetUData
 ### NAME
-[MUIM_GetUData](MUI_Notify/#MUIM_GetUData) -- V8, 0x8042ed0c
+[MUIM_GetUData](MUI_Notify.md/#MUIM_GetUData) -- V8, 0x8042ed0c
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_GetUData, ULONG udata, ULONG attr, ULONG *storage);`
 
 ### FUNCTION
-This method tests if the [MUIA_UserData](MUI_Notify/#MUIA_UserData) of the object contains the given
+This method tests if the [MUIA_UserData](MUI_Notify.md/#MUIA_UserData) of the object contains the given
 <udata> and gets <attr> to <storage> for itself in this case.
 
 Although this is not very useful for single objects, performing this method
@@ -484,30 +484,30 @@ first matching object will be asked for the specified attribute.
      place to store the attribute.
 
 ### NOTES
-If you have many objects in your application, [MUIM_GetUData](MUI_Notify/#MUIM_GetUData) may take quite
+If you have many objects in your application, [MUIM_GetUData](MUI_Notify.md/#MUIM_GetUData) may take quite
 long. You can limit the amount of time by performing the method not on the
 application but on the window or even on the group/family your objects are
 placed in.
 
 ### SEE ALSO
-[MUIM_SetUData](MUI_Notify/#MUIM_SetUData), [MUIM_FindUData](MUI_Notify/#MUIM_FindUData)
+[MUIM_SetUData](MUI_Notify.md/#MUIM_SetUData), [MUIM_FindUData](MUI_Notify.md/#MUIM_FindUData)
 
 ## MUIM_Import
 ### NAME
-[MUIM_Import](MUI_Notify/#MUIM_Import) -- V12, 0x8042d012
+[MUIM_Import](MUI_Notify.md/#MUIM_Import) -- V12, 0x8042d012
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Import, Object *dataspace);`
 
 ### FUNCTION
 This method is called for each object in the application tree (including
-menus) during execution of [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load). Its purpose is to import
+menus) during execution of [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load). Its purpose is to import
 an object's "contents" from a dataspace object after loading from an IFF
 file.
 
 If you override this method to import your custom data, you are supposed to
-use your [MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) as ID for the dataspace entry. Don't import if your
-[MUIA_ObjectID](MUI_Notify/#MUIA_ObjectID) is 0.
+use your [MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) as ID for the dataspace entry. Don't import if your
+[MUIA_ObjectID](MUI_Notify.md/#MUIA_ObjectID) is 0.
 
 ### INPUTS
 **`Object *dataspace`**
@@ -536,17 +536,17 @@ ULONG mImport(struct IClass *cl, Object *obj, struct MUIP_Import *msg)
 ```
 
 ### SEE ALSO
-[MUIM_Import](MUI_Notify/#MUIM_Import), [MUIM_Application_Load](MUI_Application/#MUIM_Application_Load), [MUIM_Application_Save](MUI_Application/#MUIM_Application_Save)
+[MUIM_Import](MUI_Notify.md/#MUIM_Import), [MUIM_Application_Load](MUI_Application.md/#MUIM_Application_Load), [MUIM_Application_Save](MUI_Application.md/#MUIM_Application_Save)
 
 ## MUIM_KillNotify
 ### NAME
-[MUIM_KillNotify](MUI_Notify/#MUIM_KillNotify) -- V4, 0x8042d240
+[MUIM_KillNotify](MUI_Notify.md/#MUIM_KillNotify) -- V4, 0x8042d240
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_KillNotify, ULONG TrigAttr);`
 
 ### FUNCTION
-[MUIM_KillNotify](MUI_Notify/#MUIM_KillNotify) kills previously given notifications on specific attributes.
+[MUIM_KillNotify](MUI_Notify.md/#MUIM_KillNotify) kills previously given notifications on specific attributes.
 
 ### INPUTS
 **`ULONG TrigAttr`**
@@ -560,17 +560,17 @@ DoMethod(button, MUIM_KillNotify, MUIA_Pressed);
 ```
 
 ### SEE ALSO
-[MUIM_Notify](MUI_Notify/#MUIM_Notify)
+[MUIM_Notify](MUI_Notify.md/#MUIM_Notify)
 
 ## MUIM_KillNotifyObj
 ### NAME
-[MUIM_KillNotifyObj](MUI_Notify/#MUIM_KillNotifyObj) -- V16, 0x8042b145
+[MUIM_KillNotifyObj](MUI_Notify.md/#MUIM_KillNotifyObj) -- V16, 0x8042b145
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_KillNotifyObj, ULONG TrigAttr, Object *dest);`
 
 ### FUNCTION
-Similar to [MUIM_KillNotify](MUI_Notify/#MUIM_KillNotify) this method kills previously given notifications
+Similar to [MUIM_KillNotify](MUI_Notify.md/#MUIM_KillNotify) this method kills previously given notifications
 on specific attributes, but only for a specific destination object.
 
 ### INPUTS
@@ -588,11 +588,11 @@ DoMethod(button, MUIM_KillNotifyObj, MUIA_Pressed, otherbutton);
 ```
 
 ### SEE ALSO
-[MUIM_KillNotify](MUI_Notify/#MUIM_KillNotify)
+[MUIM_KillNotify](MUI_Notify.md/#MUIM_KillNotify)
 
 ## MUIM_MultiSet
 ### NAME
-[MUIM_MultiSet](MUI_Notify/#MUIM_MultiSet) -- V7, 0x8042d356
+[MUIM_MultiSet](MUI_Notify.md/#MUIM_MultiSet) -- V7, 0x8042d356
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_MultiSet, ULONG attr, ULONG val, Object *obj, /* ... */);`
@@ -626,17 +626,17 @@ DoMethod(xxx, MUIM_MultiSet, MUIA_Disabled, TRUE,
 ```
 
 ### SEE ALSO
-[MUIM_Set](MUI_Notify/#MUIM_Set), [MUIM_Notify](MUI_Notify/#MUIM_Notify)
+[MUIM_Set](MUI_Notify.md/#MUIM_Set), [MUIM_Notify](MUI_Notify.md/#MUIM_Notify)
 
 ## MUIM_NoNotifySet
 ### NAME
-[MUIM_NoNotifySet](MUI_Notify/#MUIM_NoNotifySet) -- V9, 0x8042216f
+[MUIM_NoNotifySet](MUI_Notify.md/#MUIM_NoNotifySet) -- V9, 0x8042216f
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_NoNotifySet, ULONG attr, ULONG val, /* ... */);`
 
 ### FUNCTION
-Acts like [MUIM_Set](MUI_Notify/#MUIM_Set) but doesn't trigger any notification. This can become
+Acts like [MUIM_Set](MUI_Notify.md/#MUIM_Set) but doesn't trigger any notification. This can become
 useful to avoid deadlocks with bi-directional connections.
 
 ### INPUTS
@@ -658,11 +658,11 @@ DoMethod(sbar, MUIM_Notify, MUIA_Prop_First, MUIV_EveryTime,
 ```
 
 ### SEE ALSO
-[MUIM_Set](MUI_Notify/#MUIM_Set)
+[MUIM_Set](MUI_Notify.md/#MUIM_Set)
 
 ## MUIM_Notify
 ### NAME
-[MUIM_Notify](MUI_Notify/#MUIM_Notify) -- V4, 0x8042c9cb
+[MUIM_Notify](MUI_Notify.md/#MUIM_Notify) -- V4, 0x8042c9cb
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Notify, ULONG TrigAttr, ULONG TrigVal, Object *DestObj, ULONG FollowParams, /* ... */);`
@@ -687,15 +687,15 @@ attribute's value within the notification method. See below.
 
 One big problem with notifications are endless loops. Imagine you have a prop
 gadget and want to show its state with a gauge object. You connect
-[MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First) with [MUIA_Gauge_Max](MUI_Gauge/#MUIA_Gauge_Max) and everything is fine, the gauge gets
+[MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First) with [MUIA_Gauge_Max](MUI_Gauge.md/#MUIA_Gauge_Max) and everything is fine, the gauge gets
 updated when the user drags around the gadget. On the other hand, if your
 program sets the gauge to a new value, you might want your prop gadget to
-immediately show this change and connect [MUIA_Gauge_Max](MUI_Gauge/#MUIA_Gauge_Max) width
-[MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First). Voila, a perfect endless loop.
+immediately show this change and connect [MUIA_Gauge_Max](MUI_Gauge.md/#MUIA_Gauge_Max) width
+[MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First). Voila, a perfect endless loop.
 
 To avoid these conditions, MUI always checks new attribute values against
 the current state and cancels notification when both values are equal. Thus,
-setting [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First) to 42 if the prop gadgets first position is already
+setting [MUIA_Prop_First](MUI_Prop.md/#MUIA_Prop_First) to 42 if the prop gadgets first position is already
 42 won't trigger any notification event.
 
 ### INPUTS
@@ -713,7 +713,7 @@ setting [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First) to 42 if the prop gadgets f
      MUIV_NotTriggerValue here. In this case, MUI will replace TRUE
      values with FALSE and FALSE values with TRUE. This can become
      quite useful when you try to set "negative" attributes like
-     [MUIA_Disabled](MUI_Area/#MUIA_Disabled).
+     [MUIA_Disabled](MUI_Area.md/#MUIA_Disabled).
 
 **`Object *DestObj`**
      object on which to perform the notification method. Either
@@ -730,7 +730,7 @@ setting [MUIA_Prop_First](MUI_Prop/#MUIA_Prop_First) to 42 if the prop gadgets f
 
  ULONG FollowParams
  of following parameters. If you e.g. have a notification method
- with three parts (maybe [MUIM_Set](MUI_Notify/#MUIM_Set), attr, val), you have to set
+ with three parts (maybe [MUIM_Set](MUI_Notify.md/#MUIM_Set), attr, val), you have to set
  FollowParams to 3. This allows MUI to copy the complete
  notification method into a private buffer for later use.
 
@@ -779,7 +779,7 @@ DoMethod(stringobj, MUIM_Notify, MUIA_String_Acknowledge, MUIV_EveryTime,
 
 ## MUIM_Set
 ### NAME
-[MUIM_Set](MUI_Notify/#MUIM_Set) -- V4, 0x8042549a
+[MUIM_Set](MUI_Notify.md/#MUIM_Set) -- V4, 0x8042549a
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Set, ULONG attr, ULONG val);`
@@ -788,7 +788,7 @@ DoMethod(stringobj, MUIM_Notify, MUIA_String_Acknowledge, MUIV_EveryTime,
 Set an attribute to a value. Normally, you would set attributes with
 intuition.library SetAttrs() or with the OM_SET method as with any other
 BOOPSI objects. But since these calls need a complete tag list, not just a
-single attribute/value pair, they are not useful within a [MUIM_Notify](MUI_Notify/#MUIM_Notify)
+single attribute/value pair, they are not useful within a [MUIM_Notify](MUI_Notify.md/#MUIM_Notify)
 method.
 
 ### INPUTS
@@ -809,11 +809,11 @@ SetAttrs(strobj, MUIA_String_Contents, "foobar", TAG_DONE);
 are equal.
 
 ### SEE ALSO
-[MUIM_SetAsString](MUI_Notify/#MUIM_SetAsString), [MUIM_Notify](MUI_Notify/#MUIM_Notify), [MUIM_NoNotifySet](MUI_Notify/#MUIM_NoNotifySet)
+[MUIM_SetAsString](MUI_Notify.md/#MUIM_SetAsString), [MUIM_Notify](MUI_Notify.md/#MUIM_Notify), [MUIM_NoNotifySet](MUI_Notify.md/#MUIM_NoNotifySet)
 
 ## MUIM_SetAsString
 ### NAME
-[MUIM_SetAsString](MUI_Notify/#MUIM_SetAsString) -- V4, 0x80422590
+[MUIM_SetAsString](MUI_Notify.md/#MUIM_SetAsString) -- V4, 0x80422590
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_SetAsString, ULONG attr, CONST_STRPTR format, ULONG val, /* ... */);`
@@ -854,17 +854,17 @@ DoMethod(propobj, MUIM_Notify, MUIA_Prop_First, MUIV_EveryTime,
 ```
 
 ### SEE ALSO
-[MUIM_Set](MUI_Notify/#MUIM_Set), [MUIM_Notify](MUI_Notify/#MUIM_Notify)
+[MUIM_Set](MUI_Notify.md/#MUIM_Set), [MUIM_Notify](MUI_Notify.md/#MUIM_Notify)
 
 ## MUIM_SetUData
 ### NAME
-[MUIM_SetUData](MUI_Notify/#MUIM_SetUData) -- V8, 0x8042c920
+[MUIM_SetUData](MUI_Notify.md/#MUIM_SetUData) -- V8, 0x8042c920
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_SetUData, ULONG udata, ULONG attr, ULONG val);`
 
 ### FUNCTION
-This method tests if the [MUIA_UserData](MUI_Notify/#MUIA_UserData) of the object contains the given
+This method tests if the [MUIA_UserData](MUI_Notify.md/#MUIA_UserData) of the object contains the given
 <udata> and sets <attr> to <val> for itself in this case.
 
 Altough this is not very useful for single objects, performing this method
@@ -873,7 +873,7 @@ children (any maybe their children) are tested against <udata> and all
 matching objects will get the attribute set.
 
 If you e.g. want to clear several string gadgets in your applciation at
-once, you simply give them the same [MUIA_UserData](MUI_Notify/#MUIA_UserData) and use
+once, you simply give them the same [MUIA_UserData](MUI_Notify.md/#MUIA_UserData) and use
 
 ```c++
 DoMethod(app, MUIM_SetUData, MyUDATA, MUIA_String_Contents, NULL);
@@ -890,25 +890,25 @@ DoMethod(app, MUIM_SetUData, MyUDATA, MUIA_String_Contents, NULL);
      value to set attribute to.
 
 ### NOTES
-If you have many objects in your application, [MUIM_SetUData](MUI_Notify/#MUIM_SetUData) may take quite
+If you have many objects in your application, [MUIM_SetUData](MUI_Notify.md/#MUIM_SetUData) may take quite
 long. You can limit the amount of time by performing the method not on the
 application but on the window or even on the group your gadgets are place
 in.
 
 ### SEE ALSO
-[MUIM_GetUData](MUI_Notify/#MUIM_GetUData), [MUIM_FindUData](MUI_Notify/#MUIM_FindUData), [MUIM_SetUDataOnce](MUI_Notify/#MUIM_SetUDataOnce)
+[MUIM_GetUData](MUI_Notify.md/#MUIM_GetUData), [MUIM_FindUData](MUI_Notify.md/#MUIM_FindUData), [MUIM_SetUDataOnce](MUI_Notify.md/#MUIM_SetUDataOnce)
 
 ## MUIM_SetUDataOnce
 ### NAME
-[MUIM_SetUDataOnce](MUI_Notify/#MUIM_SetUDataOnce) -- V11, 0x8042ca19
+[MUIM_SetUDataOnce](MUI_Notify.md/#MUIM_SetUDataOnce) -- V11, 0x8042ca19
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_SetUDataOnce, ULONG udata, ULONG attr, ULONG val);`
 
 ### FUNCTION
-This method performs like [MUIM_SetUData](MUI_Notify/#MUIM_SetUData), but stops when it has found an
+This method performs like [MUIM_SetUData](MUI_Notify.md/#MUIM_SetUData), but stops when it has found an
 object with the given user data. If you don't have objects with equal user
-datas and don't rely on setting all of them, [MUIM_SetUDataOnce](MUI_Notify/#MUIM_SetUDataOnce) is
+datas and don't rely on setting all of them, [MUIM_SetUDataOnce](MUI_Notify.md/#MUIM_SetUDataOnce) is
 preferrable because it's more efficient.
 
 ### INPUTS
@@ -922,12 +922,12 @@ preferrable because it's more efficient.
      value to set attribute to.
 
 ### SEE ALSO
-[MUIM_SetUData](MUI_Notify/#MUIM_SetUData), [MUIM_GetUData](MUI_Notify/#MUIM_GetUData)
+[MUIM_SetUData](MUI_Notify.md/#MUIM_SetUData), [MUIM_GetUData](MUI_Notify.md/#MUIM_GetUData)
 
 
 ## MUIM_WriteLong
 ### NAME
-[MUIM_WriteLong](MUI_Notify/#MUIM_WriteLong) -- V6, 0x80428d86
+[MUIM_WriteLong](MUI_Notify.md/#MUIM_WriteLong) -- V6, 0x80428d86
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_WriteLong, ULONG val, ULONG *memory);`
@@ -956,11 +956,11 @@ DoMethod(slider, MUIM_Notify, MUIA_Numeric_Value, MUIV_EveryTime,
 ```
 
 ### SEE ALSO
-[MUIM_WriteString](MUI_Notify/#MUIM_WriteString), [MUIM_Notify](MUI_Notify/#MUIM_Notify)
+[MUIM_WriteString](MUI_Notify.md/#MUIM_WriteString), [MUIM_Notify](MUI_Notify.md/#MUIM_Notify)
 
 ## MUIM_WriteString
 ### NAME
-[MUIM_WriteString](MUI_Notify/#MUIM_WriteString) -- V6, 0x80424bf4
+[MUIM_WriteString](MUI_Notify.md/#MUIM_WriteString) -- V6, 0x80424bf4
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_WriteString, CONST_STRPTR str, STRPTR memory);`
@@ -991,7 +991,7 @@ DoMethod(string, MUIM_Notify, MUIA_String_Contents, MUIV_EveryTime,
 ```
 
 ### SEE ALSO
-[MUIM_WriteLong](MUI_Notify/#MUIM_WriteLong), [MUIM_Notify](MUI_Notify/#MUIM_Notify)
+[MUIM_WriteLong](MUI_Notify.md/#MUIM_WriteLong), [MUIM_Notify](MUI_Notify.md/#MUIM_Notify)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

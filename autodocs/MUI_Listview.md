@@ -32,52 +32,52 @@ Attribute|Version|ISG|Type
 
 ## MUIA_Listview_AgainClick
 ### NAME
-[MUIA_Listview_AgainClick](MUI_Listview/#MUIA_Listview_AgainClick) -- V20 [I.G], `BOOL`, 0x804214c2
+[MUIA_Listview_AgainClick](MUI_Listview.md/#MUIA_Listview_AgainClick) -- V20 [I.G], `BOOL`, 0x804214c2
 
 ### FUNCTION
 This attribute is set to TRUE whenever the user clicks on the same entry
 again, but not necessarily within the system's double click time.
 
 ### SEE ALSO
-[MUIA_Listview_DoubleClick](MUI_Listview/#MUIA_Listview_DoubleClick)
+[MUIA_Listview_DoubleClick](MUI_Listview.md/#MUIA_Listview_DoubleClick)
 
 ## MUIA_Listview_ClickColumn
 ### NAME
-[MUIA_Listview_ClickColumn](MUI_Listview/#MUIA_Listview_ClickColumn) -- V7 [..G], `LONG`, 0x8042d1b3
+[MUIA_Listview_ClickColumn](MUI_Listview.md/#MUIA_Listview_ClickColumn) -- V7 [..G], `LONG`, 0x8042d1b3
 
 ### FUNCTION
 When using a multi column list, this attribute contains the number of the
 column where the user clicked.
 
 ### SEE ALSO
-[MUIA_Listview_DefClickColumn](MUI_Listview/#MUIA_Listview_DefClickColumn)
+[MUIA_Listview_DefClickColumn](MUI_Listview.md/#MUIA_Listview_DefClickColumn)
 
 ## MUIA_Listview_DefClickColumn
 ### NAME
-[MUIA_Listview_DefClickColumn](MUI_Listview/#MUIA_Listview_DefClickColumn) -- V7 [ISG], `LONG`, 0x8042b296
+[MUIA_Listview_DefClickColumn](MUI_Listview.md/#MUIA_Listview_DefClickColumn) -- V7 [ISG], `LONG`, 0x8042b296
 
 ### FUNCTION
 When the listview is controlled with the keyboard and the user presses
 RETURN, the value given here will be used as default for
-[MUIA_Listview_ClickColumn](MUI_Listview/#MUIA_Listview_ClickColumn).
+[MUIA_Listview_ClickColumn](MUI_Listview.md/#MUIA_Listview_ClickColumn).
 
 ### SEE ALSO
-[MUIA_Listview_ClickColumn](MUI_Listview/#MUIA_Listview_ClickColumn)
+[MUIA_Listview_ClickColumn](MUI_Listview.md/#MUIA_Listview_ClickColumn)
 
 ## MUIA_Listview_DoubleClick
 ### NAME
-[MUIA_Listview_DoubleClick](MUI_Listview/#MUIA_Listview_DoubleClick) -- V4 [I.G], `BOOL`, 0x80424635
+[MUIA_Listview_DoubleClick](MUI_Listview.md/#MUIA_Listview_DoubleClick) -- V4 [I.G], `BOOL`, 0x80424635
 
 ### FUNCTION
 This attribute is set to TRUE whenever the user double clicks on an entry in
 the list.
 
 ### SEE ALSO
-[MUIA_Listview_SelectChange](MUI_Listview/#MUIA_Listview_SelectChange)
+[MUIA_Listview_SelectChange](MUI_Listview.md/#MUIA_Listview_SelectChange)
 
 ## MUIA_Listview_DragType
 ### NAME
-[MUIA_Listview_DragType](MUI_Listview/#MUIA_Listview_DragType) -- V11 [ISG], `LONG`, 0x80425cd3
+[MUIA_Listview_DragType](MUI_Listview.md/#MUIA_Listview_DragType) -- V11 [ISG], `LONG`, 0x80425cd3
 
 ### SPECIAL INPUTS
   * MUIV_Listview_DragType_None
@@ -89,7 +89,7 @@ this for the listview class. Currently, only one drag type is defined.
 
 ## MUIA_Listview_Input
 ### NAME
-[MUIA_Listview_Input](MUI_Listview/#MUIA_Listview_Input) -- V4 [I..], `BOOL`, 0x8042682d
+[MUIA_Listview_Input](MUI_Listview.md/#MUIA_Listview_Input) -- V4 [I..], `BOOL`, 0x8042682d
 
 ### FUNCTION
 Setting this to FALSE will result in a read only listview.
@@ -97,11 +97,11 @@ Setting this to FALSE will result in a read only listview.
 Defaults to TRUE.
 
 ### SEE ALSO
-[MUIA_Listview_MultiSelect](MUI_Listview/#MUIA_Listview_MultiSelect)
+[MUIA_Listview_MultiSelect](MUI_Listview.md/#MUIA_Listview_MultiSelect)
 
 ## MUIA_Listview_List
 ### NAME
-[MUIA_Listview_List](MUI_Listview/#MUIA_Listview_List) -- V4 [I.G], `Object *`, 0x8042bcce
+[MUIA_Listview_List](MUI_Listview.md/#MUIA_Listview_List) -- V4 [I.G], `Object *`, 0x8042bcce
 
 ### FUNCTION
 Every listview needs a list object as child. Specify it here.
@@ -121,11 +121,11 @@ ListviewObject,
 ```
 
 ### SEE ALSO
-[MUIA_Listview_Input](MUI_Listview/#MUIA_Listview_Input)
+[MUIA_Listview_Input](MUI_Listview.md/#MUIA_Listview_Input)
 
 ## MUIA_Listview_MultiSelect
 ### NAME
-[MUIA_Listview_MultiSelect](MUI_Listview/#MUIA_Listview_MultiSelect) -- V7 [I..], `LONG`, 0x80427e08
+[MUIA_Listview_MultiSelect](MUI_Listview.md/#MUIA_Listview_MultiSelect) -- V7 [I..], `LONG`, 0x80427e08
 
 ### SPECIAL INPUTS
   * MUIV_Listview_MultiSelect_None
@@ -152,11 +152,11 @@ Four possibilities exist for a listviews multi select capabilities:
 Please do **NOT** override the users prefs unless you have a good reason!
 
 ### SEE ALSO
-[MUIA_List_MultiTestHook](MUI_List/#MUIA_List_MultiTestHook)
+[MUIA_List_MultiTestHook](MUI_List.md/#MUIA_List_MultiTestHook)
 
 ## MUIA_Listview_ScrollerPos
 ### NAME
-[MUIA_Listview_ScrollerPos](MUI_Listview/#MUIA_Listview_ScrollerPos) -- V10 [I..], `BOOL`, 0x8042b1b4
+[MUIA_Listview_ScrollerPos](MUI_Listview.md/#MUIA_Listview_ScrollerPos) -- V10 [I..], `BOOL`, 0x8042b1b4
 
 ### SPECIAL INPUTS
   * MUIV_Listview_ScrollerPos_Default
@@ -201,7 +201,7 @@ DoMethod(list, MUIM_Notify, MUIA_List_TopPixel, MUIV_EveryTime,
 
 ## MUIA_Listview_SelectChange
 ### NAME
-[MUIA_Listview_SelectChange](MUI_Listview/#MUIA_Listview_SelectChange) -- V4 [..G], `BOOL`, 0x8042178f
+[MUIA_Listview_SelectChange](MUI_Listview.md/#MUIA_Listview_SelectChange) -- V4 [..G], `BOOL`, 0x8042178f
 
 ### FUNCTION
 This attribute is set to TRUE whenever the selection state of one or more
@@ -209,7 +209,7 @@ items in the list is changing. You can use this e.g. if you want to display
 the number of selected items in a status line.
 
 ### SEE ALSO
-[MUIA_Listview_MultiSelect](MUI_Listview/#MUIA_Listview_MultiSelect)
+[MUIA_Listview_MultiSelect](MUI_Listview.md/#MUIA_Listview_MultiSelect)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

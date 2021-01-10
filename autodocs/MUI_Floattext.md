@@ -21,21 +21,21 @@ Method|Version
 
 ## MUIA_Floattext_Justify
 ### NAME
-[MUIA_Floattext_Justify](MUI_Floattext/#MUIA_Floattext_Justify) -- V4 [ISG], `BOOL`, 0x8042dc03
+[MUIA_Floattext_Justify](MUI_Floattext.md/#MUIA_Floattext_Justify) -- V4 [ISG], `BOOL`, 0x8042dc03
 
 ### FUNCTION
 Indicate whether you want your the text aligned to the left and right
 border. MUI will try to insert spaces between words to reach this goal.
 
-If you want right aligned or centered text, use the [MUIA_List_Format](MUI_List/#MUIA_List_Format)
+If you want right aligned or centered text, use the [MUIA_List_Format](MUI_List.md/#MUIA_List_Format)
 attribute.
 
 ### SEE ALSO
-[MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text), [MUIA_List_Format](MUI_List/#MUIA_List_Format)
+[MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text), [MUIA_List_Format](MUI_List.md/#MUIA_List_Format)
 
 ## MUIA_Floattext_KeepStyles
 ### NAME
-[MUIA_Floattext_KeepStyles](MUI_Floattext/#MUIA_Floattext_KeepStyles) -- V20 [I..], `BOOL`, 0x80427b9f
+[MUIA_Floattext_KeepStyles](MUI_Floattext.md/#MUIA_Floattext_KeepStyles) -- V20 [I..], `BOOL`, 0x80427b9f
 
 ### FUNCTION
 If set to TRUE any active text styles at the end of a paragraph will be kept
@@ -44,11 +44,11 @@ instead of being reset back to plain text.
 Defaults to FALSE.
 
 ### SEE ALSO
-[MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text)
+[MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text)
 
 ## MUIA_Floattext_SkipChars
 ### NAME
-[MUIA_Floattext_SkipChars](MUI_Floattext/#MUIA_Floattext_SkipChars) -- V4 [IS.], `STRPTR`, 0x80425c7d
+[MUIA_Floattext_SkipChars](MUI_Floattext.md/#MUIA_Floattext_SkipChars) -- V4 [IS.], `STRPTR`, 0x80425c7d
 
 ### FUNCTION
 Defines an array of characters that shall be skipped when displaying the
@@ -57,11 +57,11 @@ control characters in it, you could set this attribute to "\1" to prevent
 Floattext class from displaying unreadable crap.
 
 ### SEE ALSO
-[MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text)
+[MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text)
 
 ## MUIA_Floattext_TabSize
 ### NAME
-[MUIA_Floattext_TabSize](MUI_Floattext/#MUIA_Floattext_TabSize) -- V4 [IS.], `LONG`, 0x80427d17
+[MUIA_Floattext_TabSize](MUI_Floattext.md/#MUIA_Floattext_TabSize) -- V4 [IS.], `LONG`, 0x80427d17
 
 ### FUNCTION
 Adjust the tab size for a text. The tab size is measured in spaces, so if
@@ -71,11 +71,11 @@ consider using the fixed width font.
 Defaults to 8.
 
 ### SEE ALSO
-[MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text)
+[MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text)
 
 ## MUIA_Floattext_Text
 ### NAME
-[MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text) -- V4 [ISG], `STRPTR`, 0x8042d16a
+[MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text) -- V4 [ISG], `STRPTR`, 0x8042d16a
 
 ### FUNCTION
 Strings of characters to be displayed as floattext. This string may contain
@@ -91,9 +91,9 @@ consider using the configured fixed width font.
 MUI copies the complete string into a private buffer, you don't need to keep
 your text in memory. If memory is low, nothing will be displayed. That's why
 you always have to be prepared for handling a NULL pointer when getting back
-[MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text).
+[MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text).
 
-Setting [MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text) to NULL means to clear the current text.
+Setting [MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text) to NULL means to clear the current text.
 
 Please note that justification and word wrap with proportional fonts is a
 complicated operation and may take a considerable amount of time, especially
@@ -102,7 +102,7 @@ with long texts on slow machines.
 Any active text styles (i.e. bold text or colors) will be reset at the end
 of a paragraph indicated by a line feed character (0x0a, \n). However, it is
 possible to switch off this behaviour by setting the attribute
-[MUIA_Floattext_KeepStyles](MUI_Floattext/#MUIA_Floattext_KeepStyles) to TRUE.
+[MUIA_Floattext_KeepStyles](MUI_Floattext.md/#MUIA_Floattext_KeepStyles) to TRUE.
 
 ### EXAMPLE
 ```c++
@@ -121,12 +121,12 @@ FreeVec(text);
 ```
 
 ### SEE ALSO
-[MUIA_Floattext_Justify](MUI_Floattext/#MUIA_Floattext_Justify), [MUIA_Floattext_TabSize](MUI_Floattext/#MUIA_Floattext_TabSize), [MUIA_Floattext_SkipChars](MUI_Floattext/#MUIA_Floattext_SkipChars),
-[MUIA_Floattext_KeepStyles](MUI_Floattext/#MUIA_Floattext_KeepStyles)
+[MUIA_Floattext_Justify](MUI_Floattext.md/#MUIA_Floattext_Justify), [MUIA_Floattext_TabSize](MUI_Floattext.md/#MUIA_Floattext_TabSize), [MUIA_Floattext_SkipChars](MUI_Floattext.md/#MUIA_Floattext_SkipChars),
+[MUIA_Floattext_KeepStyles](MUI_Floattext.md/#MUIA_Floattext_KeepStyles)
 
 ## MUIM_Floattext_Append
 ### NAME
-[MUIM_Floattext_Append](MUI_Floattext/#MUIM_Floattext_Append) -- V20, 0x8042a221
+[MUIM_Floattext_Append](MUI_Floattext.md/#MUIM_Floattext_Append) -- V20, 0x8042a221
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Floattext_Append, CONST_STRPTR Text);`
@@ -151,7 +151,7 @@ DoMethod(obj, MUIM_Floattext_Append, " World!");
 ```
 
 ### SEE ALSO
-[MUIA_Floattext_Text](MUI_Floattext/#MUIA_Floattext_Text)
+[MUIA_Floattext_Text](MUI_Floattext.md/#MUIA_Floattext_Text)
 
 ----
 <table class='compact' style='border: none; border-spacing: 0px; margin: 0px' width='100%'>

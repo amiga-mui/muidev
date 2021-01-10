@@ -2,9 +2,9 @@
 ## Super class
 [Group.mui](MUI_Group.md)
 ## Inherited by
-* [Filepanel.mui](MUI_Filepanel)
-* [Fontpanel.mui](MUI_Fontpanel)
-* [Screenmodepanel.mui](MUI_Screenmodepanel)
+* [Filepanel.mui](MUI_Filepanel.md)
+* [Fontpanel.mui](MUI_Fontpanel.md)
+* [Screenmodepanel.mui](MUI_Screenmodepanel.md)
 ## Background
 Panel class is an abstract base class for ASL like selectors.
 ## Methods
@@ -14,7 +14,7 @@ Method|Version
 
 ## MUIM_Panel_Run
 ### NAME
-[MUIM_Panel_Run](MUI_Panel/#MUIM_Panel_Run) -- V21, 0x8042d789
+[MUIM_Panel_Run](MUI_Panel.md/#MUIM_Panel_Run) -- V21, 0x8042d789
 
 ### SYNOPSIS
 `DoMethod(obj, MUIM_Panel_Run, Object *app, Object *win);`
