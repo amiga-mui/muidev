@@ -1,6 +1,6 @@
 # Filepanel.mui
 ## Super class
-[Panel.mui](MUI_Panel)
+[Panel.mui](MUI_Panel.md)
 ## Background
 Filepanel class offers a full featured replacement for ASL file requesters.
 As a replacement it understands most of ASL's file requester attributes or

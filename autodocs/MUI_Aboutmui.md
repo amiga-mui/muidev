@@ -1,6 +1,6 @@
 # Aboutmui.mui
 ## Super class
-[Window.mui](MUI_Window)
+[Window.mui](MUI_Window.md)
 ## Background
 This class can be used to display a MUI about window in MUI applications. Add a
 "Project/About MUI..." menu item and make it do something like this:

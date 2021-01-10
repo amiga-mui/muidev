@@ -1,6 +1,6 @@
 # Popasl.mui
 ## Super class
-[Popstring.mui](MUI_Popstring)
+[Popstring.mui](MUI_Popstring.md)
 ## Background
 As a subclass of popstring class, popasl can be used to pop up any kinds of
 standard system asl requesters. A seperate task is spawned to handle these

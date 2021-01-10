@@ -1,6 +1,6 @@
 # Menustrip.mui
 ## Super class
-[Family.mui](MUI_Family)
+[Family.mui](MUI_Family.md)
 ## Background
 Menustrip class is the base class for MUI's object oriented menus. Its
 children are objects of Menu class, each of them describes exactly one menu.

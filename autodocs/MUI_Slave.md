@@ -1,6 +1,6 @@
 # Slave.mui
 ## Super class
-[Process.mui](MUI_Process)
+[Process.mui](MUI_Process.md)
 ## Background
 The Slave class provides a convenient way of safely dispatching methods that
 are to be run asynchronously on a thread as well as a safe way to call a

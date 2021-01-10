@@ -1,6 +1,6 @@
 # Listview.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 It's important to know that MUI makes a difference between a list and a
 listview. A list is just a collection of some entries and is part of a

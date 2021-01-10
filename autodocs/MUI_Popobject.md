@@ -1,6 +1,6 @@
 # Popobject.mui
 ## Super class
-[Popstring.mui](MUI_Popstring)
+[Popstring.mui](MUI_Popstring.md)
 ## Inherited by
 * [Poplist.mui](MUI_Poplist)
 * [Popscreen.mui](MUI_Popscreen)

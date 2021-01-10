@@ -1,6 +1,6 @@
 # Title.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Title class is the new replacement class for the old register class. It
 offers much more flexibility regarding dynamic page adding/removal as well

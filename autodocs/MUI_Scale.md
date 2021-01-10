@@ -1,6 +1,6 @@
 # Scale.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 A Scale object generates a percentage scale running from 0% to 100%. A good
 place for such an object is e.g. below a fuel gauge.

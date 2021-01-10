@@ -1,6 +1,6 @@
 # Volumelist.mui
 ## Super class
-[List.mui](MUI_List)
+[List.mui](MUI_List.md)
 ## Background
 Volumelist generates a list of all available volumes. Since you shouldn't
 use your own file requester in every application, this class is probably not

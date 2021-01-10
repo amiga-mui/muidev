@@ -1,6 +1,6 @@
 # Floattext.mui
 ## Super class
-[List.mui](MUI_List)
+[List.mui](MUI_List.md)
 ## Background
 Floattext class is a subclass of list class that takes a big text string as
 input and splits it up into several lines to be dislayed. Formatting

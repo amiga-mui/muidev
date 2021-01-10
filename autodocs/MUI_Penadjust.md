@@ -1,6 +1,6 @@
 # Penadjust.mui
 ## Super class
-[Register.mui](MUI_Register)
+[Register.mui](MUI_Register.md)
 ## Background
 This is a private class.
 ## Attributes

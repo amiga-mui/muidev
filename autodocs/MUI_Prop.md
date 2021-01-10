@@ -1,6 +1,6 @@
 # Prop.mui
 ## Super class
-[Gadget.mui](MUI_Gadget)
+[Gadget.mui](MUI_Gadget.md)
 ## Background
 Prop class generates the well known proportional gadgets. It offers the same
 attributes as a usual boopsi gadget of propgclass. However, MUI's prop

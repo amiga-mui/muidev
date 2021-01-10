@@ -1,6 +1,6 @@
 # Cycle.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Cycle class generates the well known cycle gadgets. However, MUI cycle
 gadgets feature a (configurable) popup menu to avoid clicking through many

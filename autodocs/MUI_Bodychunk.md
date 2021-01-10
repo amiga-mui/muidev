@@ -1,6 +1,6 @@
 # Bodychunk.mui
 ## Super class
-[Bitmap.mui](MUI_Bitmap)
+[Bitmap.mui](MUI_Bitmap.md)
 ## Background
 Big and colorful images (e.g. About-Logos) usually take lots of space when
 stored in a traditional BitMap structure. To save memory, you can decide to

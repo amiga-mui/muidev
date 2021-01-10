@@ -1,6 +1,6 @@
 # Scrollgroup.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Scrollgroup objects can be used to supply virtual groups with scrollbars.
 These scrollbars automatically adjust according to the virtual and display

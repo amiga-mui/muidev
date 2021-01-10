@@ -1,6 +1,6 @@
 # Knob.mui
 ## Super class
-[Numeric.mui](MUI_Numeric)
+[Numeric.mui](MUI_Numeric.md)
 ## Background
 This is a subclass of Numeric class which offers a knob that the user may
 turn.

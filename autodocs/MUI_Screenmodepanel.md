@@ -1,6 +1,6 @@
 # Screenmodepanel.mui
 ## Super class
-[Panel.mui](MUI_Panel)
+[Panel.mui](MUI_Panel.md)
 ## Background
 Screenmodepanel class offers a full featured replacement for ASL screenmode
 requesters. As a replacement it understands most of ASL's screenmode requester.

@@ -1,6 +1,6 @@
 # Mccprefs.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Mccprefs is the base class for all custom class configuration classes. Each
 configuration class (*.mcp) must be a subclass of Mccprefs.

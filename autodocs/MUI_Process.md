@@ -1,6 +1,6 @@
 # Process.mui
 ## Super class
-[Semaphore.mui](MUI_Semaphore)
+[Semaphore.mui](MUI_Semaphore.md)
 ## Inherited by
 * [Slave.mui](MUI_Slave)
 ## Background

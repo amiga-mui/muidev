@@ -1,6 +1,6 @@
 # Rectangle.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 Rectangle class seems kind of useless since it doesn't define any attributes
 or methods itself. However, objects of this type are frequently used in

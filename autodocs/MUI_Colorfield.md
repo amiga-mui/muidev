@@ -1,6 +1,6 @@
 # Colorfield.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 Colorfield class creates a rectangle filled with a specific color, useful
 e.g. within a palette requester. You can change the color of the field at

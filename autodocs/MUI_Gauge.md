@@ -1,6 +1,6 @@
 # Gauge.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 A gauge object is a nice looking display element useful for some kind of
 progress display.

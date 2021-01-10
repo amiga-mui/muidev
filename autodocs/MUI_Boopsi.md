@@ -1,6 +1,6 @@
 # Boopsi.mui
 ## Super class
-[Gadget.mui](MUI_Gadget)
+[Gadget.mui](MUI_Gadget.md)
 ## Background
 MUI's Boopsi class provides an interface to standard, system style BOOPSI
 gadgets. Since BOOPSI's gadgetclass misses some important features needed

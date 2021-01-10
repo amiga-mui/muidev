@@ -1,6 +1,6 @@
 # Slider.mui
 ## Super class
-[Numeric.mui](MUI_Numeric)
+[Numeric.mui](MUI_Numeric.md)
 ## Background
 The slider class generates a GU element that allows a user to adjust a
 numeric value. The programmer has not very much influence on the slider's

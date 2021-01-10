@@ -1,6 +1,6 @@
 # Pixmap.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 The Pixmap class allows including self-made inlined image data in MUI
 applications.

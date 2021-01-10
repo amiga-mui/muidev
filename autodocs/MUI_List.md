@@ -1,6 +1,6 @@
 # List.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Inherited by
 * [Dirlist.mui](MUI_Dirlist)
 * [Floattext.mui](MUI_Floattext)

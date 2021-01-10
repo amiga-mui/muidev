@@ -1,6 +1,6 @@
 # Textdata.mui
 ## Super class
-[Notify.mui](MUI_Notify)
+[Notify.mui](MUI_Notify.md)
 ## Background
 Usually all text displayed in a MUI GUI is limited to ISO-8859-1 encoded
 texts as this is the Amiga standard text encoding.

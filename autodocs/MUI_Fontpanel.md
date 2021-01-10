@@ -1,6 +1,6 @@
 # Fontpanel.mui
 ## Super class
-[Panel.mui](MUI_Panel)
+[Panel.mui](MUI_Panel.md)
 ## Background
 Fontpanel class is MUI's replacement for ASL font requesters to provide the
 extended font styles, sizing and coloring. Furthermore it offers the

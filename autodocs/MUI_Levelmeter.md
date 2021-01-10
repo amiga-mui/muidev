@@ -1,6 +1,6 @@
 # Levelmeter.mui
 ## Super class
-[Numeric.mui](MUI_Numeric)
+[Numeric.mui](MUI_Numeric.md)
 ## Background
 This is a subclass of numeric class that display a levelmeter. See Slidorama
 demo for more details.

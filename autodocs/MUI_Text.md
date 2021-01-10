@@ -1,6 +1,6 @@
 # Text.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Inherited by
 * [Fontdisplay.mui](MUI_Fontdisplay)
 ## Background

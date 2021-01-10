@@ -1,6 +1,6 @@
 # Datamap.mui
 ## Super class
-[Semaphore.mui](MUI_Semaphore)
+[Semaphore.mui](MUI_Semaphore.md)
 ## Background
 The Datamap class serves as a simple data container, similar to Dataspace. They
 both are subclasses of Semaphore clas. The data is sorted by the string key

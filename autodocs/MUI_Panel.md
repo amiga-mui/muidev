@@ -1,6 +1,6 @@
 # Panel.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Inherited by
 * [Filepanel.mui](MUI_Filepanel)
 * [Fontpanel.mui](MUI_Fontpanel)

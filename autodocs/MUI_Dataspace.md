@@ -1,6 +1,6 @@
 # Dataspace.mui
 ## Super class
-[Semaphore.mui](MUI_Semaphore)
+[Semaphore.mui](MUI_Semaphore.md)
 ## Background
 The Dataspace class serves as a very simple container for all kinds of data.
 You can add data items and reference them later through an ID. Furthermore,

@@ -1,6 +1,6 @@
 # Register.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Inherited by
 * [Penadjust.mui](MUI_Penadjust)
 ## Background

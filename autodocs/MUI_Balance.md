@@ -1,6 +1,6 @@
 # Balance.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 The Balance class is very simple. Inserting objects of this class somewhere in
 your group (only horizontal or vertical groups, nothing 2-dimensional) allows

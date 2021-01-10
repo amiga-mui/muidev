@@ -1,6 +1,6 @@
 # Keyadjust.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Keyadjust class provides a standardized way to let the user enter keyboard
 shortcuts for specific actions. The shortcut is checked for consistency and

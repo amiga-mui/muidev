@@ -1,6 +1,6 @@
 # Popstring.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Inherited by
 * [Popasl.mui](MUI_Popasl)
 * [Popobject.mui](MUI_Popobject)

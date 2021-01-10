@@ -1,6 +1,6 @@
 # Application.mui
 ## Super class
-[Notify.mui](MUI_Notify)
+[Notify.mui](MUI_Notify.md)
 ## Background
 Application class is the master class for all MUI applications. It serves as
 a kind of anchor for all input, either coming from the user or somewhere

@@ -1,6 +1,6 @@
 # Popscreen.mui
 ## Super class
-[Popobject.mui](MUI_Popobject)
+[Popobject.mui](MUI_Popobject.md)
 ## Background
 This is a private class.
 ----

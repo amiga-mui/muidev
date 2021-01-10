@@ -1,6 +1,6 @@
 # Selectgroup.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Selectgroup objects combine radio buttons and labels or other visible objects
 into a group of selectable options.

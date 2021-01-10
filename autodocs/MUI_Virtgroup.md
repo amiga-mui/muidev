@@ -1,6 +1,6 @@
 # Virtgroup.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Virtgroup class generates special kinds of group objects whose children can
 be a lot larger than the actual group. The group acts as a (small) window

@@ -1,6 +1,6 @@
 # Menuitem.mui
 ## Super class
-[Family.mui](MUI_Family)
+[Family.mui](MUI_Family.md)
 ## Background
 Menuitem class describes a single menu item. You can use all of the gadtools
 menus features except Image menus here.

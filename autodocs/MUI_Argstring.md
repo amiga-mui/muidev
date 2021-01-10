@@ -1,6 +1,6 @@
 # Argstring.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 ## Attributes
 Attribute|Version|ISG|Type

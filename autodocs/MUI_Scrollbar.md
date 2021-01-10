@@ -1,6 +1,6 @@
 # Scrollbar.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 The Scrollbar class has no objects and attributes itself. It just connects a
 proportional gadget and two button gadgets with approriate imagery to make

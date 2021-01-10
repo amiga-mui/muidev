@@ -1,6 +1,6 @@
 # Numeric.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Inherited by
 * [Knob.mui](MUI_Knob)
 * [Levelmeter.mui](MUI_Levelmeter)

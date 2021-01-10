@@ -1,6 +1,6 @@
 # Pendisplay.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Inherited by
 * [Poppen.mui](MUI_Poppen)
 ## Background

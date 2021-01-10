@@ -1,6 +1,6 @@
 # Window.mui
 ## Super class
-[Notify.mui](MUI_Notify)
+[Notify.mui](MUI_Notify.md)
 ## Inherited by
 * [Aboutmui.mui](MUI_Aboutmui)
 ## Background

@@ -1,6 +1,6 @@
 # Image.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 Image class is used to display one of MUI's standard images or some selfmade
 image data.

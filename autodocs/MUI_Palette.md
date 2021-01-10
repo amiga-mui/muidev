@@ -1,6 +1,6 @@
 # Palette.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 OBSOLETE!
 There are better ways to define colors now. Check out Poppen class for an

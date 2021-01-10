@@ -1,6 +1,6 @@
 # Menu.mui
 ## Super class
-[Family.mui](MUI_Family)
+[Family.mui](MUI_Family.md)
 ## Background
 Objects of menu class describe exactly one pulldown menu. They don't feature
 many options themselves, but as a subclass of Family class, they act as

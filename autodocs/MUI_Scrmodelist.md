@@ -1,6 +1,6 @@
 # Scrmodelist.mui
 ## Super class
-[List.mui](MUI_List)
+[List.mui](MUI_List.md)
 ## Background
 This is a private class and only used by the MUI preferences progam. Maybe
 it will get public in a future release.

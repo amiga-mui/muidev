@@ -1,6 +1,6 @@
 # Area.mui
 ## Super class
-[Notify.mui](MUI_Notify)
+[Notify.mui](MUI_Notify.md)
 ## Inherited by
 * [Balance.mui](MUI_Balance)
 * [Bitmap.mui](MUI_Bitmap)

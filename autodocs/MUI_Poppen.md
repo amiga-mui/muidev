@@ -1,6 +1,6 @@
 # Poppen.mui
 ## Super class
-[Pendisplay.mui](MUI_Pendisplay)
+[Pendisplay.mui](MUI_Pendisplay.md)
 ## Background
 Poppen class adds input capabilities to its super class Pendisplay. It
 should be used if your application allows users to configure some custom

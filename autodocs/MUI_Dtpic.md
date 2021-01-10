@@ -1,6 +1,6 @@
 # Dtpic.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 The Dtpic class allows including arbitrary images loadable using
 datatypes.library in MUI applications. One just as to provide the file name

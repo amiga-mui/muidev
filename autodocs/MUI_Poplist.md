@@ -1,6 +1,6 @@
 # Poplist.mui
 ## Super class
-[Popobject.mui](MUI_Popobject)
+[Popobject.mui](MUI_Popobject.md)
 ## Background
 Poplist class simplifies creation of popups that contain just a simple list
 of predefined gadget contents.

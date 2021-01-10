@@ -1,6 +1,6 @@
 # Fontdisplay.mui
 ## Super class
-[Text.mui](MUI_Text)
+[Text.mui](MUI_Text.md)
 ## Background
 Fontdisplay class is used within Fontpanel to display a font sample of the
 currently selected font. There are no public attributes or methods yet.

@@ -1,6 +1,6 @@
 # Radio.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Radio class generates radio button gadgets. They do the same job as cycle
 gadgets and eat up more window space, maybe that's the reason  why so few of

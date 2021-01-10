@@ -1,6 +1,6 @@
 # Numericbutton.mui
 ## Super class
-[Numeric.mui](MUI_Numeric)
+[Numeric.mui](MUI_Numeric.md)
 ## Background
 This class is some kind of space-saving slider. No more need for extra
 attributes, simply use Numeric class options for this one.

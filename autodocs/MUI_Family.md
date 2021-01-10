@@ -1,6 +1,6 @@
 # Family.mui
 ## Super class
-[Notify.mui](MUI_Notify)
+[Notify.mui](MUI_Notify.md)
 ## Inherited by
 * [Menu.mui](MUI_Menu)
 * [Menuitem.mui](MUI_Menuitem)

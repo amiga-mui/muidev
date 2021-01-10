@@ -1,6 +1,6 @@
 # Coloradjust.mui
 ## Super class
-[Group.mui](MUI_Group)
+[Group.mui](MUI_Group.md)
 ## Background
 Coloradjust class creates some gadgets that allow adjusting a single color.
 Depending on the operating system, different kinds of gadgets are be used.

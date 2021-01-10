@@ -1,6 +1,6 @@
 # Dirlist.mui
 ## Super class
-[List.mui](MUI_List)
+[List.mui](MUI_List.md)
 ## Background
 Dirlist class provides a quick and easy way of showing entries in a
 directory. It features lots of control attributes, many of them known from

@@ -1,6 +1,6 @@
 # String.mui
 ## Super class
-[Area.mui](MUI_Area)
+[Area.mui](MUI_Area.md)
 ## Background
 String class generates standard string gadgets with all editing facilities
 (clear, undo, etc.) enabled.

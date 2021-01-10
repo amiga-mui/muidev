@@ -1,6 +1,6 @@
 # Objectmap.mui
 ## Super class
-[Semaphore.mui](MUI_Semaphore)
+[Semaphore.mui](MUI_Semaphore.md)
 ## Background
 The Objectmap class serves as a simple data container, similar to Dataspace
 and Datamap. They both are subclasses of Semaphore class. The data is sorted
