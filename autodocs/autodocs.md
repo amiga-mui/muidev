@@ -1,5 +1,6 @@
 Available online Autodocs for public MUI classes
 
+* [muimaster.library](muimaster.txt)
 * [Aboutmui.mui](MUI_Aboutmui.md)
 * [Application.mui](MUI_Application.md)
 * [Area.mui](MUI_Area.md)
