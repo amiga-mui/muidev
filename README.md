@@ -6,6 +6,7 @@
 
 [![Current Release](https://img.shields.io/github/release/amiga-mui/muidev.svg)](https://github.com/amiga-mui/muidev/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/amiga-mui/muidev/latest/total.svg)](https://github.com/amiga-mui/muidev/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/amiga-mui/muidev/snapshots/total.svg)](https://github.com/amiga-mui/muidev/releases/snapshots)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/amiga-mui/muidev.svg)](https://github.com/amiga-mui/muidev/issues)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/amiga-mui/muidev.svg)](https://github.com/amiga-mui/muidev/issues)
 
